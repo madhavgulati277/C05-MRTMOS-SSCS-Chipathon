@@ -1,0 +1,9 @@
+** sch_path: /foss/designs/sscs-chipathon-2026/schema_ram/ota_gds.sch
+.subckt ota_gds vin+ vin- out bias
+*.PININFO vin+:I vin-:I out:O bias:I
+M1 out vin- int2 int2 nfet_05v0 L=0.60u W=0.60u nf=1
+M3 int2 bias 0 0 nfet_05v0 L=1.2u W=0.48u nf=1
+M4 out int1 net1 net1 pfet_05v0 L=0.60u W=0.4036u nf=1
+M5 int1 int1 net1 net1 pfet_05v0 L=0.60u W=0.4036u nf=1
+M2 int1 vin+ int2 int2 nfet_05v0 L=0.60u W=0.60u nf=1
+.ends
