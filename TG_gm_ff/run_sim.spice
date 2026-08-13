@@ -1,0 +1,88 @@
+* ==========================================
+* MASTER TESTBENCH
+* ==========================================
+
+* 1. Load the GlobalFoundries 180nm PDK
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+
+* 2. Load the circuit you drew in Xschem
+.include /headless/.xschem/simulations/gm_ff.spice
+
+* 3. The Simulation Commands
+.control
+  save all
+  op
+  
+  print @m.xm2.m0[gm]
+  print @m.xm2.m0[id]
+
+  * ==========================================
+  * AC ANALYSIS & PHASE MARGIN FIX
+  * ==========================================
+  ac dec 10 1 1G
+  meas ac dc_gain MAX vdb(out)
+  meas ac ugbw WHEN vdb(out)=0 FALL=1
+  
+  * Calculate Phase Margin correctly (+180 degrees)
+  let phase_deg = (180/PI) * vp(out)
+  let pm_vector = phase_deg + 180
+  meas ac phase_margin FIND pm_vector AT=ugbw
+  
+  plot vdb(out)
+  plot phase_deg
+
+  * ==========================================
+  * NOISE ANALYSIS
+  * ==========================================
+  noise v(out) V4 dec 20 1 1G
+  setplot noise1
+  plot sqrt(inoise_spectrum)
+  plot sqrt(onoise_spectrum)
+  setplot noise2
+  print inoise_total
+  print onoise_total
+
+  * ==========================================
+  * MONTE CARLO (FINAL WITH SCATTER PLOT)
+  * ==========================================
+  alterparam sw_stat_global = 1
+  alterparam sw_stat_mismatch = 1
+  
+  setplot const
+  let mc_runs = 1000
+  let run = 1
+  
+  * Create two vectors: one for the Y-axis (Gm) and one for the X-axis (Run #)
+  let gm_array = vector(mc_runs)
+  let run_index = vector(mc_runs)
+
+  while const.run <= const.mc_runs
+    let random_seed = floor(sunif(0) * 10000)
+    
+    alterparam mc_skew = $&random_seed
+    alterparam cap_mc_skew = $&random_seed
+    alterparam res_mc_skew = $&random_seed
+    
+    reset
+    op
+    
+    let current_gm = @m.xm2.m0[gm]
+    let idx = const.run - 1
+    
+    * Store both the Gm value and the current run number
+    let const.gm_array[idx] = current_gm
+    let const.run_index[idx] = const.run
+    
+    let const.run = const.run + 1
+  end
+
+  setplot const
+  
+  * Force a scatter plot of Gm vs the Run Number with proper labels
+  plot gm_array vs run_index title "Gm Mismatch across 1000 Simulated Chips" xlabel "Chip Number" ylabel "Transconductance (A/V)"
+
+  * Export the data to a text file for the bell curve
+  print gm_array > mc_data.txt
+  
+.endc
