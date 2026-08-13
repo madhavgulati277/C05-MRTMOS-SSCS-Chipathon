@@ -6,6 +6,7 @@ S {}
 F {}
 E {}
 P 4 1 900 -30 {}
+P 4 1 320 -100 {}
 N 50 -40 120 -40 {lab=0}
 N 285 -160 335 -160 {lab=Vdd}
 N -20 -40 10 -40 {lab=Vin+}
@@ -41,6 +42,7 @@ N -50 100 130 100 {lab=Vbias_b}
 N -50 190 130 190 {lab=Vbias_a}
 N 730 60 750 60 {lab=Vbias_b}
 N 820 -40 840 -40 {lab=Vbias_a}
+N 290 -100 460 -100 {lab=#net2}
 C {/foss/designs/C05-MRTMOS-SSCS-Chipathon/gf180mcu/gf180mcuD/libs.tech/xschem/symbols/pfet_05v0.sym} 265 -160 0 0 {name=M4
 L=2u
 W=27u
@@ -70,7 +72,7 @@ C {vsource.sym} 590 120 0 0 {name=V2 value=3.333 savecurrent=false}
 C {gnd.sym} 590 150 0 0 {name=l6 lab=0}
 C {code.sym} 505 -340 0 0 {name=s1 only_toplevel=false value="
 .include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
-.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical 
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice ff 
 .op"}
 C {ipin.sym} 570 215 0 0 {name=p4 lab=Vin-
 }
@@ -164,3 +166,9 @@ C {ipin.sym} -50 100 0 0 {name=p11 lab=Vbias_b
 }
 C {ipin.sym} -50 190 0 0 {name=p12 lab=Vbias_a
 }
+C {gnd.sym} 460 -40 0 0 {name=l11 lab=0}
+C {capa.sym} 460 -70 0 0 {name=C1
+m=1
+value=2p
+footprint=1206
+device="ceramic capacitor"}
