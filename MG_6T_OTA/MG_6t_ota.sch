@@ -38,11 +38,15 @@ N 170 130 170 160 {lab=#net4}
 N 170 220 170 270 {lab=0}
 N 170 -330 170 -250 {lab=Vdd}
 N 130 -330 170 -330 {lab=Vdd}
-N -50 100 130 100 {lab=Vbias_b}
-N -50 190 130 190 {lab=Vbias_a}
-N 730 60 750 60 {lab=Vbias_b}
-N 820 -40 840 -40 {lab=Vbias_a}
+N -50 100 130 100 {lab=#net5}
+N -50 190 130 190 {lab=#net6}
 N 290 -100 460 -100 {lab=#net2}
+N -120 -60 -120 20 {lab=Vdd}
+N -160 -60 -120 -60 {lab=Vdd}
+N -120 80 -120 110 {lab=#net5}
+N -120 100 -50 100 {lab=#net5}
+N -120 170 -120 210 {lab=#net6}
+N -120 190 -50 190 {lab=#net6}
 C {/foss/designs/C05-MRTMOS-SSCS-Chipathon/gf180mcu/gf180mcuD/libs.tech/xschem/symbols/pfet_05v0.sym} 265 -160 0 0 {name=M4
 L=2u
 W=27u
@@ -72,7 +76,8 @@ C {vsource.sym} 590 120 0 0 {name=V2 value=3.333 savecurrent=false}
 C {gnd.sym} 590 150 0 0 {name=l6 lab=0}
 C {code.sym} 505 -340 0 0 {name=s1 only_toplevel=false value="
 .include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
-.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice ff 
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_typical
 .op"}
 C {ipin.sym} 570 215 0 0 {name=p4 lab=Vin-
 }
@@ -154,21 +159,32 @@ sa=0 sb=0 sd=0
 model=nfet_05v0
 spiceprefix=X
 }
-C {ipin.sym} 730 60 0 0 {name=p9 lab=Vbias_b
-}
-C {vsource.sym} 750 90 0 0 {name=V4 value=2 savecurrent=false}
-C {gnd.sym} 750 120 0 0 {name=l9 lab=0}
-C {ipin.sym} 820 -40 0 0 {name=p10 lab=Vbias_a
-}
-C {vsource.sym} 840 -10 0 0 {name=V5 value=1 savecurrent=false}
-C {gnd.sym} 840 20 0 0 {name=l10 lab=0}
-C {ipin.sym} -50 100 0 0 {name=p11 lab=Vbias_b
-}
-C {ipin.sym} -50 190 0 0 {name=p12 lab=Vbias_a
-}
 C {gnd.sym} 460 -40 0 0 {name=l11 lab=0}
 C {capa.sym} 460 -70 0 0 {name=C1
 m=1
 value=2p
 footprint=1206
 device="ceramic capacitor"}
+C {symbols/ppolyf_u_3k.sym} -120 50 0 0 {name=R1
+W=1e-6
+L=3e-6
+model=ppolyf_u_3k
+spiceprefix=X
+m=1}
+C {symbols/ppolyf_u_3k.sym} -120 140 0 0 {name=R2
+W=1e-6
+L=1e-6
+model=ppolyf_u_3k
+spiceprefix=X
+m=1}
+C {symbols/ppolyf_u_3k.sym} -120 240 0 0 {name=R3
+W=1e-6
+L=1e-6
+model=ppolyf_u_3k
+spiceprefix=X
+m=1}
+C {ipin.sym} -160 -60 0 0 {name=p9 lab=Vdd}
+C {gnd.sym} -120 270 0 0 {name=l9 lab=0}
+C {gnd.sym} -140 50 0 0 {name=l10 lab=0}
+C {gnd.sym} -140 140 0 0 {name=l12 lab=0}
+C {gnd.sym} -140 240 0 0 {name=l13 lab=0}
