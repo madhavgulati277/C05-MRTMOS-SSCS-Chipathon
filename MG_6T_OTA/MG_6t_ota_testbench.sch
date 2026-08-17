@@ -35,9 +35,9 @@ m=1
 value=2p
 footprint=1206
 device="ceramic capacitor"}
-C {MG_6t_ota.sym} 190 0 0 0 {name=x1}
 C {ipin.sym} 40 -30 0 0 {name=p2 lab=Vdd}
 C {ipin.sym} 40 10 0 0 {name=p3 lab=Vin+
 }
 C {ipin.sym} -50 -5 0 0 {name=p5 lab=Vin-
 }
+C {MG_6t_ota.sym} 190 0 0 0 {name=x1}

@@ -12,7 +12,7 @@ C {ipin.sym} -50 -250 0 0 {name=p4 lab=Vin
 }
 C {code.sym} -350 -230 0 0 {name=s1 only_toplevel=false value="
 .include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
-.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical 
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice ff
 
 * ==========================================
 * 1. TESTBENCH COMPONENTS (Stimuli & Loads)

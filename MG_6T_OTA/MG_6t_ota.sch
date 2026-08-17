@@ -44,7 +44,7 @@ N -120 270 -120 290 {lab=GND}
 N -20 -160 60 -160 {lab=Vdd}
 N 280 -160 360 -160 {lab=Vdd}
 N 290 -90 440 -90 {lab=Vout}
-C {/foss/designs/C05-MRTMOS-SSCS-Chipathon/gf180mcu/gf180mcuD/libs.tech/xschem/symbols/pfet_05v0.sym} 265 -160 0 0 {name=M4
+C {/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/xschem/symbols/nfet_05v0.sym} 265 -160 0 0 {name=M4
 L=2u
 W=27u
 nf=14
@@ -61,7 +61,7 @@ spiceprefix=X
 C {ipin.sym} 130 -330 0 0 {name=p2 lab=Vdd}
 C {ipin.sym} -20 -40 0 0 {name=p5 lab=Vin+
 }
-C {/foss/designs/C05-MRTMOS-SSCS-Chipathon/gf180mcu/gf180mcuD/libs.tech/xschem/symbols/nfet_05v0.sym} 310 -40 0 1 {name=M2
+C {/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/xschem/symbols/nfet_05v0.sym} 310 -40 0 1 {name=M2
 L=1u
 W=16u
 nf=8
@@ -77,7 +77,7 @@ spiceprefix=X
 }
 C {ipin.sym} 360 -40 0 1 {name=p6 lab=Vin-
 }
-C {/foss/designs/C05-MRTMOS-SSCS-Chipathon/gf180mcu/gf180mcuD/libs.tech/xschem/symbols/nfet_05v0.sym} 30 -40 0 0 {name=M1
+C {/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/xschem/symbols/nfet_05v0.sym} 30 -40 0 0 {name=M1
 L=1u
 W=16u
 nf=8
@@ -91,7 +91,7 @@ sa=0 sb=0 sd=0
 model=nfet_05v0
 spiceprefix=X
 }
-C {/foss/designs/C05-MRTMOS-SSCS-Chipathon/gf180mcu/gf180mcuD/libs.tech/xschem/symbols/pfet_05v0.sym} 75 -160 0 1 {name=M3
+C {/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/xschem/symbols/pfet_05v0.sym} 75 -160 0 1 {name=M3
 L=2u
 W=27u
 nf=14
@@ -105,7 +105,7 @@ sa=0 sb=0 sd=0
 model=pfet_05v0
 spiceprefix=X
 }
-C {/foss/designs/C05-MRTMOS-SSCS-Chipathon/gf180mcu/gf180mcuD/libs.tech/xschem/symbols/nfet_05v0.sym} 150 100 0 0 {name=M5b
+C {/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/xschem/symbols/nfet_05v0.sym} 150 100 0 0 {name=M5b
 L=1.25u
 W=12u
 nf=8
@@ -119,7 +119,7 @@ sa=0 sb=0 sd=0
 model=nfet_05v0
 spiceprefix=X
 }
-C {/foss/designs/C05-MRTMOS-SSCS-Chipathon/gf180mcu/gf180mcuD/libs.tech/xschem/symbols/nfet_05v0.sym} 150 190 0 0 {name=M5a
+C {/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/xschem/symbols/nfet_05v0.sym} 150 190 0 0 {name=M5a
 L=1.25u
 W=6u
 nf=4
