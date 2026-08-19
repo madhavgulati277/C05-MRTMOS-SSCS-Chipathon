@@ -57,7 +57,7 @@ C {simulator_commands.sym} 690 -20 0 0 {name=s1 only_toplevel=false value="
 .endc
 "}
 C {res.sym} 340 -190 0 0 {name=R1
-value=8e3
+value=100k
 footprint=1206
 device=resistor
 m=1}

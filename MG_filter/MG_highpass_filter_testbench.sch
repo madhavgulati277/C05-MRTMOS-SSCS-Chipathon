@@ -6,7 +6,6 @@ S {}
 F {}
 E {}
 P 4 1 140 60 {}
-C {MG_lowpass_filter.sym} 100 -20 0 0 {name=x1}
 C {gnd.sym} 100 20 0 0 {name=l1 lab=0}
 C {iopin.sym} 250 -20 0 0 {name=p1 lab=Vout}
 C {iopin.sym} -50 -20 0 1 {name=p2 lab=Vin}
@@ -17,7 +16,7 @@ C {code.sym} 350 -140 0 0 {name=s1 only_toplevel=false value="
 .lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice mimcap_typical
 .lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice cap_mim
 
-Vin Vin 0 DC 0 AC 1 PULSE(0 1 10p 10p 10p 50n 100n)
+Vin Vin 0 DC 0 AC 1 PULSE(0 1 10p 10p 10p 0.5m 1m)
 
 .control
   save v(Vin) v(Vout)
@@ -33,7 +32,8 @@ Vin Vin 0 DC 0 AC 1 PULSE(0 1 10p 10p 10p 50n 100n)
   plot vout_phase vs frequency xlabel 'Frequency [Hz]' ylabel 'Phase [deg]' title 'GF180MCU Phase Response'
 
   * --- Transient Analysis ---
-  tran 10n 1000n
+  tran 10p 1m
   plot v(Vin) v(Vout) xlabel 'Time [s]' ylabel 'Voltage [V]' title 'GF180MCU Step Response'
 .endc
 "}
+C {MG_highpass_filter.sym} 100 -20 0 0 {name=x1}
