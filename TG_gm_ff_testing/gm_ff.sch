@@ -37,7 +37,6 @@ N 150 140 180 140 {lab=GND}
 N -20 20 40 20 {lab=ext_bias}
 N 40 20 40 70 {lab=ext_bias}
 N 300 -150 300 -110 {lab=#net3}
-N 160 -300 190 -300 {lab=VDD}
 N 190 -300 190 -240 {lab=VDD}
 N 300 -130 360 -130 {lab=#net3}
 N -40 70 -20 70 {lab=GND}
@@ -62,7 +61,9 @@ N 490 -30 520 -30 {lab=GND}
 N 200 120 490 120 {lab=GND}
 N 490 -30 490 120 {lab=GND}
 N -270 20 -200 20 {lab=ext_bias}
-N 120 -320 160 -300 {lab=VDD}
+N 190 -350 190 -300 {lab=VDD}
+N 190 -370 190 -350 {lab=ext_bias}
+N 120 -370 190 -370 {lab=ext_bias}
 C {symbols/nfet_05v0.sym} 320 -80 0 1 {name=M1
 L=1u
 W=24u
@@ -163,10 +164,10 @@ model=cap_nmos_06v0
 spiceprefix=X
 m=6}
 C {lab_pin.sym} -270 80 0 0 {name=p20 sig_type=std_logic lab=GND}
-C {symbols/cap_nmos_06v0.sym} 120 -290 0 1 {name=C1
+C {symbols/cap_nmos_06v0.sym} 120 -340 0 1 {name=C1
 W=60e-6
 L=10e-6
 model=cap_nmos_06v0
 spiceprefix=X
 m=6}
-C {lab_pin.sym} 120 -260 0 0 {name=p2 sig_type=std_logic lab=GND}
+C {lab_pin.sym} 120 -310 0 0 {name=p2 sig_type=std_logic lab=GND}
