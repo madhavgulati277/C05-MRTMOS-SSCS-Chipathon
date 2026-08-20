@@ -19,6 +19,7 @@ N 80 100 190 100 {lab=GND}
 N -0 -60 0 60 {lab=Vin}
 N 80 -0 100 -0 {lab=Vout}
 N -10 -0 -0 -0 {lab=Vin}
+N 80 -120 210 -120 {lab=Vdd}
 C {symbols/pfet_05v0.sym} 60 -60 0 0 {name=M1
 L=0.6u
 W=2.2u
@@ -50,4 +51,11 @@ spiceprefix=X
 C {ipin.sym} 80 -130 0 0 {name=p1 lab=Vdd}
 C {ipin.sym} 80 120 0 0 {name=p2 lab=GND}
 C {ipin.sym} -10 0 0 0 {name=p3 lab=Vin}
-C {ipin.sym} 100 0 0 1 {name=p4 lab=Vout}
+C {opin.sym} 100 0 0 0 {name=p4 lab=Vout}
+C {symbols/cap_nmos_06v0.sym} 210 -90 0 0 {name=C1
+W=60e-6
+L=10e-6
+model=cap_nmos_06v0
+spiceprefix=X
+m=6}
+C {lab_pin.sym} 210 -60 0 0 {name=p5 sig_type=std_logic lab=GND}

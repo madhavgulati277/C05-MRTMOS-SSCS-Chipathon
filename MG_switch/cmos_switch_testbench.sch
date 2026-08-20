@@ -5,10 +5,10 @@ V {}
 S {}
 F {}
 E {}
-N -140 -230 -50 -230 {lab=0}
-C {gnd.sym} -140 -230 0 0 {name=l4 lab=0}
-C {ipin.sym} -50 -290 0 0 {name=p2 lab=Vdd}
-C {ipin.sym} -50 -250 0 0 {name=p4 lab=Vin
+N 10 -180 100 -180 {lab=0}
+C {gnd.sym} 10 -180 0 0 {name=l4 lab=0}
+C {ipin.sym} 50 -320 0 0 {name=p2 lab=Vdd}
+C {ipin.sym} 160 -320 0 0 {name=p4 lab=Vin
 }
 C {code.sym} -350 -230 0 0 {name=s1 only_toplevel=false value="
 .include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
@@ -91,6 +91,6 @@ C_load out 0 1p
 
 .endc
 "}
-C {ipin.sym} -50 -270 0 0 {name=p1 lab=in}
-C {ipin.sym} -50 -210 0 0 {name=p6 lab=out}
+C {ipin.sym} -50 -250 0 0 {name=p1 lab=in}
+C {ipin.sym} 250 -250 0 1 {name=p6 lab=out}
 C {cmos_switch.sym} 100 -250 0 0 {name=x1}
