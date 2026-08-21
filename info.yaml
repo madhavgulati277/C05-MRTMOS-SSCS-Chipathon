@@ -11,10 +11,66 @@
 # ======================================================
 # Project metadata (used for documentation / review)
 # ======================================================
+# ======================================================
+# Chipathon 2026: info.yaml Configuration
+# ======================================================
+# Pin numbers go from top right to bottom left pin, as in block A.
+# ======================================================
+
 project:
-  title: "PDK test"             # Project title (e.g. "Simple CPU", "PLL", "ADC")
-  team: "C05 MRTMOS"                      # Your Team name
-  discord: "madhavgulati277, tur0922, ramann_696"                   # Optional: Discord username (for support / communication)
-  description: "Dry run submission"  # Short one-line description
-  lvs_config: "dry_run/lvs_config.json"
+  title: "PDK test"
+  team: "C05 MRTMOS"
+  discord: "madhavgulati277, tur0922, ramann_696"
+  description: "OTA with Switched Compensation Block"
+  top_module: "YOUR_TOP_CELL_NAME"          # MUST REPLACE: Match this exactly to your GDS top cell
+  gds: "dry_run/ota_gds.gds"                # Path to your GDS file
+
+# ======================================================
+# Pin Declarations (P1 to P22)
+# ======================================================
+pin_types:
+  # --- Gm1 Inputs ---
+  p1_gm1_in1: "input"       # P1: Gm1 (external signal) Input 1
+  p2_gm1_in2: "input"       # P2: Gm1 (external signal) Input 2
+
+  # --- Gmff Inputs ---
+  p3_gmff_in1: "input"      # P3: Gmff input 1
+  p4_gmff_in2: "input"      # P4: Gmff input 2
+
+  # --- External Components / Test Pins ---
+  p5_miller_rc_1: "inout"   # P5: Off-chip Miller R/C 1
+  p6_miller_rc_2: "inout"   # P6: Off-chip Miller R/C 2
+  p7_shunt_cap: "inout"     # P7: Off-chip shunt capacitor
+  
+  # --- Gm2 ---
+  p8_gm2_in_minus: "input"  # P8: Gm2 input- pin
+  
+  # --- Nested Miller ---
+  p9_nested_rc_1: "inout"   # P9: Off-chip Nested Miller R/C 1 (Gm2 out / Gm3 in)
+  p10_nested_rc_2: "inout"  # P10: Off-chip Nested Miller R/C 2
+  
+  # --- Gm3 ---
+  p11_gm3_in_minus: "input" # P11: Gm3 input- pin
+
+  # --- Power & Ground ---
+  p12_gnd: "power"          # P12: GND Pin (topleft corner)
+  
+  # --- Gmff Adjust ---
+  p13_gmff_ext_res: "inout" # P13: Gmff external resistor adjustment
+
+  # --- Power ---
+  p14_vdd: "power"          # P14: Vdd pin
+
+  # --- Output ---
+  p15_out: "output"         # P15: Main Output
+
+  # --- 7-bit Decoder Inputs ---
+  p16_dec_0: "input"        # P16: Decoder input 1
+  p17_dec_1: "input"        # P17: Decoder input 2
+  p18_dec_2: "input"        # P18: Decoder input 3
+  p19_dec_3: "input"        # P19: Decoder input 4
+  p20_dec_4: "input"        # P20: Decoder input 5
+  p21_dec_5: "input"        # P21: Decoder input 6
+  p22_dec_6: "input"        # P22: Decoder input 7
+
 

@@ -11,9 +11,10 @@ N 510 -30 530 -30 {lab=Vdd}
 N 810 -35 830 -35 {lab=Vin-}
 N -50 -10 40 -10 {lab=Vin-}
 N -50 -10 -50 -0 {lab=Vin-}
-N 340 0 380 0 {lab=#net1}
+N 340 0 380 0 {lab=Vout}
 N 170 -90 190 -90 {lab=Vdd}
 N 190 -90 190 -60 {lab=Vdd}
+N 380 0 410 -0 {lab=Vout}
 C {vsource.sym} 530 0 0 0 {name=V1 value=5 savecurrent=false}
 C {gnd.sym} 530 30 0 0 {name=l1 lab=0}
 C {gnd.sym} 190 60 0 0 {name=l4 lab=0}
@@ -23,10 +24,68 @@ C {ipin.sym} 660 -30 0 0 {name=p8 lab=Vin+
 C {vsource.sym} 680 0 0 0 {name=V2 value=3.333 savecurrent=false}
 C {gnd.sym} 680 30 0 0 {name=l6 lab=0}
 C {code.sym} 235 120 0 0 {name=s1 only_toplevel=false value="
+
 .include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
 .lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
 .lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_typical
-.op"}
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice moscap_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice diode_typical
+
+*.control
+*  save all
+*  op
+*  alter v2 ac = 1
+*  ac dec 20 1 1G
+*  setplot ac1
+*
+*  let gain_db = vdb(vout)
+*  let phase_deg = (180/PI) * ph(vout)
+*  
+*  meas ac dc_gain MAX gain_db
+*  meas ac ugbw WHEN gain_db=0 FALL=1
+*  meas ac ph_at_ugbw FIND phase_deg WHEN gain_db=0
+*  let phase_margin = 180 + ph_at_ugbw
+*  
+*  print dc_gain ugbw phase_margin
+*  
+*  plot gain_db title 'Magnitude Response (dB)'
+*  plot phase_deg title 'Phase Response (Degrees)'
+*.endc
+
+.control
+  let mc_runs = 50
+  let run_idx = 1
+  
+  * Header for text file 
+  echo Run_Number DC_Gain_dB UGBW_Hz Phase_Margin_Deg > mc_results.txt
+  
+  while run_idx <= mc_runs
+    reset 
+    
+    * THIS IS THE FIX: alter must be applied AFTER reset!
+    alter v2 ac = 1
+    
+    ac dec 20 1 1G
+    
+    let gain_db = vdb(Vout)
+    let phase_deg = (180/PI) * ph(Vout)
+    
+    meas ac dc_gain MAX gain_db
+    meas ac ugbw WHEN gain_db=0 FALL=1
+    meas ac ph_at_ugbw FIND phase_deg WHEN gain_db=0
+    let phase_margin = 180 + ph_at_ugbw
+    
+    * Save data without quotes
+    echo $&run_idx $&dc_gain $&ugbw $&phase_margin >> mc_results.txt
+    
+    destroy all
+    let run_idx = run_idx + 1
+  end
+
+  echo Monte Carlo simulation complete check mc_results.txt
+.endc
+
+"}
 C {ipin.sym} 810 -35 0 0 {name=p4 lab=Vin-
 }
 C {vsource.sym} 830 -5 0 0 {name=V3 value=3.333 savecurrent=false}
@@ -43,3 +102,4 @@ C {ipin.sym} 40 10 0 0 {name=p3 lab=Vin+
 C {ipin.sym} -50 -5 0 0 {name=p5 lab=Vin-
 }
 C {MG_6t_ota.sym} 190 0 0 0 {name=x1}
+C {opin.sym} 410 0 0 0 {name=p6 lab=Vout}
