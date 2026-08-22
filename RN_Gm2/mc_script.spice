@@ -1,0 +1,57 @@
+ .param sw_stat_global=1
+ .param sw_stat_mismatch=1
+
+ *.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice statistical
+ *.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_statistical
+ *.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice moscap_typical
+ *.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice diode_typical
+
+ .control  
+ let mc_runs = 50
+  let run_idx = 1
+
+  echo Run_Number DC_Gain_dB UGBW_Hz Phase_Margin_Deg > mc_results.txt
+
+  while run_idx <= mc_runs
+
+    * 1. FLUSH THE CACHE: Turn off MC and reset
+    * This forces NGSPICE to recognize a physical state change
+    alterparam sw_stat_global = 0
+    alterparam sw_stat_mismatch = 0
+    reset
+
+    * 2. ROLL NEW DICE: Change seed, turn MC back on exactly to 1, and reset
+    * Because the state changed from 0 -> 1, NGSPICE is forced to re-evaluate
+    * the agauss() functions with the new seed!
+    setseed $&run_idx
+    alterparam sw_stat_global = 1
+    alterparam sw_stat_mismatch = 1
+    reset
+
+    op
+    print all
+
+
+    * 3. Run Simulation
+    alter v2 ac = 1
+    ac dec 20 1 1G
+
+
+    * 4. Measure
+    let gain_db = vdb(Vout)
+    let phase_deg = (180/PI) * ph(Vout)
+
+    meas ac dc_gain MAX gain_db
+    meas ac ugbw WHEN gain_db=0 FALL=1
+    meas ac ph_at_ugbw FIND phase_deg WHEN gain_db=0
+    let phase_margin = 180 + ph_at_ugbw
+
+    * 5. Save data
+    echo $&run_idx $&dc_gain $&ugbw $&phase_margin >> /foss/designs/sscs-chipathon-2026/schema_ram/mc_results_gm2.txt
+
+    destroy all
+    let run_idx = run_idx + 1
+  end
+
+  echo Monte Carlo simulation complete check mc_results_gm2.txt
+.endc
