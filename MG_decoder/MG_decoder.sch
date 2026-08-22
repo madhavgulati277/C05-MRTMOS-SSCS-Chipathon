@@ -237,12 +237,12 @@ C {lab_pin.sym} 2400 1580 3 0 {name=l40 sig_type=std_logic lab=GND}
 C {MG_and_gate.sym} 3600 1500 0 0 {name=xAND_S9}
 C {lab_pin.sym} 3600 1420 1 0 {name=l41 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 3600 1580 3 0 {name=l42 sig_type=std_logic lab=GND}
-C {ipin.sym} -2700 -150 0 0 {name=p_P13 lab=P13}
-C {ipin.sym} -2700 150 0 0 {name=p_P14 lab=P14}
-C {ipin.sym} -2700 450 0 0 {name=p_P15 lab=P15}
-C {ipin.sym} -2700 750 0 0 {name=p_P16 lab=P16}
-C {ipin.sym} -2690 1050 0 0 {name=p_P17 lab=P17}
-C {ipin.sym} -2680 1350 0 0 {name=p_P19 lab=P19}
+C {ipin.sym} -2400 -150 0 0 {name=p_P13 lab=P13}
+C {ipin.sym} -2400 150 0 0 {name=p_P14 lab=P14}
+C {ipin.sym} -2400 450 0 0 {name=p_P15 lab=P15}
+C {ipin.sym} -2400 750 0 0 {name=p_P16 lab=P16}
+C {ipin.sym} -2390 1050 0 0 {name=p_P17 lab=P17}
+C {ipin.sym} -2380 1350 0 0 {name=p_P19 lab=P19}
 C {ipin.sym} 2990 720 0 0 {name=p_VDD lab=VDD}
 C {ipin.sym} 2990 620 0 0 {name=p_GND lab=GND}
 C {opin.sym} 440 0 0 0 {name=p_S4 lab=S4}
@@ -255,21 +255,3 @@ C {opin.sym} 2720 1500 0 0 {name=p_S6 lab=S6}
 C {opin.sym} 3750 1500 0 0 {name=p_S9 lab=S9}
 C {lab_pin.sym} 3110 720 1 0 {name=l56 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 3110 620 3 0 {name=l57 sig_type=std_logic lab=GND}
-C {/foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_ESD_protection/MG_ESD_protection.sym} -2550 -150 0 0 {name=x1}
-C {lab_pin.sym} -2550 -200 1 0 {name=l43 sig_type=std_logic lab=VDD}
-C {lab_pin.sym} -2550 -100 3 0 {name=l44 sig_type=std_logic lab=GND}
-C {/foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_ESD_protection/MG_ESD_protection.sym} -2550 150 0 0 {name=x2}
-C {lab_pin.sym} -2550 100 1 0 {name=l45 sig_type=std_logic lab=VDD}
-C {lab_pin.sym} -2550 200 3 0 {name=l46 sig_type=std_logic lab=GND}
-C {/foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_ESD_protection/MG_ESD_protection.sym} -2550 450 0 0 {name=x3}
-C {lab_pin.sym} -2550 400 1 0 {name=l47 sig_type=std_logic lab=VDD}
-C {lab_pin.sym} -2550 500 3 0 {name=l48 sig_type=std_logic lab=GND}
-C {/foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_ESD_protection/MG_ESD_protection.sym} -2550 750 0 0 {name=x4}
-C {lab_pin.sym} -2550 700 1 0 {name=l49 sig_type=std_logic lab=VDD}
-C {lab_pin.sym} -2550 800 3 0 {name=l50 sig_type=std_logic lab=GND}
-C {/foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_ESD_protection/MG_ESD_protection.sym} -2540 1050 0 0 {name=x5}
-C {lab_pin.sym} -2540 1000 1 0 {name=l51 sig_type=std_logic lab=VDD}
-C {lab_pin.sym} -2540 1100 3 0 {name=l52 sig_type=std_logic lab=GND}
-C {/foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_ESD_protection/MG_ESD_protection.sym} -2530 1350 0 0 {name=x6}
-C {lab_pin.sym} -2530 1300 1 0 {name=l53 sig_type=std_logic lab=VDD}
-C {lab_pin.sym} -2530 1400 3 0 {name=l54 sig_type=std_logic lab=GND}

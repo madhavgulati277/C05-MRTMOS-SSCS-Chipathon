@@ -13,15 +13,15 @@ N 300 -50 300 10 {lab=#net2}
 N 180 10 300 10 {lab=#net2}
 N 180 20 180 40 {lab=#net2}
 N 80 -80 300 -80 {lab=GND}
-N 80 -240 80 -210 {lab=VDD}
-N 300 -240 300 -210 {lab=VDD}
-N 80 -240 300 -240 {lab=VDD}
-N 60 -180 80 -180 {lab=VDD}
-N 60 -220 60 -180 {lab=VDD}
-N 60 -220 80 -220 {lab=VDD}
-N 300 -180 320 -180 {lab=VDD}
-N 320 -220 320 -180 {lab=VDD}
-N 300 -220 320 -220 {lab=VDD}
+N 80 -240 80 -210 {lab=#net3}
+N 300 -240 300 -210 {lab=#net3}
+N 80 -240 300 -240 {lab=#net3}
+N 60 -180 80 -180 {lab=#net3}
+N 60 -220 60 -180 {lab=#net3}
+N 60 -220 80 -220 {lab=#net3}
+N 300 -180 320 -180 {lab=#net3}
+N 320 -220 320 -180 {lab=#net3}
+N 300 -220 320 -220 {lab=#net3}
 N 120 -180 260 -180 {lab=#net1}
 N 140 -180 140 -130 {lab=#net1}
 N 80 -130 140 -130 {lab=#net1}
@@ -36,34 +36,22 @@ N -20 100 -20 130 {lab=GND}
 N 150 140 180 140 {lab=GND}
 N -20 20 40 20 {lab=ext_bias}
 N 40 20 40 70 {lab=ext_bias}
-N 300 -150 300 -110 {lab=#net3}
-N 190 -300 190 -240 {lab=VDD}
-N 300 -130 360 -130 {lab=#net3}
+N 300 -150 300 -110 {lab=Vout}
+N 190 -300 190 -240 {lab=#net3}
+N 300 -130 360 -130 {lab=Vout}
 N -40 70 -20 70 {lab=GND}
 N -40 70 -40 110 {lab=GND}
 N -40 110 -20 110 {lab=GND}
 N -20 130 180 130 {lab=GND}
 N -200 20 -200 40 {lab=ext_bias}
 N -20 20 -20 40 {lab=ext_bias}
-N -110 -240 80 -240 {lab=VDD}
-N -110 -240 -110 -130 {lab=VDD}
 N 190 -80 190 -20 {lab=GND}
-N -110 -20 190 -20 {lab=GND}
-N -110 -30 -110 -20 {lab=GND}
 N 60 -20 60 130 {lab=GND}
-N 360 -210 360 -130 {lab=#net3}
-N 360 -210 370 -210 {lab=#net3}
-N 190 -280 520 -280 {lab=VDD}
-N 520 -280 520 -260 {lab=VDD}
-N 490 -280 490 -130 {lab=VDD}
-N 520 -160 520 -30 {lab=GND}
-N 490 -30 520 -30 {lab=GND}
-N 200 120 490 120 {lab=GND}
-N 490 -30 490 120 {lab=GND}
 N -270 20 -200 20 {lab=ext_bias}
-N 190 -350 190 -300 {lab=VDD}
-N 190 -370 190 -350 {lab=ext_bias}
-N 120 -370 190 -370 {lab=ext_bias}
+N 190 -350 190 -300 {lab=#net3}
+N 190 -370 190 -350 {lab=#net3}
+N 120 -370 190 -370 {lab=#net3}
+N 60 -20 190 -20 {lab=GND}
 C {symbols/nfet_05v0.sym} 320 -80 0 1 {name=M1
 L=1u
 W=24u
@@ -149,14 +137,10 @@ model=nfet_05v0
 spiceprefix=X
 }
 C {ipin.sym} 150 140 0 0 {name=p1 lab=GND}
-C {ipin.sym} 520 -280 0 1 {name=p3 lab=VDD}
 C {iopin.sym} -200 40 0 0 {name=p4 lab=ext_bias}
-C {iopin.sym} 640 -80 0 0 {name=p5 lab=Vin-}
-C {iopin.sym} -260 -80 0 1 {name=p9 lab=Vin+}
-C {iopin.sym} 670 -210 0 0 {name=p6 lab=Vout}
-C {/foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_ESD_protection/MG_ESD_protection.sym} -110 -80 0 0 {name=x1}
-C {/foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_ESD_protection/MG_ESD_protection.sym} 490 -80 0 1 {name=x2}
-C {/foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_ESD_protection/MG_ESD_protection.sym} 520 -210 0 1 {name=x3}
+C {iopin.sym} 340 -80 0 0 {name=p5 lab=Vin-}
+C {iopin.sym} 40 -80 0 1 {name=p9 lab=Vin+}
+C {iopin.sym} 360 -130 0 0 {name=p6 lab=Vout}
 C {symbols/cap_nmos_06v0.sym} -270 50 0 1 {name=C3
 W=60e-6
 L=10e-6
@@ -171,3 +155,4 @@ model=cap_nmos_06v0
 spiceprefix=X
 m=6}
 C {lab_pin.sym} 120 -310 0 0 {name=p2 sig_type=std_logic lab=GND}
+C {ipin.sym} 190 -290 0 1 {name=p3 lab=VDD}
