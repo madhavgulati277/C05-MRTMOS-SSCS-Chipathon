@@ -25,11 +25,11 @@ C {vsource.sym} 680 0 0 0 {name=V2 value=3.333 savecurrent=false}
 C {gnd.sym} 680 30 0 0 {name=l6 lab=0}
 C {code.sym} 235 120 0 0 {name=s1 only_toplevel=false value="
 
-.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
-.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
-.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_typical
-.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice moscap_typical
-.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice diode_typical
+*.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+*.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+*.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_typical
+*.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice moscap_typical
+*.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice diode_typical
 
 *.control
 *  save all
@@ -52,21 +52,49 @@ C {code.sym} 235 120 0 0 {name=s1 only_toplevel=false value="
 *  plot phase_deg title 'Phase Response (Degrees)'
 *.endc
 
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+
+* MUST be defined here exactly as 1
+.param sw_stat_global=1
+.param sw_stat_mismatch=1
+
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice statistical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_statistical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice moscap_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice diode_typical
+
 .control
   let mc_runs = 50
   let run_idx = 1
   
-  * Header for text file 
   echo Run_Number DC_Gain_dB UGBW_Hz Phase_Margin_Deg > mc_results.txt
   
   while run_idx <= mc_runs
+    
+    * 1. FLUSH THE CACHE: Turn off MC and reset
+    * This forces NGSPICE to recognize a physical state change
+    alterparam sw_stat_global = 0
+    alterparam sw_stat_mismatch = 0
+    reset
+    
+    * 2. ROLL NEW DICE: Change seed, turn MC back on exactly to 1, and reset
+    * Because the state changed from 0 -> 1, NGSPICE is forced to re-evaluate 
+    * the agauss() functions with the new seed!
+    setseed $&run_idx
+    alterparam sw_stat_global = 1
+    alterparam sw_stat_mismatch = 1
     reset 
     
-    * THIS IS THE FIX: alter must be applied AFTER reset!
+    op
+    print all
+
+    
+    * 3. Run Simulation
     alter v2 ac = 1
-    
     ac dec 20 1 1G
+
     
+    * 4. Measure
     let gain_db = vdb(Vout)
     let phase_deg = (180/PI) * ph(Vout)
     
@@ -75,8 +103,8 @@ C {code.sym} 235 120 0 0 {name=s1 only_toplevel=false value="
     meas ac ph_at_ugbw FIND phase_deg WHEN gain_db=0
     let phase_margin = 180 + ph_at_ugbw
     
-    * Save data without quotes
-    echo $&run_idx $&dc_gain $&ugbw $&phase_margin >> mc_results.txt
+    * 5. Save data
+    echo $&run_idx $&dc_gain $&ugbw $&phase_margin >> /foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_6T_OTA/plots_and_results/mc_results.txt
     
     destroy all
     let run_idx = run_idx + 1
