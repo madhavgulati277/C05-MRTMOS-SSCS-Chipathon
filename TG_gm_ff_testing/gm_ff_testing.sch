@@ -24,8 +24,11 @@ N 340 -250 340 -220 {lab=#net2}
 C {vsource.sym} 540 -200 0 0 {name=V1 value=5 savecurrent=false}
 C {gnd.sym} 540 -140 0 0 {name=l2 lab=0}
 C {vdd.sym} 540 -260 0 0 {name=l3 lab=VDD}
-C {vsource.sym} -300 -140 0 0 {name=V3 value=2.5 savecurrent=false}
-C {vsource.sym} -220 -140 0 0 {name=V4 value="dc 2.5 ac 1 sin(2.5 1m 1Meg)" savecurrent=false
+C {vsource.sym} -300 -140 0 0 {name=V3 value=3 savecurrent=false}
+C {vsource.sym} -220 -140 0 0 {name=V4 
+*value="dc 2.5 ac 1 sin(2.5 1m 1Meg)" 
+value= "3 ac 1" 
+savecurrent=false
 }
 C {gnd.sym} -300 -80 0 0 {name=l7 lab=0}
 C {gnd.sym} -220 -80 0 0 {name=l8 lab=0}
@@ -61,7 +64,7 @@ value=10MEG
 footprint=1206
 device=resistor
 m=1}
-C {vsource.sym} 340 -100 0 0 {name=V2 value=2 savecurrent=false}
+C {vsource.sym} 340 -100 0 0 {name=V2 value=5 savecurrent=false}
 C {gnd.sym} 170 70 0 0 {name=l1 lab=0}
 C {iopin.sym} 390 -20 0 0 {name=p4 lab=Vout}
 C {capa.sym} 520 -10 0 0 {name=C1
