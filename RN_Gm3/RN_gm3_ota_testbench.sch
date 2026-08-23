@@ -10,12 +10,17 @@ S {}
 F {}
 E {}
 N 130 -0 160 0 {lab=Vout}
+N 100 -210 110 -210 {lab=Vin+}
+N 170 -210 180 -210 {lab=#net1}
+N 310 -210 320 -210 {lab=Vin-}
+N 380 -210 400 -210 {lab=#net2}
 C {code.sym} 250 -40 0 0 {name=SIMULATIONS only_toplevel=false value="
 .include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
 .lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
 .lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_typical
 .lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice moscap_typical
-.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice diode_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice mimcap_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice cap_mim
 
 
 
@@ -66,19 +71,22 @@ C {gnd.sym} -20 60 0 0 {name=l2 lab=0}
 C {vsource.sym} 20 -140 0 0 {name=V1 value=5 savecurrent=false}
 C {lab_pin.sym} 20 -170 0 0 {name=p2 sig_type=std_logic lab=Vdd}
 C {gnd.sym} 20 -110 0 0 {name=l3 lab=0}
-C {vsource.sym} 240 -160 0 0 {name=V2 value="DC 3 AC 1" savecurrent=false}
-C {lab_pin.sym} 180 -190 0 0 {name=p5 sig_type=std_logic lab=Vin+}
-C {gnd.sym} 240 -130 0 0 {name=l4 lab=0}
-C {capa.sym} 210 -190 1 0 {name=C2
-m=1
-value=100p
-footprint=1206
-device="ceramic capacitor"}
-C {lab_pin.sym} -200 -250 0 0 {name=p6 sig_type=std_logic lab=Vin-}
-C {gnd.sym} -140 -250 0 0 {name=l5 lab=0}
-C {capa.sym} -170 -250 1 0 {name=C3
-m=1
-value=100p
-footprint=1206
-device="ceramic capacitor"}
 C {lab_pin.sym} 160 0 2 0 {name=p7 sig_type=std_logic lab=Vout}
+C {vsource.sym} 180 -180 0 0 {name=V2 value="DC 3 AC 0.5" savecurrent=false}
+C {lab_pin.sym} 100 -210 0 0 {name=p5 sig_type=std_logic lab=Vin+}
+C {gnd.sym} 180 -150 0 0 {name=l4 lab=0}
+C {vsource.sym} 400 -180 0 0 {name=V3 value="DC 3 AC -0.5" savecurrent=false}
+C {lab_pin.sym} 310 -210 0 0 {name=p6 sig_type=std_logic lab=Vin-}
+C {gnd.sym} 400 -150 0 0 {name=l5 lab=0}
+C {symbols/cap_mim_2f0fF.sym} 140 -210 3 0 {name=C2
+W=4e-4
+L=4e-4
+model=cap_mim_2f0fF
+spiceprefix=X
+m=1}
+C {symbols/cap_mim_2f0fF.sym} 350 -210 3 0 {name=C3
+W=4e-4
+L=4e-4
+model=cap_mim_2f0fF
+spiceprefix=X
+m=1}
