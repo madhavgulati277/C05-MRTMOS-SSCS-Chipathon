@@ -57,7 +57,6 @@ C {code.sym} 250 -40 0 0 {name=SIMULATIONS only_toplevel=false value="
 
 .options savecurrents
 "}
-C {RN_gm3_ota.sym} -20 0 0 0 {name=x1}
 C {lab_pin.sym} -20 -60 0 0 {name=p1 sig_type=std_logic lab=Vdd}
 C {lab_pin.sym} -170 -20 0 0 {name=p3 sig_type=std_logic lab=Vin+}
 C {lab_pin.sym} -170 20 0 0 {name=p4 sig_type=std_logic lab=Vin-}
@@ -90,3 +89,4 @@ L=4e-4
 model=cap_mim_2f0fF
 spiceprefix=X
 m=1}
+C {RN_Gm3/RN_gm3_ota.sym} -20 0 0 0 {name=x2}
