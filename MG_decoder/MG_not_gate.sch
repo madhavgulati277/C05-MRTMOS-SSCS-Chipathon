@@ -53,9 +53,9 @@ C {ipin.sym} 80 120 0 0 {name=p2 lab=GND}
 C {ipin.sym} -10 0 0 0 {name=p3 lab=Vin}
 C {opin.sym} 100 0 0 0 {name=p4 lab=Vout}
 C {symbols/cap_nmos_06v0.sym} 210 -90 0 0 {name=C1
-W=60e-6
-L=10e-6
+W=30e-6
+L=30e-6
 model=cap_nmos_06v0
 spiceprefix=X
-m=6}
+m=1}
 C {lab_pin.sym} 210 -60 0 0 {name=p5 sig_type=std_logic lab=GND}
