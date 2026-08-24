@@ -1,0 +1,23 @@
+magic
+tech gf180mcuD
+magscale 1 5
+timestamp 1787609447
+<< nwell >>
+rect -450 -450 11300 2350
+use pfet_05v0_5KHHJD  pfet_05v0_5KHHJD_0
+timestamp 1787602295
+transform 1 0 4056 0 1 940
+box -1321 -915 1321 915
+use pfet_05v0_5KHHJD  pfet_05v0_5KHHJD_1
+timestamp 1787602295
+transform 1 0 6761 0 1 940
+box -1321 -915 1321 915
+use pfet_05v0_5KHHJD  pfet_05v0_5KHHJD_2
+timestamp 1787602295
+transform 1 0 9466 0 1 940
+box -1321 -915 1321 915
+use pfet_05v0_5KHHJD  PMOSLeft
+timestamp 1787602295
+transform 1 0 1351 0 1 940
+box -1321 -915 1321 915
+<< end >>

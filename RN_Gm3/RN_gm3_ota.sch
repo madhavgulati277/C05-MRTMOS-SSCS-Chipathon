@@ -52,7 +52,6 @@ N -70 -330 -70 -320 {lab=Vdd}
 N -300 -70 -280 -70 {lab=Vin+}
 N -330 -250 -90 -250 {lab=Vdd}
 N -300 -250 -300 -150 {lab=Vdd}
-N 30 -80 30 -70 {lab=Vin-}
 N -280 -70 -240 -70 {lab=Vin+}
 N -380 30 -290 30 {lab=#net3}
 N -1150 90 -980 90 {lab=#net4}
@@ -139,9 +138,9 @@ spiceprefix=X
 }
 C {symbols/nfet_05v0.sym} -180 -70 0 0 {name=M2
 L=1u
-W=10u
+W=7.5u
 nf=4
-m=3
+m=4
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -153,9 +152,9 @@ spiceprefix=X
 }
 C {symbols/pfet_05v0.sym} -140 -160 0 1 {name=M5
 L=2u
-W=34u
-nf=20
-m=1
+W=17u
+nf=10
+m=2
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -203,9 +202,9 @@ C {opin.sym} 90 -120 0 0 {name=p9 lab=Vout
 }
 C {symbols/nfet_05v0.sym} 0 -70 0 1 {name=M1
 L=1u
-W=10u
+W=7.5u
 nf=4
-m=3
+m=4
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -234,9 +233,9 @@ C {ipin.sym} -1100 -70 0 0 {name=p11 lab=Vin+}
 C {ipin.sym} 1080 -70 0 1 {name=p12 lab=Vin-}
 C {symbols/pfet_05v0.sym} -40 -160 0 0 {name=M4
 L=2u
-W=34u
-nf=20
-m=1
+W=17u
+nf=10
+m=2
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
