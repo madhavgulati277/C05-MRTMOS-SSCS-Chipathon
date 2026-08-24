@@ -27,7 +27,7 @@ N -120 -320 -90 -320 {lab=Vdd}
 N -90 -320 -90 -260 {lab=Vdd}
 N -90 -320 -20 -320 {lab=Vdd}
 C {/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/xschem/symbols/nfet_05v0.sym} 410 -180 0 1 {name=M1
-L=0.6u
+L=0.7u
 W=2u
 nf=2
 m=1
@@ -41,7 +41,7 @@ model=nfet_05v0
 spiceprefix=X
 }
 C {/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/xschem/symbols/pfet_05v0.sym} 140 -180 0 0 {name=M2
-L=0.6u
+L=0.7u
 W=6u
 nf=6
 m=1
@@ -55,7 +55,7 @@ model=pfet_05v0
 spiceprefix=X
 }
 C {/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/xschem/symbols/nfet_05v0.sym} -110 -130 0 0 {name=M3
-L=0.6u
+L=0.7u
 W=1u
 nf=1
 m=1
@@ -69,7 +69,7 @@ model=nfet_05v0
 spiceprefix=X
 }
 C {/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/xschem/symbols/pfet_05v0.sym} -110 -230 0 0 {name=M4
-L=0.6u
+L=0.7u
 W=3u
 nf=2
 m=1

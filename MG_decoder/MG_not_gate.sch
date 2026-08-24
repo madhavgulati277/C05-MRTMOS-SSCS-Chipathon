@@ -21,7 +21,7 @@ N 80 -0 100 -0 {lab=Vout}
 N -10 -0 -0 -0 {lab=Vin}
 N 80 -120 210 -120 {lab=Vdd}
 C {symbols/pfet_05v0.sym} 60 -60 0 0 {name=M1
-L=0.6u
+L=0.7u
 W=2.2u
 nf=2
 m=1
@@ -35,7 +35,7 @@ model=pfet_05v0
 spiceprefix=X
 }
 C {symbols/nfet_05v0.sym} 60 60 0 0 {name=M2
-L=0.6u
+L=0.7u
 W=1u
 nf=1
 m=1
