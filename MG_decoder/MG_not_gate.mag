@@ -1,75 +1,24 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1787590787
+timestamp 1787675881
 << metal1 >>
-rect 1354 5545 8863 5725
-rect 1046 1830 1277 5464
-rect -21 1810 1277 1830
-rect -21 1740 80 1810
-rect 470 1740 1277 1810
-rect -21 1543 1277 1740
-rect -21 1425 25 1543
-rect 467 1415 513 1543
-rect 10 720 70 800
-rect -420 700 70 720
-rect -420 600 -400 700
-rect -300 600 70 700
-rect 150 700 340 720
-rect 150 640 200 700
-rect 300 640 340 700
-rect -420 580 70 600
-rect 10 380 70 580
-rect 420 380 480 800
-rect 146 270 170 305
-rect 320 270 342 305
-rect 146 250 342 270
-rect 1046 -532 1277 1543
-rect 1353 -613 1354 -567
-rect 1353 -626 7350 -613
-rect -159 -652 7350 -626
-rect 7503 -652 8860 5545
-rect -159 -806 8860 -652
-<< via1 >>
-rect 80 1740 470 1810
-rect -400 600 -300 700
-rect 200 600 300 700
-rect 170 270 320 330
-<< metal2 >>
-rect 70 1810 480 1880
-rect 70 1740 80 1810
-rect 470 1740 480 1810
-rect 70 1730 480 1740
-rect -430 700 -270 730
-rect -430 600 -400 700
-rect -300 600 -270 700
-rect -430 570 -270 600
-rect 190 700 750 710
-rect 190 600 200 700
-rect 300 600 750 700
-rect 190 590 750 600
-rect 160 330 330 340
-rect 160 270 170 330
-rect 320 270 330 330
-rect 160 -806 330 270
+rect 422 1060 451 1063
+rect 390 764 451 1060
+rect 543 845 589 1211
+rect 390 572 425 764
+rect 690 760 740 1060
+rect 723 572 740 760
 use nmoscap_6p0_SBPANC  XC1
-timestamp 1787590787
-transform 1 0 4352 0 1 2466
+timestamp 1787675881
+transform 1 0 4372 0 1 3616
 box -3152 -3156 3152 3156
-use pfet_05v0_FUMN3G  XM1
-timestamp 1787581952
-transform -1 0 246 0 1 1208
-box -414 -628 406 512
-use nfet_05v0_DMGHGA  XM2
-timestamp 1787581952
-transform 0 1 244 -1 0 450
-box -190 -224 190 224
-<< labels >>
-rlabel metal2 -430 570 -270 600 1 Vin
-rlabel metal2 300 590 750 710 1 Vout
-port 1 n signal output
-rlabel metal2 70 1810 480 1880 1 Vdd
-port 2 n power input
-rlabel metal2 160 228 330 270 1 GND
-port 3 n ground bidirectional
+use pfet_05v0_2VHNWJ  XM1
+timestamp 1787675881
+transform 1 0 566 0 1 1308
+box -406 -308 434 292
+use nfet_05v0_6KVYMT  XM2
+timestamp 1787675881
+transform 0 1 574 -1 0 670
+box -220 -194 220 194
 << end >>
