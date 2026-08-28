@@ -18,7 +18,7 @@
 # ======================================================
 
 project:
-  title: "MRTMOS Compensation Networks Illustration Chip"
+  title: "MRTMOS - Compensation Networks Illustration Chip"
   team: "C05 MRTMOS"
   discord: "madhavgulati277, tur0922, ramann_696"
   description: "OTA with Switched Compensation Block"

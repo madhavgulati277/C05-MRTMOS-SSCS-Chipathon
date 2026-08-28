@@ -1,0 +1,60 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1787851017
+<< pwell >>
+rect -3776 -236 3776 236
+<< mvpsubdiff >>
+rect -3752 199 3752 212
+rect -3752 153 -3636 199
+rect 3636 153 3752 199
+rect -3752 140 3752 153
+rect -3752 96 -3680 140
+rect -3752 -96 -3739 96
+rect -3693 -96 -3680 96
+rect 3680 96 3752 140
+rect -3752 -140 -3680 -96
+rect 3680 -96 3693 96
+rect 3739 -96 3752 96
+rect 3680 -140 3752 -96
+rect -3752 -153 3752 -140
+rect -3752 -199 -3636 -153
+rect 3636 -199 3752 -153
+rect -3752 -212 3752 -199
+<< mvpsubdiffcont >>
+rect -3636 153 3636 199
+rect -3739 -96 -3693 96
+rect 3693 -96 3739 96
+rect -3636 -199 3636 -153
+<< mvndiode >>
+rect -3600 47 3600 60
+rect -3600 -47 -3587 47
+rect 3587 -47 3600 47
+rect -3600 -60 3600 -47
+<< mvndiodec >>
+rect -3587 -47 3587 47
+<< metal1 >>
+rect -3746 199 3744 204
+rect -3746 153 -3636 199
+rect 3636 153 3744 199
+rect -3746 144 3744 153
+rect -3746 96 -3686 144
+rect -3746 -96 -3739 96
+rect -3693 -96 -3686 96
+rect 3684 96 3744 144
+rect -3598 -47 -3587 47
+rect 3587 -47 3598 47
+rect -3746 -146 -3686 -96
+rect 3684 -96 3693 96
+rect 3739 -96 3744 96
+rect 3684 -146 3744 -96
+rect -3746 -153 3744 -146
+rect -3746 -199 -3636 -153
+rect 3636 -199 3744 -153
+rect -3746 -206 3744 -199
+<< properties >>
+string FIXED_BBOX -3716 -176 3716 176
+string gencell diode_nd2ps_06v0
+string library gf180mcu
+string parameters w 36 l 0.6 area 21.599 peri 73.2 nx 1 ny 1 dummy 0 lmin 0.45 wmin 0.45 class diode elc 1 erc 1 etc 1 ebc 1 doverlap 0 full_metal 1 compatible {diode_nd2ps_03v3 diode_nd2ps_06v0}
+<< end >>

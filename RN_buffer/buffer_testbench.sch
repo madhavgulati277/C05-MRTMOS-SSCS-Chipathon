@@ -48,4 +48,4 @@ Vin_src net3 0 DC 2.5 AC 1 PULSE(2.0 3.0 0n 1n 1n 0.5u 1u)
 "
 
 }
-C {C05-MRTMOS-SSCS-Chipathon/RN_buffer/buffer.sym} -30 -220 0 0 {name=x1}
+C {buffer.sym} -30 -220 0 0 {name=x1}

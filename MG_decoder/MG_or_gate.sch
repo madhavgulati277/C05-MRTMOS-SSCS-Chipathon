@@ -52,7 +52,7 @@ N 80 120 80 150 {lab=GND}
 N -160 50 -0 50 {lab=#net1}
 N 80 -140 210 -140 {lab=Vdd}
 C {symbols/pfet_05v0.sym} 60 -60 0 0 {name=M1
-L=0.6u
+L=0.7u
 W=2.2u
 nf=2
 m=1
@@ -66,7 +66,7 @@ model=pfet_05v0
 spiceprefix=X
 }
 C {symbols/nfet_05v0.sym} 60 60 0 0 {name=M2
-L=0.6u
+L=0.7u
 W=1u
 nf=1
 m=1
@@ -84,7 +84,7 @@ C {ipin.sym} 80 120 0 0 {name=p2 lab=GND}
 C {ipin.sym} -320 -60 0 0 {name=p3 lab=Vin_A}
 C {opin.sym} 100 0 0 0 {name=p4 lab=Vout}
 C {symbols/pfet_05v0.sym} -180 10 0 0 {name=M3
-L=0.6u
+L=0.7u
 W=2.2u
 nf=2
 m=1
@@ -98,7 +98,7 @@ model=pfet_05v0
 spiceprefix=X
 }
 C {symbols/pfet_05v0.sym} -180 -60 0 0 {name=M4
-L=0.6u
+L=0.7u
 W=2.2u
 nf=2
 m=1
@@ -113,7 +113,7 @@ spiceprefix=X
 }
 C {ipin.sym} -210 20 0 0 {name=p5 lab=Vin_B}
 C {symbols/nfet_05v0.sym} -300 100 0 0 {name=M5
-L=0.6u
+L=0.7u
 W=2u
 nf=1
 m=1
@@ -127,7 +127,7 @@ model=nfet_05v0
 spiceprefix=X
 }
 C {symbols/nfet_05v0.sym} -170 100 0 0 {name=M6
-L=0.6u
+L=0.7u
 W=2u
 nf=1
 m=1

@@ -50,7 +50,7 @@ N -160 -60 -160 -10 {lab=Vin_B}
 N -160 -60 -130 -60 {lab=Vin_B}
 N -150 60 -150 70 {lab=#net2}
 C {symbols/pfet_05v0.sym} 60 -60 0 0 {name=M1
-L=0.6u
+L=0.7u
 W=2.2u
 nf=2
 m=1
@@ -64,7 +64,7 @@ model=pfet_05v0
 spiceprefix=X
 }
 C {symbols/nfet_05v0.sym} 60 60 0 0 {name=M2
-L=0.6u
+L=0.7u
 W=1u
 nf=1
 m=1
@@ -82,7 +82,7 @@ C {ipin.sym} 80 120 0 0 {name=p2 lab=GND}
 C {ipin.sym} -320 -60 0 0 {name=p3 lab=Vin_A}
 C {opin.sym} 100 0 0 0 {name=p4 lab=Vout}
 C {symbols/pfet_05v0.sym} -240 -60 0 0 {name=M3
-L=0.6u
+L=0.7u
 W=2.2u
 nf=2
 m=1
@@ -96,7 +96,7 @@ model=pfet_05v0
 spiceprefix=X
 }
 C {symbols/pfet_05v0.sym} -110 -60 0 0 {name=M4
-L=0.6u
+L=0.7u
 W=2.2u
 nf=2
 m=1
@@ -111,7 +111,7 @@ spiceprefix=X
 }
 C {ipin.sym} -200 -10 0 0 {name=p5 lab=Vin_B}
 C {symbols/nfet_05v0.sym} -170 30 0 0 {name=M5
-L=0.6u
+L=0.7u
 W=2u
 nf=1
 m=1
@@ -125,7 +125,7 @@ model=nfet_05v0
 spiceprefix=X
 }
 C {symbols/nfet_05v0.sym} -170 100 0 0 {name=M6
-L=0.6u
+L=0.7u
 W=2u
 nf=1
 m=1
@@ -139,9 +139,9 @@ model=nfet_05v0
 spiceprefix=X
 }
 C {symbols/cap_nmos_06v0.sym} 210 -110 0 0 {name=C1
-W=60e-6
-L=10e-6
+W=30e-6
+L=30e-6
 model=cap_nmos_06v0
 spiceprefix=X
-m=6}
+m=1}
 C {lab_pin.sym} 210 -80 0 0 {name=p6 sig_type=std_logic lab=GND}
