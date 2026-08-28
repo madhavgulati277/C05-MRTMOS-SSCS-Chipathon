@@ -1,0 +1,10 @@
+magic
+tech gf180mcuD
+magscale 1 5
+timestamp 1787842582
+<< properties >>
+string FIXED_BBOX -428 -3171 428 3171
+string gencell ppolyf_u_1k_6p0
+string library gf180mcu
+string parameters w 2.0 l 60.0 m 1 nx 3 wmin 1.000 lmin 1.000 class resistor rho 1000 val 92.4k dummy 0 dw 0.0 term 0.0 sterm 0.0 caplen 0.4 snake 1 glc 1 grc 1 gtc 0 gbc 0 roverlap 1 endcov 80 full_metal 1 compatible {ppolyf_u_1k ppolyf_u_1k_6p0}
+<< end >>
