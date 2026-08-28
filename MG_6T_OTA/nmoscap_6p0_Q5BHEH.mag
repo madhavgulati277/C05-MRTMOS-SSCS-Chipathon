@@ -1,0 +1,55 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1787931391
+<< nwell >>
+rect -3820 -3824 3820 3824
+<< pwell >>
+rect -3852 3824 3852 3856
+rect -3852 -3824 -3820 3824
+rect 3820 -3824 3852 3824
+rect -3852 -3856 3852 -3824
+<< mvnsubdiff >>
+rect -3788 3687 -3700 3700
+rect -3788 -3687 -3775 3687
+rect -3729 -3687 -3700 3687
+rect -3788 -3700 -3700 -3687
+rect 3700 3687 3788 3700
+rect 3700 -3687 3729 3687
+rect 3775 -3687 3788 3687
+rect 3700 -3700 3788 -3687
+<< mvnsubdiffcont >>
+rect -3775 -3687 -3729 3687
+rect 3729 -3687 3775 3687
+<< mvnvaractor >>
+rect -3700 -3700 3700 3700
+<< polysilicon >>
+rect -2594 3779 2594 3792
+rect -2594 3756 -2581 3779
+rect -3700 3733 -2581 3756
+rect 2581 3756 2594 3779
+rect 2581 3733 3700 3756
+rect -3700 3700 3700 3733
+rect -3700 -3733 3700 -3700
+rect -3700 -3756 -2581 -3733
+rect -2594 -3779 -2581 -3756
+rect 2581 -3756 3700 -3733
+rect 2581 -3779 2594 -3756
+rect -2594 -3792 2594 -3779
+<< polycontact >>
+rect -2581 3733 2581 3779
+rect -2581 -3779 2581 -3733
+<< metal1 >>
+rect -2592 3733 -2581 3779
+rect 2581 3733 2592 3779
+rect -3775 3687 -3729 3698
+rect -3775 -3698 -3729 -3687
+rect 3729 3687 3775 3698
+rect 3729 -3698 3775 -3687
+rect -2592 -3779 -2581 -3733
+rect 2581 -3779 2592 -3733
+<< properties >>
+string gencell nmoscap_6p0
+string library gf180mcu
+string parameters w 37 l 37 m 1 nf 1 diffcov 100 polycov 70 guard 0 glc 0 grc 0 gtc 0 gbc 0 tbcov 100 rlcov 100 topc 1 botc 1 poverlap 0 doverlap 1 lmin 0.28 wmin 0.3 class mosfet full_metal 0 compatible {nmoscap_3p3 nmoscap_6p0}
+<< end >>
