@@ -33,12 +33,11 @@ N 180 120 200 120 {lab=GND}
 N 20 70 140 70 {lab=ext_bias}
 N -200 20 -20 20 {lab=ext_bias}
 N -20 100 -20 130 {lab=GND}
-N 150 140 180 140 {lab=GND}
 N -20 20 40 20 {lab=ext_bias}
 N 40 20 40 70 {lab=ext_bias}
-N 300 -150 300 -110 {lab=Vout}
+N 300 -150 300 -110 {lab=#net3}
 N 190 -300 190 -240 {lab=VDD}
-N 300 -130 360 -130 {lab=Vout}
+N 300 -130 360 -130 {lab=#net3}
 N -40 70 -20 70 {lab=GND}
 N -40 70 -40 110 {lab=GND}
 N -40 110 -20 110 {lab=GND}
@@ -52,11 +51,7 @@ N 190 -350 190 -300 {lab=VDD}
 N 190 -370 190 -350 {lab=VDD}
 N 120 -370 190 -370 {lab=VDD}
 N 60 -20 190 -20 {lab=GND}
-C {ipin.sym} 150 140 0 0 {name=p1 lab=GND}
 C {iopin.sym} -200 40 0 0 {name=p4 lab=ext_bias}
-C {iopin.sym} 340 -80 0 0 {name=p5 lab=Vin-}
-C {iopin.sym} 40 -80 0 1 {name=p9 lab=Vin+}
-C {iopin.sym} 360 -130 0 0 {name=p6 lab=Vout}
 C {symbols/cap_nmos_06v0.sym} -270 50 0 1 {name=C3
 W=60e-6
 L=10e-6
@@ -71,7 +66,6 @@ model=cap_nmos_06v0
 spiceprefix=X
 m=6}
 C {lab_pin.sym} 120 -310 0 0 {name=p2 sig_type=std_logic lab=GND}
-C {ipin.sym} 190 -290 0 1 {name=p3 lab=VDD}
 C {symbols/nfet_05v0.sym} 160 70 0 0 {name=M7
 L=1.2u
 W=16u
@@ -88,9 +82,9 @@ spiceprefix=X
 }
 C {symbols/nfet_05v0.sym} 320 -80 0 1 {name=M8
 L=1u
-W=10u
+W=7.5u
 nf=4
-m=3
+m=4
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -102,9 +96,9 @@ spiceprefix=X
 }
 C {symbols/pfet_05v0.sym} 100 -180 0 1 {name=M9
 L=2u
-W=34u
-nf=20
-m=1
+W=17u
+nf=10
+m=2
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -130,9 +124,9 @@ spiceprefix=X
 }
 C {symbols/nfet_05v0.sym} 60 -80 0 0 {name=M1
 L=1u
-W=10u
+W=7.5u
 nf=4
-m=3
+m=4
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -144,9 +138,9 @@ spiceprefix=X
 }
 C {symbols/pfet_05v0.sym} 280 -180 0 0 {name=M2
 L=2u
-W=34u
-nf=20
-m=1
+W=17u
+nf=10
+m=2
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -156,3 +150,8 @@ sa=0 sb=0 sd=0
 model=pfet_05v0
 spiceprefix=X
 }
+C {ipin.sym} 40 -80 0 0 {name=p7 lab=Vin+}
+C {ipin.sym} 340 -80 0 1 {name=p8 lab=Vin-}
+C {iopin.sym} 180 140 0 0 {name=p1 lab=GND}
+C {iopin.sym} 190 -340 0 0 {name=p5 lab=VDD}
+C {opin.sym} 360 -130 0 0 {name=p3 lab=Vout}

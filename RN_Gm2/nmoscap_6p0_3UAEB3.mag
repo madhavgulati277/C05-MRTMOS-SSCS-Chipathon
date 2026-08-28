@@ -1,0 +1,47 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1787893748
+<< nwell >>
+rect -3120 -3100 3120 3100
+<< pwell >>
+rect -3152 3100 3152 3132
+rect -3152 -3100 -3120 3100
+rect 3120 -3100 3152 3100
+rect -3152 -3132 3152 -3100
+<< mvnsubdiff >>
+rect -3088 2963 -3000 2976
+rect -3088 -3011 -3075 2963
+rect -3029 -3011 -3000 2963
+rect -3088 -3024 -3000 -3011
+rect 3000 2963 3088 2976
+rect 3000 -3011 3029 2963
+rect 3075 -3011 3088 2963
+rect 3000 -3024 3088 -3011
+<< mvnsubdiffcont >>
+rect -3075 -3011 -3029 2963
+rect 3029 -3011 3075 2963
+<< mvnvaractor >>
+rect -3000 -3024 3000 2976
+<< polysilicon >>
+rect -1805 3055 1805 3068
+rect -1805 3032 -1792 3055
+rect -3000 3009 -1792 3032
+rect 1792 3032 1805 3055
+rect 1792 3009 3000 3032
+rect -3000 2976 3000 3009
+rect -3000 -3068 3000 -3024
+<< polycontact >>
+rect -1792 3009 1792 3055
+<< metal1 >>
+rect -1803 3009 -1792 3055
+rect 1792 3009 1803 3055
+rect -3075 2963 -3029 2974
+rect -3075 -3022 -3029 -3011
+rect 3029 2963 3075 2974
+rect 3029 -3022 3075 -3011
+<< properties >>
+string gencell nmoscap_6p0
+string library gf180mcu
+string parameters w 30 l 30 m 1 nf 1 diffcov 100 polycov 60 guard 0 glc 0 grc 0 gtc 0 gbc 0 tbcov 100 rlcov 100 topc 1 botc 0 poverlap 0 doverlap 1 lmin 0.28 wmin 0.3 class mosfet full_metal 0 compatible {nmoscap_3p3 nmoscap_6p0}
+<< end >>
