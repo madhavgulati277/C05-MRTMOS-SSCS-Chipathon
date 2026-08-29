@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1787962842
+timestamp 1787990334
 << nwell >>
 rect 10810 2840 11330 2850
 rect 10810 1460 11790 2840
@@ -836,15 +836,15 @@ rect 24100 -160 25960 -140
 rect 24100 -220 34900 -160
 rect 23820 -280 34900 -220
 rect 25550 -360 34900 -280
-use nfet_05v0_4EKCKL  nfet_05v0_4EKCKL_0
+use nfet_05v0_4EKCKL__0  nfet_05v0_4EKCKL_0
 timestamp 1787847698
 transform 1 0 21924 0 1 -1750
 box -1444 -450 1656 276
-use nfet_05v0_4EKCKL  nfet_05v0_4EKCKL_1
+use nfet_05v0_4EKCKL__0  nfet_05v0_4EKCKL_1
 timestamp 1787847698
 transform 1 0 14154 0 1 -1890
 box -1444 -450 1656 276
-use nfet_05v0_4EKCKL  nfet_05v0_4EKCKL_2
+use nfet_05v0_4EKCKL__0  nfet_05v0_4EKCKL_2
 timestamp 1787847698
 transform 1 0 10544 0 1 -1940
 box -1444 -450 1656 276
@@ -860,71 +860,71 @@ use nfet_05v0_37MYH2  nfet_05v0_37MYH2_2
 timestamp 1787961841
 transform 1 0 23965 0 1 -606
 box -245 -324 245 324
-use nfet_05v0_SF24D3  nfet_05v0_SF24D3_0
+use nfet_05v0_SF24D3__0  nfet_05v0_SF24D3_0
 timestamp 1787765199
 transform 1 0 17976 0 1 624
 box -676 -534 676 516
-use nfet_05v0_SF24D3  nfet_05v0_SF24D3_1
+use nfet_05v0_SF24D3__0  nfet_05v0_SF24D3_1
 timestamp 1787765199
 transform 1 0 19556 0 1 624
 box -676 -534 676 516
-use nfet_05v0_SF24D3  nfet_05v0_SF24D3_2
+use nfet_05v0_SF24D3__0  nfet_05v0_SF24D3_2
 timestamp 1787765199
 transform 1 0 21116 0 1 624
 box -676 -534 676 516
-use nfet_05v0_SF24D3  nfet_05v0_SF24D3_3
+use nfet_05v0_SF24D3__0  nfet_05v0_SF24D3_3
 timestamp 1787765199
 transform 1 0 22676 0 1 624
 box -676 -534 676 516
-use nfet_05v0_SF24D3  nfet_05v0_SF24D3_4
+use nfet_05v0_SF24D3__0  nfet_05v0_SF24D3_4
 timestamp 1787765199
 transform 1 0 17976 0 1 -505
 box -676 -534 676 516
-use nfet_05v0_SF24D3  nfet_05v0_SF24D3_5
+use nfet_05v0_SF24D3__0  nfet_05v0_SF24D3_5
 timestamp 1787765199
 transform 1 0 19576 0 1 -506
 box -676 -534 676 516
-use nfet_05v0_SF24D3  nfet_05v0_SF24D3_6
+use nfet_05v0_SF24D3__0  nfet_05v0_SF24D3_6
 timestamp 1787765199
 transform 1 0 21136 0 1 -505
 box -676 -534 676 516
-use nfet_05v0_SF24D3  nfet_05v0_SF24D3_7
+use nfet_05v0_SF24D3__0  nfet_05v0_SF24D3_7
 timestamp 1787765199
 transform 1 0 22695 0 1 -505
 box -676 -534 676 516
-use nmoscap_6p0_3UAEB3  nmoscap_6p0_3UAEB3_0
+use nmoscap_6p0_3UAEB3__0  nmoscap_6p0_3UAEB3_0
 timestamp 1787893748
 transform 1 0 18722 0 1 -7028
 box -3152 -3132 3152 3132
-use nmoscap_6p0_3UAEB3  nmoscap_6p0_3UAEB3_1
+use nmoscap_6p0_3UAEB3__0  nmoscap_6p0_3UAEB3_1
 timestamp 1787893748
 transform 1 0 26277 0 1 -7088
 box -3152 -3132 3152 3132
-use nmoscap_6p0_3UAEB3  nmoscap_6p0_3UAEB3_2
+use nmoscap_6p0_3UAEB3__0  nmoscap_6p0_3UAEB3_2
 timestamp 1787893748
 transform 1 0 18557 0 -1 -14959
 box -3152 -3132 3152 3132
-use nmoscap_6p0_3UAEB3  nmoscap_6p0_3UAEB3_3
+use nmoscap_6p0_3UAEB3__0  nmoscap_6p0_3UAEB3_3
 timestamp 1787893748
 transform 1 0 26142 0 -1 -14928
 box -3152 -3132 3152 3132
-use nmoscap_6p0_3UAEB3  nmoscap_6p0_3UAEB3_4
+use nmoscap_6p0_3UAEB3__0  nmoscap_6p0_3UAEB3_4
 timestamp 1787893748
 transform 1 0 19387 0 -1 8131
 box -3152 -3132 3152 3132
-use nmoscap_6p0_3UAEB3  nmoscap_6p0_3UAEB3_5
+use nmoscap_6p0_3UAEB3__0  nmoscap_6p0_3UAEB3_5
 timestamp 1787893748
 transform 1 0 26972 0 -1 8162
 box -3152 -3132 3152 3132
-use nmoscap_6p0_3UAEB3  nmoscap_6p0_3UAEB3_6
+use nmoscap_6p0_3UAEB3__0  nmoscap_6p0_3UAEB3_6
 timestamp 1787893748
 transform 1 0 19552 0 1 16062
 box -3152 -3132 3152 3132
-use nmoscap_6p0_3UAEB3  nmoscap_6p0_3UAEB3_7
+use nmoscap_6p0_3UAEB3__0  nmoscap_6p0_3UAEB3_7
 timestamp 1787893748
 transform 1 0 27107 0 1 16002
 box -3152 -3132 3152 3132
-use nfet_05v0_4EKCKL  NMOS
+use nfet_05v0_4EKCKL__0  NMOS
 timestamp 1787847698
 transform 1 0 18764 0 1 -1750
 box -1444 -450 1656 276
@@ -936,31 +936,31 @@ use pfet_05v0_63BLP2  pfet_05v0_63BLP2_1
 timestamp 1787962502
 transform 1 0 11319 0 1 2068
 box -299 -378 299 378
-use pfet_05v0_B5NW4X  pfet_05v0_B5NW4X_0
+use pfet_05v0_B5NW4X__0  pfet_05v0_B5NW4X_0
 timestamp 1787746457
 transform 1 0 20046 0 1 2098
 box -2882 -620 2642 740
-use pfet_05v0_B5NW4X  pfet_05v0_B5NW4X_1
+use pfet_05v0_B5NW4X__0  pfet_05v0_B5NW4X_1
 timestamp 1787746457
 transform 1 0 25450 0 1 2098
 box -2882 -620 2642 740
-use pfet_05v0_B5NW4X  pfet_05v0_B5NW4X_2
+use pfet_05v0_B5NW4X__0  pfet_05v0_B5NW4X_2
 timestamp 1787746457
 transform 1 0 30854 0 1 2098
 box -2882 -620 2642 740
-use pfet_05v0_B5NW4X  PMOS1
+use pfet_05v0_B5NW4X__0  PMOS1
 timestamp 1787746457
 transform 1 0 14642 0 1 2098
 box -2882 -620 2642 740
-use ppolyf_u_1k_6p0_MVF2LK  ppolyf_u_1k_6p0_MVF2LK_0
+use ppolyf_u_1k_6p0_MVF2LK__0  ppolyf_u_1k_6p0_MVF2LK_0
 timestamp 1787842582
 transform 1 0 16576 0 1 -9438
 box 0 0 1 1
-use ppolyf_u_1k_V44B55  ppolyf_u_1k_V44B55_0
+use ppolyf_u_1k_V44B55__0  ppolyf_u_1k_V44B55_0
 timestamp 1787842582
 transform 1 0 25549 0 1 -9654
 box 0 0 1 1
-use ppolyf_u_1k_V44B55  ppolyf_u_1k_V44B55_1
+use ppolyf_u_1k_V44B55__0  ppolyf_u_1k_V44B55_1
 timestamp 1787842582
 transform 1 0 14169 0 1 -9594
 box 0 0 1 1

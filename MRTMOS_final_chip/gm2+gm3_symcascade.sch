@@ -31,7 +31,7 @@ N -120 120 1030 120 {lab=out}
 N -120 -10 -120 120 {lab=out}
 N 100 -190 100 -150 {lab=#net1}
 C {schema_ram/gm2_ota_sym.sym} 60 -20 0 0 {name=x1}
-C {schema_ram/gm3_makesymbol.sym} 750 -20 0 0 {name=x2}
+C {gm3_makesymbol.sym} 750 -20 0 0 {name=x2}
 C {code_shown.sym} -460 250 0 0 {name=MODELS only_toplevel=true value="
 .lib /foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
 .lib /foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_typical

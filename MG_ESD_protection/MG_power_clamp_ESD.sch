@@ -101,6 +101,8 @@ N -680 -40 -680 -0 {lab=#net1}
 N -650 -20 -110 -20 {lab=GND}
 N -650 -20 -650 100 {lab=GND}
 N -80 -100 -80 -40 {lab=Vdd}
+N -200 -40 -140 -40 {lab=Vdd}
+N -140 -40 -80 -40 {lab=Vdd}
 C {devices/ipin.sym} -670 -100 0 0 {name=p1 lab=Vdd}
 C {devices/ipin.sym} -670 100 0 0 {name=p2 lab=GND}
 C {/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/xschem/symbols/pfet_05v0.sym} -20 -50 0 0 {name=MM_p1 W=12u L=0.7u m=1 nf=6}
@@ -175,18 +177,6 @@ model=ppolyf_u_1k_6p0
 spiceprefix=X
 m=1}
 C {symbols/ppolyf_u_1k_6p0.sym} -290 -40 3 0 {name=R8
-W=1e-6
-L=4e-5
-model=ppolyf_u_1k_6p0
-spiceprefix=X
-m=1}
-C {symbols/ppolyf_u_1k_6p0.sym} -110 -40 3 0 {name=R9
-W=1e-6
-L=4e-5
-model=ppolyf_u_1k_6p0
-spiceprefix=X
-m=1}
-C {symbols/ppolyf_u_1k_6p0.sym} -170 -40 3 0 {name=R10
 W=1e-6
 L=4e-5
 model=ppolyf_u_1k_6p0

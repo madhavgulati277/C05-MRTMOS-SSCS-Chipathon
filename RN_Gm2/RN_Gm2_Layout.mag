@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1787976471
+timestamp 1787990334
 << nwell >>
 rect -2670 1330 -1590 1360
 rect -800 1330 14580 1360
@@ -1147,35 +1147,35 @@ use nfet_05v0_UQRLYZ  nfet_05v0_UQRLYZ_1
 timestamp 1787857354
 transform 1 0 8904 0 1 -2280
 box -1588 -300 1588 300
-use nmoscap_6p0_3UAEB3  nmoscap_6p0_3UAEB3_0
+use nmoscap_6p0_3UAEB3__1  nmoscap_6p0_3UAEB3_0
 timestamp 1787893748
 transform 1 0 21352 0 1 -10248
 box -3152 -3132 3152 3132
-use nmoscap_6p0_3UAEB3  nmoscap_6p0_3UAEB3_1
+use nmoscap_6p0_3UAEB3__1  nmoscap_6p0_3UAEB3_1
 timestamp 1787893748
 transform 1 0 28907 0 1 -10308
 box -3152 -3132 3152 3132
-use nmoscap_6p0_3UAEB3  nmoscap_6p0_3UAEB3_2
+use nmoscap_6p0_3UAEB3__1  nmoscap_6p0_3UAEB3_2
 timestamp 1787893748
 transform 1 0 21187 0 -1 -18179
 box -3152 -3132 3152 3132
-use nmoscap_6p0_3UAEB3  nmoscap_6p0_3UAEB3_3
+use nmoscap_6p0_3UAEB3__1  nmoscap_6p0_3UAEB3_3
 timestamp 1787893748
 transform 1 0 28772 0 -1 -18148
 box -3152 -3132 3152 3132
-use nmoscap_6p0_3UAEB3  nmoscap_6p0_3UAEB3_4
+use nmoscap_6p0_3UAEB3__1  nmoscap_6p0_3UAEB3_4
 timestamp 1787893748
 transform 1 0 35252 0 1 18212
 box -3152 -3132 3152 3132
-use nmoscap_6p0_3UAEB3  nmoscap_6p0_3UAEB3_5
+use nmoscap_6p0_3UAEB3__1  nmoscap_6p0_3UAEB3_5
 timestamp 1787893748
 transform 1 0 35592 0 -1 9412
 box -3152 -3132 3152 3132
-use nmoscap_6p0_3UAEB3  nmoscap_6p0_3UAEB3_6
+use nmoscap_6p0_3UAEB3__1  nmoscap_6p0_3UAEB3_6
 timestamp 1787893748
 transform 1 0 45152 0 -1 9152
 box -3152 -3132 3152 3132
-use nmoscap_6p0_3UAEB3  nmoscap_6p0_3UAEB3_7
+use nmoscap_6p0_3UAEB3__1  nmoscap_6p0_3UAEB3_7
 timestamp 1787893748
 transform 1 0 45372 0 1 17752
 box -3152 -3132 3152 3132
@@ -1303,243 +1303,243 @@ use ppolyf_u_1k_6p0_73E2DS  ppolyf_u_1k_6p0_73E2DS_25
 timestamp 1787976448
 transform 1 0 12454 0 1 12626
 box -344 -7866 344 7866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_0
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_0
 timestamp 1787976448
 transform 1 0 -9904 0 1 47038
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_1
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_1
 timestamp 1787976448
 transform 1 0 -8624 0 1 47248
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_2
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_2
 timestamp 1787976448
 transform 1 0 -7516 0 1 47316
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_3
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_3
 timestamp 1787976448
 transform 1 0 -6446 0 1 47356
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_4
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_4
 timestamp 1787976448
 transform 1 0 -5576 0 1 47316
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_5
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_5
 timestamp 1787976448
 transform 1 0 -4586 0 1 47356
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_6
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_6
 timestamp 1787976448
 transform 1 0 -3596 0 1 47356
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_7
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_7
 timestamp 1787976448
 transform 1 0 -2606 0 1 47356
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_8
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_8
 timestamp 1787976448
 transform 1 0 -1616 0 1 47316
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_9
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_9
 timestamp 1787976448
 transform 1 0 -626 0 1 47356
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_10
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_10
 timestamp 1787976448
 transform 1 0 364 0 1 47396
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_11
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_11
 timestamp 1787976448
 transform 1 0 1354 0 1 47436
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_12
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_12
 timestamp 1787976448
 transform 1 0 -11106 0 1 47316
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_13
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_13
 timestamp 1787976448
 transform 1 0 -12346 0 1 47436
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_14
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_14
 timestamp 1787976448
 transform 1 0 -13796 0 1 47266
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_15
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_15
 timestamp 1787976448
 transform 1 0 -15196 0 1 47316
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_16
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_16
 timestamp 1787976448
 transform 1 0 -16726 0 1 47436
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_17
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_17
 timestamp 1787976448
 transform 1 0 -17836 0 1 47516
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_18
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_18
 timestamp 1787976448
 transform 1 0 6134 0 1 51716
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_19
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_19
 timestamp 1787976448
 transform 1 0 7414 0 1 51816
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_20
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_20
 timestamp 1787976448
 transform 1 0 8504 0 1 51816
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_21
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_21
 timestamp 1787976448
 transform 1 0 9694 0 1 51916
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_22
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_22
 timestamp 1787976448
 transform 1 0 10974 0 1 52016
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_23
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_23
 timestamp 1787976448
 transform 1 0 12264 0 1 52116
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_24
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_24
 timestamp 1787976448
 transform 1 0 13544 0 1 52316
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_25
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_25
 timestamp 1787976448
 transform 1 0 14934 0 1 52216
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_26
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_26
 timestamp 1787976448
 transform 1 0 16514 0 1 52316
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_27
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_27
 timestamp 1787976448
 transform 1 0 17994 0 1 52406
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_28
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_28
 timestamp 1787976448
 transform 1 0 19374 0 1 52316
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_29
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_29
 timestamp 1787976448
 transform 1 0 20664 0 1 52406
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_30
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_30
 timestamp 1787976448
 transform 1 0 63744 0 1 55076
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_31
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_31
 timestamp 1787976448
 transform 1 0 62494 0 1 54966
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_32
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_32
 timestamp 1787976448
 transform 1 0 61454 0 1 55076
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_33
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_33
 timestamp 1787976448
 transform 1 0 60514 0 1 55076
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_34
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_34
 timestamp 1787976448
 transform 1 0 59474 0 1 54966
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_35
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_35
 timestamp 1787976448
 transform 1 0 58644 0 1 55076
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_36
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_36
 timestamp 1787976448
 transform 1 0 57814 0 1 55176
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_37
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_37
 timestamp 1787976448
 transform 1 0 56564 0 1 54966
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_38
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_38
 timestamp 1787976448
 transform 1 0 55734 0 1 54866
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_39
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_39
 timestamp 1787976448
 transform 1 0 54694 0 1 54866
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_40
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_40
 timestamp 1787976448
 transform 1 0 53754 0 1 54966
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_41
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_41
 timestamp 1787976448
 transform 1 0 52924 0 1 54966
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_42
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_42
 timestamp 1787976448
 transform 1 0 51984 0 1 54966
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_43
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_43
 timestamp 1787976448
 transform 1 0 51044 0 1 55176
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_44
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_44
 timestamp 1787976448
 transform 1 0 50114 0 1 55386
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_45
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_45
 timestamp 1787976448
 transform 1 0 48864 0 1 55176
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_46
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_46
 timestamp 1787976448
 transform 1 0 47924 0 1 55386
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_47
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_47
 timestamp 1787976448
 transform 1 0 46784 0 1 55286
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_48
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_48
 timestamp 1787976448
 transform 1 0 42624 0 1 55486
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_49
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_49
 timestamp 1787976448
 transform 1 0 41374 0 1 55386
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_50
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_50
 timestamp 1787976448
 transform 1 0 40434 0 1 55386
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_51
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_51
 timestamp 1787976448
 transform 1 0 39504 0 1 55696
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_52
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_52
 timestamp 1787976448
 transform 1 0 38774 0 1 55906
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_53
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_53
 timestamp 1787976448
 transform 1 0 37834 0 1 55906
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_54
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_54
 timestamp 1787976448
 transform 1 0 37114 0 1 55696
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_55
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_55
 timestamp 1787976448
 transform 1 0 36074 0 1 55386
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_56
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_56
 timestamp 1787976448
 transform 1 0 35134 0 1 55806
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_57
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_57
 timestamp 1787976448
 transform 1 0 33984 0 1 55906
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_58
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_58
 timestamp 1787976448
 transform 1 0 32844 0 1 56116
 box -344 -22866 344 22866
-use ppolyf_u_1k_6p0_CUPJUN  ppolyf_u_1k_6p0_CUPJUN_59
+use ppolyf_u_1k_6p0_CUPJUN__0  ppolyf_u_1k_6p0_CUPJUN_59
 timestamp 1787976448
 transform 1 0 31804 0 1 55906
 box -344 -22866 344 22866
