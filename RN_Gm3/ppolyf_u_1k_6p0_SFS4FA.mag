@@ -1,0 +1,36 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1787981468
+<< pwell >>
+rect -344 -21794 344 21794
+<< mvpsubdiff >>
+rect -312 21690 312 21762
+rect -312 -21690 -240 21690
+rect 240 -21690 312 21690
+rect -312 -21762 312 -21690
+<< polysilicon >>
+rect -100 21537 100 21550
+rect -100 21491 -52 21537
+rect 52 21491 100 21537
+rect -100 21428 100 21491
+rect -100 -21491 100 -21428
+rect -100 -21537 -52 -21491
+rect 52 -21537 100 -21491
+rect -100 -21550 100 -21537
+<< polycontact >>
+rect -52 21491 52 21537
+rect -52 -21537 52 -21491
+<< mvnhighres >>
+rect -100 -21428 100 21428
+<< metal1 >>
+rect -63 21491 -52 21537
+rect 52 21491 63 21537
+rect -63 -21537 -52 -21491
+rect 52 -21537 63 -21491
+<< properties >>
+string FIXED_BBOX -276 -21726 276 21726
+string gencell ppolyf_u_1k_6p0
+string library gf180mcu
+string parameters w 1.0 l 214.28 m 1 nx 1 wmin 1.000 lmin 1.000 class resistor rho 1000 val 214.28k dummy 0 dw 0.0 term 0.0 sterm 0.0 caplen 0.4 snake 0 glc 0 grc 0 gtc 0 gbc 0 roverlap 0 endcov 60 full_metal 0 compatible {ppolyf_u_1k ppolyf_u_1k_6p0}
+<< end >>
