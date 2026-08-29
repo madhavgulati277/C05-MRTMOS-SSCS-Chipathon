@@ -111,7 +111,7 @@ C {ipin.sym} 110 -50 0 1 {name=p2 lab=GND}
 C {iopin.sym} 580 -150 0 0 {name=p3 lab=Vin}
 C {iopin.sym} 230 -190 0 0 {name=p4 lab=Vout}
 C {/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/xschem/symbols/pfet_05v0.sym} 120 -230 0 0 {name=M2
-L=1.2u
+L=0.7u
 W=8u
 nf=4
 m=1
@@ -139,7 +139,7 @@ model=pfet_05v0
 spiceprefix=X
 }
 C {/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/xschem/symbols/pfet_05v0.sym} 50 -190 0 0 {name=M4
-L=1.2u
+L=0.7u
 W=8u
 nf=4
 m=1
@@ -273,14 +273,14 @@ model=ppolyf_u_1k_6p0
 spiceprefix=X
 m=1}
 C {symbols/cap_nmos_06v0.sym} -110 -400 1 0 {name=C1
-W=1e-6
-L=1e-6
+W=30e-6
+L=30e-6
 model=cap_nmos_06v0
 spiceprefix=X
 m=1}
 C {symbols/cap_nmos_06v0.sym} -30 -360 1 0 {name=C2
-W=1e-6
-L=1e-6
+W=30e-6
+L=30e-6
 model=cap_nmos_06v0
 spiceprefix=X
 m=1}
