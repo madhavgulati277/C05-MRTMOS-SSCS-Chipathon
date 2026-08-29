@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1787990472
+timestamp 1787995837
 << mvpsubdiff >>
 rect -1945 310 760 330
 rect -1945 260 -1930 310
@@ -27,7 +27,7 @@ rect -1745 1610 -1315 1690
 rect -779 1627 -349 1707
 rect 350 1590 780 1670
 << metal1 >>
-rect -2526 1707 1080 2000
+rect -2526 1707 1080 1800
 rect -2526 1690 -779 1707
 rect -2526 1610 -1745 1690
 rect -1315 1627 -779 1690
@@ -127,8 +127,11 @@ rect 610 890 1040 960
 rect 530 880 1040 890
 rect -870 580 -860 670
 rect -790 580 -780 670
-rect -870 20 -780 580
-rect 928 75 1040 880
+rect -870 130 -780 580
+rect 928 210 1040 880
+rect -2600 30 -720 130
+rect 928 75 1490 210
+rect -870 20 -780 30
 use nfet_05v0_EGQXBG  nfet_05v0_EGQXBG_0
 timestamp 1787918360
 transform 0 1 -470 -1 0 626
@@ -154,7 +157,7 @@ timestamp 1787828174
 transform 1 0 -564 0 1 1308
 box -446 -288 414 452
 << labels >>
-rlabel metal1 50 1670 1080 2000 1 Vdd
+rlabel metal1 50 1670 1080 1800 1 Vdd
 port 4 n power input
 rlabel metal1 55 210 390 454 1 GND
 port 5 n power input
