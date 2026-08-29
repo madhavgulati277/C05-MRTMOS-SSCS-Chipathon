@@ -70,7 +70,7 @@ spiceprefix=X
 }
 C {/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/xschem/symbols/pfet_05v0.sym} -110 -230 0 0 {name=M4
 L=0.7u
-W=3u
+W=2.2u
 nf=2
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -94,9 +94,9 @@ C {lab_pin.sym} 0 -130 0 1 {name=p8 sig_type=std_logic lab=GND}
 C {lab_pin.sym} 330 -180 0 0 {name=p9 sig_type=std_logic lab=GND}
 C {lab_pin.sym} 460 -180 0 1 {name=p10 sig_type=std_logic lab=Vin}
 C {symbols/cap_nmos_06v0.sym} -20 -290 0 0 {name=C3
-W=60e-6
-L=10e-6
+W=30e-6
+L=30e-6
 model=cap_nmos_06v0
 spiceprefix=X
-m=6}
+m=1}
 C {lab_pin.sym} -20 -260 0 1 {name=p20 sig_type=std_logic lab=GND}
