@@ -28,68 +28,52 @@ project:
 # ======================================================
 # Pin Declarations (P1 to P22)
 # ======================================================
-# --- Gm1 Inputs ---
-  - name: p1_gm1_in1
-    io_type: analog
-  - name: p2_gm1_in2
-    io_type: analog
 
-  # --- Gmff Inputs ---
-  - name: p3_gmff_in1
-    io_type: analog
-  - name: p4_gmff_in2
-    io_type: analog
-
-  # --- External Components / Test Pins ---
-  - name: p5_miller_rc_1
-    io_type: analog
-  - name: p6_miller_rc_2
-    io_type: analog
-  - name: p7_shunt_cap
-    io_type: analog
-
-  # --- Gm2 ---
-  - name: p8_gm2_in_minus
-    io_type: analog
-
-  # --- Nested Miller ---
-  - name: p9_nested_rc_1
-    io_type: analog
-  - name: p10_nested_rc_2
-    io_type: analog
-
-  # --- Gm3 ---
-  - name: p11_gm3_in_minus
-    io_type: analog
-
-  # --- Power & Ground ---
-  - name: p12_gnd
-    io_type: ground
-
-  # --- Gmff Adjust ---
-  - name: p13_gmff_ext_res
-    io_type: analog
-
-  # --- Power ---
-  - name: p14_vdd
-    io_type: power
-
-  # --- Output ---
-  - name: p15_out
-    io_type: analog
-
-  # --- 7-bit Decoder Inputs ---
-  - name: p16_dec_0
-    io_type: input_cmos
-  - name: p17_dec_1
-    io_type: input_cmos
-  - name: p18_dec_2
-    io_type: input_cmos
-  - name: p19_dec_3
-    io_type: input_cmos
-  - name: p20_dec_4
-    io_type: input_cmos
-  - name: p21_dec_5
-    io_type: input_cmos
-  - name: p22_dec_6
-    io_type: input_cmos
+- name: p1
+  io_type: signal (analog)
+  class: input
+- name: p2
+  io_type: signal (analog)
+  class: input
+- name: p3
+  io_type: signal (analog)
+  class: input
+- name: p4
+  io_type: analog
+- name: p5
+  io_type: signal (analog)
+  class: input
+- name: p6
+  io_type: analog
+- name: p7
+  io_type: analog
+- name: p8
+  io_type: analog
+- name: p9
+  io_type: analog
+- name: p10
+  io_type: analog
+- name: p11
+  io_type: analog
+- name: p12
+  io_type: analog
+- name: p13
+  io_type: analog
+- name: p14
+  io_type: power
+- name: p15
+  io_type: ground
+- name: p16
+  io_type: input_cmos
+- name: p17
+  io_type: input_cmos
+- name: p18
+  io_type: input_cmos
+- name: p19
+  io_type: input_cmos
+- name: p20
+  io_type: input_cmos
+- name: p21
+  io_type: input_cmos
+- name: p22
+  io_type: input_cmos
