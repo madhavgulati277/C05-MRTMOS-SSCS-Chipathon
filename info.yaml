@@ -29,67 +29,72 @@ project:
 # Pin Declarations (P1 to P22)
 # ======================================================
 
-- name: p1
-  io_type: analog
-  class: input
-- name: p2
-  io_type: analog
-  class: input
-- name: p3
-  io_type: analog
-  class: input
-- name: p4
-  io_type: analog
-- name: p5
-  io_type: analog
-  class: input
-- name: p6
-  io_type: analog
-  class: inout
-- name: p7
-  io_type: analog
-  class: inout
-- name: p8
-  io_type: analog
-  class: inout
-- name: p9
-  io_type: analog
-  class: input
-- name: p10
-  io_type: analog
-  class: inout
-- name: p11
-  io_type: analog
-  class: inout
-- name: p12
-  io_type: analog
-  class: input
-- name: p13
-  io_type: analog
-- name: p14
-  io_type: power
-  class: input
-- name: p15
-  io_type: ground
-  class: input
-- name: p16
-  io_type: digital
-  class: input
-- name: p17
-  io_type: digital
-  class: input
-- name: p18
-  io_type: digital
-  class: input
-- name: p19
-  io_type: digital
-  class: input
-- name: p20
-  io_type: digital
-  class: input
-- name: p21
-  io_type: digital
-  class: input
-- name: p22
-  io_type: digital
-  class: input
+# ======================================================
+# Pin Declarations (P1 to P22)
+# ======================================================
+
+  pins:
+    - name: p1
+      io_type: analog
+      class: input
+    - name: p2
+      io_type: analog
+      class: input
+    - name: p3
+      io_type: analog
+      class: input
+    - name: p4
+      io_type: analog
+    - name: p5
+      io_type: analog
+      class: input
+    - name: p6
+      io_type: analog
+      class: inout
+    - name: p7
+      io_type: analog
+      class: inout
+    - name: p8
+      io_type: analog
+      class: inout
+    - name: p9
+      io_type: analog
+      class: input
+    - name: p10
+      io_type: analog
+      class: inout
+    - name: p11
+      io_type: analog
+      class: inout
+    - name: p12
+      io_type: analog
+      class: input
+    - name: p13
+      io_type: analog
+    - name: p14
+      io_type: power
+      class: input
+    - name: p15
+      io_type: ground
+      class: input
+    - name: p16
+      io_type: digital
+      class: input
+    - name: p17
+      io_type: digital
+      class: input
+    - name: p18
+      io_type: digital
+      class: input
+    - name: p19
+      io_type: digital
+      class: input
+    - name: p20
+      io_type: digital
+      class: input
+    - name: p21
+      io_type: digital
+      class: input
+    - name: p22
+      io_type: digital
+      class: input
