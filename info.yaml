@@ -39,41 +39,41 @@ project:
   io_type: signal (analog)
   class: input
 - name: p4
-  io_type: analog
+  io_type: signal (analog)
 - name: p5
   io_type: signal (analog)
   class: input
 - name: p6
-  io_type: analog
+  io_type: signal (analog)
 - name: p7
-  io_type: analog
+  io_type: signal (analog)
 - name: p8
-  io_type: analog
+  io_type: signal (analog)
 - name: p9
-  io_type: analog
+  io_type: signal (analog)
 - name: p10
-  io_type: analog
+  io_type: signal (analog)
 - name: p11
-  io_type: analog
+  io_type: signal (analog)
 - name: p12
-  io_type: analog
+  io_type: signal (analog)
 - name: p13
-  io_type: analog
+  io_type: signal (analog)
 - name: p14
   io_type: power
 - name: p15
   io_type: ground
 - name: p16
-  io_type: input_cmos
+  io_type: signal (digital)
 - name: p17
-  io_type: input_cmos
+  io_type: signal (digital)
 - name: p18
-  io_type: input_cmos
+  io_type: signal (digital)
 - name: p19
-  io_type: input_cmos
+  io_type: signal (digital)
 - name: p20
-  io_type: input_cmos
+  io_type: signal (digital)
 - name: p21
-  io_type: input_cmos
+  io_type: signal (digital)
 - name: p22
-  io_type: input_cmos
+  io_type: signal (digital)
