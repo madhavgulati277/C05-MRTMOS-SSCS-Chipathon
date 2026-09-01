@@ -1,0 +1,51 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1788190411
+<< pwell >>
+rect -444 -2366 444 2366
+<< mvpsubdiff >>
+rect -412 2262 412 2334
+rect -412 2218 -340 2262
+rect -412 -2218 -399 2218
+rect -353 -2218 -340 2218
+rect 340 2218 412 2262
+rect -412 -2262 -340 -2218
+rect 340 -2218 353 2218
+rect 399 -2218 412 2218
+rect 340 -2262 412 -2218
+rect -412 -2334 412 -2262
+<< mvpsubdiffcont >>
+rect -399 -2218 -353 2218
+rect 353 -2218 399 2218
+<< polysilicon >>
+rect -200 2109 200 2122
+rect -200 2063 -187 2109
+rect 187 2063 200 2109
+rect -200 2000 200 2063
+rect -200 -2063 200 -2000
+rect -200 -2109 -187 -2063
+rect 187 -2109 200 -2063
+rect -200 -2122 200 -2109
+<< polycontact >>
+rect -187 2063 187 2109
+rect -187 -2109 187 -2063
+<< mvnhighres >>
+rect -200 -2000 200 2000
+<< metal1 >>
+rect -399 2275 399 2321
+rect -399 2218 -353 2275
+rect 353 2218 399 2275
+rect -198 2063 -187 2109
+rect 187 2063 198 2109
+rect -198 -2109 -187 -2063
+rect 187 -2109 198 -2063
+rect -399 -2275 -353 -2218
+rect 353 -2275 399 -2218
+rect -399 -2321 399 -2275
+<< properties >>
+string FIXED_BBOX -376 -2298 376 2298
+string gencell ppolyf_u_1k_6p0
+string library gf180mcu
+string parameters w 2.0 l 20.0 m 1 nx 1 wmin 1.000 lmin 1.000 class resistor rho 1000 val 10.0k dummy 0 dw 0.0 term 0.0 sterm 0.0 caplen 0.4 snake 0 glc 1 grc 1 gtc 0 gbc 0 roverlap 0 endcov 100 full_metal 1 compatible {ppolyf_u_1k ppolyf_u_1k_6p0}
+<< end >>

@@ -43,10 +43,6 @@ N -120 270 -120 290 {lab=GND}
 N -20 -160 60 -160 {lab=Vdd}
 N 280 -160 360 -160 {lab=Vdd}
 N 290 -90 440 -90 {lab=Vout}
-N -300 100 -120 100 {lab=#net4}
-N -300 190 -120 190 {lab=#net5}
-N 170 -360 170 -330 {lab=Vdd}
-N 170 -360 240 -360 {lab=Vdd}
 N -120 -120 -0 -120 {lab=Vin+}
 N -0 -120 -0 -40 {lab=Vin+}
 N -0 -40 10 -40 {lab=Vin+}
@@ -174,24 +170,3 @@ C {lab_pin.sym} -140 140 0 0 {name=p14 sig_type=std_logic lab=GND}
 C {lab_pin.sym} -140 240 0 0 {name=p15 sig_type=std_logic lab=GND}
 C {opin.sym} 440 -90 0 0 {name=p16 lab=Vout
 }
-C {lab_pin.sym} -300 160 0 1 {name=p17 sig_type=std_logic lab=GND}
-C {lab_pin.sym} -300 250 0 1 {name=p18 sig_type=std_logic lab=GND}
-C {symbols/cap_nmos_06v0.sym} 240 -330 0 0 {name=C3
-W=37e-6
-L=37e-6
-model=cap_nmos_06v0
-spiceprefix=X
-m=1}
-C {lab_pin.sym} 240 -300 0 1 {name=p20 sig_type=std_logic lab=GND}
-C {symbols/cap_nmos_06v0.sym} -300 130 0 0 {name=C4
-W=37e-6
-L=37e-6
-model=cap_nmos_06v0
-spiceprefix=X
-m=1}
-C {symbols/cap_nmos_06v0.sym} -300 220 0 0 {name=C1
-W=37e-6
-L=37e-6
-model=cap_nmos_06v0
-spiceprefix=X
-m=1}

@@ -1,0 +1,248 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1788264820
+<< metal1 >>
+rect -1662 31710 298 31874
+rect 940 31710 1160 32030
+rect -1662 31590 1160 31710
+rect -1662 31384 298 31590
+rect 940 31260 1160 31590
+rect -1661 30377 299 30867
+rect 74 28332 454 29929
+rect 55 26181 435 27778
+rect 64 24273 444 25870
+rect 55 22268 435 23865
+rect 64 20137 444 21734
+rect 74 18131 454 19728
+rect 220 17694 370 17700
+rect 103 16097 483 17694
+rect 94 14170 474 15767
+rect 84 12155 464 13752
+rect -1619 11690 -1080 11702
+rect -1619 11200 350 11690
+rect -1619 9710 -1080 11200
+rect -1619 9220 360 9710
+rect -1619 9211 -1080 9220
+rect 84 7181 464 8778
+rect 123 5127 503 6724
+rect 103 3200 483 4797
+rect 94 1146 474 2743
+rect 55 -839 435 758
+rect 123 -3010 503 -1413
+rect 74 -5025 454 -3428
+rect 84 -7001 464 -5404
+rect 113 -9006 493 -7409
+rect -1658 -9970 302 -9480
+rect -1639 -10610 321 -10481
+rect 1010 -10610 1160 -10310
+rect -1639 -10760 1160 -10610
+rect -1639 -10971 321 -10760
+rect 1010 -11160 1160 -10760
+rect 14742 -11669 25041 32450
+rect 39530 31700 39720 32040
+rect 39530 31580 40410 31700
+rect 39530 31230 39720 31580
+rect 40235 29286 40615 30883
+rect 40332 28866 40712 28868
+rect 40329 27281 40712 28866
+rect 40332 27271 40712 27281
+rect 40313 25247 40693 26844
+rect 40244 23222 40624 24819
+rect 40307 22795 40457 22811
+rect 40274 21198 40654 22795
+rect 40313 19076 40693 20673
+rect 40361 17148 40741 18745
+rect 40313 15104 40693 16701
+rect 40322 13099 40702 14696
+rect 40293 11114 40673 12711
+rect 40322 8164 40702 9761
+rect 40332 6130 40712 7727
+rect 40351 4105 40731 5702
+rect 40332 2139 40712 3736
+rect 40313 105 40693 1702
+rect 40371 -362 40751 -342
+rect 40293 -430 40751 -362
+rect 40283 -1939 40751 -430
+rect 40283 -1998 40741 -1939
+rect 40283 -2027 40663 -1998
+rect 40322 -3983 40702 -2386
+rect 40342 -5959 40722 -4362
+rect 40332 -7974 40712 -6377
+rect 40293 -10057 40673 -8460
+rect 39390 -10630 39580 -10300
+rect 39390 -10780 40400 -10630
+rect 39390 -11110 39580 -10780
+use resistor_100k  resistor_100k_0
+timestamp 1788190910
+transform 1 0 70 0 1 70
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_1
+timestamp 1788190910
+transform 1 0 70 0 1 1070
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_2
+timestamp 1788190910
+transform 1 0 70 0 1 2070
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_3
+timestamp 1788190910
+transform 1 0 70 0 1 3070
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_4
+timestamp 1788190910
+transform 1 0 70 0 1 4070
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_5
+timestamp 1788190910
+transform 1 0 70 0 1 5070
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_6
+timestamp 1788190910
+transform 1 0 70 0 1 6070
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_7
+timestamp 1788190910
+transform 1 0 70 0 1 7070
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_8
+timestamp 1788190910
+transform 1 0 70 0 1 8070
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_9
+timestamp 1788190910
+transform 1 0 70 0 1 9070
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_10
+timestamp 1788190910
+transform 1 0 70 0 1 10070
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_11
+timestamp 1788190910
+transform 1 0 70 0 1 11070
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_12
+timestamp 1788190910
+transform 1 0 70 0 1 12070
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_13
+timestamp 1788190910
+transform 1 0 70 0 1 13070
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_14
+timestamp 1788190910
+transform 1 0 70 0 1 14070
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_15
+timestamp 1788190910
+transform 1 0 70 0 1 15070
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_16
+timestamp 1788190910
+transform 1 0 70 0 1 16070
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_17
+timestamp 1788190910
+transform 1 0 70 0 1 17070
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_18
+timestamp 1788190910
+transform 1 0 70 0 1 18070
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_19
+timestamp 1788190910
+transform 1 0 70 0 1 19070
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_20
+timestamp 1788190910
+transform 1 0 70 0 1 20070
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_21
+timestamp 1788190910
+transform 1 0 70 0 1 21070
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_22
+timestamp 1788190910
+transform 1 0 70 0 1 -928
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_23
+timestamp 1788190910
+transform 1 0 70 0 1 23195
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_24
+timestamp 1788190910
+transform 1 0 70 0 1 22195
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_25
+timestamp 1788190910
+transform 1 0 70 0 1 24176
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_26
+timestamp 1788190910
+transform 1 0 70 0 1 25176
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_27
+timestamp 1788190910
+transform 1 0 70 0 1 31255
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_28
+timestamp 1788190910
+transform 1 0 70 0 1 30255
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_29
+timestamp 1788190910
+transform 1 0 70 0 1 29274
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_30
+timestamp 1788190910
+transform 1 0 70 0 1 28274
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_31
+timestamp 1788190910
+transform 1 0 70 0 1 27149
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_32
+timestamp 1788190910
+transform 1 0 70 0 1 26149
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_33
+timestamp 1788190910
+transform 1 0 70 0 1 -4099
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_34
+timestamp 1788190910
+transform 1 0 70 0 1 -5099
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_35
+timestamp 1788190910
+transform 1 0 70 0 1 -6099
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_36
+timestamp 1788190910
+transform 1 0 70 0 1 -7099
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_37
+timestamp 1788190910
+transform 1 0 70 0 1 -8099
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_38
+timestamp 1788190910
+transform 1 0 70 0 1 -9099
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_39
+timestamp 1788190910
+transform 1 0 70 0 1 -10099
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_40
+timestamp 1788190910
+transform 1 0 70 0 1 -11097
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_41
+timestamp 1788190910
+transform 1 0 70 0 1 -2099
+box -128 -68 40604 820
+use resistor_100k  resistor_100k_42
+timestamp 1788190910
+transform 1 0 70 0 1 -3099
+box -128 -68 40604 820
+<< end >>

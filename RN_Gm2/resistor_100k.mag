@@ -1,0 +1,26 @@
+magic
+tech gf180mcuD
+magscale 1 5
+timestamp 1788190910
+<< mvpsubdiff >>
+rect 155 360 435 390
+rect 19860 360 20145 390
+rect 155 -15 435 15
+rect 19860 -15 20145 15
+<< mvpsubdiffcont >>
+rect 435 360 19860 390
+rect 435 -15 19860 15
+<< metal1 >>
+rect 420 390 19875 400
+rect 420 360 435 390
+rect 19860 360 19875 390
+rect 420 350 19875 360
+rect 420 15 19875 25
+rect 420 -15 435 15
+rect 19860 -15 19875 15
+rect 420 -25 19875 -15
+use ppolyf_u_1k_6p0_XM9FDM  ppolyf_u_1k_6p0_XM9FDM_0
+timestamp 1788190910
+transform 0 -1 10119 1 0 188
+box -222 -10183 222 10183
+<< end >>
