@@ -19,7 +19,7 @@ N -700 -530 -630 -530 {lab=in+}
 N -640 -510 -610 -510 {lab=in-}
 N -430 -690 -430 -580 {lab=#net1}
 N -450 -690 -430 -690 {lab=#net1}
-C {schema_ram/gm3_makesymbol.sym} -440 -520 0 0 {name=x1}
+C {gm3_makesymbol.sym} -440 -520 0 0 {name=x1}
 C {code.sym} -860 -560 0 0 {name=SIMULATIONS only_toplevel=false value="
 .control 
   	save all

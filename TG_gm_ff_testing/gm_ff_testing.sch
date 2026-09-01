@@ -37,8 +37,8 @@ C {lab_wire.sym} -220 -200 0 0 {name=p7 sig_type=std_logic lab=Vin+}
 C {gnd.sym} 520 50 0 0 {name=l9 lab=0}
 C {lab_wire.sym} 520 -70 0 0 {name=p8 sig_type=std_logic lab=Vout}
 C {ipin.sym} 70 -140 0 0 {name=p3 lab=VDD}
-C {iopin.sym} 20 -10 0 1 {name=p5 lab=Vin-}
-C {iopin.sym} 20 -30 0 1 {name=p9 lab=Vin+}
+C {ipin.sym} 20 -10 0 0 {name=p5 lab=Vin-}
+C {ipin.sym} 20 -30 0 0 {name=p9 lab=Vin+}
 C {simulator_commands.sym} 690 -20 0 0 {name=s1 only_toplevel=false value="
 .include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
 .lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
@@ -66,11 +66,11 @@ device=resistor
 m=1}
 C {vsource.sym} 340 -100 0 0 {name=V2 value=5 savecurrent=false}
 C {gnd.sym} 170 70 0 0 {name=l1 lab=0}
-C {iopin.sym} 390 -20 0 0 {name=p4 lab=Vout}
+C {opin.sym} 390 -20 0 0 {name=p4 lab=Vout}
 C {capa.sym} 520 -10 0 0 {name=C1
 m=1
 value=50p
 footprint=1206
 device="ceramic capacitor"}
 C {gnd.sym} 340 -70 0 0 {name=l4 lab=0}
-C {TG_gm_ff_testing/gm_ff.sym} 170 -20 0 0 {name=x2}
+C {gm_ff.sym} 170 -20 0 0 {name=x2}

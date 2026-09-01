@@ -35,9 +35,9 @@ N -200 20 -20 20 {lab=ext_bias}
 N -20 100 -20 130 {lab=GND}
 N -20 20 40 20 {lab=ext_bias}
 N 40 20 40 70 {lab=ext_bias}
-N 300 -150 300 -110 {lab=#net3}
+N 300 -150 300 -110 {lab=Vout}
 N 190 -300 190 -240 {lab=VDD}
-N 300 -130 360 -130 {lab=#net3}
+N 300 -130 360 -130 {lab=Vout}
 N -40 70 -20 70 {lab=GND}
 N -40 70 -40 110 {lab=GND}
 N -40 110 -20 110 {lab=GND}
@@ -51,7 +51,7 @@ N 190 -350 190 -300 {lab=VDD}
 N 190 -370 190 -350 {lab=VDD}
 N 120 -370 190 -370 {lab=VDD}
 N 60 -20 190 -20 {lab=GND}
-C {iopin.sym} -200 40 0 0 {name=p4 lab=ext_bias}
+C {ipin.sym} -200 40 0 1 {name=p4 lab=ext_bias}
 C {symbols/cap_nmos_06v0.sym} -270 50 0 1 {name=C3
 W=60e-6
 L=10e-6
@@ -152,6 +152,6 @@ spiceprefix=X
 }
 C {ipin.sym} 40 -80 0 0 {name=p7 lab=Vin+}
 C {ipin.sym} 340 -80 0 1 {name=p8 lab=Vin-}
-C {iopin.sym} 180 140 0 0 {name=p1 lab=GND}
-C {iopin.sym} 190 -340 0 0 {name=p5 lab=VDD}
+C {ipin.sym} 180 140 0 0 {name=p1 lab=GND}
+C {ipin.sym} 190 -340 0 1 {name=p5 lab=VDD}
 C {opin.sym} 360 -130 0 0 {name=p3 lab=Vout}
