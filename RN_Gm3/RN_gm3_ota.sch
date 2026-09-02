@@ -41,40 +41,33 @@ N -160 -130 -160 -120 {lab=#net2}
 N -20 -130 -20 -120 {lab=Vout}
 N -160 -210 -90 -210 {lab=Vdd}
 N 30 -120 90 -120 {lab=Vout}
-N -290 30 -190 30 {lab=#net3}
-N -1230 40 -1230 50 {lab=#net3}
-N -1320 20 -1230 20 {lab=#net3}
-N -160 -290 -160 -250 {lab=Vdd}
+N -670 40 -670 50 {lab=#net3}
+N -760 20 -670 20 {lab=#net3}
 N -160 -330 -160 -290 {lab=Vdd}
 N -160 -330 -70 -330 {lab=Vdd}
 N -70 -330 -70 -320 {lab=Vdd}
 N -300 -70 -280 -70 {lab=Vin+}
-N -330 -250 -90 -250 {lab=Vdd}
 N -280 -70 -240 -70 {lab=Vin+}
-N -380 30 -290 30 {lab=#net3}
-N -1230 50 -1230 60 {lab=#net3}
-N -650 -260 -330 -260 {lab=Vdd}
-N -330 -260 -330 -250 {lab=Vdd}
-N -1230 30 -380 30 {lab=#net3}
-N -640 -70 -620 -70 {lab=Vin+}
-N -620 -70 -300 -70 {lab=Vin+}
-N -1030 -70 -640 -70 {lab=Vin+}
-N -1100 -70 -1030 -70 {lab=Vin+}
+N -670 50 -670 60 {lab=#net3}
+N -460 -260 -140 -260 {lab=Vdd}
+N -450 -70 -430 -70 {lab=Vin+}
 N 180 -70 220 -70 {lab=Vin-}
 N 260 -70 280 -70 {lab=Vin-}
 N 220 -70 260 -70 {lab=Vin-}
-N 600 -70 620 -70 {lab=Vin-}
-N 280 -70 600 -70 {lab=Vin-}
-N 620 -70 1010 -70 {lab=Vin-}
-N 1010 -70 1080 -70 {lab=Vin-}
+N 280 -70 350 -70 {lab=Vin-}
 N 50 -70 180 -70 {lab=Vin-}
 N -20 -210 280 -210 {lab=Vdd}
 N 280 -210 280 -150 {lab=Vdd}
-N -1230 -260 -1230 -120 {lab=Vdd}
-N -1230 -60 -1230 40 {lab=#net3}
-N -1230 -260 -650 -260 {lab=Vdd}
-N -620 -200 -620 -70 {lab=Vin+}
+N -670 -260 -670 -120 {lab=Vdd}
+N -670 -60 -670 40 {lab=#net3}
+N -430 -200 -430 -70 {lab=Vin+}
 N 280 -90 280 -70 {lab=Vin-}
+N -670 -260 -460 -260 {lab=Vdd}
+N -670 30 -190 30 {lab=#net3}
+N -430 -70 -300 -70 {lab=Vin+}
+N -160 -290 -160 -260 {lab=Vdd}
+N -140 -260 -90 -260 {lab=Vdd}
+N -90 -260 -90 -250 {lab=Vdd}
 C {symbols/nfet_05v0.sym} -120 30 0 0 {name=M3
 L=1.2u
 W=16u
@@ -117,7 +110,7 @@ sa=0 sb=0 sd=0
 model=pfet_05v0
 spiceprefix=X
 }
-C {symbols/cap_nmos_06v0.sym} -1350 20 1 0 {name=C3
+C {symbols/cap_nmos_06v0.sym} -790 20 1 0 {name=C3
 W=60e-6
 L=10e-6
 model=cap_nmos_06v0
@@ -130,7 +123,7 @@ model=cap_nmos_06v0
 spiceprefix=X
 m=6}
 C {lab_pin.sym} -70 -260 0 1 {name=p20 sig_type=std_logic lab=GND}
-C {lab_pin.sym} -1380 20 0 0 {name=p4 sig_type=std_logic lab=GND}
+C {lab_pin.sym} -820 20 0 0 {name=p4 sig_type=std_logic lab=GND}
 C {lab_pin.sym} -30 -70 0 0 {name=p15 sig_type=std_logic lab=GND}
 C {lab_pin.sym} -150 -70 0 1 {name=p16 sig_type=std_logic lab=GND}
 C {opin.sym} 90 -120 0 0 {name=p9 lab=Vout
@@ -149,8 +142,8 @@ sa=0 sb=0 sd=0
 model=nfet_05v0
 spiceprefix=X
 }
-C {ipin.sym} -1100 -70 0 0 {name=p11 lab=Vin+}
-C {ipin.sym} 1080 -70 0 1 {name=p12 lab=Vin-}
+C {ipin.sym} -450 -70 0 0 {name=p11 lab=Vin+}
+C {ipin.sym} 350 -70 0 1 {name=p12 lab=Vin-}
 C {symbols/pfet_05v0.sym} -40 -160 0 0 {name=M4
 L=2u
 W=17u
@@ -168,34 +161,34 @@ spiceprefix=X
 C {lab_pin.sym} 280 -10 0 1 {name=p13 sig_type=std_logic lab=GND}
 C {ipin.sym} -160 -300 0 0 {name=p1 lab=Vdd}
 C {ipin.sym} -90 70 0 0 {name=p6 lab=GND}
-C {lab_pin.sym} -1250 90 0 0 {name=p18 sig_type=std_logic lab=GND}
-C {lab_pin.sym} -1230 120 0 0 {name=p74 sig_type=std_logic lab=GND}
-C {lab_pin.sym} -1250 -90 0 0 {name=p2 sig_type=std_logic lab=GND}
-C {symbols/ppolyf_u_1k_6p0.sym} -1230 90 0 0 {name=R2
+C {lab_pin.sym} -690 90 0 0 {name=p18 sig_type=std_logic lab=GND}
+C {lab_pin.sym} -670 120 0 0 {name=p74 sig_type=std_logic lab=GND}
+C {lab_pin.sym} -690 -90 0 0 {name=p2 sig_type=std_logic lab=GND}
+C {symbols/ppolyf_u_1k_6p0.sym} -670 90 0 0 {name=R2
 W=2e-6
 L=250e-6
 model=ppolyf_u_1k_6p0
 spiceprefix=X
 m=1}
-C {symbols/ppolyf_u_1k_6p0.sym} -1230 -90 0 0 {name=R7
+C {symbols/ppolyf_u_1k_6p0.sym} -670 -90 0 0 {name=R7
 W=2e-6
 L=750e-6
 model=ppolyf_u_1k_6p0
 spiceprefix=X
 m=1}
-C {symbols/ppolyf_u_1k_6p0.sym} -620 -230 0 0 {name=R1
+C {symbols/ppolyf_u_1k_6p0.sym} -430 -230 0 0 {name=R1
 W=2e-6
 L=1600e-6
 model=ppolyf_u_1k_6p0
 spiceprefix=X
 m=1}
-C {symbols/ppolyf_u_1k_6p0.sym} -620 -40 0 0 {name=R3
+C {symbols/ppolyf_u_1k_6p0.sym} -430 -40 0 0 {name=R3
 W=2e-6
 L=2400e-6
 model=ppolyf_u_1k_6p0
 spiceprefix=X
 m=1}
-C {lab_pin.sym} -620 -10 0 0 {name=p3 sig_type=std_logic lab=GND}
+C {lab_pin.sym} -430 -10 0 0 {name=p3 sig_type=std_logic lab=GND}
 C {symbols/ppolyf_u_1k_6p0.sym} 280 -120 0 0 {name=R4
 W=2e-6
 L=1600e-6
@@ -210,5 +203,5 @@ spiceprefix=X
 m=1}
 C {lab_pin.sym} 260 -40 0 0 {name=p5 sig_type=std_logic lab=GND}
 C {lab_pin.sym} 260 -120 0 0 {name=p7 sig_type=std_logic lab=GND}
-C {lab_pin.sym} -640 -40 0 0 {name=p8 sig_type=std_logic lab=GND}
-C {lab_pin.sym} -640 -230 0 0 {name=p10 sig_type=std_logic lab=GND}
+C {lab_pin.sym} -450 -40 0 0 {name=p8 sig_type=std_logic lab=GND}
+C {lab_pin.sym} -450 -230 0 0 {name=p10 sig_type=std_logic lab=GND}
