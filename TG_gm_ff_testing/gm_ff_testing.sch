@@ -44,6 +44,7 @@ C {simulator_commands.sym} 690 -20 0 0 {name=s1 only_toplevel=false value="
 .lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
 .lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_typical
 
+
 .control
   save all
   op
