@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1787988344
+timestamp 1788446153
 << nwell >>
 rect -1040 -560 17480 1480
 << pwell >>
@@ -592,27 +592,27 @@ use nfet_05v0_6F38LB  nfet_05v0_6F38LB_1
 timestamp 1787960809
 transform 1 0 12064 0 1 -2100
 box -1284 -300 1284 300
-use nfet_05v0_37MYH2__0  nfet_05v0_37MYH2_0
+use nfet_05v0_37MYH2  nfet_05v0_37MYH2_0
 timestamp 1787960809
 transform 1 0 8715 0 1 -6756
 box -245 -324 245 324
-use nfet_05v0_37MYH2__0  nfet_05v0_37MYH2_1
+use nfet_05v0_37MYH2  nfet_05v0_37MYH2_1
 timestamp 1787960809
 transform 1 0 5765 0 1 -6786
 box -245 -324 245 324
-use nfet_05v0_37MYH2__0  nfet_05v0_37MYH2_2
+use nfet_05v0_37MYH2  nfet_05v0_37MYH2_2
 timestamp 1787960809
 transform 1 0 935 0 1 -2006
 box -245 -324 245 324
-use nfet_05v0_37MYH2__0  nfet_05v0_37MYH2_3
+use nfet_05v0_37MYH2  nfet_05v0_37MYH2_3
 timestamp 1787960809
 transform 1 0 5005 0 1 -1956
 box -245 -324 245 324
-use nfet_05v0_37MYH2__0  nfet_05v0_37MYH2_4
+use nfet_05v0_37MYH2  nfet_05v0_37MYH2_4
 timestamp 1787960809
 transform 1 0 10365 0 1 -2016
 box -245 -324 245 324
-use nfet_05v0_37MYH2__0  nfet_05v0_37MYH2_5
+use nfet_05v0_37MYH2  nfet_05v0_37MYH2_5
 timestamp 1787960809
 transform 1 0 13865 0 1 -2146
 box -245 -324 245 324

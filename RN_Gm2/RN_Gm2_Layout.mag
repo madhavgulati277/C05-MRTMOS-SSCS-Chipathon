@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1788360058
+timestamp 1788460256
 << mvndiff >>
 rect 2789 -1537 2861 -1469
 << mvpsubdiff >>
@@ -719,16 +719,16 @@ use pfet_05v0_886J8L  pfet_05v0_886J8L_3
 timestamp 1788004626
 transform -1 0 1488 0 -1 4008
 box -1548 -750 1592 442
-use resistive_divider_1v25  resistive_divider_1v25_0
-timestamp 1788335513
+use resistive_divider_1v25__0  resistive_divider_1v25_0
+timestamp 1788460256
 transform -1 0 7770 0 -1 -12135
 box -1090 -1320 10640 10310
-use resistive_divider_3v0  resistive_divider_3v0_0
-timestamp 1788359904
+use resistive_divider_3v0__0  resistive_divider_3v0_0
+timestamp 1788460256
 transform 1 0 11500 0 1 -10530
 box -1662 -11669 40751 32450
-use resistive_divider_3v0  resistive_divider_3v0_1
-timestamp 1788359904
+use resistive_divider_3v0__0  resistive_divider_3v0_1
+timestamp 1788460256
 transform -1 0 -4504 0 1 -10600
 box -1662 -11669 40751 32450
 << labels >>

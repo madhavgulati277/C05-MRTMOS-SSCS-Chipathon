@@ -1,8 +1,8 @@
 magic
 tech gf180mcuD
 magscale 1 5
-timestamp 1788190411
-use ppolyf_u_1k_6p0_45EQGM  ppolyf_u_1k_6p0_45EQGM_0
+timestamp 1788460256
+use ppolyf_u_1k_6p0_45EQGM__0  ppolyf_u_1k_6p0_45EQGM_0
 timestamp 1788190411
 transform 0 -1 944 1 0 773
 box -222 -1183 222 1183
