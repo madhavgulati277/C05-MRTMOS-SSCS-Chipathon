@@ -19,7 +19,7 @@ rect 420 15 19875 25
 rect 420 -15 435 15
 rect 19860 -15 19875 15
 rect 420 -25 19875 -15
-use ppolyf_u_1k_6p0_XM9FDM__0  ppolyf_u_1k_6p0_XM9FDM_0
+use ppolyf_u_1k_6p0_XM9FDM_RN_Gm2  ppolyf_u_1k_6p0_XM9FDM_0
 timestamp 1788190910
 transform 0 -1 10119 1 0 188
 box -222 -10183 222 10183

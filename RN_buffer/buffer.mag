@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1788460256
+timestamp 1788543747
 << mvpsubdiff >>
 rect 1040 8660 6710 8750
 rect 1040 8440 1160 8660
@@ -826,110 +826,110 @@ use pfet_05v0_Z5N35L  pfet_05v0_Z5N35L_1
 timestamp 1788459954
 transform 1 0 4114 0 1 -2112
 box -274 -478 274 478
-use ppolyf_u_1k_6p0_XM9FDM__0  ppolyf_u_1k_6p0_XM9FDM_0 RN_Gm2
-timestamp 1788190910
+use ppolyf_u_1k_6p0_XM9FDM_RN_buffer  ppolyf_u_1k_6p0_XM9FDM_0
+timestamp 1788459954
 transform 0 1 27908 -1 0 3566
-box -444 -20366 444 20366
-use ppolyf_u_1k_6p0_XM9FDM__0  ppolyf_u_1k_6p0_XM9FDM_1
-timestamp 1788190910
+box -444 -20368 446 20372
+use ppolyf_u_1k_6p0_XM9FDM_RN_buffer  ppolyf_u_1k_6p0_XM9FDM_1
+timestamp 1788459954
 transform 0 1 27906 -1 0 2574
-box -444 -20366 444 20366
-use ppolyf_u_1k_6p0_XM9FDM__0  ppolyf_u_1k_6p0_XM9FDM_2
-timestamp 1788190910
+box -444 -20368 446 20372
+use ppolyf_u_1k_6p0_XM9FDM_RN_buffer  ppolyf_u_1k_6p0_XM9FDM_2
+timestamp 1788459954
 transform 0 1 27904 -1 0 642
-box -444 -20366 444 20366
-use ppolyf_u_1k_6p0_XM9FDM__0  ppolyf_u_1k_6p0_XM9FDM_3
-timestamp 1788190910
+box -444 -20368 446 20372
+use ppolyf_u_1k_6p0_XM9FDM_RN_buffer  ppolyf_u_1k_6p0_XM9FDM_3
+timestamp 1788459954
 transform 0 1 27906 -1 0 1594
-box -444 -20366 444 20366
-use ppolyf_u_1k_6p0_XM9FDM__0  ppolyf_u_1k_6p0_XM9FDM_4
-timestamp 1788190910
+box -444 -20368 446 20372
+use ppolyf_u_1k_6p0_XM9FDM_RN_buffer  ppolyf_u_1k_6p0_XM9FDM_4
+timestamp 1788459954
 transform 0 1 27902 -1 0 -7030
-box -444 -20366 444 20366
-use ppolyf_u_1k_6p0_XM9FDM__0  ppolyf_u_1k_6p0_XM9FDM_5
-timestamp 1788190910
+box -444 -20368 446 20372
+use ppolyf_u_1k_6p0_XM9FDM_RN_buffer  ppolyf_u_1k_6p0_XM9FDM_5
+timestamp 1788459954
 transform 0 1 27904 -1 0 -6078
-box -444 -20366 444 20366
-use ppolyf_u_1k_6p0_XM9FDM__0  ppolyf_u_1k_6p0_XM9FDM_6
-timestamp 1788190910
+box -444 -20368 446 20372
+use ppolyf_u_1k_6p0_XM9FDM_RN_buffer  ppolyf_u_1k_6p0_XM9FDM_6
+timestamp 1788459954
 transform 0 1 27904 -1 0 -5098
-box -444 -20366 444 20366
-use ppolyf_u_1k_6p0_XM9FDM__0  ppolyf_u_1k_6p0_XM9FDM_7
-timestamp 1788190910
+box -444 -20368 446 20372
+use ppolyf_u_1k_6p0_XM9FDM_RN_buffer  ppolyf_u_1k_6p0_XM9FDM_7
+timestamp 1788459954
 transform 0 1 27906 -1 0 -4146
-box -444 -20366 444 20366
-use ppolyf_u_1k_6p0_XM9FDM__0  ppolyf_u_1k_6p0_XM9FDM_8
-timestamp 1788190910
+box -444 -20368 446 20372
+use ppolyf_u_1k_6p0_XM9FDM_RN_buffer  ppolyf_u_1k_6p0_XM9FDM_8
+timestamp 1788459954
 transform 0 1 27906 -1 0 -336
-box -444 -20366 444 20366
-use ppolyf_u_1k_6p0_XM9FDM__0  ppolyf_u_1k_6p0_XM9FDM_9
-timestamp 1788190910
+box -444 -20368 446 20372
+use ppolyf_u_1k_6p0_XM9FDM_RN_buffer  ppolyf_u_1k_6p0_XM9FDM_9
+timestamp 1788459954
 transform 0 1 27906 -1 0 -8076
-box -444 -20366 444 20366
-use ppolyf_u_1k_6p0_XM9FDM__0  ppolyf_u_1k_6p0_XM9FDM_10
-timestamp 1788190910
+box -444 -20368 446 20372
+use ppolyf_u_1k_6p0_XM9FDM_RN_buffer  ppolyf_u_1k_6p0_XM9FDM_10
+timestamp 1788459954
 transform 0 1 -23902 -1 0 3716
-box -444 -20366 444 20366
-use ppolyf_u_1k_6p0_XM9FDM__0  ppolyf_u_1k_6p0_XM9FDM_11
-timestamp 1788190910
+box -444 -20368 446 20372
+use ppolyf_u_1k_6p0_XM9FDM_RN_buffer  ppolyf_u_1k_6p0_XM9FDM_11
+timestamp 1788459954
 transform 0 1 -23902 -1 0 2706
-box -444 -20366 444 20366
-use ppolyf_u_1k_6p0_XM9FDM__0  ppolyf_u_1k_6p0_XM9FDM_12
-timestamp 1788190910
+box -444 -20368 446 20372
+use ppolyf_u_1k_6p0_XM9FDM_RN_buffer  ppolyf_u_1k_6p0_XM9FDM_12
+timestamp 1788459954
 transform 0 1 -23902 -1 0 1606
-box -444 -20366 444 20366
-use ppolyf_u_1k_6p0_XM9FDM__0  ppolyf_u_1k_6p0_XM9FDM_13
-timestamp 1788190910
+box -444 -20368 446 20372
+use ppolyf_u_1k_6p0_XM9FDM_RN_buffer  ppolyf_u_1k_6p0_XM9FDM_13
+timestamp 1788459954
 transform 0 1 -23902 -1 0 -1604
-box -444 -20366 444 20366
-use ppolyf_u_1k_6p0_XM9FDM__0  ppolyf_u_1k_6p0_XM9FDM_14
-timestamp 1788190910
+box -444 -20368 446 20372
+use ppolyf_u_1k_6p0_XM9FDM_RN_buffer  ppolyf_u_1k_6p0_XM9FDM_14
+timestamp 1788459954
 transform 0 1 -23902 -1 0 -2714
-box -444 -20366 444 20366
-use ppolyf_u_1k_6p0_XM9FDM__0  ppolyf_u_1k_6p0_XM9FDM_15
-timestamp 1788190910
+box -444 -20368 446 20372
+use ppolyf_u_1k_6p0_XM9FDM_RN_buffer  ppolyf_u_1k_6p0_XM9FDM_15
+timestamp 1788459954
 transform 0 1 -23902 -1 0 -3724
-box -444 -20366 444 20366
-use ppolyf_u_1k_6p0_XM9FDM__0  ppolyf_u_1k_6p0_XM9FDM_16
-timestamp 1788190910
+box -444 -20368 446 20372
+use ppolyf_u_1k_6p0_XM9FDM_RN_buffer  ppolyf_u_1k_6p0_XM9FDM_16
+timestamp 1788459954
 transform 0 1 -23902 -1 0 -4824
-box -444 -20366 444 20366
-use ppolyf_u_1k_6p0_XM9FDM__0  ppolyf_u_1k_6p0_XM9FDM_17
-timestamp 1788190910
+box -444 -20368 446 20372
+use ppolyf_u_1k_6p0_XM9FDM_RN_buffer  ppolyf_u_1k_6p0_XM9FDM_17
+timestamp 1788459954
 transform 0 1 -23902 -1 0 -5974
-box -444 -20366 444 20366
-use ppolyf_u_1k_6p0_XM9FDM__0  ppolyf_u_1k_6p0_XM9FDM_18
-timestamp 1788190910
+box -444 -20368 446 20372
+use ppolyf_u_1k_6p0_XM9FDM_RN_buffer  ppolyf_u_1k_6p0_XM9FDM_18
+timestamp 1788459954
 transform 0 1 -23902 -1 0 -6984
-box -444 -20366 444 20366
-use ppolyf_u_1k_6p0_XM9FDM__0  ppolyf_u_1k_6p0_XM9FDM_19
-timestamp 1788190910
+box -444 -20368 446 20372
+use ppolyf_u_1k_6p0_XM9FDM_RN_buffer  ppolyf_u_1k_6p0_XM9FDM_19
+timestamp 1788459954
 transform 0 1 -23902 -1 0 -8084
-box -444 -20366 444 20366
-use ppolyf_u_1k_6p0_XM9FDM__0  ppolyf_u_1k_6p0_XM9FDM_20
-timestamp 1788190910
+box -444 -20368 446 20372
+use ppolyf_u_1k_6p0_XM9FDM_RN_buffer  ppolyf_u_1k_6p0_XM9FDM_20
+timestamp 1788459954
 transform 0 1 -23902 -1 0 4726
-box -444 -20366 444 20366
-use ppolyf_u_1k_6p0_XM9FDM__0  ppolyf_u_1k_6p0_XM9FDM_21
-timestamp 1788190910
+box -444 -20368 446 20372
+use ppolyf_u_1k_6p0_XM9FDM_RN_buffer  ppolyf_u_1k_6p0_XM9FDM_21
+timestamp 1788459954
 transform 0 1 -23892 -1 0 586
-box -444 -20366 444 20366
-use ppolyf_u_1k_6p0_XM9FDM__0  ppolyf_u_1k_6p0_XM9FDM_22
-timestamp 1788190910
+box -444 -20368 446 20372
+use ppolyf_u_1k_6p0_XM9FDM_RN_buffer  ppolyf_u_1k_6p0_XM9FDM_22
+timestamp 1788459954
 transform 0 1 27918 -1 0 4646
-box -444 -20366 444 20366
-use ppolyf_u_1k_6p0_XM9FDM__0  ppolyf_u_1k_6p0_XM9FDM_23
-timestamp 1788190910
+box -444 -20368 446 20372
+use ppolyf_u_1k_6p0_XM9FDM_RN_buffer  ppolyf_u_1k_6p0_XM9FDM_23
+timestamp 1788459954
 transform 0 1 -23892 -1 0 -454
-box -444 -20366 444 20366
-use ppolyf_u_1k_6p0_XM9FDM__0  ppolyf_u_1k_6p0_XM9FDM_24
-timestamp 1788190910
+box -444 -20368 446 20372
+use ppolyf_u_1k_6p0_XM9FDM_RN_buffer  ppolyf_u_1k_6p0_XM9FDM_24
+timestamp 1788459954
 transform 0 1 -23902 -1 0 -9054
-box -444 -20366 444 20366
-use ppolyf_u_1k_6p0_XM9FDM__0  ppolyf_u_1k_6p0_XM9FDM_25
-timestamp 1788190910
+box -444 -20368 446 20372
+use ppolyf_u_1k_6p0_XM9FDM_RN_buffer  ppolyf_u_1k_6p0_XM9FDM_25
+timestamp 1788459954
 transform 0 1 27908 -1 0 -9074
-box -444 -20366 444 20366
+box -444 -20368 446 20372
 use pfet_05v0_V5ACYY  XM1
 timestamp 1788459954
 transform 1 0 2214 0 1 -595

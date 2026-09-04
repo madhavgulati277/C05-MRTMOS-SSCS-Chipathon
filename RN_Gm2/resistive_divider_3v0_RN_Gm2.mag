@@ -75,175 +75,175 @@ rect 40293 -10057 40673 -8460
 rect 39390 -10630 39580 -10300
 rect 39390 -10780 40400 -10630
 rect 39390 -11110 39580 -10780
-use resistor_100k__0  resistor_100k_0
+use resistor_100k_RN_Gm2  resistor_100k_0
 timestamp 1788460256
 transform 1 0 70 0 1 70
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_1
+use resistor_100k_RN_Gm2  resistor_100k_1
 timestamp 1788460256
 transform 1 0 70 0 1 1070
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_2
+use resistor_100k_RN_Gm2  resistor_100k_2
 timestamp 1788460256
 transform 1 0 70 0 1 2070
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_3
+use resistor_100k_RN_Gm2  resistor_100k_3
 timestamp 1788460256
 transform 1 0 70 0 1 3070
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_4
+use resistor_100k_RN_Gm2  resistor_100k_4
 timestamp 1788460256
 transform 1 0 70 0 1 4070
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_5
+use resistor_100k_RN_Gm2  resistor_100k_5
 timestamp 1788460256
 transform 1 0 70 0 1 5070
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_6
+use resistor_100k_RN_Gm2  resistor_100k_6
 timestamp 1788460256
 transform 1 0 70 0 1 6070
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_7
+use resistor_100k_RN_Gm2  resistor_100k_7
 timestamp 1788460256
 transform 1 0 70 0 1 7070
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_8
+use resistor_100k_RN_Gm2  resistor_100k_8
 timestamp 1788460256
 transform 1 0 70 0 1 8070
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_9
+use resistor_100k_RN_Gm2  resistor_100k_9
 timestamp 1788460256
 transform 1 0 70 0 1 9070
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_10
+use resistor_100k_RN_Gm2  resistor_100k_10
 timestamp 1788460256
 transform 1 0 70 0 1 10070
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_11
+use resistor_100k_RN_Gm2  resistor_100k_11
 timestamp 1788460256
 transform 1 0 70 0 1 11070
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_12
+use resistor_100k_RN_Gm2  resistor_100k_12
 timestamp 1788460256
 transform 1 0 70 0 1 12070
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_13
+use resistor_100k_RN_Gm2  resistor_100k_13
 timestamp 1788460256
 transform 1 0 70 0 1 13070
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_14
+use resistor_100k_RN_Gm2  resistor_100k_14
 timestamp 1788460256
 transform 1 0 70 0 1 14070
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_15
+use resistor_100k_RN_Gm2  resistor_100k_15
 timestamp 1788460256
 transform 1 0 70 0 1 15070
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_16
+use resistor_100k_RN_Gm2  resistor_100k_16
 timestamp 1788460256
 transform 1 0 70 0 1 16070
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_17
+use resistor_100k_RN_Gm2  resistor_100k_17
 timestamp 1788460256
 transform 1 0 70 0 1 17070
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_18
+use resistor_100k_RN_Gm2  resistor_100k_18
 timestamp 1788460256
 transform 1 0 70 0 1 18070
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_19
+use resistor_100k_RN_Gm2  resistor_100k_19
 timestamp 1788460256
 transform 1 0 70 0 1 19070
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_20
+use resistor_100k_RN_Gm2  resistor_100k_20
 timestamp 1788460256
 transform 1 0 70 0 1 20070
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_21
+use resistor_100k_RN_Gm2  resistor_100k_21
 timestamp 1788460256
 transform 1 0 70 0 1 21070
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_22
+use resistor_100k_RN_Gm2  resistor_100k_22
 timestamp 1788460256
 transform 1 0 70 0 1 -928
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_23
+use resistor_100k_RN_Gm2  resistor_100k_23
 timestamp 1788460256
 transform 1 0 70 0 1 23195
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_24
+use resistor_100k_RN_Gm2  resistor_100k_24
 timestamp 1788460256
 transform 1 0 70 0 1 22195
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_25
+use resistor_100k_RN_Gm2  resistor_100k_25
 timestamp 1788460256
 transform 1 0 70 0 1 24176
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_26
+use resistor_100k_RN_Gm2  resistor_100k_26
 timestamp 1788460256
 transform 1 0 70 0 1 25176
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_27
+use resistor_100k_RN_Gm2  resistor_100k_27
 timestamp 1788460256
 transform 1 0 70 0 1 31255
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_28
+use resistor_100k_RN_Gm2  resistor_100k_28
 timestamp 1788460256
 transform 1 0 70 0 1 30255
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_29
+use resistor_100k_RN_Gm2  resistor_100k_29
 timestamp 1788460256
 transform 1 0 70 0 1 29274
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_30
+use resistor_100k_RN_Gm2  resistor_100k_30
 timestamp 1788460256
 transform 1 0 70 0 1 28274
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_31
+use resistor_100k_RN_Gm2  resistor_100k_31
 timestamp 1788460256
 transform 1 0 70 0 1 27149
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_32
+use resistor_100k_RN_Gm2  resistor_100k_32
 timestamp 1788460256
 transform 1 0 70 0 1 26149
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_33
+use resistor_100k_RN_Gm2  resistor_100k_33
 timestamp 1788460256
 transform 1 0 70 0 1 -4099
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_34
+use resistor_100k_RN_Gm2  resistor_100k_34
 timestamp 1788460256
 transform 1 0 70 0 1 -5099
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_35
+use resistor_100k_RN_Gm2  resistor_100k_35
 timestamp 1788460256
 transform 1 0 70 0 1 -6099
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_36
+use resistor_100k_RN_Gm2  resistor_100k_36
 timestamp 1788460256
 transform 1 0 70 0 1 -7099
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_37
+use resistor_100k_RN_Gm2  resistor_100k_37
 timestamp 1788460256
 transform 1 0 70 0 1 -8099
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_38
+use resistor_100k_RN_Gm2  resistor_100k_38
 timestamp 1788460256
 transform 1 0 70 0 1 -9099
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_39
+use resistor_100k_RN_Gm2  resistor_100k_39
 timestamp 1788460256
 transform 1 0 70 0 1 -10099
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_40
+use resistor_100k_RN_Gm2  resistor_100k_40
 timestamp 1788460256
 transform 1 0 70 0 1 -11097
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_41
+use resistor_100k_RN_Gm2  resistor_100k_41
 timestamp 1788460256
 transform 1 0 70 0 1 -2099
 box -128 -68 40604 820
-use resistor_100k__0  resistor_100k_42
+use resistor_100k_RN_Gm2  resistor_100k_42
 timestamp 1788460256
 transform 1 0 70 0 1 -3099
 box -128 -68 40604 820

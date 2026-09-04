@@ -57,87 +57,87 @@ rect -542 1499 -439 1735
 rect -203 1499 8888 1735
 rect 9124 1499 9232 1735
 rect -542 1388 9232 1499
-use ppolyf_u_1k_6p0_45EQGM__0  ppolyf_u_1k_6p0_45EQGM_0
+use ppolyf_u_1k_6p0_45EQGM_RN_Gm2  ppolyf_u_1k_6p0_45EQGM_0
 timestamp 1788190411
 transform 0 -1 6758 1 0 8616
 box -444 -2366 444 2366
-use ppolyf_u_1k_6p0_45EQGM__0  ppolyf_u_1k_6p0_45EQGM_1
+use ppolyf_u_1k_6p0_45EQGM_RN_Gm2  ppolyf_u_1k_6p0_45EQGM_1
 timestamp 1788190411
 transform 0 -1 6758 1 0 9616
 box -444 -2366 444 2366
-use resistor_10k__0  resistor_10k_0
+use resistor_10k_RN_Gm2  resistor_10k_0
 timestamp 1788460256
 transform 1 0 70 0 1 70
 box -478 1102 4254 1990
-use resistor_10k__0  resistor_10k_1
+use resistor_10k_RN_Gm2  resistor_10k_1
 timestamp 1788460256
 transform 1 0 70 0 1 1070
 box -478 1102 4254 1990
-use resistor_10k__0  resistor_10k_2
+use resistor_10k_RN_Gm2  resistor_10k_2
 timestamp 1788460256
 transform 1 0 70 0 1 2070
 box -478 1102 4254 1990
-use resistor_10k__0  resistor_10k_3
+use resistor_10k_RN_Gm2  resistor_10k_3
 timestamp 1788460256
 transform 1 0 70 0 1 3070
 box -478 1102 4254 1990
-use resistor_10k__0  resistor_10k_4
+use resistor_10k_RN_Gm2  resistor_10k_4
 timestamp 1788460256
 transform 1 0 70 0 1 4070
 box -478 1102 4254 1990
-use resistor_10k__0  resistor_10k_5
+use resistor_10k_RN_Gm2  resistor_10k_5
 timestamp 1788460256
 transform 1 0 70 0 1 5070
 box -478 1102 4254 1990
-use resistor_10k__0  resistor_10k_6
+use resistor_10k_RN_Gm2  resistor_10k_6
 timestamp 1788460256
 transform 1 0 70 0 1 6070
 box -478 1102 4254 1990
-use resistor_10k__0  resistor_10k_7
+use resistor_10k_RN_Gm2  resistor_10k_7
 timestamp 1788460256
 transform 1 0 70 0 1 7070
 box -478 1102 4254 1990
-use resistor_10k__0  resistor_10k_8
+use resistor_10k_RN_Gm2  resistor_10k_8
 timestamp 1788460256
 transform 1 0 70 0 1 8070
 box -478 1102 4254 1990
-use resistor_10k__0  resistor_10k_9
+use resistor_10k_RN_Gm2  resistor_10k_9
 timestamp 1788460256
 transform 1 0 70 0 1 -927
 box -478 1102 4254 1990
-use resistor_10k__0  resistor_10k_10
+use resistor_10k_RN_Gm2  resistor_10k_10
 timestamp 1788460256
 transform 1 0 4870 0 1 -927
 box -478 1102 4254 1990
-use resistor_10k__0  resistor_10k_16
+use resistor_10k_RN_Gm2  resistor_10k_16
 timestamp 1788460256
 transform 1 0 4870 0 1 7070
 box -478 1102 4254 1990
-use resistor_10k__0  resistor_10k_17
+use resistor_10k_RN_Gm2  resistor_10k_17
 timestamp 1788460256
 transform 1 0 4870 0 1 6070
 box -478 1102 4254 1990
-use resistor_10k__0  resistor_10k_18
+use resistor_10k_RN_Gm2  resistor_10k_18
 timestamp 1788460256
 transform 1 0 4870 0 1 5070
 box -478 1102 4254 1990
-use resistor_10k__0  resistor_10k_19
+use resistor_10k_RN_Gm2  resistor_10k_19
 timestamp 1788460256
 transform 1 0 4870 0 1 4070
 box -478 1102 4254 1990
-use resistor_10k__0  resistor_10k_20
+use resistor_10k_RN_Gm2  resistor_10k_20
 timestamp 1788460256
 transform 1 0 4870 0 1 3070
 box -478 1102 4254 1990
-use resistor_10k__0  resistor_10k_21
+use resistor_10k_RN_Gm2  resistor_10k_21
 timestamp 1788460256
 transform 1 0 4870 0 1 2070
 box -478 1102 4254 1990
-use resistor_10k__0  resistor_10k_22
+use resistor_10k_RN_Gm2  resistor_10k_22
 timestamp 1788460256
 transform 1 0 4870 0 1 1070
 box -478 1102 4254 1990
-use resistor_10k__0  resistor_10k_23
+use resistor_10k_RN_Gm2  resistor_10k_23
 timestamp 1788460256
 transform 1 0 4870 0 1 70
 box -478 1102 4254 1990
