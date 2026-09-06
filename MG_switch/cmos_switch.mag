@@ -193,7 +193,7 @@ use nfet_05v0_ZE6K9W  nfet_05v0_ZE6K9W_0
 timestamp 1787959664
 transform 0 1 -1893 -1 0 719
 box -312 -224 572 224
-use nfet_05v0_ZZNR9W  nfet_05v0_ZZNR9W_0
+use nfet_05v0_ZZNR9W_MG_switch  nfet_05v0_ZZNR9W_0
 timestamp 1787759295
 transform 0 1 564 -1 0 568
 box -192 -224 358 226

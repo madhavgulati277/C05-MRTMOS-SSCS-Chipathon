@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1787995727
+timestamp 1788548983
 << pwell >>
 rect -1007 210 -936 374
 << mvpsubdiff >>
@@ -154,19 +154,19 @@ use nfet_05v0_EGQXBG  nfet_05v0_EGQXBG_0
 timestamp 1787918360
 transform 1 0 -546 0 1 723
 box -324 -506 190 324
-use nfet_05v0_ZZNR9W  nfet_05v0_ZZNR9W_0
+use nfet_05v0_ZZNR9W_MG_decoder  nfet_05v0_ZZNR9W_0
 timestamp 1787759295
 transform 0 1 564 -1 0 568
 box -192 -224 358 226
-use pfet_05v0_2VHNWJ  pfet_05v0_2VHNWJ_0
+use pfet_05v0_2VHNWJ_MG_decoder  pfet_05v0_2VHNWJ_0
 timestamp 1787836214
 transform 1 0 -544 0 1 1658
 box -406 -308 434 442
-use pfet_05v0_2VHNWJ  pfet_05v0_2VHNWJ_1
+use pfet_05v0_2VHNWJ_MG_decoder  pfet_05v0_2VHNWJ_1
 timestamp 1787836214
 transform 1 0 -1664 0 1 1668
 box -406 -308 434 442
-use pfet_05v0_2VHNWJ  XM1
+use pfet_05v0_2VHNWJ_MG_decoder  XM1
 timestamp 1787836214
 transform 1 0 566 0 1 1308
 box -406 -308 434 442

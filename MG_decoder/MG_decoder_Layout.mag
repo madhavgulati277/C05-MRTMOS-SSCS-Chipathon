@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1788007717
+timestamp 1788548983
 << metal1 >>
 rect 13910 3100 14140 3140
 rect 14110 3020 14140 3100
@@ -484,87 +484,87 @@ rect -730 -16780 15420 -16700
 rect -730 -16850 15380 -16780
 rect -730 -16910 13970 -16850
 use MG_and_gate  MG_and_gate_0
-timestamp 1787995727
+timestamp 1788548983
 transform 1 0 5990 0 1 -2330
 box -2690 70 1570 2212
 use MG_and_gate  MG_and_gate_1
-timestamp 1787995727
+timestamp 1788548983
 transform 1 0 5940 0 1 -4910
 box -2690 70 1570 2212
 use MG_and_gate  MG_and_gate_2
-timestamp 1787995727
+timestamp 1788548983
 transform 1 0 5920 0 1 -7660
 box -2690 70 1570 2212
 use MG_and_gate  MG_and_gate_3
-timestamp 1787995727
+timestamp 1788548983
 transform 1 0 5880 0 1 -10450
 box -2690 70 1570 2212
 use MG_and_gate  MG_and_gate_4
-timestamp 1787995727
+timestamp 1788548983
 transform 1 0 11920 0 1 210
 box -2690 70 1570 2212
 use MG_and_gate  MG_and_gate_5
-timestamp 1787995727
+timestamp 1788548983
 transform 1 0 11700 0 1 -7740
 box -2690 70 1570 2212
 use MG_and_gate  MG_and_gate_6
-timestamp 1787995727
+timestamp 1788548983
 transform 1 0 11580 0 1 -10340
 box -2690 70 1570 2212
 use MG_and_gate  MG_and_gate_7
-timestamp 1787995727
+timestamp 1788548983
 transform 1 0 11560 0 1 -13570
 box -2690 70 1570 2212
 use MG_and_gate  MG_and_gate_8
-timestamp 1787995727
+timestamp 1788548983
 transform 1 0 11480 0 1 -16540
 box -2690 70 1570 2212
 use MG_and_gate  MG_and_gate_9
-timestamp 1787995727
+timestamp 1788548983
 transform 1 0 17680 0 1 -16310
 box -2690 70 1570 2212
 use MG_and_gate  MG_and_gate_10
-timestamp 1787995727
+timestamp 1788548983
 transform 1 0 17650 0 1 -4410
 box -2690 70 1570 2212
 use MG_and_gate  MG_and_gate_11
-timestamp 1787995727
+timestamp 1788548983
 transform 1 0 17780 0 1 -7810
 box -2690 70 1570 2212
 use MG_and_gate  MG_and_gate_12
-timestamp 1787995727
+timestamp 1788548983
 transform 1 0 17760 0 1 -10530
 box -2690 70 1570 2212
 use MG_not_gate  MG_not_gate_0
-timestamp 1787990511
+timestamp 1788548983
 transform 1 0 -50 0 1 -75
 box 50 75 1150 2000
 use MG_not_gate  MG_not_gate_1
-timestamp 1787990511
+timestamp 1788548983
 transform 1 0 -50 0 1 -2235
 box 50 75 1150 2000
 use MG_not_gate  MG_not_gate_2
-timestamp 1787990511
+timestamp 1788548983
 transform 1 0 -60 0 1 -4425
 box 50 75 1150 2000
 use MG_not_gate  MG_not_gate_3
-timestamp 1787990511
+timestamp 1788548983
 transform 1 0 -90 0 1 -6775
 box 50 75 1150 2000
 use MG_or_gate  MG_or_gate_0
-timestamp 1787995837
+timestamp 1788548983
 transform 1 0 5916 0 1 310
 box -2616 20 1490 1800
 use MG_or_gate  MG_or_gate_1
-timestamp 1787995837
+timestamp 1788548983
 transform 1 0 11896 0 1 -2130
 box -2616 20 1490 1800
 use MG_or_gate  MG_or_gate_2
-timestamp 1787995837
+timestamp 1788548983
 transform 1 0 11866 0 1 -4800
 box -2616 20 1490 1800
 use MG_or_gate  MG_or_gate_4
-timestamp 1787995837
+timestamp 1788548983
 transform 1 0 17766 0 1 -13330
 box -2616 20 1490 1800
 << labels >>
