@@ -1,0 +1,288 @@
+timestamp 1788810448
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+use cmos_neg_switch cmos_neg_switch_0 0 1 540 -1 0 1140
+use cmos_neg_switch cmos_neg_switch_1 0 -1 -1408 1 0 -1298
+use cmos_switch cmos_switch_1 -1 0 863 0 -1 -928
+use cmos_switch cmos_switch_0 1 0 -1723 0 1 726
+port "Vin" 2 -1022 -491 6523 -202 m2
+port "GND" 1 -688 -4633 -448 106 m1
+port "Vdd" 3 -7444 -876 -4903 -500 m1
+node "Vin" 3 3363.21 -1022 -491 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3140170 19818 0 0 0 0 0 0
+node "m2_n4114_n1585#" 0 715.649 -4114 -1585 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 675591 4384 0 0 0 0 0 0
+node "m2_n4815_n2527#" 3 2732.44 -4815 -2527 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1926548 16968 0 0 0 0 0 0
+node "m1_n4781_n2946#" 4 5202.93 -4781 -2946 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 521788 7214 2835624 17682 0 0 0 0 0 0
+node "m1_3480_n1071#" 2 3665.81 3480 -1071 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 613210 3646 2883495 15996 0 0 0 0 0 0
+node "GND" 2 5163.29 -688 -4633 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2634420 17146 0 0 0 0 0 0 0 0
+node "m1_n3360_3754#" 4 4913.39 -3360 3754 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 527974 7398 2891190 17858 0 0 0 0 0 0
+node "Vdd" 6 28533 -7444 -876 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19362367 75414 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_n3360_3754#" "Vdd" 1449.68
+cap "m2_n4114_n1585#" "m2_n4815_n2527#" 163.352
+cap "m1_3480_n1071#" "m1_n4781_n2946#" 306.111
+cap "m1_3480_n1071#" "Vdd" 1233.2
+cap "m2_n4815_n2527#" "m1_n4781_n2946#" 199.122
+cap "Vin" "GND" 1662.83
+cap "m2_n4114_n1585#" "m1_n4781_n2946#" 2.58493
+cap "m2_n4815_n2527#" "Vdd" 1126.49
+cap "Vin" "Vdd" 947.692
+cap "m2_n4114_n1585#" "Vdd" 382.094
+cap "GND" "m1_n4781_n2946#" 307.79
+cap "m1_n3360_3754#" "m1_3480_n1071#" 222.463
+cap "GND" "Vdd" 126.634
+cap "m1_n4781_n2946#" "Vdd" 868.005
+cap "m1_n3360_3754#" "m2_n4815_n2527#" 237.388
+cap "Vin" "m1_n3360_3754#" 2.30405
+cap "Vin" "m1_3480_n1071#" 809.527
+cap "cmos_neg_switch_1/out" "cmos_neg_switch_1/in" 15.4005
+cap "cmos_neg_switch_1/nfet_05v0_ZE6K9W_0/a_n192_n192#" "GND" 1.91158
+cap "cmos_neg_switch_1/in" "cmos_neg_switch_1/nfet_05v0_ZE6K9W_0/a_n192_n192#" 117.488
+cap "cmos_neg_switch_1/in" "cmos_neg_switch_1/out" 21.6509
+cap "cmos_switch_1/Vdd" "cmos_neg_switch_1/nfet_05v0_ZE6K9W_0/a_n192_n192#" 2.90855
+cap "cmos_neg_switch_1/GND" "GND" 13.3383
+cap "cmos_neg_switch_1/in" "cmos_neg_switch_1/nfet_05v0_ZE6K9W_0/a_n192_n192#" -4.44089e-16
+cap "m1_n4781_n2946#" "cmos_neg_switch_1/nfet_05v0_ZE6K9W_0/a_n192_n192#" 224.701
+cap "cmos_neg_switch_1/GND" "m1_n4781_n2946#" 9.26931
+cap "GND" "cmos_neg_switch_1/nfet_05v0_ZE6K9W_0/a_n192_n192#" 45.0684
+cap "cmos_switch_1/Vdd" "cmos_switch_1/in" 11.3786
+cap "cmos_switch_1/nfet_05v0_ZZNR9W_0/a_n158_n100#" "cmos_switch_1/in" 0.179322
+cap "cmos_switch_1/XM1/a_n192_n282#" "cmos_switch_1/in" 1.37812
+cap "cmos_switch_1/Vdd" "cmos_switch_1/out" 0.198676
+cap "cmos_switch_1/in" "cmos_switch_1/nfet_05v0_ZZNR9W_0/a_n158_n100#" 1.64399
+cap "cmos_switch_1/in" "cmos_switch_1/out" 14.563
+cap "cmos_switch_1/Vdd" "cmos_switch_1/out" 1.69616
+cap "cmos_switch_1/in" "cmos_switch_1/Vdd" 9.32607
+cap "cmos_switch_1/out" "cmos_switch_1/in" 0.714964
+cap "cmos_switch_1/nfet_05v0_ZE6K9W_0/a_n192_n192#" "cmos_switch_1/out" 4.58359
+cap "cmos_neg_switch_1/out" "cmos_neg_switch_1/in" 70.42
+cap "cmos_neg_switch_1/out" "cmos_neg_switch_1/Vdd" 5.50274
+cap "cmos_neg_switch_1/in" "cmos_neg_switch_1/Vin" 1.0447
+cap "cmos_neg_switch_1/out" "cmos_neg_switch_1/in" 21.3117
+cap "cmos_neg_switch_1/in" "cmos_neg_switch_1/Vin" 0.14753
+cap "cmos_neg_switch_1/GND" "cmos_neg_switch_1/XM1/a_n52_n110#" 0.129576
+cap "cmos_neg_switch_1/pfet_05v0_M2W5S5_0/a_n540_n100#" "m1_n4781_n2946#" 0.0208655
+cap "cmos_neg_switch_1/Vin" "cmos_switch_1/Vin" 0.13498
+cap "cmos_neg_switch_1/Vin" "cmos_switch_1/Vdd" 0.28629
+cap "cmos_neg_switch_1/XM1/a_n52_n110#" "cmos_switch_1/nfet_05v0_ZZNR9W_0/a_n158_n100#" 0.947827
+cap "cmos_neg_switch_1/GND" "cmos_neg_switch_1/XM1/a_n52_n110#" 121.764
+cap "m1_n4781_n2946#" "cmos_neg_switch_1/in" 0.225931
+cap "cmos_neg_switch_1/XM1/a_n52_n110#" "cmos_switch_1/Vin" 8.4742
+cap "cmos_neg_switch_1/Vin" "m1_n4781_n2946#" 0.0409943
+cap "cmos_neg_switch_1/GND" "cmos_switch_1/nfet_05v0_ZZNR9W_0/a_n158_n100#" 1.79381
+cap "cmos_neg_switch_1/XM1/a_n52_n110#" "cmos_switch_1/Vdd" 23.2499
+cap "cmos_neg_switch_1/GND" "cmos_switch_1/Vin" 14.1465
+cap "cmos_neg_switch_1/GND" "cmos_switch_1/Vdd" 82.3617
+cap "cmos_neg_switch_1/GND" "cmos_neg_switch_1/Vin" 0.634054
+cap "cmos_switch_1/Vdd" "cmos_switch_1/out" 0.473407
+cap "cmos_neg_switch_1/pfet_05v0_M2W5S5_0/w_n1061_n278#" "cmos_switch_1/Vin" 0.344341
+cap "cmos_switch_1/Vin" "cmos_switch_1/in" 0.0722673
+cap "cmos_switch_1/Vdd" "cmos_neg_switch_1/GND" 77.3297
+cap "cmos_switch_1/Vdd" "cmos_switch_1/nfet_05v0_ZZNR9W_0/a_n158_n100#" 2.96433
+cap "cmos_neg_switch_1/nfet_05v0_ZE6K9W_0/a_52_n192#" "cmos_switch_1/nfet_05v0_ZZNR9W_0/a_n158_n100#" 0.0817778
+cap "cmos_neg_switch_1/GND" "cmos_switch_1/nfet_05v0_ZZNR9W_0/a_n158_n100#" 1.82978
+cap "cmos_switch_1/Vin" "cmos_switch_1/Vdd" 3.80039
+cap "cmos_switch_1/in" "cmos_switch_1/Vdd" 4.10362
+cap "cmos_switch_1/Vin" "cmos_neg_switch_1/nfet_05v0_ZE6K9W_0/a_52_n192#" 3.28375
+cap "cmos_switch_1/Vin" "cmos_neg_switch_1/GND" 16.7776
+cap "cmos_switch_1/out" "cmos_switch_1/Vdd" 0.868228
+cap "cmos_switch_1/in" "cmos_switch_1/Vdd" 5.05482
+cap "cmos_switch_1/nfet_05v0_ZZNR9W_0/a_n158_n100#" "cmos_switch_1/in" 0.360568
+cap "cmos_switch_1/out" "cmos_switch_1/in" 23.1986
+cap "cmos_switch_1/in" "cmos_switch_1/out" 6.43084
+cap "cmos_switch_1/out" "Vdd" 1.24213
+cap "cmos_switch_1/nfet_05v0_ZE6K9W_0/a_n192_n192#" "Vdd" 0.0855066
+cap "cmos_switch_1/out" "cmos_switch_1/nfet_05v0_ZE6K9W_0/a_n192_n192#" 0.479899
+cap "Vdd" "m1_3480_n1071#" -2.84217e-14
+cap "Vdd" "cmos_switch_1/nfet_05v0_ZE6K9W_0/a_n192_n192#" 0.0839003
+cap "Vdd" "cmos_switch_1/nfet_05v0_ZE6K9W_0/a_n280_n100#" 1.47882
+cap "cmos_neg_switch_1/out" "cmos_neg_switch_1/Vdd" 4.49704
+cap "cmos_neg_switch_1/Vdd" "cmos_neg_switch_1/Vin" 64.5301
+cap "cmos_neg_switch_1/GND" "cmos_neg_switch_1/Vdd" 7.7516
+cap "cmos_neg_switch_1/out" "cmos_neg_switch_1/Vin" 1.42109e-14
+cap "cmos_neg_switch_1/in" "cmos_neg_switch_1/Vin" -0.819803
+cap "cmos_neg_switch_1/XM1/a_n52_n110#" "cmos_neg_switch_1/Vin" 3.30765
+cap "cmos_neg_switch_1/GND" "cmos_neg_switch_1/XM1/a_n52_n110#" 1.76117
+cap "cmos_switch_0/pfet_05v0_M2W5S5_0/w_n1061_n278#" "cmos_neg_switch_1/Vin" 0.734348
+cap "cmos_switch_0/pfet_05v0_M2W5S5_0/a_436_n100#" "cmos_neg_switch_1/Vin" 0.0219693
+cap "cmos_neg_switch_1/XM1/a_n52_n110#" "cmos_neg_switch_1/Vin" 21.0631
+cap "cmos_neg_switch_1/GND" "cmos_neg_switch_1/Vin" 1.04314
+cap "cmos_neg_switch_1/Vin" "cmos_switch_0/pfet_05v0_M2W5S5_0/a_680_n100#" 0.0695592
+cap "cmos_neg_switch_1/Vdd" "cmos_neg_switch_1/XM1/a_n52_n110#" 0.862607
+cap "cmos_neg_switch_1/Vdd" "cmos_neg_switch_1/Vin" 3.41898
+cap "cmos_neg_switch_1/XM1/a_n52_n110#" "cmos_neg_switch_0/GND" 141.07
+cap "cmos_neg_switch_1/Vin" "cmos_neg_switch_0/GND" 0.221236
+cap "cmos_neg_switch_1/Vdd" "cmos_switch_1/Vin" 0.0967534
+cap "cmos_switch_1/Vin" "cmos_neg_switch_1/XM1/a_n52_n110#" 99.7741
+cap "cmos_switch_1/Vin" "cmos_neg_switch_0/GND" 54.1258
+cap "cmos_neg_switch_1/Vin" "cmos_switch_1/Vin" 0.737367
+cap "cmos_switch_1/nfet_05v0_ZZNR9W_0/a_n158_n100#" "cmos_neg_switch_0/GND" 0.883351
+cap "cmos_switch_1/Vdd" "cmos_switch_1/Vin" 0.00238414
+cap "cmos_neg_switch_0/GND" "cmos_switch_1/Vin" 67.8534
+cap "cmos_neg_switch_1/m1_n2205_529#" "cmos_switch_1/Vin" 39.7499
+cap "cmos_neg_switch_0/Vin" "cmos_switch_1/nfet_05v0_ZZNR9W_0/a_n158_n100#" 0.157672
+cap "cmos_switch_1/out" "cmos_switch_1/in" 0.630766
+cap "cmos_neg_switch_0/Vdd" "cmos_neg_switch_0/GND" 19.2985
+cap "cmos_neg_switch_0/nfet_05v0_ZZNR9W_0/a_n158_n100#" "cmos_neg_switch_0/GND" 1.06124
+cap "cmos_switch_1/nfet_05v0_ZZNR9W_0/a_n158_n100#" "cmos_neg_switch_0/GND" 0.162948
+cap "cmos_neg_switch_0/Vin" "cmos_neg_switch_0/GND" 11.7782
+cap "cmos_switch_1/nfet_05v0_ZZNR9W_0/a_n158_n100#" "cmos_neg_switch_0/Vdd" 0.503782
+cap "cmos_neg_switch_0/nfet_05v0_ZZNR9W_0/a_n158_n100#" "cmos_switch_1/nfet_05v0_ZZNR9W_0/a_n158_n100#" 0.00711906
+cap "cmos_neg_switch_0/Vin" "cmos_neg_switch_0/Vdd" 10.2292
+cap "cmos_neg_switch_0/Vin" "cmos_switch_1/out" 211.206
+cap "cmos_neg_switch_0/Vin" "cmos_neg_switch_0/GND" 1.55569
+cap "cmos_neg_switch_0/Vdd" "cmos_switch_1/out" 1.24213
+cap "cmos_switch_1/out" "cmos_switch_1/in" 0.395242
+cap "cmos_neg_switch_0/GND" "cmos_neg_switch_0/Vdd" 16.4843
+cap "cmos_neg_switch_0/GND" "cmos_switch_1/out" 32.1814
+cap "cmos_neg_switch_0/Vin" "cmos_neg_switch_0/Vdd" 8.74006
+cap "cmos_switch_1/nfet_05v0_ZE6K9W_0/a_n280_n100#" "cmos_neg_switch_0/Vdd" 1.39899
+cap "cmos_switch_1/GND" "cmos_neg_switch_0/Vdd" 3.90759
+cap "cmos_neg_switch_1/Vdd" "cmos_switch_0/GND" 8.71347
+cap "cmos_neg_switch_1/Vdd" "cmos_neg_switch_1/Vin" 3.38011
+cap "cmos_neg_switch_1/Vin" "cmos_neg_switch_1/Vdd" 50.282
+cap "cmos_neg_switch_1/GND" "cmos_neg_switch_1/Vdd" 26.6396
+cap "cmos_neg_switch_1/GND" "cmos_neg_switch_1/Vin" 1.30744
+cap "cmos_neg_switch_1/Vin" "m2_n4815_n2527#" 64.339
+cap "m2_n4815_n2527#" "cmos_neg_switch_1/Vdd" 0.64869
+cap "cmos_neg_switch_1/GND" "m2_n4815_n2527#" 2.31782
+cap "cmos_neg_switch_1/Vdd" "cmos_neg_switch_1/Vin" 96.9686
+cap "cmos_switch_0/pfet_05v0_M2W5S5_0/a_540_n192#" "cmos_neg_switch_1/Vin" 0.167675
+cap "cmos_neg_switch_1/XM1/a_n52_n110#" "cmos_neg_switch_1/GND" 1.10197
+cap "cmos_neg_switch_1/Vdd" "cmos_switch_0/pfet_05v0_M2W5S5_0/a_540_n192#" 0.54015
+cap "cmos_neg_switch_1/Vin" "cmos_neg_switch_1/GND" 84.9515
+cap "cmos_neg_switch_1/XM1/a_n52_n110#" "cmos_neg_switch_1/Vin" 20.5647
+cap "cmos_neg_switch_1/Vdd" "cmos_neg_switch_1/GND" 52.962
+cap "cmos_switch_0/pfet_05v0_M2W5S5_0/a_540_n192#" "cmos_neg_switch_1/XM1/a_n52_n110#" 0.0486246
+cap "cmos_switch_1/Vin" "cmos_neg_switch_1/Vin" 0.189489
+cap "cmos_neg_switch_0/GND" "cmos_neg_switch_1/XM1/a_n52_n110#" 16.9213
+cap "cmos_switch_1/Vin" "cmos_neg_switch_0/GND" 427.285
+cap "cmos_switch_1/Vin" "cmos_neg_switch_1/Vdd" 0.698327
+cap "cmos_neg_switch_0/m1_n2205_529#" "cmos_switch_1/Vin" 15.8848
+cap "cmos_switch_1/Vin" "cmos_neg_switch_1/XM1/a_n52_n110#" 27.0996
+cap "cmos_neg_switch_0/m1_n2205_529#" "cmos_neg_switch_0/GND" 0.707654
+cap "cmos_neg_switch_0/GND" "cmos_switch_1/Vin" 22.321
+cap "cmos_neg_switch_0/GND" "cmos_neg_switch_0/nfet_05v0_ZZNR9W_0/a_n158_n100#" 38.8078
+cap "cmos_neg_switch_0/GND" "cmos_switch_1/XM1/w_n406_n308#" 0.0869882
+cap "cmos_switch_1/Vin" "cmos_neg_switch_0/Vin" 0.113056
+cap "cmos_neg_switch_0/nfet_05v0_ZZNR9W_0/a_n158_n100#" "cmos_switch_1/Vin" 75.2474
+cap "cmos_neg_switch_0/nfet_05v0_ZZNR9W_0/a_n158_n100#" "cmos_neg_switch_0/GND" 2.59784
+cap "cmos_neg_switch_0/Vin" "cmos_neg_switch_0/GND" 15.236
+cap "cmos_neg_switch_0/Vdd" "cmos_neg_switch_0/GND" 29.8865
+cap "cmos_switch_1/pfet_05v0_M2W5S5_0/a_n296_n100#" "cmos_neg_switch_0/Vin" 0.0654007
+cap "cmos_neg_switch_0/nfet_05v0_ZZNR9W_0/a_n158_n100#" "cmos_neg_switch_0/Vin" 40.4716
+cap "cmos_neg_switch_0/nfet_05v0_ZZNR9W_0/a_n158_n100#" "cmos_neg_switch_0/Vdd" 0.862607
+cap "cmos_neg_switch_0/Vdd" "cmos_neg_switch_0/Vin" 80.7789
+cap "cmos_neg_switch_0/Vin" "cmos_switch_1/pfet_05v0_M2W5S5_0/w_n1061_n278#" 0.645301
+cap "cmos_neg_switch_0/out" "cmos_neg_switch_0/Vin" 0.0937681
+cap "cmos_switch_1/pfet_05v0_M2W5S5_0/a_n52_n100#" "cmos_neg_switch_0/Vin" 0.00395748
+cap "cmos_neg_switch_0/Vdd" "cmos_neg_switch_0/GND" 12.5767
+cap "cmos_neg_switch_0/Vdd" "cmos_neg_switch_0/out" 16.5711
+cap "cmos_neg_switch_0/Vin" "cmos_neg_switch_0/nfet_05v0_ZZNR9W_0/a_n158_n100#" 3.30765
+cap "cmos_neg_switch_0/Vin" "cmos_neg_switch_0/Vdd" 84.5538
+cap "cmos_switch_0/nfet_05v0_ZE6K9W_0/a_52_n192#" "cmos_neg_switch_1/Vdd" 10.1733
+cap "cmos_switch_0/nfet_05v0_ZE6K9W_0/a_192_n100#" "cmos_neg_switch_1/Vdd" 3.28221
+cap "cmos_neg_switch_1/Vdd" "cmos_switch_0/GND" 2.56501
+cap "cmos_switch_0/nfet_05v0_ZE6K9W_0/a_52_n192#" "cmos_neg_switch_1/Vdd" 8.85298
+cap "cmos_switch_0/out" "cmos_neg_switch_1/GND" 0.682303
+cap "cmos_switch_0/out" "cmos_neg_switch_1/Vdd" 2.75915
+cap "cmos_neg_switch_1/GND" "cmos_neg_switch_1/Vdd" 2.56501
+cap "cmos_switch_0/out" "cmos_switch_0/in" 0.806079
+cap "cmos_switch_0/nfet_05v0_ZE6K9W_0/a_52_n192#" "cmos_switch_0/out" 65.4447
+cap "cmos_switch_0/in" "cmos_switch_0/out" 2.80211
+cap "cmos_switch_0/pfet_05v0_M2W5S5_0/a_540_n192#" "cmos_neg_switch_1/GND" 0.077186
+cap "cmos_switch_0/pfet_05v0_M2W5S5_0/a_540_n192#" "cmos_switch_0/in" 0.115006
+cap "cmos_neg_switch_0/nfet_05v0_ZE6K9W_0/a_52_n192#" "cmos_switch_0/Vin" 28.2496
+cap "cmos_switch_0/pfet_05v0_M2W5S5_0/a_540_n192#" "cmos_switch_0/Vdd" 1.38953
+cap "cmos_neg_switch_0/nfet_05v0_ZE6K9W_0/a_52_n192#" "cmos_neg_switch_0/GND" 0.745638
+cap "cmos_switch_0/Vin" "cmos_switch_0/Vdd" 3.28871
+cap "cmos_neg_switch_0/pfet_05v0_M2W5S5_0/a_680_n100#" "cmos_switch_0/Vin" 0.0039667
+cap "cmos_switch_0/pfet_05v0_M2W5S5_0/a_540_n192#" "cmos_neg_switch_0/GND" 1.84612
+cap "cmos_neg_switch_0/GND" "cmos_switch_0/Vdd" 9.68861
+cap "cmos_neg_switch_0/nfet_05v0_ZE6K9W_0/a_52_n192#" "cmos_switch_0/pfet_05v0_M2W5S5_0/a_540_n192#" 0.203456
+cap "cmos_neg_switch_0/nfet_05v0_ZE6K9W_0/a_52_n192#" "cmos_switch_0/Vdd" 2.50853
+cap "cmos_switch_0/Vin" "cmos_neg_switch_0/pfet_05v0_M2W5S5_0/w_n1061_n278#" 0.439076
+cap "cmos_switch_0/Vin" "cmos_neg_switch_0/GND" 12.2058
+cap "cmos_switch_0/Vin" "cmos_switch_0/in" 0.037239
+cap "cmos_neg_switch_0/Vin" "cmos_switch_0/Vin" 0.138501
+cap "cmos_neg_switch_0/nfet_05v0_ZE6K9W_0/a_52_n192#" "cmos_switch_0/Vin" 31.163
+cap "cmos_neg_switch_0/GND" "cmos_switch_0/Vdd" 10.6808
+cap "cmos_neg_switch_0/nfet_05v0_ZE6K9W_0/a_52_n192#" "cmos_switch_0/nfet_05v0_ZZNR9W_0/a_n158_n100#" 0.95946
+cap "cmos_neg_switch_0/GND" "cmos_neg_switch_0/Vin" 0.0906275
+cap "cmos_neg_switch_0/GND" "cmos_switch_0/Vin" 13.4485
+cap "cmos_neg_switch_0/Vin" "cmos_switch_0/Vdd" 0.347574
+cap "cmos_neg_switch_0/nfet_05v0_ZE6K9W_0/a_52_n192#" "cmos_switch_0/Vdd" 12.7504
+cap "cmos_neg_switch_0/GND" "cmos_switch_0/nfet_05v0_ZZNR9W_0/a_n158_n100#" 0.877603
+cap "cmos_neg_switch_0/out" "cmos_neg_switch_0/in" 0.527499
+cap "cmos_neg_switch_0/Vdd" "cmos_neg_switch_0/Vin" 2.27374e-13
+cap "cmos_neg_switch_0/GND" "cmos_neg_switch_0/Vin" 0.0288325
+cap "cmos_neg_switch_0/out" "cmos_neg_switch_0/Vin" 0.303965
+cap "cmos_neg_switch_0/Vdd" "cmos_neg_switch_0/out" 15.4177
+cap "cmos_neg_switch_0/Vdd" "cmos_neg_switch_0/Vin" 20.8653
+cap "cmos_neg_switch_0/in" "cmos_neg_switch_0/out" 0.466506
+cap "cmos_neg_switch_0/Vin" "cmos_neg_switch_0/in" -0.760955
+cap "cmos_neg_switch_0/Vin" "cmos_neg_switch_0/out" 9.08748
+cap "cmos_neg_switch_0/Vdd" "cmos_neg_switch_0/out" 1.42924
+cap "cmos_neg_switch_0/Vin" "cmos_neg_switch_0/Vdd" 0.934744
+cap "Vdd" "m2_n4815_n2527#" -2.84217e-14
+cap "cmos_switch_0/out" "cmos_switch_0/in" 0.556592
+cap "cmos_switch_0/nfet_05v0_ZE6K9W_0/a_52_n192#" "cmos_switch_0/out" 4.24074
+cap "cmos_switch_0/out" "cmos_switch_0/in" 40.5926
+cap "cmos_switch_0/out" "cmos_switch_0/Vdd" 0.364199
+cap "cmos_switch_0/in" "cmos_switch_0/Vdd" 3.8199
+cap "cmos_neg_switch_0/GND" "cmos_switch_0/Vdd" 16.1714
+cap "cmos_switch_0/out" "cmos_switch_0/Vdd" 0.245382
+cap "cmos_neg_switch_0/nfet_05v0_ZE6K9W_0/a_52_n192#" "cmos_switch_0/Vdd" 4.77602
+cap "cmos_switch_0/in" "cmos_switch_0/Vdd" 3.61478
+cap "cmos_neg_switch_0/nfet_05v0_ZE6K9W_0/a_52_n192#" "cmos_switch_0/Vdd" 14.0206
+cap "cmos_neg_switch_0/GND" "cmos_switch_0/Vdd" 27.6313
+cap "cmos_neg_switch_0/nfet_05v0_ZE6K9W_0/a_52_n192#" "m1_n3360_3754#" 73.7287
+cap "cmos_neg_switch_0/GND" "m1_n3360_3754#" 6.85117
+cap "cmos_neg_switch_0/in" "cmos_neg_switch_0/pfet_05v0_M2W5S5_0/a_436_n100#" -3.55271e-15
+cap "cmos_neg_switch_0/in" "m1_n3360_3754#" 0.133901
+cap "cmos_neg_switch_0/out" "cmos_neg_switch_0/in" 19.5041
+cap "Vdd" "cmos_neg_switch_0/out" 2.79703
+cap "cmos_neg_switch_0/nfet_05v0_ZE6K9W_0/a_52_n192#" "cmos_neg_switch_0/in" 44.9
+cap "cmos_neg_switch_0/nfet_05v0_ZE6K9W_0/a_52_n192#" "Vdd" 9.03941
+cap "cmos_neg_switch_0/Vdd" "cmos_neg_switch_0/in" 1.33227e-15
+cap "cmos_neg_switch_0/Vin" "cmos_neg_switch_0/in" 1.26673
+cap "cmos_neg_switch_0/in" "cmos_neg_switch_0/out" 67.6952
+cap "cmos_neg_switch_0/out" "cmos_neg_switch_0/Vdd" 0.0151243
+cap "cmos_switch_0/in" "cmos_switch_0/pfet_05v0_M2W5S5_0/a_n680_n192#" 0.750032
+cap "cmos_switch_0/Vdd" "cmos_switch_0/in" 6.931
+cap "cmos_switch_0/out" "cmos_switch_0/Vdd" 0.903118
+cap "cmos_switch_0/Vdd" "cmos_switch_0/in" 8.74238
+cap "cmos_switch_0/in" "cmos_switch_0/XM1/a_n192_n282#" 0.189994
+cap "cmos_switch_0/in" "cmos_switch_0/XM1/a_n192_n282#" 0.189994
+cap "m1_n3360_3754#" "cmos_neg_switch_0/nfet_05v0_ZE6K9W_0/a_52_n192#" 73.7287
+cap "cmos_switch_0/Vdd" "cmos_neg_switch_0/nfet_05v0_ZE6K9W_0/a_52_n192#" 4.09809
+cap "cmos_neg_switch_0/GND" "cmos_switch_0/Vdd" 11.4599
+cap "Vdd" "cmos_neg_switch_0/nfet_05v0_ZE6K9W_0/a_52_n192#" 9.89963
+cap "cmos_neg_switch_0/out" "Vdd" 3.33334
+cap "cmos_neg_switch_0/in" "cmos_neg_switch_0/nfet_05v0_ZE6K9W_0/a_52_n192#" 37.5352
+cap "cmos_neg_switch_0/out" "cmos_neg_switch_0/in" 18.3835
+cap "cmos_neg_switch_0/out" "cmos_neg_switch_0/in" 14.342
+merge "cmos_neg_switch_0/GND" "cmos_switch_0/GND" -1797.83 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -39484 -2296 0 0 0 0 0 0 0 0
+merge "cmos_switch_0/GND" "cmos_switch_1/GND"
+merge "cmos_switch_1/GND" "GND"
+merge "GND" "cmos_neg_switch_1/GND"
+merge "cmos_neg_switch_1/GND" "VSUBS"
+merge "cmos_switch_0/out" "cmos_neg_switch_1/out" -1333.56 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -796153 -6733 0 0 0 0 0 0
+merge "cmos_neg_switch_1/out" "m2_n4815_n2527#"
+merge "cmos_neg_switch_0/Vin" "cmos_switch_0/Vin" -4938.27 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1789613 -15651 0 0 0 0 0 0
+merge "cmos_switch_0/Vin" "cmos_switch_1/Vin"
+merge "cmos_switch_1/Vin" "Vin"
+merge "Vin" "cmos_neg_switch_1/Vin"
+merge "cmos_neg_switch_1/Vin" "m2_n4114_n1585#"
+merge "cmos_switch_0/in" "cmos_neg_switch_0/in" -978.211 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -31036 -1000 -462000 -2800 0 0 0 0 0 0
+merge "cmos_neg_switch_0/in" "m1_n3360_3754#"
+merge "cmos_switch_0/Vdd" "cmos_neg_switch_0/Vdd" -13415.6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8437844 -33909 0 0 0 0 0 0 0 0
+merge "cmos_neg_switch_0/Vdd" "cmos_neg_switch_1/Vdd"
+merge "cmos_neg_switch_1/Vdd" "cmos_switch_1/Vdd"
+merge "cmos_switch_1/Vdd" "Vdd"
+merge "cmos_neg_switch_0/out" "cmos_switch_1/out" -918.88 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -133708 -1993 0 0 0 0 0 0
+merge "cmos_switch_1/out" "m1_3480_n1071#"
+merge "cmos_switch_1/in" "cmos_neg_switch_1/in" -1013.93 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -31034 -1000 -462000 -2800 0 0 0 0 0 0
+merge "cmos_neg_switch_1/in" "m1_n4781_n2946#"

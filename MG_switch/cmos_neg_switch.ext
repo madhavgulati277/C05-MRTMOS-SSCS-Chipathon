@@ -1,0 +1,126 @@
+timestamp 1788807713
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+use pfet_05v0_2VHNWJ XM1 1 0 566 0 1 1308
+use pfet_05v0_M2W5S5 pfet_05v0_M2W5S5_0 0 1 -789 -1 0 845
+use nfet_05v0_ZZNR9W_MG_switch nfet_05v0_ZZNR9W_0 0 1 564 -1 0 568
+use nfet_05v0_ZE6K9W nfet_05v0_ZE6K9W_0 0 1 -1893 -1 0 719
+port "out" 8 -1229 1377 -1038 2729 m2
+port "in" 7 -1510 1673 -1392 2012 m1
+port "Vin" 6 -287 826 8 2706 m2
+port "Vdd" 4 50 1670 1140 2000 m1
+port "GND" 5 55 210 390 454 m1
+node "m1_650_1060#" 0 430.649 650 1060 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 104694 1738 0 0 0 0 0 0 0 0
+node "m1_n2205_529#" 5 2785.95 -2205 529 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 133034 2924 907075 11966 0 0 0 0 0 0
+node "out" 6 1497.07 -1229 1377 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 132947 4754 602208 7666 0 0 0 0 0 0
+node "in" 5 1501.21 -1510 1673 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 334285 8752 0 0 0 0 0 0 0 0
+node "Vin" 168 2433.41 -287 826 m2 0 0 0 0 0 0 0 0 0 0 0 0 47880 2172 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 373082 5894 662322 5258 0 0 0 0 0 0
+node "Vdd" 60 1697.51 50 1670 m1 0 0 0 0 0 0 0 0 119164 2348 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1061574 6806 0 0 0 0 0 0 0 0
+substrate "GND" 0 0 55 210 m1 0 0 0 0 0 0 0 0 0 0 93236 1980 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 899885 8242 0 0 0 0 0 0 0 0
+cap "m1_n2205_529#" "out" 124.37
+cap "in" "Vin" 57.6695
+cap "out" "Vin" 250.158
+cap "m1_n2205_529#" "Vin" 294.633
+cap "m1_650_1060#" "Vdd" 88.5651
+cap "m1_650_1060#" "m1_n2205_529#" 350.805
+cap "in" "Vdd" 146.781
+cap "m1_650_1060#" "Vin" 21.3022
+cap "out" "Vdd" 147.864
+cap "m1_n2205_529#" "Vdd" 136.633
+cap "in" "out" 1145.11
+cap "Vdd" "Vin" 622.485
+cap "m1_n2205_529#" "in" 41.2426
+cap "nfet_05v0_ZZNR9W_0/a_70_n100#" "nfet_05v0_ZE6K9W_0/a_192_n100#" 122.958
+cap "nfet_05v0_ZE6K9W_0/a_192_n100#" "nfet_05v0_ZZNR9W_0/a_n70_n192#" 31.623
+cap "nfet_05v0_ZE6K9W_0/a_192_n100#" "nfet_05v0_ZE6K9W_0/a_52_n192#" 43.8186
+cap "nfet_05v0_ZZNR9W_0/a_70_n100#" "nfet_05v0_ZE6K9W_0/a_n52_n100#" -2.6112
+cap "nfet_05v0_ZE6K9W_0/a_n52_n100#" "nfet_05v0_ZE6K9W_0/a_52_n192#" 67.5762
+cap "nfet_05v0_ZE6K9W_0/a_n52_n100#" "nfet_05v0_ZZNR9W_0/a_n70_n192#" 9.75922
+cap "pfet_05v0_M2W5S5_0/w_n1061_n278#" "nfet_05v0_ZE6K9W_0/a_192_n100#" 46.6938
+cap "nfet_05v0_ZZNR9W_0/a_70_n100#" "nfet_05v0_ZE6K9W_0/a_52_n192#" 22.1278
+cap "nfet_05v0_ZE6K9W_0/a_52_n192#" "nfet_05v0_ZZNR9W_0/a_n70_n192#" 1.70521
+cap "pfet_05v0_M2W5S5_0/w_n1061_n278#" "nfet_05v0_ZE6K9W_0/a_n52_n100#" 34.1909
+cap "pfet_05v0_M2W5S5_0/w_n1061_n278#" "nfet_05v0_ZZNR9W_0/a_70_n100#" 16.026
+cap "pfet_05v0_M2W5S5_0/w_n1061_n278#" "nfet_05v0_ZE6K9W_0/a_52_n192#" 8.24974
+cap "nfet_05v0_ZE6K9W_0/a_192_n100#" "nfet_05v0_ZE6K9W_0/a_n52_n100#" 12.0107
+cap "nfet_05v0_ZE6K9W_0/a_n52_n100#" "nfet_05v0_ZE6K9W_0/a_192_n100#" -2.46193
+cap "nfet_05v0_ZE6K9W_0/a_192_n100#" "nfet_05v0_ZE6K9W_0/a_52_n192#" 1.29262
+cap "nfet_05v0_ZZNR9W_0/a_n70_n192#" "nfet_05v0_ZZNR9W_0/a_70_n100#" 47.7336
+cap "nfet_05v0_ZE6K9W_0/a_n52_n100#" "pfet_05v0_M2W5S5_0/w_n1061_n278#" 0.712364
+cap "nfet_05v0_ZE6K9W_0/a_52_n192#" "pfet_05v0_M2W5S5_0/w_n1061_n278#" 11.4192
+cap "nfet_05v0_ZZNR9W_0/a_n70_n192#" "nfet_05v0_ZE6K9W_0/a_192_n100#" 32.8064
+cap "nfet_05v0_ZE6K9W_0/a_n52_n100#" "nfet_05v0_ZE6K9W_0/a_52_n192#" 3.04647
+cap "nfet_05v0_ZZNR9W_0/a_n70_n192#" "pfet_05v0_M2W5S5_0/w_n1061_n278#" 46.7741
+cap "nfet_05v0_ZE6K9W_0/a_192_n100#" "nfet_05v0_ZZNR9W_0/a_70_n100#" -22.2577
+cap "nfet_05v0_ZZNR9W_0/a_n70_n192#" "nfet_05v0_ZE6K9W_0/a_n52_n100#" 47.875
+cap "nfet_05v0_ZZNR9W_0/a_n70_n192#" "nfet_05v0_ZE6K9W_0/a_52_n192#" 9.77768
+cap "nfet_05v0_ZZNR9W_0/a_70_n100#" "pfet_05v0_M2W5S5_0/w_n1061_n278#" 81.1491
+cap "nfet_05v0_ZE6K9W_0/a_n52_n100#" "nfet_05v0_ZZNR9W_0/a_70_n100#" 72.9163
+cap "nfet_05v0_ZE6K9W_0/a_52_n192#" "nfet_05v0_ZZNR9W_0/a_70_n100#" -2.84217e-14
+cap "nfet_05v0_ZE6K9W_0/a_192_n100#" "pfet_05v0_M2W5S5_0/w_n1061_n278#" 3.48522
+cap "nfet_05v0_ZZNR9W_0/a_n70_n192#" "pfet_05v0_M2W5S5_0/w_n1061_n278#" 0.521899
+cap "pfet_05v0_M2W5S5_0/w_n1061_n278#" "nfet_05v0_ZZNR9W_0/a_70_n100#" 1.14129
+cap "nfet_05v0_ZZNR9W_0/a_n158_n100#" "pfet_05v0_M2W5S5_0/a_436_n100#" 0.382621
+cap "nfet_05v0_ZZNR9W_0/a_n70_n192#" "nfet_05v0_ZZNR9W_0/a_70_n100#" 66.1326
+cap "nfet_05v0_ZZNR9W_0/a_n158_n100#" "pfet_05v0_M2W5S5_0/w_n1061_n278#" 5.04481
+cap "nfet_05v0_ZZNR9W_0/a_n158_n100#" "nfet_05v0_ZZNR9W_0/a_n70_n192#" 37.8515
+cap "nfet_05v0_ZZNR9W_0/a_n158_n100#" "nfet_05v0_ZZNR9W_0/a_70_n100#" -33.489
+cap "nfet_05v0_ZZNR9W_0/a_n158_n100#" "pfet_05v0_M2W5S5_0/a_680_n100#" 0.416021
+cap "nfet_05v0_ZZNR9W_0/a_n158_n100#" "pfet_05v0_M2W5S5_0/a_192_n100#" 0.516978
+cap "nfet_05v0_ZE6K9W_0/a_192_n100#" "nfet_05v0_ZZNR9W_0/a_n70_n192#" 38.7972
+cap "nfet_05v0_ZE6K9W_0/a_n52_n100#" "nfet_05v0_ZE6K9W_0/a_52_n192#" 4.32431
+cap "nfet_05v0_ZE6K9W_0/a_52_n192#" "pfet_05v0_M2W5S5_0/w_n1061_n278#" 0.430735
+cap "nfet_05v0_ZE6K9W_0/a_192_n100#" "nfet_05v0_ZE6K9W_0/a_52_n192#" 17.8994
+cap "nfet_05v0_ZE6K9W_0/a_52_n192#" "nfet_05v0_ZZNR9W_0/a_n70_n192#" 0.192432
+cap "nfet_05v0_ZE6K9W_0/a_n52_n100#" "pfet_05v0_M2W5S5_0/w_n1061_n278#" 39.0774
+cap "nfet_05v0_ZE6K9W_0/a_192_n100#" "nfet_05v0_ZE6K9W_0/a_n52_n100#" 9.18859
+cap "nfet_05v0_ZE6K9W_0/a_n52_n100#" "nfet_05v0_ZZNR9W_0/a_n70_n192#" 9.84876
+cap "nfet_05v0_ZE6K9W_0/a_192_n100#" "pfet_05v0_M2W5S5_0/w_n1061_n278#" 55.8914
+cap "nfet_05v0_ZE6K9W_0/a_192_n100#" "nfet_05v0_ZZNR9W_0/a_n70_n192#" 33.557
+cap "nfet_05v0_ZZNR9W_0/a_n70_n192#" "nfet_05v0_ZE6K9W_0/a_52_n192#" 0.674119
+cap "nfet_05v0_ZZNR9W_0/a_n70_n192#" "pfet_05v0_M2W5S5_0/w_n1061_n278#" 159.302
+cap "nfet_05v0_ZE6K9W_0/a_192_n100#" "nfet_05v0_ZE6K9W_0/a_n52_n100#" 0.123945
+cap "nfet_05v0_ZE6K9W_0/a_n52_n100#" "pfet_05v0_M2W5S5_0/w_n1061_n278#" 85.6396
+cap "nfet_05v0_ZZNR9W_0/a_n70_n192#" "nfet_05v0_ZZNR9W_0/a_70_n100#" -1.08757
+cap "pfet_05v0_M2W5S5_0/w_n1061_n278#" "nfet_05v0_ZE6K9W_0/a_52_n192#" -19.0295
+cap "nfet_05v0_ZE6K9W_0/a_192_n100#" "pfet_05v0_M2W5S5_0/w_n1061_n278#" -19.4774
+cap "nfet_05v0_ZZNR9W_0/a_n70_n192#" "nfet_05v0_ZE6K9W_0/a_n52_n100#" 52.0738
+cap "pfet_05v0_M2W5S5_0/w_n1061_n278#" "nfet_05v0_ZZNR9W_0/a_n158_n100#" -72.9388
+cap "nfet_05v0_ZZNR9W_0/a_70_n100#" "nfet_05v0_ZZNR9W_0/a_n70_n192#" -0.170878
+cap "nfet_05v0_ZZNR9W_0/a_n70_n192#" "nfet_05v0_ZZNR9W_0/a_n158_n100#" 59.7288
+cap "pfet_05v0_M2W5S5_0/w_n1061_n278#" "nfet_05v0_ZZNR9W_0/a_n70_n192#" 85.3847
+merge "nfet_05v0_ZE6K9W_0/a_52_n192#" "nfet_05v0_ZE6K9W_0/a_n192_n192#" -399.978 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18952 -1552 0 0 0 0 0 0 0 0
+merge "nfet_05v0_ZE6K9W_0/a_n192_n192#" "nfet_05v0_ZZNR9W_0/a_n158_n100#"
+merge "nfet_05v0_ZZNR9W_0/a_n158_n100#" "XM1/a_n52_n110#"
+merge "XM1/a_n52_n110#" "m1_n2205_529#"
+merge "XM1/a_192_n110#" "pfet_05v0_M2W5S5_0/w_n1061_n278#" -560.487 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9936 -956 0 0 0 0 0 0 0 0
+merge "pfet_05v0_M2W5S5_0/w_n1061_n278#" "XM1/a_n280_n110#"
+merge "XM1/a_n280_n110#" "XM1/w_n406_n308#"
+merge "XM1/w_n406_n308#" "Vdd"
+merge "nfet_05v0_ZE6K9W_0/a_192_n100#" "nfet_05v0_ZE6K9W_0/a_n280_n100#" -536.206 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27048 -1636 0 0 0 0 0 0 0 0
+merge "nfet_05v0_ZE6K9W_0/a_n280_n100#" "pfet_05v0_M2W5S5_0/a_436_n100#"
+merge "pfet_05v0_M2W5S5_0/a_436_n100#" "pfet_05v0_M2W5S5_0/a_n52_n100#"
+merge "pfet_05v0_M2W5S5_0/a_n52_n100#" "pfet_05v0_M2W5S5_0/a_n540_n100#"
+merge "pfet_05v0_M2W5S5_0/a_n540_n100#" "out"
+merge "nfet_05v0_ZE6K9W_0/VSUBS" "nfet_05v0_ZZNR9W_0/VSUBS" -241.936 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6076 -454 0 0 0 0 0 0 0 0
+merge "nfet_05v0_ZZNR9W_0/VSUBS" "nfet_05v0_ZZNR9W_0/a_70_n100#"
+merge "nfet_05v0_ZZNR9W_0/a_70_n100#" "pfet_05v0_M2W5S5_0/VSUBS"
+merge "pfet_05v0_M2W5S5_0/VSUBS" "XM1/VSUBS"
+merge "XM1/VSUBS" "GND"
+merge "nfet_05v0_ZE6K9W_0/a_n52_n100#" "pfet_05v0_M2W5S5_0/a_680_n100#" -323.292 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1242 -514 0 0 0 0 0 0 0 0
+merge "pfet_05v0_M2W5S5_0/a_680_n100#" "pfet_05v0_M2W5S5_0/a_192_n100#"
+merge "pfet_05v0_M2W5S5_0/a_192_n100#" "pfet_05v0_M2W5S5_0/a_n296_n100#"
+merge "pfet_05v0_M2W5S5_0/a_n296_n100#" "pfet_05v0_M2W5S5_0/a_n768_n100#"
+merge "pfet_05v0_M2W5S5_0/a_n768_n100#" "in"
+merge "nfet_05v0_ZZNR9W_0/a_n70_n192#" "m1_650_1060#" -1173.5 0 0 0 0 0 0 0 0 0 0 0 0 -47880 -2172 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14636 -1224 0 0 0 0 0 0 0 0
+merge "m1_650_1060#" "pfet_05v0_M2W5S5_0/a_540_n192#"
+merge "pfet_05v0_M2W5S5_0/a_540_n192#" "pfet_05v0_M2W5S5_0/a_296_n192#"
+merge "pfet_05v0_M2W5S5_0/a_296_n192#" "pfet_05v0_M2W5S5_0/a_52_n192#"
+merge "pfet_05v0_M2W5S5_0/a_52_n192#" "pfet_05v0_M2W5S5_0/a_n192_n192#"
+merge "pfet_05v0_M2W5S5_0/a_n192_n192#" "pfet_05v0_M2W5S5_0/a_n436_n192#"
+merge "pfet_05v0_M2W5S5_0/a_n436_n192#" "pfet_05v0_M2W5S5_0/a_n680_n192#"
+merge "pfet_05v0_M2W5S5_0/a_n680_n192#" "XM1/a_n192_n282#"
+merge "XM1/a_n192_n282#" "Vin"

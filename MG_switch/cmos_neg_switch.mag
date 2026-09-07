@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1788111494
+timestamp 1788807713
 << mvpsubdiff >>
 rect -2064 337 -1726 363
 rect -2064 225 -2035 337
@@ -209,4 +209,10 @@ rlabel metal1 50 1670 1140 2000 1 Vdd
 port 4 n power input
 rlabel metal1 55 210 390 454 1 GND
 port 5 n power input
+rlabel metal2 -287 826 8 2706 1 Vin
+port 6 n analog input
+rlabel metal1 -1510 1673 -1392 2012 1 in
+port 7 n signal bidirectional
+rlabel metal2 -1229 1377 -1038 2729 1 out
+port 8 n signal bidirectional
 << end >>
