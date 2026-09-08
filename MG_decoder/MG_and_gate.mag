@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1788548983
+timestamp 1788873752
 << pwell >>
 rect -1007 210 -936 374
 << mvpsubdiff >>
@@ -151,9 +151,9 @@ rect 928 160 1040 880
 rect 928 75 1570 160
 rect 940 70 1570 75
 use nfet_05v0_EGQXBG  nfet_05v0_EGQXBG_0
-timestamp 1787918360
+timestamp 1788873717
 transform 1 0 -546 0 1 723
-box -324 -506 190 324
+box -324 -506 438 324
 use nfet_05v0_ZZNR9W_MG_decoder  nfet_05v0_ZZNR9W_0
 timestamp 1787759295
 transform 0 1 564 -1 0 568
@@ -171,9 +171,9 @@ timestamp 1787836214
 transform 1 0 566 0 1 1308
 box -406 -308 434 442
 use nfet_05v0_EGQXBG  XM6
-timestamp 1787918360
+timestamp 1788873717
 transform 1 0 -1197 0 1 721
-box -324 -506 190 324
+box -324 -506 438 324
 << labels >>
 rlabel metal1 157 1670 1100 2000 1 Vdd
 port 4 n power input
