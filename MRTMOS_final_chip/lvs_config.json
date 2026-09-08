@@ -1,0 +1,9 @@
+{
+  "TOP_SOURCE": "MRTMOS_chip_final",
+  "TOP_LAYOUT": "MRTMOS_chip_final",
+  "LAYOUT_FILE": "MRTMOS_final_chip/MRTMOS_chip_final.gds",
+  "LVS_SPICE_FILES": [
+    "path/to/your_top_level_netlist.spice"
+  ],
+  "EXTRACT_FLATPATH": true
+}
