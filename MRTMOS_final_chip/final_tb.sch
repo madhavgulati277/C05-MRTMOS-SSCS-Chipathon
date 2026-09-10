@@ -7,11 +7,16 @@ F {}
 E {}
 N 80 70 110 70 {lab=Vout}
 N 50 -140 60 -140 {lab=Vin+}
-N 120 -140 130 -140 {lab=Vin+}
+N 120 -140 130 -140 {lab=#net1}
 N 260 -140 270 -140 {lab=Vin-}
-N 330 -140 350 -140 {lab=Vin-}
-N 60 -140 120 -140 {lab=Vin+}
-N 270 -140 330 -140 {lab=Vin-}
+N 330 -140 350 -140 {lab=#net2}
+N -1100 60 -970 60 {lab=#net3}
+N -970 50 -970 60 {lab=#net3}
+N -910 50 -820 50 {lab=#net4}
+N -820 40 -820 50 {lab=#net4}
+N -520 50 -380 50 {lab=#net5}
+N -380 50 -380 90 {lab=#net5}
+N -320 90 -220 90 {lab=#net6}
 C {code.sym} 200 30 0 0 {name=SIMULATIONS only_toplevel=false value="
 .include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
 .lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
@@ -82,3 +87,25 @@ C {gnd.sym} -660 120 0 0 {name=l6 lab=0}
 C {gnd.sym} -1250 120 0 0 {name=l7 lab=0}
 C {lab_pin.sym} -660 0 0 0 {name=p8 sig_type=std_logic lab=Vdd}
 C {lab_pin.sym} -1250 0 0 0 {name=p9 sig_type=std_logic lab=Vdd}
+C {capa.sym} -350 90 1 0 {name=C2
+m=1
+value=60.7p
+footprint=1206
+device="ceramic capacitor"}
+C {capa.sym} -940 50 1 0 {name=C3
+m=1
+value=60.7p
+footprint=1206
+device="ceramic capacitor"}
+C {gnd.sym} -820 80 0 0 {name=l8 lab=0}
+C {gnd.sym} -220 50 0 0 {name=l9 lab=0}
+C {capa.sym} 90 -140 1 0 {name=C4
+m=1
+value=100m
+footprint=1206
+device="ceramic capacitor"}
+C {capa.sym} 300 -140 1 0 {name=C5
+m=1
+value=100m
+footprint=1206
+device="ceramic capacitor"}
