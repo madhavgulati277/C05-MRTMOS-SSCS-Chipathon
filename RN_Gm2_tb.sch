@@ -1,22 +1,18 @@
 v {xschem version=3.4.8RC file_version=1.3}
 G {}
-K {type=subcircuit
-format="@name @pinlist @symname"
-spectre_format="@name ( @pinlist ) @symname"
-template="name=x1"
-}
+K {}
 V {}
 S {}
 F {}
 E {}
-N 130 -0 160 0 {lab=Vout}
-N 100 -210 110 -210 {lab=Vin+}
-N 170 -210 180 -210 {lab=Vin+}
-N 310 -210 320 -210 {lab=Vin-}
-N 380 -210 400 -210 {lab=Vin-}
-N 110 -210 170 -210 {lab=Vin+}
-N 320 -210 380 -210 {lab=Vin-}
-C {code.sym} 250 -40 0 0 {name=SIMULATIONS only_toplevel=false value="
+N 70 20 100 20 {lab=Vout}
+N 40 -190 50 -190 {lab=Vin+}
+N 110 -190 120 -190 {lab=Vin+}
+N 250 -190 260 -190 {lab=Vin-}
+N 320 -190 340 -190 {lab=Vin-}
+N 50 -190 110 -190 {lab=Vin+}
+N 260 -190 320 -190 {lab=Vin-}
+C {code.sym} 190 -20 0 0 {name=SIMULATIONS only_toplevel=false value="
 .include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
 .lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
 .lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_typical
@@ -59,24 +55,23 @@ C {code.sym} 250 -40 0 0 {name=SIMULATIONS only_toplevel=false value="
 
 .options savecurrents
 "}
-C {lab_pin.sym} -20 -60 0 0 {name=p1 sig_type=std_logic lab=Vdd}
-C {lab_pin.sym} -170 -20 0 0 {name=p3 sig_type=std_logic lab=Vin+}
-C {lab_pin.sym} -170 20 0 0 {name=p4 sig_type=std_logic lab=Vin-}
-C {capa.sym} 160 30 0 0 {name=C1
+C {lab_pin.sym} -80 -40 0 0 {name=p1 sig_type=std_logic lab=Vdd}
+C {lab_pin.sym} -230 0 0 0 {name=p3 sig_type=std_logic lab=Vin+}
+C {lab_pin.sym} -230 40 0 0 {name=p4 sig_type=std_logic lab=Vin-}
+C {capa.sym} 100 50 0 0 {name=C1
 m=1
 value=50p
 footprint=1206
 device="ceramic capacitor"}
-C {gnd.sym} 160 60 0 0 {name=l1 lab=0}
-C {gnd.sym} -20 60 0 0 {name=l2 lab=0}
-C {vsource.sym} 20 -140 0 0 {name=V1 value=5 savecurrent=false}
-C {lab_pin.sym} 20 -170 0 0 {name=p2 sig_type=std_logic lab=Vdd}
-C {gnd.sym} 20 -110 0 0 {name=l3 lab=0}
-C {lab_pin.sym} 160 0 2 0 {name=p7 sig_type=std_logic lab=Vout}
-C {vsource.sym} 180 -180 0 0 {name=V2 value="DC 0 AC 0.5" savecurrent=false}
-C {lab_pin.sym} 100 -210 0 0 {name=p5 sig_type=std_logic lab=Vin+}
-C {gnd.sym} 180 -150 0 0 {name=l4 lab=0}
-C {vsource.sym} 400 -180 0 0 {name=V3 value="DC 0 AC -0.5" savecurrent=false}
-C {lab_pin.sym} 310 -210 0 0 {name=p6 sig_type=std_logic lab=Vin-}
-C {gnd.sym} 400 -150 0 0 {name=l5 lab=0}
-C {/foss/designs/C05-MRTMOS-SSCS-Chipathon/RN_Gm3/RN_gm3_ota.sym} -20 0 0 0 {name=x1}
+C {gnd.sym} 100 80 0 0 {name=l1 lab=0}
+C {gnd.sym} -80 80 0 0 {name=l2 lab=0}
+C {vsource.sym} -40 -120 0 0 {name=V1 value=5 savecurrent=false}
+C {lab_pin.sym} -40 -150 0 0 {name=p2 sig_type=std_logic lab=Vdd}
+C {gnd.sym} -40 -90 0 0 {name=l3 lab=0}
+C {lab_pin.sym} 100 20 2 0 {name=p7 sig_type=std_logic lab=Vout}
+C {vsource.sym} 120 -160 0 0 {name=V2 value="DC 0 AC 0.5" savecurrent=false}
+C {lab_pin.sym} 40 -190 0 0 {name=p5 sig_type=std_logic lab=Vin+}
+C {gnd.sym} 120 -130 0 0 {name=l4 lab=0}
+C {vsource.sym} 340 -160 0 0 {name=V3 value="DC 0 AC -0.5" savecurrent=false}
+C {lab_pin.sym} 250 -190 0 0 {name=p6 sig_type=std_logic lab=Vin-}
+C {gnd.sym} 340 -130 0 0 {name=l5 lab=0}
