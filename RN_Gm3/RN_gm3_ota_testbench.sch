@@ -14,8 +14,6 @@ N 100 -210 110 -210 {lab=Vin+}
 N 170 -210 180 -210 {lab=Vin+}
 N 310 -210 320 -210 {lab=Vin-}
 N 380 -210 400 -210 {lab=Vin-}
-N 110 -210 170 -210 {lab=Vin+}
-N 320 -210 380 -210 {lab=Vin-}
 C {code.sym} 250 -40 0 0 {name=SIMULATIONS only_toplevel=false value="
 .include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
 .lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
@@ -80,3 +78,13 @@ C {vsource.sym} 400 -180 0 0 {name=V3 value="DC 0 AC -0.5" savecurrent=false}
 C {lab_pin.sym} 310 -210 0 0 {name=p6 sig_type=std_logic lab=Vin-}
 C {gnd.sym} 400 -150 0 0 {name=l5 lab=0}
 C {/foss/designs/C05-MRTMOS-SSCS-Chipathon/RN_Gm3/RN_gm3_ota.sym} -20 0 0 0 {name=x1}
+C {capa.sym} 140 -210 1 0 {name=C3
+m=1
+value=100m
+footprint=1206
+device="ceramic capacitor"}
+C {capa.sym} 350 -210 1 0 {name=C2
+m=1
+value=100m
+footprint=1206
+device="ceramic capacitor"}
