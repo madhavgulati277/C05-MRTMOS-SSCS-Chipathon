@@ -74,4 +74,4 @@ value=50p
 footprint=1206
 device="ceramic capacitor"}
 C {gnd.sym} 340 -70 0 0 {name=l4 lab=0}
-C {gm_ff.sym} 170 -20 0 0 {name=x2}
+C {TG_gm_ff/gm_ff.sym} 170 -20 0 0 {name=x1}
