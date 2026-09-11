@@ -26,8 +26,7 @@ N -270 -170 -270 -140 {lab=ffVin+}
 N -1120 200 -1120 230 {lab=#net5}
 N -1230 140 -1120 140 {lab=#net6}
 N -1230 140 -1230 280 {lab=#net6}
-N -1140 340 100 340 {lab=Vout}
-N 80 70 80 340 {lab=Vout}
+N -1140 340 -1090 340 {lab=Vout1}
 C {code.sym} 200 30 0 0 {name=SIMULATIONS only_toplevel=false value="
 .include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
 .lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
@@ -91,9 +90,9 @@ C {gnd.sym} 130 -80 0 0 {name=l4 lab=0}
 C {vsource.sym} 350 -110 0 0 {name=V3 value="DC 3.333 AC -0.5" savecurrent=false}
 C {lab_pin.sym} 260 -140 0 0 {name=p6 sig_type=std_logic lab=Vin-}
 C {gnd.sym} 350 -80 0 0 {name=l5 lab=0}
-C {/foss/designs/C05-MRTMOS-SSCS-Chipathon/RN_Gm2/RN_gm2_ota.sym} -670 60 0 0 {name=x1}
-C {/foss/designs/C05-MRTMOS-SSCS-Chipathon/RN_Gm3/RN_gm3_ota.sym} -70 70 0 0 {name=x2}
-C {/foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_6T_OTA/MG_6t_ota.sym} -1250 60 0 0 {name=x3}
+C {RN_Gm2/RN_gm2_ota.sym} -670 60 0 0 {name=x1}
+C {RN_Gm3/RN_gm3_ota.sym} -70 70 0 0 {name=x2}
+C {MG_6T_OTA/MG_6t_ota.sym} -1250 60 0 0 {name=x3}
 C {gnd.sym} -660 120 0 0 {name=l6 lab=0}
 C {gnd.sym} -1250 120 0 0 {name=l7 lab=0}
 C {lab_pin.sym} -660 0 0 0 {name=p8 sig_type=std_logic lab=Vdd}
@@ -110,7 +109,7 @@ footprint=1206
 device="ceramic capacitor"}
 C {gnd.sym} -820 80 0 0 {name=l8 lab=0}
 C {gnd.sym} -220 50 0 0 {name=l9 lab=0}
-C {/foss/designs/C05-MRTMOS-SSCS-Chipathon/TG_gm_ff/gm_ff.sym} -1290 340 0 0 {name=x4}
+C {TG_gm_ff/gm_ff.sym} -1290 340 0 0 {name=x4}
 C {vsource.sym} -350 -110 0 0 {name=V4 value=3 savecurrent=false}
 C {vsource.sym} -270 -110 0 0 {name=V5 
 *value="dc 2.5 ac 1 sin(2.5 1m 1Meg)" 
@@ -126,9 +125,10 @@ C {lab_wire.sym} -1440 350 0 0 {name=p13 sig_type=std_logic lab=ffVin+}
 C {gnd.sym} -1290 400 0 0 {name=l12 lab=0}
 C {lab_pin.sym} -1360 280 0 0 {name=p14 sig_type=std_logic lab=Vdd}
 C {res.sym} -1120 170 0 0 {name=R1
-value=10MEG
+value=10k
 footprint=1206
 device=resistor
 m=1}
 C {vsource.sym} -1120 260 0 0 {name=V6 value=5 savecurrent=false}
 C {gnd.sym} -1120 290 0 0 {name=l13 lab=0}
+C {lab_wire.sym} -1090 340 0 0 {name=p15 sig_type=std_logic lab=Vout1}
