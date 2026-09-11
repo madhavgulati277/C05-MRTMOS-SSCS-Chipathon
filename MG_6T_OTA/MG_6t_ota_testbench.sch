@@ -173,5 +173,5 @@ C {ipin.sym} 40 10 0 0 {name=p3 lab=Vin+
 }
 C {ipin.sym} -50 -5 0 0 {name=p5 lab=Vin-
 }
-C {MG_6t_ota.sym} 190 0 0 0 {name=x1}
 C {opin.sym} 410 0 0 0 {name=p6 lab=Vout}
+C {MG_6T_OTA/MG_6t_ota.sym} 190 0 0 0 {name=x2}
