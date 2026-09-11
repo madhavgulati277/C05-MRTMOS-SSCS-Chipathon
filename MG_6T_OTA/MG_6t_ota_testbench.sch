@@ -21,7 +21,7 @@ C {gnd.sym} 190 60 0 0 {name=l4 lab=0}
 C {ipin.sym} 510 -30 0 0 {name=p1 lab=Vdd}
 C {ipin.sym} 660 -30 0 0 {name=p8 lab=Vin+
 }
-C {vsource.sym} 680 0 0 0 {name=V2 value=3.333 savecurrent=false}
+C {vsource.sym} 680 0 0 0 {name=V2 value="DC 3.333 AC 0.5" savecurrent=false}
 C {gnd.sym} 680 30 0 0 {name=l6 lab=0}
 C {code.sym} 235 100 0 0 {name=s1 only_toplevel=false value="
 
@@ -32,69 +32,83 @@ C {code.sym} 235 100 0 0 {name=s1 only_toplevel=false value="
 .lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice diode_typical
 
 .control
-  save all
+ save all
   op
+  print all
+
+  ac dec 10 1 1G
+  meas ac dc_gain MAX vdb(Vout)
+  meas ac ugbw WHEN vdb(Vout)=0 FALL=1
+  let phase_deg = (180/PI)*vp(Vout)
+  plot vdb(Vout)
+  plot phase_deg
+.endc
+
+
+*.control
+  *save all
+  *op
   
   * ==========================================
   * 1. DIFFERENTIAL RUN (Adm & Noise)
   * ==========================================
-  alter v2 ac = 1
-  alter v3 ac = -1 ; Set this to 0 if v3 is just a DC reference
+  *alter v2 ac = 1
+  *alter v3 ac = -1 ; Set this to 0 if v3 is just a DC reference
   
-  ac dec 20 1 1G
-  setplot ac1
+  *ac dec 20 1 1G
+  *setplot ac1
   
-  let gain_db = vdb(vout)
-  let phase_deg = (180/PI) * ph(vout)
-  meas ac dc_gain MAX gain_db
+  *let gain_db = vdb(vout)
+  *let phase_deg = (180/PI) * ph(vout)
+  *meas ac dc_gain MAX gain_db
   
   * Run Noise Analysis on the Differential Setup
-  noise v(vout) v2 dec 20 1 1G
+  *noise v(vout) v2 dec 20 1 1G
   
   * ==========================================
   * 2. COMMON-MODE RUN (Acm)
   * ==========================================
   * Force both inputs to swing exactly the same way
-  alter v2 ac = 1
-  alter v3 ac = 1 
+  *alter v2 ac = 1
+  *alter v3 ac = 1 
   
-  ac dec 20 1 1G
-  setplot ac2
-  let cm_gain_db = vdb(vout)
+  *ac dec 20 1 1G
+  *setplot ac2
+  *let cm_gain_db = vdb(vout)
   
   * ==========================================
   * 3. CMRR CALCULATION
   * ==========================================
   * CMRR = Differential Gain - Common Mode Gain
-  let cmrr_db = ac1.gain_db - ac2.cm_gain_db
-  meas ac max_cmrr MAX cmrr_db
+  *let cmrr_db = ac1.gain_db - ac2.cm_gain_db
+  *meas ac max_cmrr MAX cmrr_db
   
-  print ac1.dc_gain max_cmrr
+  *print ac1.dc_gain max_cmrr
   
   * Plot everything together
-  plot ac1.gain_db ac2.cm_gain_db title 'Diff Gain vs CM Gain (dB)'
-  plot cmrr_db title 'CMRR (dB)'
+  *plot ac1.gain_db ac2.cm_gain_db title 'Diff Gain vs CM Gain (dB)'
+  *plot cmrr_db title 'CMRR (dB)'
 
   * =========================================
   * 4. NOISE CALCULATION
   * =========================================
 
   * Syntax: noise v(output_node) input_source dec points fstart fstop
-  noise v(vout) v2 dec 20 1 1G
+  *noise v(vout) v2 dec 20 1 1G
   
   * ngspice creates 'noise1' for spectral density and 'noise2' for total noise
-  setplot noise1
+  *setplot noise1
   
   * Plot spectral densities (V/sqrt(Hz))
-  plot inoise_spectrum title 'Input Referred Noise Density'
-  plot onoise_spectrum title 'Output Referred Noise Density'
+  *plot inoise_spectrum title 'Input Referred Noise Density'
+  *plot onoise_spectrum title 'Output Referred Noise Density'
   
   * Calculate and print total integrated input RMS noise over the bandwidth
-  let total_in_noise = sqrt(integ(inoise_spectrum^2))
-  print total_in_noise
+  *let total_in_noise = sqrt(integ(inoise_spectrum^2))
+  *print total_in_noise
 
 
-.endc
+*.endc
 
 *.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
 
@@ -160,7 +174,7 @@ C {code.sym} 235 100 0 0 {name=s1 only_toplevel=false value="
 "}
 C {ipin.sym} 810 -35 0 0 {name=p4 lab=Vin-
 }
-C {vsource.sym} 830 -5 0 0 {name=V3 value=3.333 savecurrent=false}
+C {vsource.sym} 830 -5 0 0 {name=V3 value="DC 3.333 AC -0.5" savecurrent=false}
 C {gnd.sym} 830 25 0 0 {name=l2 lab=0}
 C {gnd.sym} 380 60 0 0 {name=l11 lab=0}
 C {capa.sym} 380 30 0 0 {name=C1
