@@ -74,7 +74,7 @@ C {gnd.sym} 130 -80 0 0 {name=l4 lab=0}
 C {vsource.sym} 350 -110 0 0 {name=V3 value="DC 0 AC -0.5" savecurrent=false}
 C {lab_pin.sym} 260 -140 0 0 {name=p6 sig_type=std_logic lab=Vin-}
 C {gnd.sym} 350 -80 0 0 {name=l5 lab=0}
-C {RN_Gm2/RN_gm2_ota.sym} -70 70 0 0 {name=x1}
+C {RN_gm2_ota.sym} -70 70 0 0 {name=x1}
 C {capa.sym} 90 -140 1 0 {name=C2
 m=1
 value=100m
