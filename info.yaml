@@ -22,7 +22,50 @@ project:
   drc_ready: true
   lvs_ready: true
 
+# Pin assignment list.
+# The official schema requires the first pin to be a ground connection.
+# Physical numbering in the submitted floorplan is P1..P28, starting at the
+# bottom-right and increasing counter-clockwise. Therefore this YAML starts
+# with P9 (GND), then continues counter-clockwise: P10..P28, P1..P8.
+# There are no digital pins in this configuration; all non-power/ground
+# signal pins are represented as analog pads.
+pins:
+  - name: p9
+    io_type: ground
 
+  - name: p10
+    io_type: power
+
+  - name: p11
+    io_type: analog
+    secondary_esd: true
+  - name: p12
+    io_type: analog
+    secondary_esd: true
+  - name: p13
+    io_type: analog
+    secondary_esd: true
+  - name: p14
+    io_type: analog
+    secondary_esd: true
+  - name: p15
+    io_type: analog
+    secondary_esd: true
+  - name: p16
+    io_type: analog
+    secondary_esd: true
+  - name: p17
+    io_type: analog
+    secondary_esd: true
+  - name: p18
+    io_type: analog
+    secondary_esd: true
+  - name: p19
+    io_type: power
+
+  - name: p20
+    io_type: analog
+    secondary_esd: true
   - name: p21
     io_type: analog
     secondary_esd: true
@@ -47,6 +90,7 @@ project:
   - name: p28
     io_type: analog
     secondary_esd: true
+
   - name: p1
     io_type: analog
     secondary_esd: true
