@@ -1,0 +1,73 @@
+# ----- ------ ----- ----- ------ ----- ----- ------ -----
+# Chipathon 2026: Project configuration
+# LICENSE: Apache License Version 2.0
+# http://www.apache.org/licenses/
+# ----- ------ ----- ----- ------ ----- ----- ------ -----
+
+# data will be pulled from main branch of the repo.
+# please be sure that the main branch contains the data you want to submit.
+# This file will be updated with more information later
+
+# ======================================================
+# Project metadata (used for documentation / review)
+# ======================================================
+project:
+  title: "MRTMOS - Compensation Networks Illustration Chip"
+  team: "C05 MRTMOS"
+  discord: "madhavgulati277, tur0922, ramann_696"
+  description: "OTA with Switched Compensation Block"
+  lvs_config: "lvs_config.json"
+  gf_def_ready: true
+  ws_def_ready: true
+  drc_ready: true
+  lvs_ready: true
+
+
+  - name: p21
+    io_type: analog
+    secondary_esd: true
+  - name: p22
+    io_type: analog
+    secondary_esd: true
+  - name: p23
+    io_type: analog
+    secondary_esd: true
+  - name: p24
+    io_type: analog
+    secondary_esd: true
+  - name: p25
+    io_type: analog
+    secondary_esd: true
+  - name: p26
+    io_type: analog
+    secondary_esd: true
+  - name: p27
+    io_type: analog
+    secondary_esd: true
+  - name: p28
+    io_type: analog
+    secondary_esd: true
+  - name: p1
+    io_type: analog
+    secondary_esd: true
+  - name: p2
+    io_type: analog
+    secondary_esd: true
+  - name: p3
+    io_type: analog
+    secondary_esd: true
+  - name: p4
+    io_type: analog
+    secondary_esd: true
+  - name: p5
+    io_type: analog
+    secondary_esd: true
+  - name: p6
+    io_type: analog
+    secondary_esd: true
+  - name: p7
+    io_type: analog
+    secondary_esd: true
+  - name: p8
+    io_type: analog
+    secondary_esd: true
