@@ -3,7 +3,7 @@
   "TOP_LAYOUT": "MRTMOS_chip_final",
   "LAYOUT_FILE": "MRTMOS_final_chip/MRTMOS_chip_final.gds",
   "LVS_SPICE_FILES": [
-    "path/to/your_top_level_netlist.spice"
+    "MRTMOS_final_chip/lvs_netlist.spice"
   ],
   "EXTRACT_FLATPATH": true
 }
