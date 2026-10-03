@@ -1,9 +1,31 @@
 {
-  "TOP_SOURCE": "MRTMOS_chip_final",
-  "TOP_LAYOUT": "MRTMOS_chip_final",
-  "LAYOUT_FILE": "MRTMOS_final_chip/MRTMOS_chip_final.gds",
-  "LVS_SPICE_FILES": [
+    "STD_CELL_LIBRARY": "gf180mcu_fd_sc_mcu7t5v0",
+    "INCLUDE_CONFIGS": [
+        "$LVS_ROOT/tech/$PDK/lvs_config.base.json"
+    ],
+    "TOP_SOURCE": "MRTMOS_chip_final",
+    "TOP_LAYOUT": "MRTMOS_chip_final",
+    "EXTRACT_FLATGLOB": [
+        ""
+    ],
+    "EXTRACT_ABSTRACT": [
+        ""
+    ],
+    "EXTRACT_FLATPATH": true,
+    "LVS_FLATTEN": [
+        ""
+    ],
+    "LVS_NOFLATTEN": [
+        ""
+    ],
+    "LVS_IGNORE": [
+        ""
+    ],
+    "LVS_SPICE_FILES": [
     "MRTMOS_final_chip/lvs_netlist.spice"
-  ],
-  "EXTRACT_FLATPATH": true
+    ],
+    "LVS_VERILOG_FILES": [
+        ""
+    ],
+    "LAYOUT_FILE": "MRTMOS_final_chip/MRTMOS_chip_final.gds"
 }
