@@ -1,0 +1,215 @@
+** ====================================================================
+**  MG_ESD_protection : HBM / CDM / normal-operation test suite
+**  Paste this into the testbench "code" block (or .include it).
+**  Needs top-level nets named: external_input_pin, Vdd, pin_facing_input
+**  and instances x1 (MG_ESD_protection) and x2 (MG_power_clamp_ESD).
+** ====================================================================
+
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice moscap_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice diode_typical
+* cap_mim_2f0fF (clamp RC timer) needs the MIM-cap section too.
+* Check the exact section name with:  grep -n "^.lib" sm141064.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice mimcap_typical
+
+.temp 27
+.options reltol=1e-3 abstol=1e-12 vntol=1e-6 gmin=1e-12 method=gear
+
+* ---------------- helper switch model ----------------
+.model SWM SW(vt=0.5 vh=0.1 ron=0.1 roff=1e12)
+
+* ---------------- load on the protected node ----------------
+* stands in for the gate of the circuit being protected
+Cgate pin_facing_input 0 100f
+
+* ---------------- supply: floating / DC 5 V / ramp ----------------
+* Vsupc=0 -> Vdd floating | Vsupc=1 -> connected
+* Vpre=1  -> Vdd = 5 V from t=0 | Vpre=0 -> ramp starting at 1 us
+* Vrate   -> ramp speed in 1/s (1e6 = 1 us ramp, 1e3 = 1 ms ramp)
+Bsup  vdd_src 0 V = 5*( v(vpre) + (1-v(vpre))*min(1,max(0,(time-1u)*v(vrate))) )
+Vpre  vpre  0 dc 0
+Vrate vrate 0 dc 1e6
+Ssup  vdd_src Vdd supc 0 SWM
+Vsupc supc  0 dc 0
+
+* ---------------- HBM source (JS-001 style: 100 pF, 1.5 k) ----------------
+* Vch = charge voltage (+ve or -ve). Schg charges Chbm until 9 ns,
+* Sdis connects it to the pad from 10 ns.  L sets a ~7 ns rise time.
+Vch   hbm_ch 0 dc 0
+Schg  hbm_ch hbm_c ctl_chg 0 SWM
+Chbm  hbm_c 0 100p
+Sdis  hbm_c hbm_a ctl_dis 0 SWM
+Rhbm  hbm_a hbm_b 1.5k
+Lhbm  hbm_b hbm_d 5u
+Vsns_hbm hbm_d external_input_pin 0
+Vctl_chg ctl_chg 0 pulse(1 0 9n 0.1n 0.1n 10 20)
+Vctl_dis ctl_dis 0 pulse(0 1 10n 0.1n 0.1n 10 20)
+
+* ---------------- CDM source: current pulse into the pad ----------------
+* i(t) = Vcdm * 1.87 * (exp(-t/500p) - exp(-t/100p)),  t starts at 1 ns
+* 1.87 normalises the peak to 1, so Vcdm [V] = peak current [A].
+* ~0.1 ns rise, ~0.6 ns FWHM (representative, slightly harsh).
+Vcdm cdm_amp 0 dc 0
+Bcdm 0 external_input_pin I = v(cdm_amp)*1.87*(exp(-(time-1n)/500p)-exp(-(time-1n)/100p))*u(time-1n)
+
+* ---------------- pad drive for DC / AC tests ----------------
+Vin   in_drv 0 dc 0 ac 1
+Sin   in_drv in_x vinc 0 SWM
+Vsns_in in_x external_input_pin 0
+Vinc  vinc 0 dc 0
+
+.control
+set noaskquit
+set vgate_lim = 8      ; max allowed |V| on pin_facing_input [V]  (PLACEHOLDER - use your
+                       ; PDK / reliability limit for the protected gate)
+set vdd_lim   = 9      ; max allowed Vdd during a zap [V]         (PLACEHOLDER)
+set leak_lim  = 1u     ; max pad leakage in normal range [A]
+
+* =====================================================================
+*  TEST 1 : HBM, +2 kV, pad -> GND, Vdd floating   (PS mode)
+*           path: upper diodes -> Vdd -> power clamp -> GND
+* =====================================================================
+alter vsupc = 0
+alter vinc  = 0
+alter vcdm  = 0
+alter vch   = 2000
+tran 0.1n 800n 0 0.2n
+meas tran hbm_ps_ipk   MAX i(vsns_hbm)
+meas tran hbm_ps_vpad  MAX v(external_input_pin)
+meas tran hbm_ps_vdd   MAX v(vdd)
+meas tran hbm_ps_vgate MAX v(pin_facing_input)
+meas tran hbm_ps_vclmp MAX v(x2.clamp)
+echo
+echo "=== TEST 1: HBM +2kV (PS) ==="
+if $&hbm_ps_vgate < $vgate_lim
+  echo "PASS: protected node peak below $vgate_lim V"
+else
+  echo "FAIL: protected node peak above $vgate_lim V"
+end
+if $&hbm_ps_vdd < $vdd_lim
+  echo "PASS: Vdd peak below $vdd_lim V"
+else
+  echo "FAIL: Vdd peak above $vdd_lim V"
+end
+if $&hbm_ps_vclmp > 2
+  echo "PASS: clamp gate reached > 2 V (clamp turned on)"
+else
+  echo "FAIL: clamp gate never turned on"
+end
+plot v(external_input_pin) v(vdd) v(pin_facing_input) title 'HBM +2kV PS: pad / Vdd / protected node'
+plot i(vsns_hbm) title 'HBM +2kV PS: injected pad current [A]'
+plot v(x2.clamp) v(x2.net1) v(vdd) title 'HBM +2kV PS: clamp gate (x2.clamp), RC node (x2.net1), Vdd'
+
+* =====================================================================
+*  TEST 2 : HBM, -2 kV, pad -> GND   (NS mode)
+*           path: GND -> lower diodes (forward) -> pad
+* =====================================================================
+alter vch = -2000
+tran 0.1n 800n 0 0.2n
+meas tran hbm_ns_ipk   MIN i(vsns_hbm)
+meas tran hbm_ns_vpad  MIN v(external_input_pin)
+meas tran hbm_ns_vgate MIN v(pin_facing_input)
+echo
+echo "=== TEST 2: HBM -2kV (NS) ==="
+if $&hbm_ns_vgate > -$vgate_lim
+  echo "PASS: protected node minimum above -$vgate_lim V"
+else
+  echo "FAIL: protected node below -$vgate_lim V"
+end
+plot v(external_input_pin) v(pin_facing_input) title 'HBM -2kV NS: pad / protected node'
+plot i(vsns_hbm) title 'HBM -2kV NS: injected pad current [A]'
+
+* =====================================================================
+*  TEST 3 : CDM, +5 A and -5 A pulses at the pad, Vdd floating
+*           (change the 5 / -5 below for other CDM levels; see JS-002)
+* =====================================================================
+alter vch  = 0
+alter vcdm = 5
+tran 5p 20n 0 10p
+meas tran cdm_p_vgate MAX v(pin_facing_input)
+meas tran cdm_p_vdd   MAX v(vdd)
+meas tran cdm_p_vpad  MAX v(external_input_pin)
+echo
+echo "=== TEST 3a: CDM +5 A ==="
+if $&cdm_p_vgate < $vgate_lim
+  echo "PASS: protected node peak below $vgate_lim V"
+else
+  echo "FAIL: protected node peak above $vgate_lim V"
+end
+plot v(external_input_pin) v(vdd) v(pin_facing_input) title 'CDM +5A: pad / Vdd / protected node'
+
+alter vcdm = -5
+tran 5p 20n 0 10p
+meas tran cdm_n_vgate MIN v(pin_facing_input)
+meas tran cdm_n_vpad  MIN v(external_input_pin)
+echo
+echo "=== TEST 3b: CDM -5 A ==="
+if $&cdm_n_vgate > -$vgate_lim
+  echo "PASS: protected node minimum above -$vgate_lim V"
+else
+  echo "FAIL: protected node below -$vgate_lim V"
+end
+plot v(external_input_pin) v(pin_facing_input) title 'CDM -5A: pad / protected node'
+
+* =====================================================================
+*  TEST 4 : NORMAL OPERATION (the protection must stay invisible)
+*   4a  DC sweep of the pad, Vdd = 5 V : leakage + where diodes turn on
+*   4b  AC response pad -> protected node (bandwidth cost of the R + diodes)
+*   4c  Power-up ramps : clamp must NOT turn on (1 us and 1 ms ramps)
+* =====================================================================
+alter vcdm  = 0
+alter vsupc = 1
+alter vpre  = 1
+alter vinc  = 1
+
+* ---- 4a ----
+dc vin -1.5 6.5 0.02
+let ipad = abs(i(vsns_in))
+meas dc leak_max MAX ipad FROM=0 TO=5
+echo
+echo "=== TEST 4a: DC leakage, pad 0..5 V, Vdd=5 V ==="
+if $&leak_max < $leak_lim
+  echo "PASS: leakage below $leak_lim A"
+else
+  echo "FAIL: leakage above $leak_lim A"
+end
+plot ylog ipad vs v(external_input_pin) title 'DC |I(pad)| vs V(pad), Vdd=5V (diodes should conduct only outside 0..5V)'
+plot v(pin_facing_input) vs v(external_input_pin) title 'DC transfer: protected node vs pad'
+
+* ---- 4b ----
+alter vin = 2.5
+ac dec 20 1k 10G
+meas ac bw_3db WHEN vdb(pin_facing_input)=-3 FALL=1
+echo
+echo "=== TEST 4b: -3 dB bandwidth through the protection network [Hz] ==="
+print bw_3db
+plot vdb(pin_facing_input) title 'AC: protected node / pad [dB]'
+
+* ---- 4c ----
+alter vin   = 0
+alter vinc  = 0
+alter vpre  = 0
+alter vrate = 1e6
+tran 5n 6u
+meas tran pu_fast_vclmp MAX v(x2.clamp)
+alter vrate = 1e3
+tran 100n 1.2m
+meas tran pu_slow_vclmp MAX v(x2.clamp)
+echo
+echo "=== TEST 4c: power-up false-trigger check (max clamp-gate voltage) ==="
+echo "fast (1 us) ramp:"
+print pu_fast_vclmp
+if $&pu_slow_vclmp < 0.3
+  echo "PASS: 1 ms ramp does not trigger the clamp"
+else
+  echo "FAIL: 1 ms ramp triggers the clamp"
+end
+plot v(vdd) v(x2.clamp) v(x2.net1) title 'Power-up 1 ms ramp: Vdd, clamp gate, RC node'
+
+echo
+echo "All tests done."
+.endc
+
+.end

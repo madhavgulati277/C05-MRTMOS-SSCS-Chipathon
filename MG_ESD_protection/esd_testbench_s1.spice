@@ -1,0 +1,382 @@
+* ====================================================================
+* ESD TESTBENCH  (paste into the xschem code block s1, replace the old
+* code block AND the old top-level code).  No double quotes are used so
+* it can live inside value="..." in xschem.
+*
+* SCHEMATIC EDITS REQUIRED (see reply):
+*   - delete R1, C1 (and old R_VDD_leak / C_load lines)
+*   - chip ground pins of x1 and x2 go to a net labelled VSS (NOT node 0)
+*   - keep instance names x1 (input protection) and x2 (power clamp)
+*   - nets used here: external_input_pin, Vdd, VSS, pin_facing_input
+*
+* NOT simulated by SPICE: snapback, thermal failure, latch-up.
+* Use results as voltage-window / current-density checks, then confirm
+* with TLP on silicon.
+* ====================================================================
+
+* ---------------- 0. PDK (unchanged from yours) ----------------
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice mimcap_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice cap_mim
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice diode_typical
+
+.options method=gear reltol=1e-3 abstol=1e-12 vntol=1e-6 gmin=1e-13 itl4=300
+
+* ---------------- 1. Switch models ----------------
+.model SWREF sw vt=0.5 vh=0.1 ron=0.01 roff=1e13
+.model SWZAP sw vt=0.5 vh=0.1 ron=0.05 roff=1e12
+
+* ---------------- 2. Chip-side environment ----------------
+* Reference pin is tied to tester ground (node 0) through a switch;
+* un-referenced rails FLOAT (1G leak only, for DC solvability).
+S_REF_VSS VSS 0 en_vss 0 SWREF
+S_REF_VDD Vdd 0 en_vdd 0 SWREF
+R_LEAK_VSS VSS 0 1G
+R_LEAK_VDD Vdd 0 1G
+* die / package parasitics to tester ground
+C_PAR_VSS VSS 0 4p
+C_PAR_VDD Vdd 0 1p
+* on-chip decap between rails (try 10p ... 1n: it matters a lot)
+C_DECAP Vdd VSS 100p
+V_EN_VSS en_vss 0 DC 1
+V_EN_VDD en_vdd 0 DC 0
+
+* Normal supply (for leakage / power-up tests)
+V_SUP sup 0 DC 0 PULSE(0 5.5 10n 10u 10u 1 2)
+S_SUP sup Vdd en_sup 0 SWREF
+V_EN_SUP en_sup 0 DC 0
+
+* Pad bias / AC source (for DC and AC checks)
+V_PADB padb 0 DC 0 AC 1
+S_PADB padb external_input_pin en_padb 0 SWREF
+V_EN_PADB en_padb 0 DC 0
+
+* Short from pad to VSS (tester calibration)
+S_CAL external_input_pin VSS en_cal 0 SWREF
+V_EN_CAL en_cal 0 DC 0
+
+* Realistic input buffer so gate-oxide stress is meaningful
+XMN_IN buf_out pin_facing_input VSS VSS nfet_05v0 L=0.6u W=2u
+XMP_IN buf_out pin_facing_input Vdd Vdd pfet_05v0 L=0.5u W=4u
+C_BUF buf_out 0 20f
+
+* ---------------- 3. Zap timing ----------------
+* charge switch closed until 1 ns, zap switch closes at 2 ns
+V_CTL_CHG ctl_chg 0 PULSE(1 0 1n 10p 10p 10 20)
+V_CTL_ZAP ctl_zap 0 PULSE(0 1 2n 10p 10p 10 20)
+
+* ---------------- 4. HBM generator (JS-001: 100 pF, 1.5 kohm) ----------------
+* C_HBM is charged through S_CHG at the DC operating point (no UIC needed)
+V_CHG chg 0 DC 2000
+S_CHG chg hbm_node ctl_chg 0 SWZAP
+C_HBM hbm_node 0 100p
+S_ZAP hbm_node hbm_r ctl_zap 0 SWZAP
+R_HBM hbm_r hbm_l 1.5k
+L_HBM hbm_l hbm_int 7.5u
+* select where the zap is injected: pad, or the VDD pin
+V_EN_PAD en_pad 0 DC 1
+V_EN_VDDZ en_vddz 0 DC 0
+B_GPAD g_pad 0 V = v(ctl_zap)*v(en_pad)
+B_GVDD g_vdd 0 V = v(ctl_zap)*v(en_vddz)
+S_TO_PAD hbm_int external_input_pin g_pad 0 SWZAP
+S_TO_VDD hbm_int Vdd g_vdd 0 SWZAP
+
+* ---------------- 5. CDM generator (behavioural, JS-002 style) ----------------
+* Relativity trick: the DIE stays at 0 V (VSS tied to node 0) and the
+* ground plane node gp is pre-charged to -Vcdm.  Die charged to +V  <=>
+* gp charged to -V.  Calibrate L_CDM / R_CDM with TEST 0b.
+V_CDM cdm_src 0 DC 0
+V_EN_CDM en_cdm 0 DC 0
+B_CCHG ctl_cchg 0 V = v(ctl_chg)*v(en_cdm)
+B_CZAP ctl_czap 0 V = v(ctl_zap)*v(en_cdm)
+S_CDMCHG cdm_src gp ctl_cchg 0 SWZAP
+C_DEV gp 0 4p
+R_LEAK_GP gp 0 1G
+S_CDM external_input_pin cdm_a ctl_czap 0 SWZAP
+R_CDM cdm_a cdm_b 5
+L_CDM cdm_b gp 30n
+
+* ====================================================================
+* 6. TEST CONTROL
+* ====================================================================
+.control
+* graphs ON by default; HBM sweep graphs are drawn only at temperature plot_temp
+* ---- results log: truncated at start, every echo below appends to it ----
+shell rm -f /foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_ESD_protection/ESD_simulation_results.txt
+echo ESD simulation results >> /foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_ESD_protection/ESD_simulation_results.txt
+shell date >> /foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_ESD_protection/ESD_simulation_results.txt
+set do_plot = 1
+set plot_temp = 27
+set levels = ( 500 1000 2000 )
+set temps = ( 27 125 )
+* PLACEHOLDER limits - replace with GF180MCU numbers for your devices
+let VLIM_RAIL = 8
+let VLIM_GOX  = 10
+
+* ------------------------------------------------------------------
+* TEST 0a : HBM tester calibration, +2 kV into a short
+*   JS-001 targets: Ipeak 1.2-1.48 A, rise(10-90) 2-10 ns, decay 130-170 ns
+* ------------------------------------------------------------------
+echo ===== TEST 0a : HBM calibration into short =====
+echo ===== TEST 0a : HBM calibration into short ===== >> /foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_ESD_protection/ESD_simulation_results.txt
+option temp = 27
+alter V_CHG dc = 2000
+alter V_EN_VSS dc = 1
+alter V_EN_VDD dc = 0
+alter V_EN_PAD dc = 1
+alter V_EN_VDDZ dc = 0
+alter V_EN_CDM dc = 0
+alter V_EN_CAL dc = 1
+tran 0.05n 1u 0 0.1n
+let ipk = maximum(l_hbm#branch)
+let i10 = 0.1*ipk
+let i90 = 0.9*ipk
+let i37 = 0.368*ipk
+meas tran t10 WHEN l_hbm#branch=$&i10 RISE=1
+meas tran t90 WHEN l_hbm#branch=$&i90 RISE=1
+meas tran t37 WHEN l_hbm#branch=$&i37 FALL=1
+let trise = t90 - t10
+let tdecay = t37 - t10
+echo HBM short: Ipeak=$&ipk A  rise=$&trise s  decay=$&tdecay s
+echo HBM short: Ipeak=$&ipk A  rise=$&trise s  decay=$&tdecay s >> /foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_ESD_protection/ESD_simulation_results.txt
+if $do_plot = 1
+  plot l_hbm#branch title HBM_calibration_into_short
+end
+alter V_EN_CAL dc = 0
+
+* ------------------------------------------------------------------
+* TEST 0b : CDM calibration, die charged +500 V, pad shorted to VSS
+*   JS-002 (4 pF module, 500 V) approx: Ipeak ~5.75 A, rise < 400 ps
+*   -> tune L_CDM / R_CDM until it matches (verify against the standard)
+* ------------------------------------------------------------------
+echo ===== TEST 0b : CDM calibration into short =====
+echo ===== TEST 0b : CDM calibration into short ===== >> /foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_ESD_protection/ESD_simulation_results.txt
+alter V_CHG dc = 0
+alter V_EN_PAD dc = 0
+alter V_EN_CDM dc = 1
+alter V_EN_VSS dc = 1
+alter V_EN_VDD dc = 0
+alter V_EN_CAL dc = 1
+alter V_CDM dc = -500
+tran 2p 12n 0 5p
+let icdm = maximum(abs(l_cdm#branch))
+echo CDM short: Ipeak=$&icdm A
+echo CDM short: Ipeak=$&icdm A >> /foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_ESD_protection/ESD_simulation_results.txt
+if $do_plot = 1
+  plot l_cdm#branch title CDM_calibration_into_short
+end
+alter V_EN_CAL dc = 0
+
+* ------------------------------------------------------------------
+* TEST 1 : HBM, all stress modes x levels x temperatures
+*   1 PS  pad+  ref VSS   (VDD floating)   -> input diode + clamp
+*   2 NS  pad-  ref VSS   (VDD floating)   -> bottom diode
+*   3 PD  pad+  ref VDD   (VSS floating)   -> top diode
+*   4 ND  pad-  ref VDD   (VSS floating)   -> bottom diode + clamp
+*   5 VDD-PS  VDD+ ref VSS (pad floating)  -> clamp
+*   6 VDD-NS  VDD- ref VSS (pad floating)  -> clamp body diode
+* ------------------------------------------------------------------
+echo ===== TEST 1 : HBM sweep =====
+echo ===== TEST 1 : HBM sweep ===== >> /foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_ESD_protection/ESD_simulation_results.txt
+alter V_EN_CDM dc = 0
+alter V_EN_CAL dc = 0
+foreach tc $temps
+  option temp = $tc
+  foreach vz $levels
+    foreach m 1 2 3 4 5 6
+      alter V_EN_PAD dc = 1
+      alter V_EN_VDDZ dc = 0
+      if $m = 1
+        set mname = PS
+        alter V_CHG dc = $vz
+        alter V_EN_VSS dc = 1
+        alter V_EN_VDD dc = 0
+      end
+      if $m = 2
+        set mname = NS
+        alter V_CHG dc = -$vz
+        alter V_EN_VSS dc = 1
+        alter V_EN_VDD dc = 0
+      end
+      if $m = 3
+        set mname = PD
+        alter V_CHG dc = $vz
+        alter V_EN_VSS dc = 0
+        alter V_EN_VDD dc = 1
+      end
+      if $m = 4
+        set mname = ND
+        alter V_CHG dc = -$vz
+        alter V_EN_VSS dc = 0
+        alter V_EN_VDD dc = 1
+      end
+      if $m = 5
+        set mname = VDD_PS
+        alter V_CHG dc = $vz
+        alter V_EN_VSS dc = 1
+        alter V_EN_VDD dc = 0
+        alter V_EN_PAD dc = 0
+        alter V_EN_VDDZ dc = 1
+      end
+      if $m = 6
+        set mname = VDD_NS
+        alter V_CHG dc = -$vz
+        alter V_EN_VSS dc = 1
+        alter V_EN_VDD dc = 0
+        alter V_EN_PAD dc = 0
+        alter V_EN_VDDZ dc = 1
+      end
+      tran 0.05n 1.5u 0 0.1n
+      let ipk   = maximum(abs(l_hbm#branch))
+      let vpad  = maximum(abs(v(external_input_pin)))
+      let vrail = maximum(abs(v(Vdd)-v(VSS)))
+      let vgox1 = maximum(abs(v(pin_facing_input)-v(VSS)))
+      let vgox2 = maximum(abs(v(pin_facing_input)-v(Vdd)))
+      echo T=$tc V=$vz MODE=$mname Ipk=$&ipk Vpad=$&vpad Vrail=$&vrail Vgate_VSS=$&vgox1 Vgate_VDD=$&vgox2
+      echo T=$tc V=$vz MODE=$mname Ipk=$&ipk Vpad=$&vpad Vrail=$&vrail Vgate_VSS=$&vgox1 Vgate_VDD=$&vgox2 >> /foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_ESD_protection/ESD_simulation_results.txt
+      if $&vrail > $&VLIM_RAIL
+        echo    FAIL: rail overstress
+        echo    FAIL: rail overstress >> /foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_ESD_protection/ESD_simulation_results.txt
+      end
+      if $&vgox1 > $&VLIM_GOX
+        echo    FAIL: gate-oxide overstress (vs VSS)
+        echo    FAIL: gate-oxide overstress (vs VSS) >> /foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_ESD_protection/ESD_simulation_results.txt
+      end
+      if $&vgox2 > $&VLIM_GOX
+        echo    FAIL: gate-oxide overstress (vs VDD)
+        echo    FAIL: gate-oxide overstress (vs VDD) >> /foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_ESD_protection/ESD_simulation_results.txt
+      end
+      if $do_plot = 1
+        if $tc = $plot_temp
+          echo    (graphs: current window then voltage window for T=$tc V=$vz MODE=$mname)
+          echo    (graphs: current window then voltage window for T=$tc V=$vz MODE=$mname) >> /foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_ESD_protection/ESD_simulation_results.txt
+          plot l_hbm#branch title HBM_current_$mname
+          plot v(external_input_pin) v(Vdd) v(VSS) v(pin_facing_input) v(x2.clamp) title HBM_voltages_$mname
+          plot v(Vdd)-v(VSS) v(pin_facing_input)-v(VSS) v(pin_facing_input)-v(Vdd) title HBM_stress_vs_rails_$mname
+        end
+      end
+    end
+  end
+end
+
+* ------------------------------------------------------------------
+* TEST 2 : CDM (pad discharge, die charged +/-), 250 V and 500 V
+* ------------------------------------------------------------------
+echo ===== TEST 2 : CDM =====
+echo ===== TEST 2 : CDM ===== >> /foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_ESD_protection/ESD_simulation_results.txt
+option temp = 27
+alter V_CHG dc = 0
+alter V_EN_PAD dc = 0
+alter V_EN_VDDZ dc = 0
+alter V_EN_CAL dc = 0
+alter V_EN_CDM dc = 1
+alter V_EN_VSS dc = 1
+alter V_EN_VDD dc = 0
+foreach vc 250 500
+  foreach pol 1 -1
+    if $pol = 1
+      alter V_CDM dc = -$vc
+    else
+      alter V_CDM dc = $vc
+    end
+    tran 2p 12n 0 5p
+    let icdm  = maximum(abs(l_cdm#branch))
+    let vpad  = maximum(abs(v(external_input_pin)))
+    let vrail = maximum(abs(v(Vdd)-v(VSS)))
+    let vgox1 = maximum(abs(v(pin_facing_input)-v(VSS)))
+    let vgox2 = maximum(abs(v(pin_facing_input)-v(Vdd)))
+    echo CDM V=$vc pol=$pol Ipk=$&icdm Vpad=$&vpad Vrail=$&vrail Vgate_VSS=$&vgox1 Vgate_VDD=$&vgox2
+    echo CDM V=$vc pol=$pol Ipk=$&icdm Vpad=$&vpad Vrail=$&vrail Vgate_VSS=$&vgox1 Vgate_VDD=$&vgox2 >> /foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_ESD_protection/ESD_simulation_results.txt
+    if $&vgox1 > $&VLIM_GOX
+      echo    FAIL: gate-oxide overstress (vs VSS)
+      echo    FAIL: gate-oxide overstress (vs VSS) >> /foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_ESD_protection/ESD_simulation_results.txt
+    end
+    if $&vgox2 > $&VLIM_GOX
+      echo    FAIL: gate-oxide overstress (vs VDD)
+      echo    FAIL: gate-oxide overstress (vs VDD) >> /foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_ESD_protection/ESD_simulation_results.txt
+    end
+    if $do_plot = 1
+      echo    (graphs for CDM V=$vc pol=$pol)
+      echo    (graphs for CDM V=$vc pol=$pol) >> /foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_ESD_protection/ESD_simulation_results.txt
+      plot l_cdm#branch title CDM_current
+      plot v(external_input_pin) v(Vdd) v(VSS) v(pin_facing_input) title CDM_voltages
+      plot v(pin_facing_input)-v(VSS) v(pin_facing_input)-v(Vdd) title CDM_gate_stress
+    end
+  end
+end
+
+* ------------------------------------------------------------------
+* TEST 3 : normal operation, DC leakage of the rail (clamp must be OFF)
+* ------------------------------------------------------------------
+echo ===== TEST 3 : VDD leakage vs voltage =====
+echo ===== TEST 3 : VDD leakage vs voltage ===== >> /foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_ESD_protection/ESD_simulation_results.txt
+alter V_EN_CDM dc = 0
+alter V_EN_PAD dc = 0
+alter V_EN_VDDZ dc = 0
+alter V_CHG dc = 0
+alter V_EN_VSS dc = 1
+alter V_EN_VDD dc = 0
+alter V_EN_SUP dc = 1
+foreach tc 27 125
+  option temp = $tc
+  dc V_SUP 0 7 0.05
+  meas dc ileak55 FIND i(V_SUP) AT=5.5
+  echo T=$tc  I(VDD) at 5.5 V = $&ileak55 A   (target: nA range)
+  echo T=$tc  I(VDD) at 5.5 V = $&ileak55 A   (target: nA range) >> /foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_ESD_protection/ESD_simulation_results.txt
+  if $do_plot = 1
+    plot -i(V_SUP) title VDD_leakage_vs_VDD
+  end
+end
+
+* ------------------------------------------------------------------
+* TEST 4 : power-up ramp false-trigger check (clamp must stay OFF)
+* ------------------------------------------------------------------
+echo ===== TEST 4 : power-up ramps =====
+echo ===== TEST 4 : power-up ramps ===== >> /foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_ESD_protection/ESD_simulation_results.txt
+option temp = 27
+foreach trmp 100n 1u 10u 100u
+  alter V_SUP pulse = [ 0 5.5 10n $trmp $trmp 1 2 ]
+  tran 1n 150u 0 20n
+  let isup = maximum(abs(i(V_SUP)))
+  let vcl  = maximum(v(x2.clamp))
+  echo ramp=$trmp Isup_pk=$&isup A  clamp_gate_pk=$&vcl V
+  echo ramp=$trmp Isup_pk=$&isup A  clamp_gate_pk=$&vcl V >> /foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_ESD_protection/ESD_simulation_results.txt
+  if $do_plot = 1
+    plot v(Vdd) v(x2.clamp) title POWERUP
+    plot -i(V_SUP) title POWERUP_supply_current
+  end
+end
+
+* ------------------------------------------------------------------
+* TEST 5 : pad DC (diode turn-on / leakage) and AC (input bandwidth)
+* ------------------------------------------------------------------
+echo ===== TEST 5 : pad DC and AC =====
+echo ===== TEST 5 : pad DC and AC ===== >> /foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_ESD_protection/ESD_simulation_results.txt
+alter V_EN_SUP dc = 1
+alter V_SUP dc = 5
+alter V_EN_PADB dc = 1
+dc V_PADB -1 6.5 0.05
+if $do_plot = 1
+  plot -i(V_PADB) title PAD_DC_current
+end
+alter V_PADB dc = 2.5
+ac dec 20 1e6 20g
+meas ac f3db WHEN vdb(pin_facing_input)=-3 FALL=1
+echo Input path -3 dB bandwidth = $&f3db Hz
+echo Input path -3 dB bandwidth = $&f3db Hz >> /foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_ESD_protection/ESD_simulation_results.txt
+if $do_plot = 1
+  plot vdb(pin_facing_input) title INPUT_PATH_AC
+end
+alter V_EN_PADB dc = 0
+
+echo ===== DONE =====
+echo ===== DONE ===== >> /foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_ESD_protection/ESD_simulation_results.txt
+* ---------------- Pass criteria ----------------
+* Vrail (VDD-VSS peak)  < VLIM_RAIL
+* Vgate peak            < VLIM_GOX, in every mode and in CDM
+* Ipk / number of parallel diodes (6 per side) < It2 per diode (TLP data)
+* Clamp (x2) current    < clamp It2 (TLP)
+* Leakage at 5.5 V and 125C small; no clamp turn-on for ramps >= ~10 us
+.endc

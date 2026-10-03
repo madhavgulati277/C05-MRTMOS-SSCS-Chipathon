@@ -1,0 +1,96 @@
+* =====================================================================
+* HBM test code for MG_ESD_protection (paste into the xschem code block)
+* In the testbench schematic: delete R1 (1k on Vdd) or set it to 1Meg.
+* Keep C1 (1n), x1, x2, C_load. Do NOT keep the old V1 0V source on Vdd.
+* =====================================================================
+
+* --- 1. GF180MCU PDK libraries (unchanged) ---
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice mimcap_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice cap_mim
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice diode_typical
+
+* --- 2. Test parameters (changed by alterparam in the .control block) ---
+.param VHBM=2000
+.param RVDD=1m
+
+* --- 3. Vdd rail: 1m ohm = "Vdd grounded", 1G = "Vdd floating" ---
+Rvdd Vdd 0 {RVDD}
+
+* --- 4. HBM source: 100pF / 1.5k, plus 7.5uH tester/package inductance
+*        (gives a ~5 ns rise time; delete L_HBM and connect R_HBM to Vin for the plain RC model)
+C_HBM hbm_node 0 100p ic={VHBM}
+R_HBM hbm_node hbm_l 1.5k
+L_HBM hbm_l Vin 7.5u
+
+* --- 5. PRIMARY protection stand-in (placeholder for the PDK analog pad cell's HBM diodes)
+*        4 x (20u x 20u) per diode = 320 um perimeter each. Replace with the
+*        gf180mcu_fd_io__asig_5p0 cell netlist when you have it.
+DP1 Vin Vdd diode_pd2nw_06v0 area='20u*20u' pj='4*20u' m=4
+DP2 0 Vin diode_nd2ps_06v0 area='20u*20u' pj='4*20u' m=4
+
+* --- 6. Internal logic dummy load ---
+C_load Vout 0 50f
+
+* --- 7. Simulation control ---
+.options method=gear reltol=1e-4
+
+.control
+* uic is REQUIRED so the capacitor starts at +/-VHBM
+
+* ---------- CASE 1: +2kV on pin, Vdd grounded (pin -> Vdd diode path) ----------
+alterparam VHBM = 2000
+alterparam RVDD = 1m
+reset
+tran 0.1n 1u uic
+let ihbm  = (v(hbm_node) - v(hbm_l)) / 1.5k
+let ipk   = maximum(abs(ihbm))
+let vpad  = maximum(abs(v(vin)))
+let vcore = maximum(abs(v(vout)))
+let vrail = maximum(abs(v(vdd)))
+let vdrop = maximum(abs(v(vin) - v(vout)))
+echo "=== CASE 1: +2kV, Vdd grounded ==="
+print ipk vpad vcore vrail vdrop
+plot ihbm title 'Case 1: HBM current (A)'
+plot v(vin) v(vout) title 'Case 1: pad and protected node'
+
+* ---------- CASE 2: -2kV on pin, Vdd grounded (GND -> pin diode path) ----------
+alterparam VHBM = -2000
+alterparam RVDD = 1m
+reset
+tran 0.1n 1u uic
+let ihbm  = (v(hbm_node) - v(hbm_l)) / 1.5k
+let ipk   = maximum(abs(ihbm))
+let vpad  = maximum(abs(v(vin)))
+let vcore = maximum(abs(v(vout)))
+let vrail = maximum(abs(v(vdd)))
+let vdrop = maximum(abs(v(vin) - v(vout)))
+echo "=== CASE 2: -2kV, Vdd grounded ==="
+print ipk vpad vcore vrail vdrop
+plot v(vin) v(vout) title 'Case 2: pad and protected node'
+
+* ---------- CASE 3: +2kV on pin, Vdd FLOATING (pin -> Vdd -> power clamp -> GND) ----------
+alterparam VHBM = 2000
+alterparam RVDD = 1G
+reset
+tran 0.1n 1u uic
+let ihbm  = (v(hbm_node) - v(hbm_l)) / 1.5k
+let ipk   = maximum(abs(ihbm))
+let vpad  = maximum(abs(v(vin)))
+let vcore = maximum(abs(v(vout)))
+let vrail = maximum(abs(v(vdd)))
+let vdrop = maximum(abs(v(vin) - v(vout)))
+echo "=== CASE 3: +2kV, Vdd floating (tests the power clamp) ==="
+print ipk vpad vcore vrail vdrop
+plot v(vin) v(vdd) v(vout) title 'Case 3: pad, rail and protected node'
+
+* Reading the results:
+*   ipk   ~ 1.3 A                sanity check on the source
+*   vpad  = voltage at the pad (with the primary clamp present)
+*   vcore = voltage the gate sees
+*   vrail = Vdd rail peak (Case 3 is the one that matters)
+*   vdrop / R_cdm = current through the CDM resistor
+* ngspice has no breakdown / thermal-failure model: also check current per um of diode perimeter.
+.endc
