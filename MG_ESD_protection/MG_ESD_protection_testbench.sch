@@ -48,6 +48,9 @@ I_ESD 0 external_input_pin PWL(0 0 1n 0)
 C_load pin_facing_input 0 100f
 Rleak Vdd 0 1G
 
+* Add a controllable voltage source for Vdd (Assuming 3.3V - change to 5.0 if using 5V IOs)
+V_power Vdd 0 PWL(0 0)
+
 .control
 
   * ==========================================
@@ -55,9 +58,11 @@ Rleak Vdd 0 1G
   * Peak Current: ~1.33A, Rise: 5ns, Decay: ~150ns
   * ==========================================
   alter @I_ESD[pwl] = [ 0 0 5n 1.33 155n 0.49 305n 0.18 500n 0 ]
+
+
   
   * Run Transient Simulation (500ns duration, 1ns steps)
-  tran 0.1n 500n
+  tran 250n 1
   
   * Extract Peak Voltages
   meas tran V_pad_max_HBM MAX v(external_input_pin)
@@ -71,28 +76,96 @@ Rleak Vdd 0 1G
   * Plot HBM Waveforms
   plot v(external_input_pin) v(pin_facing_input) title 'HBM 2kV ESD Event' ylabel 'Voltage (V)' xlabel 'Time (s)'
   plot v(pin_facing_input) title 'HBM 2kV ESD Event' ylabel 'Voltage (V)' xlabel 'Time (s)'
+  plot v(Vdd) title 'HBM 2kV ESD Event' ylabel 'Vdd' xlabel 'Time'
 
+
+
+
+* ==========================================
+  * 3b. HBM - Power ON 1us after strike ends
+  * Vdd ramps from 0V to 3.3V starting at 1.5us
+  * ==========================================
+*  alter @I_ESD[pwl] = [ 0 0 5n 1.33 155n 0.49 305n 0.18 500n 0 ]
+*  alter @V_power[pwl] = [ 0 0 1.5u 0 1.6u 5 6u 5 ]
+  
+*  tran 0.1n 60u
+  
+*  meas tran V_pad_max_HBM_after MAX v(external_input_pin)
+*  meas tran V_core_max_HBM_after MAX v(pin_facing_input)
+  
+*  print V_pad_max_HBM_after V_core_max_HBM_after
+*  plot v(external_input_pin) v(pin_facing_input) title 'HBM (Power ON at 1.5us)' ylabel 'Voltage (V)'
+*  plot v(Vdd) title 'HBM Vdd Supply (Delayed Power)' ylabel 'Vdd'
+
+  * ==========================================
+  * 3c. HBM - Powered ON during strike
+  * Vdd is constant at 3.3V the entire time
+  * ==========================================
+*  alter @I_ESD[pwl] = [ 0 0 5n 1.33 155n 0.49 305n 0.18 500n 0 ]
+*  alter @V_power[pwl] = [ 0 5 6u 5 ]
+  
+*  tran 0.1n 60u
+ 
+*  meas tran V_pad_max_HBM_on MAX v(external_input_pin)
+*  meas tran V_core_max_HBM_on MAX v(pin_facing_input)
+ 
+*  print V_pad_max_HBM_on V_core_max_HBM_on
+*  plot v(external_input_pin) v(pin_facing_input) title 'HBM (Already Powered ON)' ylabel 'Voltage (V)'
 
   * ==========================================
   * 4. CDM (Charged Device Model) - 500V Equivalent
   * Peak Current: ~5A, Rise: 250ps, Duration: ~2ns
   * ==========================================
-  alter @I_ESD[pwl] = [ 0 0 250p 5.0 750p 0 1n -1.0 1.5n 0 3n 0 ]
+*  alter @I_ESD[pwl] = [ 0 0 250p 5.0 750p 0 1n -1.0 1.5n 0 3n 0 ]
   
   * Run Transient Simulation (3ns duration, 10ps steps)
-  tran 5p 3n  
+*  tran 10n 60m
   * Extract Peak Voltages
-  meas tran V_pad_max_CDM MAX v(external_input_pin)
-  meas tran V_core_max_CDM MAX v(pin_facing_input)
-  meas tran V_vdd_max_CDM MAX v(Vdd)
+*  meas tran V_pad_max_CDM MAX v(external_input_pin)
+*  meas tran V_core_max_CDM MAX v(pin_facing_input)
+*  meas tran V_vdd_max_CDM MAX v(Vdd)
   
   * Print to Console
-  print V_pad_max_CDM V_core_max_CDM
+*  print V_pad_max_CDM V_core_max_CDM
   
   
   * Plot CDM Waveforms
-  plot v(external_input_pin) v(pin_facing_input) title 'CDM 500V ESD Event' ylabel 'Voltage (V)' xlabel 'Time (s)'
-  plot v(pin_facing_input) title 'CDM 500V ESD Event' ylabel 'Voltage (V)' xlabel 'Time (s)'
+*  plot v(external_input_pin) v(pin_facing_input) title 'CDM 500V ESD Event' ylabel 'Voltage (V)' xlabel 'Time (s)'
+*  plot v(pin_facing_input) title 'CDM 500V ESD Event' ylabel 'Voltage (V)' xlabel 'Time (s)'
+*  plot v(Vdd) title 'CDM 500V ESD Event' ylabel 'Vdd' xlabel 'Time'
+
+  * ==========================================
+  * 4b. CDM - Power ON 1us after strike
+  * Strike ends at 3ns. Vdd ramps to 3.3V starting at 1.003us
+  * ==========================================
+  * Reset V_power to default 0V before the run so earlier tests don't leak over
+*  alter @V_power[pwl] = [ 0 0 1.003u 0 1.103u 5 6u 5 ]
+*  alter @I_ESD[pwl] = [ 0 0 250p 5.0 750p 0 1n -1.0 1.5n 0 3n 0 ]
+  
+  * Note: 50p step used here to prevent massive file sizes over a 6us run
+*  tran 50p 60u
+  
+*  meas tran V_pad_max_CDM_after MAX v(external_input_pin)
+*  meas tran V_core_max_CDM_after MAX v(pin_facing_input)
+  
+*  print V_pad_max_CDM_after V_core_max_CDM_after
+*  plot v(external_input_pin) v(pin_facing_input) title 'CDM (Power ON at 1us)' ylabel 'Voltage (V)'
+*  plot v(Vdd) title 'CDM Vdd Supply (Delayed Power)' ylabel 'Vdd'
+
+  * ==========================================
+  * 4c. CDM - Powered ON during strike
+  * Vdd is constant at 3.3V the entire time
+  * ==========================================
+*  alter @V_power[pwl] = [ 0 5 6u 5 ]
+*  alter @I_ESD[pwl] = [ 0 0 250p 5.0 750p 0 1n -1.0 1.5n 0 3n 0 ]
+  
+*  tran 50p 60u
+  
+*  meas tran V_pad_max_CDM_on MAX v(external_input_pin)
+*  meas tran V_core_max_CDM_on MAX v(pin_facing_input)
+ 
+*  print V_pad_max_CDM_on V_core_max_CDM_on
+*  plot v(external_input_pin) v(pin_facing_input) title 'CDM (Already Powered ON)' ylabel 'Voltage (V)'
 
 
 .endc
