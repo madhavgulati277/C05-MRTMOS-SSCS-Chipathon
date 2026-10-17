@@ -1,0 +1,52 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1792181836
+<< pwell >>
+rect -2676 -266 2676 266
+<< mvpsubdiff >>
+rect -2652 229 2652 242
+rect -2652 183 -2536 229
+rect 2536 183 2652 229
+rect -2652 170 2652 183
+rect -2652 126 -2580 170
+rect -2652 -126 -2639 126
+rect -2593 -126 -2580 126
+rect 2580 126 2652 170
+rect -2652 -170 -2580 -126
+rect 2580 -126 2593 126
+rect 2639 -126 2652 126
+rect 2580 -170 2652 -126
+rect -2652 -183 2652 -170
+rect -2652 -229 -2536 -183
+rect 2536 -229 2652 -183
+rect -2652 -242 2652 -229
+<< mvpsubdiffcont >>
+rect -2536 183 2536 229
+rect -2639 -126 -2593 126
+rect 2593 -126 2639 126
+rect -2536 -229 2536 -183
+<< mvndiode >>
+rect -2500 77 2500 90
+rect -2500 -77 -2487 77
+rect 2487 -77 2500 77
+rect -2500 -90 2500 -77
+<< mvndiodec >>
+rect -2487 -77 2487 77
+<< metal1 >>
+rect -2639 183 -2536 229
+rect 2536 183 2639 229
+rect -2639 126 -2593 183
+rect 2593 126 2639 183
+rect -2498 -77 -2487 77
+rect 2487 -77 2498 77
+rect -2639 -183 -2593 -126
+rect 2593 -183 2639 -126
+rect -2639 -229 -2536 -183
+rect 2536 -229 2639 -183
+<< properties >>
+string FIXED_BBOX -2616 -206 2616 206
+string gencell diode_nd2ps_06v0
+string library gf180mcu
+string parameters w 25 l 0.9 area 22.5 peri 51.8 nx 1 ny 1 dummy 0 lmin 0.45 wmin 0.45 class diode elc 1 erc 1 etc 1 ebc 1 doverlap 0 full_metal 1 compatible {diode_nd2ps_03v3 diode_nd2ps_06v0}
+<< end >>
