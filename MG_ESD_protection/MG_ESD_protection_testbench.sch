@@ -7,10 +7,6 @@ F {}
 E {}
 N 30 -50 320 -50 {lab=Vdd}
 N 30 50 320 50 {lab=0}
-N 400 -30 480 -30 {lab=Vdd}
-N 400 30 480 30 {lab=0}
-N 440 -50 440 -30 {lab=Vdd}
-N 440 30 440 50 {lab=0}
 N 440 -50 760 -50 {lab=Vdd}
 N 320 -50 440 -50 {lab=Vdd}
 N 320 50 440 50 {lab=0}
@@ -21,16 +17,6 @@ C {ipin.sym} -120 0 0 0 {name=p1 lab=external_input_pin}
 C {ipin.sym} 30 -50 0 0 {name=p2 lab=Vdd}
 C {opin.sym} 180 0 0 0 {name=p3 lab=pin_facing_input}
 C {gnd.sym} 30 50 0 0 {name=l1 lab=0}
-C {capa.sym} 400 0 0 0 {name=C1
-m=1
-value=1n
-footprint=1206
-device="ceramic capacitor"}
-C {res.sym} 480 0 0 0 {name=R1
-value=1k
-footprint=1206
-device=resistor
-m=1}
 C {MG_power_clamp_ESD.sym} 760 10 0 0 {name=x2}
 C {code.sym} 120 -250 0 0 {name=s1 only_toplevel=false value="
 
@@ -49,7 +35,7 @@ C_load pin_facing_input 0 100f
 Rleak Vdd 0 1G
 
 * Add a controllable voltage source for Vdd (Assuming 3.3V - change to 5.0 if using 5V IOs)
-V_power Vdd 0 PWL(0 0)
+* V_power Vdd 0 PWL(0 0)
 
 .control
 
@@ -62,7 +48,7 @@ V_power Vdd 0 PWL(0 0)
 
   
   * Run Transient Simulation (500ns duration, 1ns steps)
-  tran 250n 1
+  tran 1n 1u
   
   * Extract Peak Voltages
   meas tran V_pad_max_HBM MAX v(external_input_pin)
@@ -116,23 +102,23 @@ V_power Vdd 0 PWL(0 0)
   * 4. CDM (Charged Device Model) - 500V Equivalent
   * Peak Current: ~5A, Rise: 250ps, Duration: ~2ns
   * ==========================================
-*  alter @I_ESD[pwl] = [ 0 0 250p 5.0 750p 0 1n -1.0 1.5n 0 3n 0 ]
+  alter @I_ESD[pwl] = [ 0 0 250p 5.0 750p 0 1n -1.0 1.5n 0 3n 0 ]
   
   * Run Transient Simulation (3ns duration, 10ps steps)
-*  tran 10n 60m
+  tran 10p 10n
   * Extract Peak Voltages
-*  meas tran V_pad_max_CDM MAX v(external_input_pin)
-*  meas tran V_core_max_CDM MAX v(pin_facing_input)
+  meas tran V_pad_max_CDM MAX v(external_input_pin)
+ meas tran V_core_max_CDM MAX v(pin_facing_input)
 *  meas tran V_vdd_max_CDM MAX v(Vdd)
   
   * Print to Console
-*  print V_pad_max_CDM V_core_max_CDM
+  print V_pad_max_CDM V_core_max_CDM
   
   
   * Plot CDM Waveforms
-*  plot v(external_input_pin) v(pin_facing_input) title 'CDM 500V ESD Event' ylabel 'Voltage (V)' xlabel 'Time (s)'
-*  plot v(pin_facing_input) title 'CDM 500V ESD Event' ylabel 'Voltage (V)' xlabel 'Time (s)'
-*  plot v(Vdd) title 'CDM 500V ESD Event' ylabel 'Vdd' xlabel 'Time'
+  plot v(external_input_pin) v(pin_facing_input) title 'CDM 500V ESD Event' ylabel 'Voltage (V)' xlabel 'Time (s)'
+  plot v(pin_facing_input) title 'CDM 500V ESD Event' ylabel 'Voltage (V)' xlabel 'Time (s)'
+  plot v(Vdd) title 'CDM 500V ESD Event' ylabel 'Vdd' xlabel 'Time'
 
   * ==========================================
   * 4b. CDM - Power ON 1us after strike

@@ -21,6 +21,9 @@ project:
   ws_def_ready: true
   drc_ready: true
   lvs_ready: true
+  export_control: "Export_Control_GF_Rev8.2.docx"   # Required export control document
+
+
 
 # Pin assignment list.
 # The official schema requires the first pin to be a ground connection.

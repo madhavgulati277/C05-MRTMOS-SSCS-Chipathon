@@ -213,6 +213,21 @@ N -20 0 -10 0 {lab=#net1}
 N -230 0 -20 0 {lab=#net1}
 N 130 -100 200 -100 {lab=Vdd}
 N 130 100 200 100 {lab=GND}
+N 4040 -100 4040 -30 {lab=Vdd}
+N 4040 30 4040 100 {lab=GND}
+N 4080 100 4120 100 {lab=GND}
+N 4200 -100 4200 -30 {lab=Vdd}
+N 4200 30 4200 100 {lab=GND}
+N 4040 0 4080 0 {lab=GND}
+N 4080 0 4080 100 {lab=GND}
+N 4200 0 4240 0 {lab=GND}
+N 4240 0 4240 100 {lab=GND}
+N 4040 -100 4200 -100 {lab=Vdd}
+N 4200 100 4240 100 {lab=GND}
+N 4120 100 4200 100 {lab=GND}
+N 4040 100 4080 100 {lab=GND}
+N 3900 100 4040 100 {lab=GND}
+N 3860 -100 4040 -100 {lab=Vdd}
 C {devices/ipin.sym} -740 -100 0 0 {name=p1 lab=Vdd}
 C {devices/ipin.sym} -740 100 0 0 {name=p2 lab=GND}
 C {/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/xschem/symbols/cap_nmos_06v0.sym} -230 40 0 0 {name=C1
@@ -320,3 +335,7 @@ L=6e-5
 model=ppolyf_u_1k_6p0
 spiceprefix=X
 m=1}
+C {lab_pin.sym} 4000 0 0 0 {name=p3 sig_type=std_logic lab=clamp}
+C {lab_pin.sym} 4160 0 0 0 {name=p29 sig_type=std_logic lab=clamp}
+C {/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/xschem/symbols/nfet_05v0.sym} 4180 0 0 0 {name=MM_clamp25 W=25u L=0.9u nf=1}
+C {/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/xschem/symbols/nfet_05v0.sym} 4020 0 0 0 {name=MM_clamp26 W=25u L=0.9u nf=1}
