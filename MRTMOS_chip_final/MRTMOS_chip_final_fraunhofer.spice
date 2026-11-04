@@ -1,0 +1,209 @@
+** sch_path: /foss/designs/C05-MRTMOS-SSCS-Chipathon/MRTMOS_chip_final/final_tb.sch
+**.subckt final_tb
+C1 Vout 0 50p
+V1 Vdd 0 5
+V2 Vin+ 0 DC 3.333 AC 0.5
+V3 Vin- 0 DC 3.333 AC -0.5
+x1 Vdd net3 net2 net8 0 RN_gm2_ota
+x2 Vdd Vout net9 net4 0 RN_gm3_ota
+x3 Vdd net1 Vin- Vin+ 0 MG_6t_ota
+C2 net4 net3 750p
+C3 net2 net1 750p
+*  x4 -  gm_ff  IS MISSING !!!!
+V4 ffVin- 0 3
+V5 ffVin+ 0 3 ac 1
+R1 net6 net5 10k
+V6 net5 0 5
+C4 net9 0 750p
+C5 net8 0 750p
+C6 Vout net7 50p
+**** begin user architecture code
+
+
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice moscap_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice mimcap_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice cap_mim
+
+
+
+
+* AC & Transient Step Stimulus
+* - DC bias: 3.0V
+* - AC magnitude: 1V (for Bode plot)
+* - Pulse: 2.95V to 3.05V step (100mV step), 5ns edges, 1MHz frequency (0.5us width, 1us period)
+
+
+* --- 2. Simulation Control Block ---
+.control
+  save all
+
+  * A. DC Operating Point Analysis
+  op
+  print v(Vout) v(Vin+) v(Vin-)
+
+  * B. AC Sweep (Bode Plot: Gain & Phase)
+  ac dec 20 1 100Meg
+  set units = degrees
+  plot vdb(Vout) vs frequency title 'Open-Loop AC Gain (dB)'
+  plot cph(Vout) vs frequency title 'Open-Loop AC Phase (Degrees)'
+
+  * C. Transient Analysis (1 MHz Step Response)
+  * Run for 5 microseconds (5 complete 1MHz cycles) with a 1ns step
+*  alter @v2[pulse] = [ 2.9 3.1 0 5n 5n 0.495u 1u ]
+*  tran 1n 5u
+*  plot v(Vin+) v(Vin-) v(Vout) title '1MHz Transient Step Response'
+
+  * Save the raw data
+  write RN_finaltb_sim.raw
+.endc
+
+.options savecurrents
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  /foss/designs/C05-MRTMOS-SSCS-Chipathon/RN_Gm2/RN_gm2_ota.sym # of pins=5
+** sym_path: /foss/designs/C05-MRTMOS-SSCS-Chipathon/RN_Gm2/RN_gm2_ota.sym
+** sch_path: /foss/designs/C05-MRTMOS-SSCS-Chipathon/RN_Gm2/RN_gm2_ota.sch
+.subckt RN_gm2_ota VDD Vout Vin- Vin+ GND
+*.opin Vout
+*.ipin Vin+
+*.ipin Vin-
+*.ipin VDD
+*.ipin GND
+XM1 Vout Vin- int2 GND nfet_05v0 L=1u W=20u nf=10 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XM2 int1 Vin+ int2 GND nfet_05v0 L=1u W=20u nf=10 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XM3 int2 net1 GND GND nfet_05v0 L=1.2u W=16u nf=8 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=3
+XM4 Vout int1 VDD VDD pfet_05v0 L=1.2u W=20u nf=8 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM5 int1 int1 VDD VDD pfet_05v0 L=1.2u W=20u nf=8 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XR3 net1 net45 GND ppolyf_u_3k r_width=2e-6 r_length=600e-6
+XR4 net46 net1 GND ppolyf_u_3k r_width=2e-6 r_length=200e-6
+XC3 VDD GND cap_nmos_06v0 c_width=30e-6 c_length=30e-6 m=4
+XR1 net11 VDD GND ppolyf_u_3k r_width=2e-6 r_length=400e-6
+XR2 net10 GND GND ppolyf_u_3k r_width=2e-6 r_length=600e-6
+XR25 net9 net10 GND ppolyf_u_3k r_width=2e-6 r_length=600e-6
+XR26 net8 net9 GND ppolyf_u_3k r_width=2e-6 r_length=600e-6
+XR27 net7 net8 GND ppolyf_u_3k r_width=2e-6 r_length=600e-6
+XR28 net6 net7 GND ppolyf_u_3k r_width=2e-6 r_length=600e-6
+XR29 net5 net6 GND ppolyf_u_3k r_width=2e-6 r_length=600e-6
+XR30 net4 net5 GND ppolyf_u_3k r_width=2e-6 r_length=600e-6
+XR31 net3 net4 GND ppolyf_u_3k r_width=2e-6 r_length=600e-6
+XR32 net3 net2 GND ppolyf_u_3k r_width=2e-6 r_length=600e-6
+XR33 net2 Vin+ GND ppolyf_u_3k r_width=2e-6 r_length=600e-6
+XR34 net11 net12 GND ppolyf_u_3k r_width=2e-6 r_length=400e-6
+XR35 net13 net12 GND ppolyf_u_3k r_width=2e-6 r_length=400e-6
+XR36 net13 net14 GND ppolyf_u_3k r_width=2e-6 r_length=400e-6
+XR37 net15 net14 GND ppolyf_u_3k r_width=2e-6 r_length=400e-6
+XR38 net15 net16 GND ppolyf_u_3k r_width=2e-6 r_length=400e-6
+XR39 net17 net16 GND ppolyf_u_3k r_width=2e-6 r_length=400e-6
+XR40 net17 net18 GND ppolyf_u_3k r_width=2e-6 r_length=400e-6
+XR41 net19 net18 GND ppolyf_u_3k r_width=2e-6 r_length=400e-6
+XR42 Vin+ net19 GND ppolyf_u_3k r_width=2e-6 r_length=400e-6
+XR5 net29 VDD GND ppolyf_u_3k r_width=2e-6 r_length=400e-6
+XR6 net28 GND GND ppolyf_u_3k r_width=2e-6 r_length=600e-6
+XR43 net27 net28 GND ppolyf_u_3k r_width=2e-6 r_length=600e-6
+XR44 net26 net27 GND ppolyf_u_3k r_width=2e-6 r_length=600e-6
+XR45 net25 net26 GND ppolyf_u_3k r_width=2e-6 r_length=600e-6
+XR46 net24 net25 GND ppolyf_u_3k r_width=2e-6 r_length=600e-6
+XR47 net23 net24 GND ppolyf_u_3k r_width=2e-6 r_length=600e-6
+XR48 net22 net23 GND ppolyf_u_3k r_width=2e-6 r_length=600e-6
+XR49 net21 net22 GND ppolyf_u_3k r_width=2e-6 r_length=600e-6
+XR50 net21 net20 GND ppolyf_u_3k r_width=2e-6 r_length=600e-6
+XR51 net20 Vin- GND ppolyf_u_3k r_width=2e-6 r_length=600e-6
+XR52 net29 net30 GND ppolyf_u_3k r_width=2e-6 r_length=400e-6
+XR53 net31 net30 GND ppolyf_u_3k r_width=2e-6 r_length=400e-6
+XR54 net31 net32 GND ppolyf_u_3k r_width=2e-6 r_length=400e-6
+XR55 net33 net32 GND ppolyf_u_3k r_width=2e-6 r_length=400e-6
+XR56 net33 net34 GND ppolyf_u_3k r_width=2e-6 r_length=400e-6
+XR57 net35 net34 GND ppolyf_u_3k r_width=2e-6 r_length=400e-6
+XR58 net35 net36 GND ppolyf_u_3k r_width=2e-6 r_length=400e-6
+XR59 net37 net36 GND ppolyf_u_3k r_width=2e-6 r_length=400e-6
+XR60 Vin- net37 GND ppolyf_u_3k r_width=2e-6 r_length=400e-6
+XR7 net47 net46 GND ppolyf_u_3k r_width=2e-6 r_length=200e-6
+XR8 net38 net47 GND ppolyf_u_3k r_width=2e-6 r_length=200e-6
+XR9 net38 net48 GND ppolyf_u_3k r_width=2e-6 r_length=200e-6
+XR10 net48 net49 GND ppolyf_u_3k r_width=2e-6 r_length=200e-6
+XR11 net49 net39 GND ppolyf_u_3k r_width=2e-6 r_length=200e-6
+XR12 net50 net39 GND ppolyf_u_3k r_width=2e-6 r_length=200e-6
+XR13 net51 net50 GND ppolyf_u_3k r_width=2e-6 r_length=200e-6
+XR14 net40 net51 GND ppolyf_u_3k r_width=2e-6 r_length=200e-6
+XR15 net40 GND GND ppolyf_u_3k r_width=2e-6 r_length=200e-6
+XR16 net45 net43 GND ppolyf_u_3k r_width=2e-6 r_length=600e-6
+XR17 net43 net42 GND ppolyf_u_3k r_width=2e-6 r_length=600e-6
+XR18 net42 net41 GND ppolyf_u_3k r_width=2e-6 r_length=600e-6
+XR19 net41 net52 GND ppolyf_u_3k r_width=2e-6 r_length=600e-6
+XR20 net52 net44 GND ppolyf_u_3k r_width=2e-6 r_length=600e-6
+XR21 net53 net44 GND ppolyf_u_3k r_width=2e-6 r_length=600e-6
+XR22 net54 net53 GND ppolyf_u_3k r_width=2e-6 r_length=600e-6
+XR24 net55 net54 GND ppolyf_u_3k r_width=2e-6 r_length=600e-6
+XR61 VDD net55 GND ppolyf_u_3k r_width=2e-6 r_length=600e-6
+XC2 net1 GND cap_nmos_06v0 c_width=30e-6 c_length=30e-6 m=4
+.ends
+
+
+* expanding   symbol:  /foss/designs/C05-MRTMOS-SSCS-Chipathon/RN_Gm3/RN_gm3_ota.sym # of pins=5
+** sym_path: /foss/designs/C05-MRTMOS-SSCS-Chipathon/RN_Gm3/RN_gm3_ota.sym
+** sch_path: /foss/designs/C05-MRTMOS-SSCS-Chipathon/RN_Gm3/RN_gm3_ota.sch
+.subckt RN_gm3_ota Vdd Vout Vin+ Vin- GND
+*.opin Vout
+*.ipin Vin+
+*.ipin Vin-
+*.ipin Vdd
+*.ipin GND
+XM3 net1 net3 GND GND nfet_05v0 L=1.2u W=16u nf=8 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM2 net2 Vin+ net1 GND nfet_05v0 L=1u W=7.5u nf=4 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XM5 net2 net2 Vdd Vdd pfet_05v0 L=2u W=17u nf=10 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XC3 net3 GND cap_nmos_06v0 c_width=60e-6 c_length=10e-6 m=6
+XC4 Vdd GND cap_nmos_06v0 c_width=60e-6 c_length=10e-6 m=6
+XM1 Vout Vin- net1 GND nfet_05v0 L=1u W=7.5u nf=4 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XM4 Vout net2 Vdd Vdd pfet_05v0 L=2u W=17u nf=10 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XR2 GND net3 GND ppolyf_u_1k_6p0 r_width=2e-6 r_length=250e-6
+XR7 net3 Vdd GND ppolyf_u_1k_6p0 r_width=2e-6 r_length=750e-6
+XR1 Vin+ Vdd GND ppolyf_u_1k_6p0 r_width=2e-6 r_length=1600e-6
+XR3 GND Vin+ GND ppolyf_u_1k_6p0 r_width=2e-6 r_length=2400e-6
+XR4 Vin- Vdd GND ppolyf_u_1k_6p0 r_width=2e-6 r_length=1600e-6
+XR5 GND Vin- GND ppolyf_u_1k_6p0 r_width=2e-6 r_length=2400e-6
+.ends
+
+
+* expanding   symbol:  /foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_6T_OTA/MG_6t_ota.sym # of pins=5
+** sym_path: /foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_6T_OTA/MG_6t_ota.sym
+** sch_path: /foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_6T_OTA/MG_6t_ota.sch
+.subckt MG_6t_ota Vdd Vout Vin- Vin+ GND
+*.ipin Vdd
+*.ipin Vin+
+*.ipin Vin-
+*.ipin GND
+*.opin Vout
+XM4 Vout net1 Vdd Vdd pfet_05v0 L=2u W=27u nf=14 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XM2 Vout Vin- net2 GND nfet_05v0 L=1u W=16u nf=8 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XM1 net1 Vin+ net2 GND nfet_05v0 L=1u W=16u nf=8 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XM3 net1 net1 Vdd Vdd pfet_05v0 L=2u W=28u nf=14 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XM5b net2 net4 net3 GND nfet_05v0 L=1.25u W=12u nf=8 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XM5a net3 net5 GND GND nfet_05v0 L=1.25u W=6u nf=4 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XR1 net4 Vdd GND ppolyf_u_3k r_width=2e-6 r_length=600e-6
+XR2 net5 net4 GND ppolyf_u_3k r_width=2e-6 r_length=200e-6
+XR3 GND net5 GND ppolyf_u_3k r_width=2e-6 r_length=200e-6
+.ends
+
+.end
