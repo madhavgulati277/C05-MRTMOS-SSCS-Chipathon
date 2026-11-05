@@ -1,0 +1,8 @@
+** sch_path: /foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_switch/cmos_switch.sch
+.subckt cmos_switch Vdd in Vin GND out
+*.PININFO Vdd:I Vin:I in:I out:I GND:I
+XM1 in Vin out GND nfet_05v0 L=0.7u W=2u nf=2
+XM2 out net1 in Vdd pfet_05v0 L=0.7u W=6u nf=6
+XM3 net1 Vin GND GND nfet_05v0 L=0.7u W=1u nf=1
+XM4 net1 Vin Vdd Vdd pfet_05v0 L=0.7u W=2.2u nf=2
+.ends

@@ -25,7 +25,6 @@ N -90 -100 -90 -70 {lab=GND}
 N 330 -180 390 -180 {lab=GND}
 N -120 -320 -90 -320 {lab=Vdd}
 N -90 -320 -90 -260 {lab=Vdd}
-N -90 -320 -20 -320 {lab=Vdd}
 C {/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/xschem/symbols/nfet_05v0.sym} 410 -180 0 1 {name=M1
 L=0.7u
 W=2u
@@ -93,10 +92,3 @@ C {lab_pin.sym} 210 -180 0 1 {name=p5 sig_type=std_logic lab=Vdd}
 C {lab_pin.sym} 0 -130 0 1 {name=p8 sig_type=std_logic lab=GND}
 C {lab_pin.sym} 330 -180 0 0 {name=p9 sig_type=std_logic lab=GND}
 C {lab_pin.sym} 460 -180 0 1 {name=p10 sig_type=std_logic lab=Vin}
-C {symbols/cap_nmos_06v0.sym} -20 -290 0 0 {name=C3
-W=30e-6
-L=30e-6
-model=cap_nmos_06v0
-spiceprefix=X
-m=1}
-C {lab_pin.sym} -20 -260 0 1 {name=p20 sig_type=std_logic lab=GND}

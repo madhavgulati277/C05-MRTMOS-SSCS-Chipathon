@@ -1,0 +1,62 @@
+
+Circuit 1 cell pfet_05v0 and Circuit 2 cell pfet_05v0 are black boxes.
+Warning: Equate pins:  cell pfet_05v0 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_05v0 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_05v0                       |Circuit 2: pfet_05v0                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_05v0 and pfet_05v0 are equivalent.
+
+Circuit 1 cell nfet_05v0 and Circuit 2 cell nfet_05v0 are black boxes.
+Warning: Equate pins:  cell nfet_05v0 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_05v0 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_05v0                       |Circuit 2: nfet_05v0                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_05v0 and nfet_05v0 are equivalent.
+Flattening unmatched subcell pfet_05v0_2VHNWJ in circuit cmos_switch (0)(1 instance)
+Flattening unmatched subcell nfet_05v0_ZZNR9W_MG_switch in circuit cmos_switch (0)(1 instance)
+Flattening unmatched subcell nfet_05v0_ZE6K9W in circuit cmos_switch (0)(1 instance)
+Flattening unmatched subcell pfet_05v0_M2W5S5 in circuit cmos_switch (0)(1 instance)
+
+Class cmos_switch (0):  Merged 7 parallel devices.
+Subcircuit summary:
+Circuit 1: cmos_switch                     |Circuit 2: cmos_switch                     
+-------------------------------------------|-------------------------------------------
+pfet_05v0 (8->2)                           |pfet_05v0 (2)                              
+nfet_05v0 (3->2)                           |nfet_05v0 (2)                              
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: cmos_switch                     |Circuit 2: cmos_switch                     
+-------------------------------------------|-------------------------------------------
+in                                         |in                                         
+out                                        |out                                        
+Vin                                        |Vin                                        
+GND                                        |GND                                        
+Vdd                                        |Vdd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes cmos_switch and cmos_switch are equivalent.
+
+Final result: Circuits match uniquely.
+.

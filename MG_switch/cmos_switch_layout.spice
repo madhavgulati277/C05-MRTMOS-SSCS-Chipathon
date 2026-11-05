@@ -1,0 +1,36 @@
+* NGSPICE file created from cmos_switch.ext - technology: gf180mcuD
+
+.subckt pfet_05v0_2VHNWJ a_192_n110# a_n280_n110# a_n52_n110# w_n406_n308# a_n192_n282#
+X0 a_192_n110# a_n192_n282# a_n52_n110# w_n406_n308# pfet_05v0 ad=0.484p pd=3.08u as=0.286p ps=1.62u w=1.1u l=0.7u
+X1 a_n52_n110# a_n192_n282# a_n280_n110# w_n406_n308# pfet_05v0 ad=0.286p pd=1.62u as=0.484p ps=3.08u w=1.1u l=0.7u
+.ends
+
+.subckt nfet_05v0_ZZNR9W_MG_switch a_70_n100# a_n158_n100# a_n70_n192# VSUBS
+X0 a_70_n100# a_n70_n192# a_n158_n100# VSUBS nfet_05v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
+.ends
+
+.subckt nfet_05v0_ZE6K9W a_192_n100# a_n280_n100# a_n52_n100# a_52_n192# a_n192_n192#
++ VSUBS
+X0 a_192_n100# a_52_n192# a_n52_n100# VSUBS nfet_05v0 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.7u
+X1 a_n52_n100# a_n192_n192# a_n280_n100# VSUBS nfet_05v0 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.7u
+.ends
+
+.subckt pfet_05v0_M2W5S5 a_436_n100# a_192_n100# a_n768_n100# a_n680_n192# a_n296_n100#
++ a_n52_n100# a_296_n192# a_680_n100# a_52_n192# w_n1061_n278# a_n540_n100# a_n436_n192#
++ a_n192_n192# a_540_n192#
+X0 a_436_n100# a_296_n192# a_192_n100# w_n1061_n278# pfet_05v0 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.7u
+X1 a_192_n100# a_52_n192# a_n52_n100# w_n1061_n278# pfet_05v0 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.7u
+X2 a_680_n100# a_540_n192# a_436_n100# w_n1061_n278# pfet_05v0 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.7u
+X3 a_n52_n100# a_n192_n192# a_n296_n100# w_n1061_n278# pfet_05v0 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.7u
+X4 a_n296_n100# a_n436_n192# a_n540_n100# w_n1061_n278# pfet_05v0 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.7u
+X5 a_n540_n100# a_n680_n192# a_n768_n100# w_n1061_n278# pfet_05v0 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.7u
+.ends
+
+.subckt cmos_switch Vdd GND Vin out in
+XXM1 Vdd Vdd a_n590_179# Vdd Vin pfet_05v0_2VHNWJ
+Xnfet_05v0_ZZNR9W_0 GND a_n590_179# Vin GND nfet_05v0_ZZNR9W_MG_switch
+Xnfet_05v0_ZE6K9W_0 out out in Vin Vin GND nfet_05v0_ZE6K9W
+Xpfet_05v0_M2W5S5_0 out in in a_n590_179# in out a_n590_179# in a_n590_179# Vdd out
++ a_n590_179# a_n590_179# a_n590_179# pfet_05v0_M2W5S5
+.ends
+

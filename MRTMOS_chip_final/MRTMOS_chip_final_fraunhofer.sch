@@ -115,7 +115,6 @@ footprint=1206
 device="ceramic capacitor"}
 C {gnd.sym} -880 80 0 0 {name=l8 lab=0}
 C {gnd.sym} -280 50 1 0 {name=l9 lab=0}
-C {/foss/designs/C05-MRTMOS-SSCS-Chipathon/TG_gm_ff/gm_ff.sym} -1290 340 0 0 {name=x4}
 C {vsource.sym} -350 -110 0 0 {name=V4 value=3 savecurrent=false}
 C {vsource.sym} -270 -110 0 0 {name=V5 
 *value="dc 2.5 ac 1 sin(2.5 1m 1Meg)" 
@@ -152,3 +151,4 @@ m=1
 value=50p
 footprint=1206
 device="ceramic capacitor"}
+C {/foss/designs/C05-MRTMOS-SSCS-Chipathon/TG_gm_ff/TG_gm_ff.sym} -1290 340 0 0 {name=x5}
