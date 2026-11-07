@@ -1,0 +1,1171 @@
+* NGSPICE file created from MRTMOS_chip_final.ext - technology: gf180mcuD
+
+.subckt diode_nd2ps_06v0_XZ9LFE a_n2652_n242# a_n2500_n90#
+D0 a_n2652_n242# a_n2500_n90# diode_nd2ps_06v0 pj=51.8u area=22.5p
+.ends
+
+.subckt diode_pd2nw_06v0_WSMRF6 a_n2500_n90# w_n2676_n266#
+D0 a_n2500_n90# w_n2676_n266# diode_pd2nw_06v0 pj=51.8u area=22.5p
+.ends
+
+.subckt diode_pd2nw_06v0_QD74SH a_n1500_n90# w_n1676_n266#
+D0 a_n1500_n90# w_n1676_n266# diode_pd2nw_06v0 pj=31.8u area=13.5p
+.ends
+
+.subckt ppolyf_u_1k_6p0_84E4CZ a_n500_1000# a_n500_n1122# a_n500_n1000# a_n712_n1334#
+X0 a_n500_1000# a_n500_n1122# a_n712_n1334# ppolyf_u_1k_6p0 r_width=5u r_length=10u
+.ends
+
+.subckt diode_nd2ps_06v0_67PAP3 a_n1652_n242# a_n1500_n90#
+D0 a_n1652_n242# a_n1500_n90# diode_nd2ps_06v0 pj=31.8u area=13.5p
+.ends
+
+.subckt MG_ESD_protection GND pin_facing_input external_input_pin ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000#
++ Vdd
+Xdiode_nd2ps_06v0_XZ9LFE_0 GND external_input_pin diode_nd2ps_06v0_XZ9LFE
+Xdiode_nd2ps_06v0_XZ9LFE_1 GND external_input_pin diode_nd2ps_06v0_XZ9LFE
+Xdiode_pd2nw_06v0_WSMRF6_0 external_input_pin Vdd diode_pd2nw_06v0_WSMRF6
+Xdiode_nd2ps_06v0_XZ9LFE_2 GND external_input_pin diode_nd2ps_06v0_XZ9LFE
+Xdiode_pd2nw_06v0_WSMRF6_1 external_input_pin Vdd diode_pd2nw_06v0_WSMRF6
+Xdiode_pd2nw_06v0_WSMRF6_2 external_input_pin Vdd diode_pd2nw_06v0_WSMRF6
+Xdiode_nd2ps_06v0_XZ9LFE_3 GND external_input_pin diode_nd2ps_06v0_XZ9LFE
+Xdiode_nd2ps_06v0_XZ9LFE_4 GND external_input_pin diode_nd2ps_06v0_XZ9LFE
+Xdiode_pd2nw_06v0_WSMRF6_3 external_input_pin Vdd diode_pd2nw_06v0_WSMRF6
+Xdiode_pd2nw_06v0_QD74SH_0 pin_facing_input Vdd diode_pd2nw_06v0_QD74SH
+Xdiode_pd2nw_06v0_WSMRF6_4 external_input_pin Vdd diode_pd2nw_06v0_WSMRF6
+Xppolyf_u_1k_6p0_84E4CZ_0 pin_facing_input external_input_pin ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000#
++ GND ppolyf_u_1k_6p0_84E4CZ
+Xdiode_nd2ps_06v0_67PAP3_0 GND pin_facing_input diode_nd2ps_06v0_67PAP3
+.ends
+
+.subckt cap_mim_2p0fF_2BWSH9
+X0 m4_n10120_n10000# m4_n10240_n10120# cap_mim_2f0_m4m5_noshield c_width=100u c_length=100u
+.ends
+
+.subckt pfet_05v0_2VHNWJ a_192_n110# a_n280_n110# a_n52_n110# w_n406_n308# a_n192_n282#
+X0 a_192_n110# a_n192_n282# a_n52_n110# w_n406_n308# pfet_05v0 ad=0.484p pd=3.08u as=0.286p ps=1.62u w=1.1u l=0.7u
+X1 a_n52_n110# a_n192_n282# a_n280_n110# w_n406_n308# pfet_05v0 ad=0.286p pd=1.62u as=0.484p ps=3.08u w=1.1u l=0.7u
+.ends
+
+.subckt nfet_05v0_ZZNR9W_MG_switch a_70_n100# a_n158_n100# a_n70_n192# VSUBS
+X0 a_70_n100# a_n70_n192# a_n158_n100# VSUBS nfet_05v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
+.ends
+
+.subckt nfet_05v0_ZE6K9W a_192_n100# a_n280_n100# a_n52_n100# a_52_n192# a_n192_n192#
++ VSUBS
+X0 a_192_n100# a_52_n192# a_n52_n100# VSUBS nfet_05v0 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.7u
+X1 a_n52_n100# a_n192_n192# a_n280_n100# VSUBS nfet_05v0 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.7u
+.ends
+
+.subckt pfet_05v0_M2W5S5 a_436_n100# a_192_n100# a_n768_n100# a_n680_n192# a_n296_n100#
++ a_n52_n100# a_296_n192# a_680_n100# a_52_n192# w_n1061_n278# a_n540_n100# a_n436_n192#
++ a_n192_n192# a_540_n192#
+X0 a_436_n100# a_296_n192# a_192_n100# w_n1061_n278# pfet_05v0 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.7u
+X1 a_192_n100# a_52_n192# a_n52_n100# w_n1061_n278# pfet_05v0 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.7u
+X2 a_680_n100# a_540_n192# a_436_n100# w_n1061_n278# pfet_05v0 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.7u
+X3 a_n52_n100# a_n192_n192# a_n296_n100# w_n1061_n278# pfet_05v0 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.7u
+X4 a_n296_n100# a_n436_n192# a_n540_n100# w_n1061_n278# pfet_05v0 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.7u
+X5 a_n540_n100# a_n680_n192# a_n768_n100# w_n1061_n278# pfet_05v0 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.7u
+.ends
+
+.subckt cmos_switch Vdd GND in a_n590_179# out Vin
+XXM1 Vdd Vdd a_n590_179# Vdd Vin pfet_05v0_2VHNWJ
+Xnfet_05v0_ZZNR9W_0 GND a_n590_179# Vin GND nfet_05v0_ZZNR9W_MG_switch
+Xnfet_05v0_ZE6K9W_0 out out in Vin Vin GND nfet_05v0_ZE6K9W
+Xpfet_05v0_M2W5S5_0 out in in a_n590_179# in out a_n590_179# in a_n590_179# Vdd out
++ a_n590_179# a_n590_179# a_n590_179# pfet_05v0_M2W5S5
+.ends
+
+.subckt cmos_neg_switch Vdd GND Vin in out
+XXM1 Vdd Vdd m1_n2205_529# Vdd Vin pfet_05v0_2VHNWJ
+Xnfet_05v0_ZZNR9W_0 GND m1_n2205_529# Vin GND nfet_05v0_ZZNR9W_MG_switch
+Xnfet_05v0_ZE6K9W_0 out out in m1_n2205_529# m1_n2205_529# GND nfet_05v0_ZE6K9W
+Xpfet_05v0_M2W5S5_0 out in in Vin in out Vin in Vin Vdd out Vin Vin Vin pfet_05v0_M2W5S5
+.ends
+
+.subckt cmos_cross_switch Vin Vdd GND
+Xcmos_switch_0 Vdd GND cmos_switch_0/in cmos_switch_0/a_n590_179# cmos_switch_0/out
++ Vin cmos_switch
+Xcmos_switch_1 Vdd GND cmos_switch_1/in cmos_switch_1/a_n590_179# cmos_switch_1/out
++ Vin cmos_switch
+Xcmos_neg_switch_0 Vdd GND Vin cmos_switch_0/in cmos_switch_1/out cmos_neg_switch
+Xcmos_neg_switch_1 Vdd GND Vin cmos_switch_1/in cmos_switch_0/out cmos_neg_switch
+.ends
+
+.subckt pfet_05v0_886J8L a_52_n342# a_1084_n342# a_396_n342# a_980_n250# a_n980_n342#
++ w_n1548_n750# a_n740_n250# a_n1084_n250# a_n1324_n342# a_292_n250# a_n292_n342#
++ a_n52_n250# a_1324_n250# a_n1412_n250# a_636_n250# a_n396_n250# a_n636_n342# a_740_n342#
+X0 a_n396_n250# a_n636_n342# a_n740_n250# w_n1548_n750# pfet_05v0 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=1.2u
+X1 a_n740_n250# a_n980_n342# a_n1084_n250# w_n1548_n750# pfet_05v0 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=1.2u
+X2 a_n1084_n250# a_n1324_n342# a_n1412_n250# w_n1548_n750# pfet_05v0 ad=0.65p pd=3.02u as=1.1p ps=5.88u w=2.5u l=1.2u
+X3 a_n52_n250# a_n292_n342# a_n396_n250# w_n1548_n750# pfet_05v0 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=1.2u
+X4 a_292_n250# a_52_n342# a_n52_n250# w_n1548_n750# pfet_05v0 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=1.2u
+X5 a_636_n250# a_396_n342# a_292_n250# w_n1548_n750# pfet_05v0 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=1.2u
+X6 a_980_n250# a_740_n342# a_636_n250# w_n1548_n750# pfet_05v0 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=1.2u
+X7 a_1324_n250# a_1084_n342# a_980_n250# w_n1548_n750# pfet_05v0 ad=1.1p pd=5.88u as=0.65p ps=3.02u w=2.5u l=1.2u
+.ends
+
+.subckt nfet_05v0_6CDBVM a_740_n292# a_52_n292# a_n396_n200# a_1084_n292# a_396_n292#
++ a_n980_n292# a_n1324_n292# a_n292_n292# a_980_n200# a_n1084_n200# a_292_n200# a_n636_n292#
++ VSUBS
+X0 a_292_n200# a_52_n292# a_n52_n200# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1.2u
+X1 a_636_n200# a_396_n292# a_292_n200# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1.2u
+X2 a_980_n200# a_740_n292# a_636_n200# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1.2u
+X3 a_1324_n200# a_1084_n292# a_980_n200# VSUBS nfet_05v0 ad=0.88p pd=4.88u as=0.52p ps=2.52u w=2u l=1.2u
+X4 a_n396_n200# a_n636_n292# a_n740_n200# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1.2u
+X5 a_n740_n200# a_n980_n292# a_n1084_n200# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1.2u
+X6 a_n1084_n200# a_n1324_n292# a_n1412_n200# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.88p ps=4.88u w=2u l=1.2u
+X7 a_n52_n200# a_n292_n292# a_n396_n200# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1.2u
+.ends
+
+.subckt nfet_05v0_FBRZKH a_n52_n200# a_356_n292# a_52_n292# a_n964_n200# a_1268_n292#
++ a_n660_n200# a_964_n292# a_n556_n292# a_660_n292# a_n1468_n292# a_n252_n292# a_n1164_n292#
++ a_556_n200# a_252_n200# a_n860_n292# a_1468_n200# a_n1556_n200# a_1164_n200# a_n356_n200#
++ a_n1268_n200# a_860_n200# VSUBS
+X0 a_252_n200# a_52_n292# a_n52_n200# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1u
+X1 a_n52_n200# a_n252_n292# a_n356_n200# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1u
+X2 a_n964_n200# a_n1164_n292# a_n1268_n200# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1u
+X3 a_860_n200# a_660_n292# a_556_n200# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1u
+X4 a_n356_n200# a_n556_n292# a_n660_n200# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1u
+X5 a_n1268_n200# a_n1468_n292# a_n1556_n200# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.88p ps=4.88u w=2u l=1u
+X6 a_1164_n200# a_964_n292# a_860_n200# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1u
+X7 a_n660_n200# a_n860_n292# a_n964_n200# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1u
+X8 a_1468_n200# a_1268_n292# a_1164_n200# VSUBS nfet_05v0 ad=0.88p pd=4.88u as=0.52p ps=2.52u w=2u l=1u
+X9 a_556_n200# a_356_n292# a_252_n200# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1u
+.ends
+
+.subckt ppolyf_u_1k_6p0_45EQGM_RN_Gm2 a_n200_n2000# a_n412_n2334# a_n200_2000# a_n200_n2122#
+X0 a_n200_2000# a_n200_n2122# a_n412_n2334# ppolyf_u_1k_6p0 r_width=2u r_length=20u
+.ends
+
+.subckt resistor_10k_RN_Gm2 ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000# ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#
++ VSUBS ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
+Xppolyf_u_1k_6p0_45EQGM_0 ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000# VSUBS ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#
++ ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122# ppolyf_u_1k_6p0_45EQGM_RN_Gm2
+.ends
+
+.subckt resistive_divider_1v25_RN_Gm2 m1_8789_4393# m1_8767_8367# m1_8767_2358# m1_n534_1394#
++ m1_n1090_8367# VSUBS
+Xresistor_10k_23 m1_4608_1365# m1_n534_1394# VSUBS resistor_10k_23/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
++ resistor_10k_RN_Gm2
+Xresistor_10k_0 m1_n534_1394# m1_3967_1408# VSUBS resistor_10k_0/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
++ resistor_10k_RN_Gm2
+Xresistor_10k_1 m1_n202_2348# m1_3967_1408# VSUBS resistor_10k_1/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
++ resistor_10k_RN_Gm2
+Xresistor_10k_2 m1_n202_2348# m1_3967_3376# VSUBS resistor_10k_2/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
++ resistor_10k_RN_Gm2
+Xresistor_10k_3 m1_n202_4351# m1_3967_3376# VSUBS resistor_10k_3/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
++ resistor_10k_RN_Gm2
+Xresistor_10k_4 m1_n202_4351# m1_3956_5364# VSUBS resistor_10k_4/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
++ resistor_10k_RN_Gm2
+Xresistor_10k_16 m1_4597_7353# m1_8767_8367# VSUBS ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
++ resistor_10k_RN_Gm2
+Xresistor_10k_5 m1_n223_6375# m1_3956_5364# VSUBS resistor_10k_5/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
++ resistor_10k_RN_Gm2
+Xresistor_10k_17 m1_4597_7353# m1_8778_6407# VSUBS resistor_10k_17/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
++ resistor_10k_RN_Gm2
+Xresistor_10k_18 m1_4597_5375# m1_8778_6407# VSUBS resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
++ resistor_10k_RN_Gm2
+Xresistor_10k_6 m1_n223_6375# m1_3967_7342# VSUBS resistor_10k_6/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
++ resistor_10k_RN_Gm2
+Xresistor_10k_19 m1_4597_5375# m1_8789_4393# VSUBS resistor_10k_19/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
++ resistor_10k_RN_Gm2
+Xresistor_10k_7 m1_n1090_8367# m1_3967_7342# VSUBS resistor_10k_7/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
++ resistor_10k_RN_Gm2
+Xresistor_10k_8 VSUBS resistor_10k_8/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122# VSUBS
++ resistor_10k_8/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000# resistor_10k_RN_Gm2
+Xresistor_10k_9 VSUBS resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122# VSUBS
++ resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000# resistor_10k_RN_Gm2
+Xppolyf_u_1k_6p0_45EQGM_0 ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000# VSUBS m1_4597_7353#
++ m1_8767_8367# ppolyf_u_1k_6p0_45EQGM_RN_Gm2
+Xppolyf_u_1k_6p0_45EQGM_1 ppolyf_u_1k_6p0_45EQGM_1/a_n200_n2000# VSUBS ppolyf_u_1k_6p0_45EQGM_1/a_n200_2000#
++ VSUBS ppolyf_u_1k_6p0_45EQGM_RN_Gm2
+Xresistor_10k_20 m1_4576_3365# m1_8789_4393# VSUBS resistor_10k_20/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
++ resistor_10k_RN_Gm2
+Xresistor_10k_10 resistor_10k_10/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000# VSUBS VSUBS
++ resistor_10k_10/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000# resistor_10k_RN_Gm2
+Xresistor_10k_21 m1_4576_3365# m1_8767_2358# VSUBS resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
++ resistor_10k_RN_Gm2
+Xresistor_10k_22 m1_4608_1365# m1_8767_2358# VSUBS resistor_10k_22/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
++ resistor_10k_RN_Gm2
+.ends
+
+.subckt ppolyf_u_1k_6p0_XM9FDM_RN_Gm2 a_n436_n20334# a_n200_n20122# a_n200_n20000#
++ a_n200_20000#
+X0 a_n200_20000# a_n200_n20122# a_n436_n20334# ppolyf_u_1k_6p0 r_width=2u r_length=0.2m
+.ends
+
+.subckt resistor_100k_RN_Gm2 ppolyf_u_1k_6p0_XM9FDM_0/a_n200_20000# ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20122#
++ a_310_n30# ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000# a_310_720#
+Xppolyf_u_1k_6p0_XM9FDM_0 a_310_n30# ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20122# ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ ppolyf_u_1k_6p0_XM9FDM_0/a_n200_20000# ppolyf_u_1k_6p0_XM9FDM_RN_Gm2
+.ends
+
+.subckt resistive_divider_3v0_RN_Gm2 resistor_100k_13/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ m1_123_n3010# m1_74_n5025# resistor_100k_25/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ m1_74_18131# resistor_100k_34/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000# m1_103_16097#
++ m1_40329_27281# resistor_100k_14/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_20000# resistor_100k_26/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ resistor_100k_32/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000# m1_n1660_13170# m1_40274_21198#
++ m1_n1661_30377# m1_40235_29286# resistor_100k_27/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ resistor_100k_33/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000# m1_40244_23222# m1_55_n839#
++ VSUBS
+Xresistor_100k_1 m1_94_1146# m1_40313_105# VSUBS resistor_100k_1/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_0 m1_55_n839# m1_40313_105# VSUBS resistor_100k_0/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_2 m1_94_1146# m1_40332_2139# VSUBS resistor_100k_2/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_3 m1_103_3200# m1_40332_2139# VSUBS resistor_100k_3/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_4 m1_103_3200# m1_40351_4105# VSUBS resistor_100k_4/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_5 m1_123_5127# m1_40351_4105# VSUBS resistor_100k_5/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_6 m1_123_5127# m1_40332_6130# VSUBS resistor_100k_6/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_7 m1_84_7181# m1_40332_6130# VSUBS resistor_100k_7/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_8 m1_84_7181# m1_40322_8164# VSUBS resistor_100k_8/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_9 m1_80_9130# m1_40322_8164# VSUBS resistor_100k_9/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_40 VSUBS VSUBS VSUBS resistor_100k_40/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_30 m1_74_28332# m1_40329_27281# VSUBS resistor_100k_30/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_41 m1_123_n3010# m1_40283_n2027# VSUBS resistor_100k_41/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_31 m1_55_26181# m1_40329_27281# VSUBS resistor_100k_31/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_32 m1_55_26181# m1_40313_25247# VSUBS resistor_100k_32/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_21 m1_64_20137# m1_40274_21198# VSUBS resistor_100k_21/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_20 m1_64_20137# m1_40313_19076# VSUBS resistor_100k_20/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_10 m1_80_9130# resistor_100k_10/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20122#
++ VSUBS resistor_100k_10/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000# VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_42 m1_123_n3010# m1_40322_n3983# VSUBS resistor_100k_42/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_11 m1_40_11140# m1_40293_11114# VSUBS resistor_100k_11/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_22 m1_55_n839# m1_40283_n2027# VSUBS resistor_100k_22/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_33 m1_74_n5025# m1_40322_n3983# VSUBS resistor_100k_33/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_23 m1_55_22268# m1_40244_23222# VSUBS resistor_100k_23/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_12 m1_40_11140# m1_40293_11114# VSUBS resistor_100k_12/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_34 m1_74_n5025# m1_40342_n5959# VSUBS resistor_100k_34/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_24 m1_55_22268# m1_40274_21198# VSUBS resistor_100k_24/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_13 m1_n1660_13170# m1_40322_13099# VSUBS resistor_100k_13/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_35 m1_84_n7001# m1_40342_n5959# VSUBS resistor_100k_35/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_25 m1_64_24273# m1_40244_23222# VSUBS resistor_100k_25/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_14 resistor_100k_14/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_20000# m1_40322_13099#
++ VSUBS resistor_100k_14/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000# VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_36 m1_84_n7001# m1_40332_n7974# VSUBS resistor_100k_36/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_26 m1_64_24273# m1_40313_25247# VSUBS resistor_100k_26/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_15 m1_n1660_13170# m1_40313_15104# VSUBS resistor_100k_15/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_37 m1_113_n9006# m1_40332_n7974# VSUBS resistor_100k_37/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_27 VSUBS VSUBS VSUBS resistor_100k_27/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_16 m1_103_16097# m1_40313_15104# VSUBS resistor_100k_16/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_38 m1_113_n9006# m1_40293_n10057# VSUBS resistor_100k_38/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_28 m1_n1661_30377# m1_40235_29286# VSUBS resistor_100k_28/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_17 m1_103_16097# m1_40361_17148# VSUBS resistor_100k_17/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_39 VSUBS m1_40293_n10057# VSUBS resistor_100k_39/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_29 m1_74_28332# m1_40235_29286# VSUBS resistor_100k_29/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_19 m1_74_18131# m1_40313_19076# VSUBS resistor_100k_19/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+Xresistor_100k_18 m1_74_18131# m1_40361_17148# VSUBS resistor_100k_18/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k_RN_Gm2
+.ends
+
+.subckt nmoscap_6p0_SBPANC w_n3120_n3124# a_n3000_n3092#
+X0 a_n3000_n3092# w_n3120_n3124# cap_nmos_06v0_b c_width=30u c_length=30u
+.ends
+
+.subckt RN_Gm2_Layout Vout Vin- m1_n2793_n17882# resistive_divider_3v0_1/resistor_100k_25/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ resistive_divider_3v0_1/resistor_100k_34/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ m1_n4880_n10400# resistive_divider_3v0_0/m1_40235_29286# resistive_divider_3v0_1/m1_74_n5025#
++ m1_n3539_n21557# resistive_divider_3v0_1/resistor_100k_26/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ resistive_divider_3v0_1/m1_74_18131# resistive_divider_3v0_1/resistor_100k_32/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ resistive_divider_3v0_0/resistor_100k_25/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ resistive_divider_3v0_0/m1_40244_23222# nmoscap_6p0_SBPANC_0/a_n3000_n3092# resistive_divider_3v0_1/resistor_100k_14/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_20000#
++ resistive_divider_3v0_1/m1_123_n3010# resistive_divider_1v25_0/m1_8767_2358# resistive_divider_3v0_1/resistor_100k_27/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ resistive_divider_3v0_1/resistor_100k_33/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ resistive_divider_3v0_1/m1_103_16097# resistive_divider_3v0_0/resistor_100k_26/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ resistive_divider_3v0_0/m1_40329_27281# resistive_divider_3v0_0/resistor_100k_32/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ Vin+ resistive_divider_3v0_0/m1_40274_21198# Vdd resistive_divider_1v25_0/m1_n534_1394#
++ resistive_divider_3v0_1/resistor_100k_13/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ pfet_05v0_886J8L_3/VSUBS
+Xpfet_05v0_886J8L_3 m1_20_n1381# m1_20_n1381# m1_20_n1381# Vout m1_20_n1381# Vdd Vdd
++ Vout m1_20_n1381# Vout m1_20_n1381# Vdd Vdd Vdd Vdd Vout m1_20_n1381# m1_20_n1381#
++ pfet_05v0_886J8L
+Xnfet_05v0_6CDBVM_0 m1_n2793_n17882# m1_n2793_n17882# a_2789_n1537# m1_n2793_n17882#
++ m1_n2793_n17882# m1_n2793_n17882# m1_n2793_n17882# m1_n2793_n17882# a_2789_n1537#
++ a_2789_n1537# a_2789_n1537# m1_n2793_n17882# pfet_05v0_886J8L_3/VSUBS nfet_05v0_6CDBVM
+Xnfet_05v0_6CDBVM_1 m1_n2793_n17882# m1_n2793_n17882# a_2789_n1537# m1_n2793_n17882#
++ m1_n2793_n17882# m1_n2793_n17882# m1_n2793_n17882# m1_n2793_n17882# a_2789_n1537#
++ a_2789_n1537# a_2789_n1537# m1_n2793_n17882# pfet_05v0_886J8L_3/VSUBS nfet_05v0_6CDBVM
+Xnfet_05v0_6CDBVM_2 m1_n2793_n17882# m1_n2793_n17882# a_2789_n1537# m1_n2793_n17882#
++ m1_n2793_n17882# m1_n2793_n17882# m1_n2793_n17882# m1_n2793_n17882# a_2789_n1537#
++ a_2789_n1537# a_2789_n1537# m1_n2793_n17882# pfet_05v0_886J8L_3/VSUBS nfet_05v0_6CDBVM
+Xnfet_05v0_FBRZKH_0 Vout Vin- Vin- a_2789_n1537# Vin- Vout Vin- Vin- Vin- Vin- Vin-
++ Vin- Vout a_2789_n1537# Vin- a_2789_n1537# a_2789_n1537# Vout a_2789_n1537# Vout
++ a_2789_n1537# pfet_05v0_886J8L_3/VSUBS nfet_05v0_FBRZKH
+Xresistive_divider_1v25_0 m1_n2793_n17882# m1_n3539_n21557# resistive_divider_1v25_0/m1_8767_2358#
++ resistive_divider_1v25_0/m1_n534_1394# Vdd pfet_05v0_886J8L_3/VSUBS resistive_divider_1v25_RN_Gm2
+Xnfet_05v0_FBRZKH_2 m1_20_n1381# Vin+ Vin+ a_2789_n1537# Vin+ m1_20_n1381# Vin+ Vin+
++ Vin+ Vin+ Vin+ Vin+ m1_20_n1381# a_2789_n1537# Vin+ a_2789_n1537# a_2789_n1537#
++ m1_20_n1381# a_2789_n1537# m1_20_n1381# a_2789_n1537# pfet_05v0_886J8L_3/VSUBS nfet_05v0_FBRZKH
+Xresistive_divider_3v0_0 resistive_divider_3v0_0/resistor_100k_13/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ resistive_divider_3v0_0/m1_123_n3010# resistive_divider_3v0_0/m1_74_n5025# resistive_divider_3v0_0/resistor_100k_25/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ resistive_divider_3v0_0/m1_74_18131# resistive_divider_3v0_0/resistor_100k_34/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ resistive_divider_3v0_0/m1_103_16097# resistive_divider_3v0_0/m1_40329_27281# resistive_divider_3v0_0/resistor_100k_14/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_20000#
++ resistive_divider_3v0_0/resistor_100k_26/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ resistive_divider_3v0_0/resistor_100k_32/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ Vin- resistive_divider_3v0_0/m1_40274_21198# Vdd resistive_divider_3v0_0/m1_40235_29286#
++ resistive_divider_3v0_0/resistor_100k_27/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ resistive_divider_3v0_0/resistor_100k_33/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ resistive_divider_3v0_0/m1_40244_23222# m1_11810_n10400# pfet_05v0_886J8L_3/VSUBS
++ resistive_divider_3v0_RN_Gm2
+Xnmoscap_6p0_SBPANC_0 Vdd nmoscap_6p0_SBPANC_0/a_n3000_n3092# nmoscap_6p0_SBPANC
+Xnmoscap_6p0_SBPANC_1 m1_n2793_n17882# pfet_05v0_886J8L_3/VSUBS nmoscap_6p0_SBPANC
+Xpfet_05v0_886J8L_0 m1_20_n1381# m1_20_n1381# m1_20_n1381# m1_20_n1381# m1_20_n1381#
++ Vdd Vdd m1_20_n1381# m1_20_n1381# m1_20_n1381# m1_20_n1381# Vdd Vdd Vdd Vdd m1_20_n1381#
++ m1_20_n1381# m1_20_n1381# pfet_05v0_886J8L
+Xresistive_divider_3v0_1 resistive_divider_3v0_1/resistor_100k_13/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ resistive_divider_3v0_1/m1_123_n3010# resistive_divider_3v0_1/m1_74_n5025# resistive_divider_3v0_1/resistor_100k_25/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ resistive_divider_3v0_1/m1_74_18131# resistive_divider_3v0_1/resistor_100k_34/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ resistive_divider_3v0_1/m1_103_16097# resistive_divider_3v0_1/m1_40329_27281# resistive_divider_3v0_1/resistor_100k_14/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_20000#
++ resistive_divider_3v0_1/resistor_100k_26/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ resistive_divider_3v0_1/resistor_100k_32/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ Vin+ resistive_divider_3v0_1/m1_40274_21198# Vdd resistive_divider_3v0_1/m1_40235_29286#
++ resistive_divider_3v0_1/resistor_100k_27/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ resistive_divider_3v0_1/resistor_100k_33/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ resistive_divider_3v0_1/m1_40244_23222# m1_n4880_n10400# pfet_05v0_886J8L_3/VSUBS
++ resistive_divider_3v0_RN_Gm2
+Xpfet_05v0_886J8L_1 m1_20_n1381# m1_20_n1381# m1_20_n1381# Vout m1_20_n1381# Vdd Vdd
++ Vout m1_20_n1381# Vout m1_20_n1381# Vdd Vdd Vdd Vdd Vout m1_20_n1381# m1_20_n1381#
++ pfet_05v0_886J8L
+Xpfet_05v0_886J8L_2 m1_20_n1381# m1_20_n1381# m1_20_n1381# m1_20_n1381# m1_20_n1381#
++ Vdd Vdd m1_20_n1381# m1_20_n1381# m1_20_n1381# m1_20_n1381# Vdd Vdd Vdd Vdd m1_20_n1381#
++ m1_20_n1381# m1_20_n1381# pfet_05v0_886J8L
+.ends
+
+.subckt nfet_05v0_J69HZZ a_436_n250# a_192_n250# a_n436_n326# a_n524_n250# a_n296_n250#
++ a_n52_n250# VSUBS
+X0 a_436_n250# a_n436_n326# a_192_n250# VSUBS nfet_05v0 ad=1.1p pd=5.88u as=0.65p ps=3.02u w=2.5u l=0.7u
+X1 a_192_n250# a_n436_n326# a_n52_n250# VSUBS nfet_05v0 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.7u
+X2 a_n52_n250# a_n436_n326# a_n296_n250# VSUBS nfet_05v0 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.7u
+X3 a_n296_n250# a_n436_n326# a_n524_n250# VSUBS nfet_05v0 ad=0.65p pd=3.02u as=1.1p ps=5.88u w=2.5u l=0.7u
+.ends
+
+.subckt ppolyf_u_1k_6p0_MUQPXQ a_n100_n4122# a_n316_n4347# a_n100_4000#
+X0 a_n100_4000# a_n100_n4122# a_n316_n4347# ppolyf_u_1k_6p0 r_width=1u r_length=40u
+.ends
+
+.subckt nmoscap_6p0_C96ALX a_n2088_n2000# a_n2000_n2092# a_2000_n2000#
+X0 a_n2000_n2092# a_n2088_n2000# cap_nmos_06v0_b c_width=20u c_length=10u
+.ends
+
+.subckt pfet_05v0_9ZYXAC a_n52_n200# a_n680_n383# a_680_n200# w_n1191_n538# a_n540_n200#
++ a_436_n200# a_192_n200# a_n768_n200# a_n296_n200#
+X0 a_680_n200# a_n680_n383# a_436_n200# w_n1191_n538# pfet_05v0 ad=0.88p pd=4.88u as=0.52p ps=2.52u w=2u l=0.7u
+X1 a_192_n200# a_n680_n383# a_n52_n200# w_n1191_n538# pfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=0.7u
+X2 a_n52_n200# a_n680_n383# a_n296_n200# w_n1191_n538# pfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=0.7u
+X3 a_n296_n200# a_n680_n383# a_n540_n200# w_n1191_n538# pfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=0.7u
+X4 a_n540_n200# a_n680_n383# a_n768_n200# w_n1191_n538# pfet_05v0 ad=0.52p pd=2.52u as=0.88p ps=4.88u w=2u l=0.7u
+X5 a_436_n200# a_n680_n383# a_192_n200# w_n1191_n538# pfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=0.7u
+.ends
+
+.subckt nfet_05v0_3V5EEB a_n280_n240# a_n52_n240# a_52_n332# a_192_n240# a_n192_n332#
++ VSUBS
+X0 a_192_n240# a_52_n332# a_n52_n240# VSUBS nfet_05v0 ad=1.056p pd=5.68u as=0.624p ps=2.92u w=2.4u l=0.7u
+X1 a_n52_n240# a_n192_n332# a_n280_n240# VSUBS nfet_05v0 ad=0.624p pd=2.92u as=1.056p ps=5.68u w=2.4u l=0.7u
+.ends
+
+.subckt MG_power_clamp_ESD Vdd GND
+Xnfet_05v0_J69HZZ_0 Vdd GND m1_n5279_5007# Vdd GND Vdd GND nfet_05v0_J69HZZ
+Xnfet_05v0_J69HZZ_1 Vdd GND m1_n5279_5007# Vdd GND Vdd GND nfet_05v0_J69HZZ
+Xppolyf_u_1k_6p0_MUQPXQ_0 m1_140_160# GND m1_n610_8350# ppolyf_u_1k_6p0_MUQPXQ
+Xnfet_05v0_J69HZZ_2 Vdd GND m1_n5279_5007# Vdd GND Vdd GND nfet_05v0_J69HZZ
+Xppolyf_u_1k_6p0_MUQPXQ_1 m1_140_160# GND m1_950_8350# ppolyf_u_1k_6p0_MUQPXQ
+Xnfet_05v0_J69HZZ_3 Vdd GND m1_n5279_5007# Vdd GND Vdd GND nfet_05v0_J69HZZ
+Xnfet_05v0_J69HZZ_4 Vdd GND m1_n5279_5007# Vdd GND Vdd GND nfet_05v0_J69HZZ
+Xppolyf_u_1k_6p0_MUQPXQ_2 m1_1750_170# GND m1_n5279_5007# ppolyf_u_1k_6p0_MUQPXQ
+Xnfet_05v0_J69HZZ_5 Vdd GND m1_n5279_5007# Vdd GND Vdd GND nfet_05v0_J69HZZ
+Xppolyf_u_1k_6p0_MUQPXQ_3 m1_1750_170# GND m1_950_8350# ppolyf_u_1k_6p0_MUQPXQ
+Xnfet_05v0_J69HZZ_6 Vdd GND m1_n5279_5007# Vdd GND Vdd GND nfet_05v0_J69HZZ
+Xnfet_05v0_J69HZZ_7 Vdd GND m1_n5279_5007# Vdd GND Vdd GND nfet_05v0_J69HZZ
+Xppolyf_u_1k_6p0_MUQPXQ_6 m1_n2910_160# GND Vdd ppolyf_u_1k_6p0_MUQPXQ
+Xnfet_05v0_J69HZZ_8 Vdd GND m1_n5279_5007# Vdd GND Vdd GND nfet_05v0_J69HZZ
+Xppolyf_u_1k_6p0_MUQPXQ_7 m1_n2910_160# GND m1_n2120_8350# ppolyf_u_1k_6p0_MUQPXQ
+Xnfet_05v0_J69HZZ_9 Vdd GND m1_n5279_5007# Vdd GND Vdd GND nfet_05v0_J69HZZ
+Xnmoscap_6p0_C96ALX_0 m1_n5279_5007# GND m1_n5279_5007# nmoscap_6p0_C96ALX
+Xppolyf_u_1k_6p0_MUQPXQ_8 m1_n1320_170# GND m1_n2120_8350# ppolyf_u_1k_6p0_MUQPXQ
+Xppolyf_u_1k_6p0_MUQPXQ_9 m1_n1320_170# GND m1_n610_8350# ppolyf_u_1k_6p0_MUQPXQ
+Xpfet_05v0_9ZYXAC_0 m1_n5874_5836# m1_n5279_5007# Vdd Vdd m1_n5874_5836# m1_n5874_5836#
++ Vdd Vdd Vdd pfet_05v0_9ZYXAC
+Xnfet_05v0_3V5EEB_0 GND m1_n5874_5836# m1_n5279_5007# GND m1_n5279_5007# GND nfet_05v0_3V5EEB
+.ends
+
+.subckt nfet_05v0_4EKCKL a_n52_n200# a_n1324_n244# a_n292_n244# a_1324_n200# a_n1412_n200#
++ a_636_n200# a_n396_n200# a_n636_n244# a_740_n244# a_52_n244# a_1084_n244# a_396_n244#
++ a_980_n200# a_n740_n200# a_n1084_n200# a_292_n200# a_n980_n244# VSUBS
+X0 a_292_n200# a_52_n244# a_n52_n200# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1.2u
+X1 a_636_n200# a_396_n244# a_292_n200# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1.2u
+X2 a_980_n200# a_740_n244# a_636_n200# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1.2u
+X3 a_1324_n200# a_1084_n244# a_980_n200# VSUBS nfet_05v0 ad=0.88p pd=4.88u as=0.52p ps=2.52u w=2u l=1.2u
+X4 a_n396_n200# a_n636_n244# a_n740_n200# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1.2u
+X5 a_n740_n200# a_n980_n244# a_n1084_n200# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1.2u
+X6 a_n1084_n200# a_n1324_n244# a_n1412_n200# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.88p ps=4.88u w=2u l=1.2u
+X7 a_n52_n200# a_n292_n244# a_n396_n200# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1.2u
+.ends
+
+.subckt nfet_05v0_SF24D3 a_n556_n232# a_n252_n232# a_556_n188# a_252_n188# a_n644_n188#
++ a_356_n232# a_n356_n188# a_52_n232# a_n52_n188# VSUBS
+X0 a_n356_n188# a_n556_n232# a_n644_n188# VSUBS nfet_05v0 ad=0.4888p pd=2.4u as=0.8272p ps=4.64u w=1.88u l=1u
+X1 a_556_n188# a_356_n232# a_252_n188# VSUBS nfet_05v0 ad=0.8272p pd=4.64u as=0.4888p ps=2.4u w=1.88u l=1u
+X2 a_252_n188# a_52_n232# a_n52_n188# VSUBS nfet_05v0 ad=0.4888p pd=2.4u as=0.4888p ps=2.4u w=1.88u l=1u
+X3 a_n52_n188# a_n252_n232# a_n356_n188# VSUBS nfet_05v0 ad=0.4888p pd=2.4u as=0.4888p ps=2.4u w=1.88u l=1u
+.ends
+
+.subckt ppolyf_u_1k_6p0_45EQGM a_n200_n2000# a_n412_n2334# a_n200_2000# a_n200_n2122#
+X0 a_n200_2000# a_n200_n2122# a_n412_n2334# ppolyf_u_1k_6p0 r_width=2u r_length=20u
+.ends
+
+.subckt resistor_10k ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000# ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#
++ VSUBS ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
+Xppolyf_u_1k_6p0_45EQGM_0 ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000# VSUBS ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#
++ ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122# ppolyf_u_1k_6p0_45EQGM
+.ends
+
+.subckt resistive_divider_1v25 m1_8789_4393# m1_8767_8367# m1_n1090_8367# VSUBS
+Xresistor_10k_23 m1_4608_1365# m1_n534_1394# VSUBS resistor_10k_23/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
++ resistor_10k
+Xresistor_10k_0 m1_n534_1394# m1_3967_1408# VSUBS resistor_10k_0/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
++ resistor_10k
+Xresistor_10k_1 m1_n202_2348# m1_3967_1408# VSUBS resistor_10k_1/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
++ resistor_10k
+Xresistor_10k_2 m1_n202_2348# m1_3967_3376# VSUBS resistor_10k_2/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
++ resistor_10k
+Xresistor_10k_3 m1_n202_4351# m1_3967_3376# VSUBS resistor_10k_3/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
++ resistor_10k
+Xresistor_10k_4 m1_n202_4351# m1_3956_5364# VSUBS resistor_10k_4/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
++ resistor_10k
+Xresistor_10k_16 m1_4597_7353# m1_8767_8367# VSUBS ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
++ resistor_10k
+Xresistor_10k_5 m1_n223_6375# m1_3956_5364# VSUBS resistor_10k_5/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
++ resistor_10k
+Xresistor_10k_17 m1_4597_7353# m1_8778_6407# VSUBS resistor_10k_17/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
++ resistor_10k
+Xresistor_10k_18 m1_4597_5375# m1_8778_6407# VSUBS resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
++ resistor_10k
+Xresistor_10k_6 m1_n223_6375# m1_3967_7342# VSUBS resistor_10k_6/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
++ resistor_10k
+Xresistor_10k_19 m1_4597_5375# m1_8789_4393# VSUBS resistor_10k_19/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
++ resistor_10k
+Xresistor_10k_7 m1_n1090_8367# m1_3967_7342# VSUBS resistor_10k_7/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
++ resistor_10k
+Xresistor_10k_8 VSUBS resistor_10k_8/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122# VSUBS
++ resistor_10k_8/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000# resistor_10k
+Xresistor_10k_9 VSUBS resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122# VSUBS
++ resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000# resistor_10k
+Xppolyf_u_1k_6p0_45EQGM_0 ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000# VSUBS m1_4597_7353#
++ m1_8767_8367# ppolyf_u_1k_6p0_45EQGM
+Xppolyf_u_1k_6p0_45EQGM_1 ppolyf_u_1k_6p0_45EQGM_1/a_n200_n2000# VSUBS ppolyf_u_1k_6p0_45EQGM_1/a_n200_2000#
++ VSUBS ppolyf_u_1k_6p0_45EQGM
+Xresistor_10k_20 m1_4576_3365# m1_8789_4393# VSUBS resistor_10k_20/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
++ resistor_10k
+Xresistor_10k_10 resistor_10k_10/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000# VSUBS VSUBS
++ resistor_10k_10/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000# resistor_10k
+Xresistor_10k_21 m1_4576_3365# m1_8767_2358# VSUBS resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
++ resistor_10k
+Xresistor_10k_22 m1_4608_1365# m1_8767_2358# VSUBS resistor_10k_22/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
++ resistor_10k
+.ends
+
+.subckt pfet_05v0_B5NW4X a_1964_n170# a_n956_n214# a_1060_n214# a_n52_n170# a_2468_n170#
++ a_n2556_n170# a_556_n214# a_n1964_n214# a_n1060_n170# a_452_n170# a_n2468_n214#
++ w_n2882_n620# a_n556_n170# a_1564_n214# a_1460_n170# a_n452_n214# a_n1564_n170#
++ a_2068_n214# a_956_n170# a_n1460_n214# a_n2068_n170# a_52_n214#
+X0 a_2468_n170# a_2068_n214# a_1964_n170# w_n2882_n620# pfet_05v0 ad=0.748p pd=4.28u as=0.442p ps=2.22u w=1.7u l=2u
+X1 a_452_n170# a_52_n214# a_n52_n170# w_n2882_n620# pfet_05v0 ad=0.442p pd=2.22u as=0.442p ps=2.22u w=1.7u l=2u
+X2 a_n1060_n170# a_n1460_n214# a_n1564_n170# w_n2882_n620# pfet_05v0 ad=0.442p pd=2.22u as=0.442p ps=2.22u w=1.7u l=2u
+X3 a_956_n170# a_556_n214# a_452_n170# w_n2882_n620# pfet_05v0 ad=0.442p pd=2.22u as=0.442p ps=2.22u w=1.7u l=2u
+X4 a_1460_n170# a_1060_n214# a_956_n170# w_n2882_n620# pfet_05v0 ad=0.442p pd=2.22u as=0.442p ps=2.22u w=1.7u l=2u
+X5 a_n1564_n170# a_n1964_n214# a_n2068_n170# w_n2882_n620# pfet_05v0 ad=0.442p pd=2.22u as=0.442p ps=2.22u w=1.7u l=2u
+X6 a_n2068_n170# a_n2468_n214# a_n2556_n170# w_n2882_n620# pfet_05v0 ad=0.442p pd=2.22u as=0.748p ps=4.28u w=1.7u l=2u
+X7 a_n556_n170# a_n956_n214# a_n1060_n170# w_n2882_n620# pfet_05v0 ad=0.442p pd=2.22u as=0.442p ps=2.22u w=1.7u l=2u
+X8 a_n52_n170# a_n452_n214# a_n556_n170# w_n2882_n620# pfet_05v0 ad=0.442p pd=2.22u as=0.442p ps=2.22u w=1.7u l=2u
+X9 a_1964_n170# a_1564_n214# a_1460_n170# w_n2882_n620# pfet_05v0 ad=0.442p pd=2.22u as=0.442p ps=2.22u w=1.7u l=2u
+.ends
+
+.subckt nmoscap_6p0_3UAEB3 w_n3120_n3100# a_n3000_n3068#
+X0 a_n3000_n3068# w_n3120_n3100# cap_nmos_06v0_b c_width=30u c_length=30u
+.ends
+
+.subckt nfet_05v0_MN8BMK a_n188_n176# a_100_n176# a_n100_n232# VSUBS
+X0 a_100_n176# a_n100_n232# a_n188_n176# VSUBS nfet_05v0 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1u
+.ends
+
+.subckt ppolyf_u_1k_6p0_XM9FDM a_n436_n20334# a_n200_n20122# a_n200_n20000# a_n200_20000#
+X0 a_n200_20000# a_n200_n20122# a_n436_n20334# ppolyf_u_1k_6p0 r_width=2u r_length=0.2m
+.ends
+
+.subckt resistor_100k ppolyf_u_1k_6p0_XM9FDM_0/a_n200_20000# ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20122#
++ a_310_n30# ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000# a_310_720#
+Xppolyf_u_1k_6p0_XM9FDM_0 a_310_n30# ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20122# ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ ppolyf_u_1k_6p0_XM9FDM_0/a_n200_20000# ppolyf_u_1k_6p0_XM9FDM
+.ends
+
+.subckt resistive_divider_3v0 m1_74_18131# m1_103_16097# resistor_100k_4/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ m1_55_22268# m1_n1660_13170# m1_n1661_30377# m1_123_5127# resistor_100k_24/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ m1_103_3200# m1_94_1146# m1_64_20137# m1_55_n839# VSUBS
+Xresistor_100k_1 m1_94_1146# m1_40313_105# VSUBS resistor_100k_1/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_0 m1_55_n839# m1_40313_105# VSUBS resistor_100k_0/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_2 m1_94_1146# m1_40332_2139# VSUBS resistor_100k_2/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_3 m1_103_3200# m1_40332_2139# VSUBS resistor_100k_3/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_4 m1_103_3200# m1_40351_4105# VSUBS resistor_100k_4/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_5 m1_123_5127# m1_40351_4105# VSUBS resistor_100k_5/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_6 m1_123_5127# m1_40332_6130# VSUBS resistor_100k_6/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_7 m1_84_7181# m1_40332_6130# VSUBS resistor_100k_7/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_8 m1_84_7181# m1_40322_8164# VSUBS resistor_100k_8/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_9 m1_80_9130# m1_40322_8164# VSUBS resistor_100k_9/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_40 VSUBS VSUBS VSUBS resistor_100k_40/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_30 m1_74_28332# m1_40329_27281# VSUBS resistor_100k_30/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_41 m1_123_n3010# m1_40283_n2027# VSUBS resistor_100k_41/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_31 m1_55_26181# m1_40329_27281# VSUBS resistor_100k_31/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_32 m1_55_26181# m1_40313_25247# VSUBS resistor_100k_32/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_21 m1_64_20137# m1_40274_21198# VSUBS resistor_100k_21/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_20 m1_64_20137# m1_40313_19076# VSUBS resistor_100k_20/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_10 m1_80_9130# resistor_100k_10/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20122#
++ VSUBS resistor_100k_10/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000# VSUBS resistor_100k
+Xresistor_100k_42 m1_123_n3010# m1_40322_n3983# VSUBS resistor_100k_42/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_11 m1_40_11140# m1_40293_11114# VSUBS resistor_100k_11/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_22 m1_55_n839# m1_40283_n2027# VSUBS resistor_100k_22/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_33 m1_74_n5025# m1_40322_n3983# VSUBS resistor_100k_33/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_23 m1_55_22268# m1_40244_23222# VSUBS resistor_100k_23/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_12 m1_40_11140# m1_40293_11114# VSUBS resistor_100k_12/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_34 m1_74_n5025# m1_40342_n5959# VSUBS resistor_100k_34/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_24 m1_55_22268# m1_40274_21198# VSUBS resistor_100k_24/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_13 m1_n1660_13170# m1_40322_13099# VSUBS resistor_100k_13/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_35 m1_84_n7001# m1_40342_n5959# VSUBS resistor_100k_35/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_25 m1_64_24273# m1_40244_23222# VSUBS resistor_100k_25/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_14 resistor_100k_14/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_20000# m1_40322_13099#
++ VSUBS resistor_100k_14/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000# VSUBS resistor_100k
+Xresistor_100k_36 m1_84_n7001# m1_40332_n7974# VSUBS resistor_100k_36/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_26 m1_64_24273# m1_40313_25247# VSUBS resistor_100k_26/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_15 m1_n1660_13170# m1_40313_15104# VSUBS resistor_100k_15/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_37 m1_113_n9006# m1_40332_n7974# VSUBS resistor_100k_37/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_27 VSUBS VSUBS VSUBS resistor_100k_27/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_16 m1_103_16097# m1_40313_15104# VSUBS resistor_100k_16/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_38 m1_113_n9006# m1_40293_n10057# VSUBS resistor_100k_38/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_28 m1_n1661_30377# m1_40235_29286# VSUBS resistor_100k_28/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_17 m1_103_16097# m1_40361_17148# VSUBS resistor_100k_17/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_39 VSUBS m1_40293_n10057# VSUBS resistor_100k_39/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_29 m1_74_28332# m1_40235_29286# VSUBS resistor_100k_29/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_19 m1_74_18131# m1_40313_19076# VSUBS resistor_100k_19/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+Xresistor_100k_18 m1_74_18131# m1_40361_17148# VSUBS resistor_100k_18/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ VSUBS resistor_100k
+.ends
+
+.subckt pfet_05v0_RM65KH a_n188_n151# w_n274_n329# a_n100_n207# a_100_n151#
+X0 a_100_n151# a_n100_n207# a_n188_n151# w_n274_n329# pfet_05v0 ad=0.77p pd=4.38u as=0.77p ps=4.38u w=1.75u l=1u
+.ends
+
+.subckt RN_GM3_Layout VDD Vout Vin- Vin+ resistive_divider_3v0_0/resistor_100k_4/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ resistive_divider_3v0_0/resistor_100k_24/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ a_12320_1819# resistive_divider_3v0_0/m1_55_n839# resistive_divider_3v0_0/m1_103_16097#
++ resistive_divider_3v0_0/m1_94_1146# resistive_divider_3v0_0/m1_64_20137# resistive_divider_3v0_0/m1_123_5127#
++ resistive_divider_3v0_0/m1_74_18131# resistive_divider_3v0_0/m1_55_22268# resistive_divider_3v0_0/m1_103_3200#
++ GND
+Xnfet_05v0_4EKCKL_0 GND a_17520_n2180# a_17520_n2180# GND GND GND m1_16820_n1480#
++ a_17520_n2180# a_17520_n2180# a_17520_n2180# a_17520_n2180# a_17520_n2180# m1_16820_n1480#
++ GND m1_16820_n1480# m1_16820_n1480# a_17520_n2180# GND nfet_05v0_4EKCKL
+Xnfet_05v0_SF24D3_0 Vin+ Vin+ m1_16820_n1480# a_12320_1819# m1_16820_n1480# Vin+ a_12320_1819#
++ Vin+ m1_16820_n1480# GND nfet_05v0_SF24D3
+Xnfet_05v0_SF24D3_1 Vin- Vin- m1_16820_n1480# Vout m1_16820_n1480# Vin- Vout Vin-
++ m1_16820_n1480# GND nfet_05v0_SF24D3
+Xnfet_05v0_SF24D3_2 Vin- Vin- m1_16820_n1480# Vout m1_16820_n1480# Vin- Vout Vin-
++ m1_16820_n1480# GND nfet_05v0_SF24D3
+Xnfet_05v0_SF24D3_3 Vin+ Vin+ m1_16820_n1480# a_12320_1819# m1_16820_n1480# Vin+ a_12320_1819#
++ Vin+ m1_16820_n1480# GND nfet_05v0_SF24D3
+Xnfet_05v0_SF24D3_4 Vin- Vin- m1_16820_n1480# Vout m1_16820_n1480# Vin- Vout Vin-
++ m1_16820_n1480# GND nfet_05v0_SF24D3
+Xnfet_05v0_SF24D3_5 Vin+ Vin+ m1_16820_n1480# a_12320_1819# m1_16820_n1480# Vin+ a_12320_1819#
++ Vin+ m1_16820_n1480# GND nfet_05v0_SF24D3
+Xnfet_05v0_SF24D3_6 Vin+ Vin+ m1_16820_n1480# a_12320_1819# m1_16820_n1480# Vin+ a_12320_1819#
++ Vin+ m1_16820_n1480# GND nfet_05v0_SF24D3
+Xnfet_05v0_SF24D3_7 Vin- Vin- m1_16820_n1480# Vout m1_16820_n1480# Vin- Vout Vin-
++ m1_16820_n1480# GND nfet_05v0_SF24D3
+Xresistive_divider_1v25_0 a_17520_n2180# GND VDD GND resistive_divider_1v25
+Xpfet_05v0_B5NW4X_0 Vout a_12320_1819# a_12320_1819# Vout VDD VDD a_12320_1819# a_12320_1819#
++ Vout VDD a_12320_1819# VDD VDD a_12320_1819# VDD a_12320_1819# VDD a_12320_1819#
++ Vout a_12320_1819# Vout a_12320_1819# pfet_05v0_B5NW4X
+Xpfet_05v0_B5NW4X_1 Vout a_12320_1819# a_12320_1819# Vout VDD VDD a_12320_1819# a_12320_1819#
++ Vout VDD a_12320_1819# VDD VDD a_12320_1819# VDD a_12320_1819# VDD a_12320_1819#
++ Vout a_12320_1819# Vout a_12320_1819# pfet_05v0_B5NW4X
+Xnmoscap_6p0_3UAEB3_0 VDD GND nmoscap_6p0_3UAEB3
+Xpfet_05v0_B5NW4X_2 a_12320_1819# a_12320_1819# a_12320_1819# a_12320_1819# VDD VDD
++ a_12320_1819# a_12320_1819# a_12320_1819# VDD a_12320_1819# VDD VDD a_12320_1819#
++ VDD a_12320_1819# VDD a_12320_1819# a_12320_1819# a_12320_1819# a_12320_1819# a_12320_1819#
++ pfet_05v0_B5NW4X
+Xnfet_05v0_MN8BMK_0 GND GND GND GND nfet_05v0_MN8BMK
+Xnmoscap_6p0_3UAEB3_1 a_17520_n2180# GND nmoscap_6p0_3UAEB3
+Xnfet_05v0_MN8BMK_1 GND GND GND GND nfet_05v0_MN8BMK
+XPMOS1 a_12320_1819# a_12320_1819# a_12320_1819# a_12320_1819# VDD VDD a_12320_1819#
++ a_12320_1819# a_12320_1819# VDD a_12320_1819# VDD VDD a_12320_1819# VDD a_12320_1819#
++ VDD a_12320_1819# a_12320_1819# a_12320_1819# a_12320_1819# a_12320_1819# pfet_05v0_B5NW4X
+XNMOS GND a_17520_n2180# a_17520_n2180# GND GND GND m1_16820_n1480# a_17520_n2180#
++ a_17520_n2180# a_17520_n2180# a_17520_n2180# a_17520_n2180# m1_16820_n1480# GND
++ m1_16820_n1480# m1_16820_n1480# a_17520_n2180# GND nfet_05v0_4EKCKL
+Xresistive_divider_3v0_0 resistive_divider_3v0_0/m1_74_18131# resistive_divider_3v0_0/m1_103_16097#
++ resistive_divider_3v0_0/resistor_100k_4/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ resistive_divider_3v0_0/m1_55_22268# Vin+ VDD resistive_divider_3v0_0/m1_123_5127#
++ resistive_divider_3v0_0/resistor_100k_24/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ resistive_divider_3v0_0/m1_103_3200# resistive_divider_3v0_0/m1_94_1146# resistive_divider_3v0_0/m1_64_20137#
++ resistive_divider_3v0_0/m1_55_n839# GND resistive_divider_3v0
+Xpfet_05v0_RM65KH_0 VDD VDD VDD VDD pfet_05v0_RM65KH
+Xpfet_05v0_RM65KH_1 VDD VDD VDD VDD pfet_05v0_RM65KH
+Xresistive_divider_3v0_1 resistive_divider_3v0_1/m1_74_18131# resistive_divider_3v0_1/m1_103_16097#
++ resistive_divider_3v0_1/resistor_100k_4/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ resistive_divider_3v0_1/m1_55_22268# Vin- VDD resistive_divider_3v0_1/m1_123_5127#
++ resistive_divider_3v0_1/resistor_100k_24/ppolyf_u_1k_6p0_XM9FDM_0/a_n200_n20000#
++ resistive_divider_3v0_1/m1_103_3200# resistive_divider_3v0_1/m1_94_1146# resistive_divider_3v0_1/m1_64_20137#
++ resistive_divider_3v0_1/m1_55_n839# GND resistive_divider_3v0
+.ends
+
+.subckt nfet_05v0_4EKCKL_TG_gm_ff a_n52_n200# a_n1324_n244# a_n292_n244# a_1324_n200#
++ a_n1412_n200# a_636_n200# a_n396_n200# a_n636_n244# a_740_n244# a_52_n244# a_1084_n244#
++ a_396_n244# a_980_n200# a_n740_n200# a_n1084_n200# a_292_n200# a_n980_n244# VSUBS
+X0 a_292_n200# a_52_n244# a_n52_n200# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1.2u
+X1 a_636_n200# a_396_n244# a_292_n200# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1.2u
+X2 a_980_n200# a_740_n244# a_636_n200# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1.2u
+X3 a_1324_n200# a_1084_n244# a_980_n200# VSUBS nfet_05v0 ad=0.88p pd=4.88u as=0.52p ps=2.52u w=2u l=1.2u
+X4 a_n396_n200# a_n636_n244# a_n740_n200# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1.2u
+X5 a_n740_n200# a_n980_n244# a_n1084_n200# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1.2u
+X6 a_n1084_n200# a_n1324_n244# a_n1412_n200# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.88p ps=4.88u w=2u l=1.2u
+X7 a_n52_n200# a_n292_n244# a_n396_n200# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1.2u
+.ends
+
+.subckt nfet_05v0_SF24D3_TG_gm_ff a_n556_n232# a_n252_n232# a_556_n188# a_252_n188#
++ a_n644_n188# a_356_n232# a_n356_n188# a_52_n232# a_n52_n188# VSUBS
+X0 a_n356_n188# a_n556_n232# a_n644_n188# VSUBS nfet_05v0 ad=0.4888p pd=2.4u as=0.8272p ps=4.64u w=1.88u l=1u
+X1 a_556_n188# a_356_n232# a_252_n188# VSUBS nfet_05v0 ad=0.8272p pd=4.64u as=0.4888p ps=2.4u w=1.88u l=1u
+X2 a_252_n188# a_52_n232# a_n52_n188# VSUBS nfet_05v0 ad=0.4888p pd=2.4u as=0.4888p ps=2.4u w=1.88u l=1u
+X3 a_n52_n188# a_n252_n232# a_n356_n188# VSUBS nfet_05v0 ad=0.4888p pd=2.4u as=0.4888p ps=2.4u w=1.88u l=1u
+.ends
+
+.subckt nfet_05v0_37MYH2 a_125_n200# a_n213_n200# a_n125_n256# VSUBS
+X0 a_125_n200# a_n125_n256# a_n213_n200# VSUBS nfet_05v0 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1.25u
+.ends
+
+.subckt pfet_05v0_B5NW4X_TG_gm_ff a_1964_n170# a_n956_n214# a_1060_n214# a_n52_n170#
++ a_2468_n170# a_n2556_n170# a_556_n214# a_n1964_n214# a_n1060_n170# a_452_n170# a_n2468_n214#
++ w_n2882_n620# a_n556_n170# a_1564_n214# a_1460_n170# a_n452_n214# a_n1564_n170#
++ a_2068_n214# a_956_n170# a_n1460_n214# a_n2068_n170# a_52_n214#
+X0 a_2468_n170# a_2068_n214# a_1964_n170# w_n2882_n620# pfet_05v0 ad=0.748p pd=4.28u as=0.442p ps=2.22u w=1.7u l=2u
+X1 a_452_n170# a_52_n214# a_n52_n170# w_n2882_n620# pfet_05v0 ad=0.442p pd=2.22u as=0.442p ps=2.22u w=1.7u l=2u
+X2 a_n1060_n170# a_n1460_n214# a_n1564_n170# w_n2882_n620# pfet_05v0 ad=0.442p pd=2.22u as=0.442p ps=2.22u w=1.7u l=2u
+X3 a_956_n170# a_556_n214# a_452_n170# w_n2882_n620# pfet_05v0 ad=0.442p pd=2.22u as=0.442p ps=2.22u w=1.7u l=2u
+X4 a_1460_n170# a_1060_n214# a_956_n170# w_n2882_n620# pfet_05v0 ad=0.442p pd=2.22u as=0.442p ps=2.22u w=1.7u l=2u
+X5 a_n1564_n170# a_n1964_n214# a_n2068_n170# w_n2882_n620# pfet_05v0 ad=0.442p pd=2.22u as=0.442p ps=2.22u w=1.7u l=2u
+X6 a_n2068_n170# a_n2468_n214# a_n2556_n170# w_n2882_n620# pfet_05v0 ad=0.442p pd=2.22u as=0.748p ps=4.28u w=1.7u l=2u
+X7 a_n556_n170# a_n956_n214# a_n1060_n170# w_n2882_n620# pfet_05v0 ad=0.442p pd=2.22u as=0.442p ps=2.22u w=1.7u l=2u
+X8 a_n52_n170# a_n452_n214# a_n556_n170# w_n2882_n620# pfet_05v0 ad=0.442p pd=2.22u as=0.442p ps=2.22u w=1.7u l=2u
+X9 a_1964_n170# a_1564_n214# a_1460_n170# w_n2882_n620# pfet_05v0 ad=0.442p pd=2.22u as=0.442p ps=2.22u w=1.7u l=2u
+.ends
+
+.subckt nmoscap_6p0_3UAEB3_TG_gm_ff w_n3120_n3100# a_n3000_n3068#
+X0 a_n3000_n3068# w_n3120_n3100# cap_nmos_06v0_b c_width=30u c_length=30u
+.ends
+
+.subckt pfet_05v0_63BLP2 a_125_n200# a_n213_n200# w_n299_n378# a_n125_n256#
+X0 a_125_n200# a_n125_n256# a_n213_n200# w_n299_n378# pfet_05v0 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1.25u
+.ends
+
+.subckt TG_Gm_ff_Layout Vin+ Vin- GND VDD Vout ext_bias
+Xnfet_05v0_4EKCKL_0 GND ext_bias ext_bias GND GND GND m1_16820_n1480# ext_bias ext_bias
++ ext_bias ext_bias ext_bias m1_16820_n1480# GND m1_16820_n1480# m1_16820_n1480# ext_bias
++ GND nfet_05v0_4EKCKL_TG_gm_ff
+Xnfet_05v0_4EKCKL_1 GND ext_bias ext_bias GND GND GND ext_bias ext_bias ext_bias ext_bias
++ ext_bias ext_bias ext_bias GND ext_bias ext_bias ext_bias GND nfet_05v0_4EKCKL_TG_gm_ff
+Xnfet_05v0_SF24D3_0 Vin+ Vin+ m1_16820_n1480# a_12320_1819# m1_16820_n1480# Vin+ a_12320_1819#
++ Vin+ m1_16820_n1480# GND nfet_05v0_SF24D3_TG_gm_ff
+Xnfet_05v0_4EKCKL_2 GND ext_bias ext_bias GND GND GND ext_bias ext_bias ext_bias ext_bias
++ ext_bias ext_bias ext_bias GND ext_bias ext_bias ext_bias GND nfet_05v0_4EKCKL_TG_gm_ff
+Xnfet_05v0_37MYH2_0 GND GND GND GND nfet_05v0_37MYH2
+Xnfet_05v0_SF24D3_2 Vin- Vin- m1_16820_n1480# Vout m1_16820_n1480# Vin- Vout Vin-
++ m1_16820_n1480# GND nfet_05v0_SF24D3_TG_gm_ff
+Xnfet_05v0_SF24D3_1 Vin- Vin- m1_16820_n1480# Vout m1_16820_n1480# Vin- Vout Vin-
++ m1_16820_n1480# GND nfet_05v0_SF24D3_TG_gm_ff
+Xnfet_05v0_SF24D3_3 Vin+ Vin+ m1_16820_n1480# a_12320_1819# m1_16820_n1480# Vin+ a_12320_1819#
++ Vin+ m1_16820_n1480# GND nfet_05v0_SF24D3_TG_gm_ff
+Xnfet_05v0_37MYH2_1 GND GND GND GND nfet_05v0_37MYH2
+Xnfet_05v0_37MYH2_2 GND GND GND GND nfet_05v0_37MYH2
+Xnfet_05v0_SF24D3_4 Vin- Vin- m1_16820_n1480# Vout m1_16820_n1480# Vin- Vout Vin-
++ m1_16820_n1480# GND nfet_05v0_SF24D3_TG_gm_ff
+Xnfet_05v0_SF24D3_5 Vin+ Vin+ m1_16820_n1480# a_12320_1819# m1_16820_n1480# Vin+ a_12320_1819#
++ Vin+ m1_16820_n1480# GND nfet_05v0_SF24D3_TG_gm_ff
+Xnfet_05v0_SF24D3_6 Vin+ Vin+ m1_16820_n1480# a_12320_1819# m1_16820_n1480# Vin+ a_12320_1819#
++ Vin+ m1_16820_n1480# GND nfet_05v0_SF24D3_TG_gm_ff
+Xnfet_05v0_SF24D3_7 Vin- Vin- m1_16820_n1480# Vout m1_16820_n1480# Vin- Vout Vin-
++ m1_16820_n1480# GND nfet_05v0_SF24D3_TG_gm_ff
+Xpfet_05v0_B5NW4X_0 Vout a_12320_1819# a_12320_1819# Vout VDD VDD a_12320_1819# a_12320_1819#
++ Vout VDD a_12320_1819# VDD VDD a_12320_1819# VDD a_12320_1819# VDD a_12320_1819#
++ Vout a_12320_1819# Vout a_12320_1819# pfet_05v0_B5NW4X_TG_gm_ff
+Xpfet_05v0_B5NW4X_1 Vout a_12320_1819# a_12320_1819# Vout VDD VDD a_12320_1819# a_12320_1819#
++ Vout VDD a_12320_1819# VDD VDD a_12320_1819# VDD a_12320_1819# VDD a_12320_1819#
++ Vout a_12320_1819# Vout a_12320_1819# pfet_05v0_B5NW4X_TG_gm_ff
+Xnmoscap_6p0_3UAEB3_0 GND ext_bias nmoscap_6p0_3UAEB3_TG_gm_ff
+Xpfet_05v0_B5NW4X_2 a_12320_1819# a_12320_1819# a_12320_1819# a_12320_1819# VDD VDD
++ a_12320_1819# a_12320_1819# a_12320_1819# VDD a_12320_1819# VDD VDD a_12320_1819#
++ VDD a_12320_1819# VDD a_12320_1819# a_12320_1819# a_12320_1819# a_12320_1819# a_12320_1819#
++ pfet_05v0_B5NW4X_TG_gm_ff
+Xnmoscap_6p0_3UAEB3_1 GND ext_bias nmoscap_6p0_3UAEB3_TG_gm_ff
+Xnmoscap_6p0_3UAEB3_2 GND ext_bias nmoscap_6p0_3UAEB3_TG_gm_ff
+Xnmoscap_6p0_3UAEB3_3 GND ext_bias nmoscap_6p0_3UAEB3_TG_gm_ff
+Xnmoscap_6p0_3UAEB3_4 GND VDD nmoscap_6p0_3UAEB3_TG_gm_ff
+Xnmoscap_6p0_3UAEB3_5 GND VDD nmoscap_6p0_3UAEB3_TG_gm_ff
+XPMOS1 a_12320_1819# a_12320_1819# a_12320_1819# a_12320_1819# VDD VDD a_12320_1819#
++ a_12320_1819# a_12320_1819# VDD a_12320_1819# VDD VDD a_12320_1819# VDD a_12320_1819#
++ VDD a_12320_1819# a_12320_1819# a_12320_1819# a_12320_1819# a_12320_1819# pfet_05v0_B5NW4X_TG_gm_ff
+Xnmoscap_6p0_3UAEB3_6 GND VDD nmoscap_6p0_3UAEB3_TG_gm_ff
+XNMOS GND ext_bias ext_bias GND GND GND m1_16820_n1480# ext_bias ext_bias ext_bias
++ ext_bias ext_bias m1_16820_n1480# GND m1_16820_n1480# m1_16820_n1480# ext_bias GND
++ nfet_05v0_4EKCKL_TG_gm_ff
+Xnmoscap_6p0_3UAEB3_7 GND VDD nmoscap_6p0_3UAEB3_TG_gm_ff
+Xpfet_05v0_63BLP2_0 VDD VDD VDD VDD pfet_05v0_63BLP2
+Xpfet_05v0_63BLP2_1 VDD VDD VDD VDD pfet_05v0_63BLP2
+.ends
+
+.subckt pfet_05v0_2VHNWJ_MG_decoder a_192_n110# a_n280_n110# a_n52_n110# w_n406_n308#
++ a_n192_n282#
+X0 a_192_n110# a_n192_n282# a_n52_n110# w_n406_n308# pfet_05v0 ad=0.484p pd=3.08u as=0.286p ps=1.62u w=1.1u l=0.7u
+X1 a_n52_n110# a_n192_n282# a_n280_n110# w_n406_n308# pfet_05v0 ad=0.286p pd=1.62u as=0.484p ps=3.08u w=1.1u l=0.7u
+.ends
+
+.subckt nfet_05v0_ZZNR9W_MG_decoder a_70_n100# a_n158_n100# a_n70_n192# VSUBS
+X0 a_70_n100# a_n70_n192# a_n158_n100# VSUBS nfet_05v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
+.ends
+
+.subckt MG_not_gate Vdd GND Vin Vout
+XXM1 Vdd Vdd Vout Vdd Vin pfet_05v0_2VHNWJ_MG_decoder
+Xnfet_05v0_ZZNR9W_0 GND Vout Vin GND nfet_05v0_ZZNR9W_MG_decoder
+.ends
+
+.subckt nfet_05v0_EGQXBG a_n158_n200# a_n70_n292# a_70_n200# VSUBS
+X0 a_70_n200# a_n70_n292# a_n158_n200# VSUBS nfet_05v0 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=0.7u
+.ends
+
+.subckt pfet_05v0_E5NMY2 a_n192_n268# a_192_n110# a_n280_n110# a_n52_n110# w_n446_n288#
+X0 a_192_n110# a_n192_n268# a_n52_n110# w_n446_n288# pfet_05v0 ad=0.484p pd=3.08u as=0.286p ps=1.62u w=1.1u l=0.7u
+X1 a_n52_n110# a_n192_n268# a_n280_n110# w_n446_n288# pfet_05v0 ad=0.286p pd=1.62u as=0.484p ps=3.08u w=1.1u l=0.7u
+.ends
+
+.subckt MG_or_gate Vdd GND Vout Vin_B Vin_A
+XXM1 Vdd Vdd Vout Vdd m1_650_1060# pfet_05v0_2VHNWJ_MG_decoder
+XXM2 GND Vout m1_650_1060# GND nfet_05v0_ZZNR9W_MG_decoder
+Xnfet_05v0_EGQXBG_0 m1_650_1060# Vin_B GND GND nfet_05v0_EGQXBG
+Xpfet_05v0_E5NMY2_0 Vin_A Vdd Vdd m1_n1596_1203# Vdd pfet_05v0_E5NMY2
+XXM3 Vin_B m1_n1596_1203# m1_n1596_1203# m1_650_1060# Vdd pfet_05v0_E5NMY2
+Xnfet_05v0_EGQXBG_1 m1_650_1060# Vin_A GND GND nfet_05v0_EGQXBG
+.ends
+
+.subckt MG_and_gate Vdd GND Vout Vin_A Vin_B
+XXM1 Vdd Vdd Vout Vdd m1_650_1060# pfet_05v0_2VHNWJ_MG_decoder
+Xnfet_05v0_EGQXBG_0 m1_n1089_609# Vin_B m1_650_1060# GND nfet_05v0_EGQXBG
+Xnfet_05v0_ZZNR9W_0 GND Vout m1_650_1060# GND nfet_05v0_ZZNR9W_MG_decoder
+XXM6 GND Vin_A m1_n1089_609# GND nfet_05v0_EGQXBG
+Xpfet_05v0_2VHNWJ_0 Vdd Vdd m1_650_1060# Vdd Vin_B pfet_05v0_2VHNWJ_MG_decoder
+Xpfet_05v0_2VHNWJ_1 Vdd Vdd m1_650_1060# Vdd Vin_A pfet_05v0_2VHNWJ_MG_decoder
+.ends
+
+.subckt MG_decoder_Layout P13 P14 P15 P16 P19 S5 S4 S7 MG_or_gate_1/Vdd MG_and_gate_8/Vdd
++ MG_not_gate_2/Vdd MG_and_gate_11/Vdd MG_and_gate_5/Vdd MG_and_gate_2/Vdd MG_or_gate_2/Vdd
++ MG_not_gate_3/Vdd MG_and_gate_9/Vdd MG_and_gate_12/Vdd MG_and_gate_6/Vdd MG_not_gate_0/Vdd
++ P17 MG_and_gate_3/Vdd MG_and_gate_0/Vdd MG_or_gate_0/Vdd MG_and_gate_7/Vdd MG_not_gate_1/Vdd
++ MG_and_gate_10/Vdd MG_and_gate_4/Vdd MG_or_gate_4/Vdd MG_and_gate_1/Vdd VSUBS
+XMG_not_gate_0 MG_not_gate_0/Vdd VSUBS P13 MG_or_gate_2/Vin_B MG_not_gate
+XMG_not_gate_1 MG_not_gate_1/Vdd VSUBS P14 MG_or_gate_1/Vin_A MG_not_gate
+XMG_not_gate_2 MG_not_gate_2/Vdd VSUBS P15 MG_not_gate_2/Vout MG_not_gate
+XMG_not_gate_3 MG_not_gate_3/Vdd VSUBS P16 MG_not_gate_3/Vout MG_not_gate
+XMG_or_gate_0 MG_or_gate_0/Vdd VSUBS S4 MG_or_gate_1/Vin_A MG_or_gate_2/Vin_B MG_or_gate
+XMG_or_gate_1 MG_or_gate_1/Vdd VSUBS MG_or_gate_1/Vout MG_or_gate_1/Vin_B MG_or_gate_1/Vin_A
++ MG_or_gate
+XMG_or_gate_2 MG_or_gate_2/Vdd VSUBS MG_or_gate_2/Vout MG_or_gate_2/Vin_B MG_or_gate_2/Vin_A
++ MG_or_gate
+XMG_or_gate_4 MG_or_gate_4/Vdd VSUBS MG_or_gate_4/Vout MG_or_gate_4/Vin_B MG_or_gate_4/Vin_A
++ MG_or_gate
+XMG_and_gate_0 MG_and_gate_0/Vdd VSUBS MG_or_gate_1/Vin_B MG_not_gate_2/Vout P16 MG_and_gate
+XMG_and_gate_1 MG_and_gate_1/Vdd VSUBS MG_or_gate_2/Vin_A P15 MG_not_gate_3/Vout MG_and_gate
+XMG_and_gate_3 MG_and_gate_3/Vdd VSUBS MG_and_gate_3/Vout P13 P14 MG_and_gate
+XMG_and_gate_2 MG_and_gate_2/Vdd VSUBS MG_and_gate_2/Vout P13 P14 MG_and_gate
+XMG_and_gate_4 MG_and_gate_4/Vdd VSUBS S5 P15 S4 MG_and_gate
+XMG_and_gate_10 MG_and_gate_10/Vdd VSUBS MG_and_gate_10/Vout MG_or_gate_1/Vout P13
++ MG_and_gate
+XMG_and_gate_11 MG_and_gate_11/Vdd VSUBS MG_and_gate_11/Vout MG_or_gate_2/Vout P14
++ MG_and_gate
+XMG_and_gate_5 MG_and_gate_5/Vdd VSUBS MG_and_gate_5/Vout P15 MG_and_gate_2/Vout MG_and_gate
+XMG_and_gate_12 MG_and_gate_12/Vdd VSUBS MG_and_gate_12/Vout MG_and_gate_5/Vout P16
++ MG_and_gate
+XMG_and_gate_6 MG_and_gate_6/Vdd VSUBS MG_or_gate_4/Vin_A S4 P16 MG_and_gate
+XMG_and_gate_7 MG_and_gate_7/Vdd VSUBS MG_or_gate_4/Vin_B MG_and_gate_3/Vout P17 MG_and_gate
+XMG_and_gate_8 MG_and_gate_8/Vdd VSUBS S7 S4 P17 MG_and_gate
+XMG_and_gate_9 MG_and_gate_9/Vdd VSUBS MG_and_gate_9/Vout MG_or_gate_4/Vout P19 MG_and_gate
+.ends
+
+.subckt ppolyf_u_1k_6p0_XM9FDM_RN_buffer a_n434_n20348# a_n200_n20122# a_n200_20000#
+X0 a_n200_20000# a_n200_n20122# a_n434_n20348# ppolyf_u_1k_6p0 r_width=2u r_length=0.2m
+.ends
+
+.subckt pfet_05v0_V5ACYY w_n2267_n478# a_356_n383# a_556_n300# a_252_n300# a_52_n383#
++ a_1268_n383# a_1468_n300# a_n1556_n300# a_964_n383# a_n556_n383# a_1164_n300# a_660_n383#
++ a_n1468_n383# a_n356_n300# a_n1268_n300# a_n252_n383# a_860_n300# a_n1164_n383#
++ a_n52_n300# a_n964_n300# a_n860_n383# a_n660_n300#
+X0 a_n356_n300# a_n556_n383# a_n660_n300# w_n2267_n478# pfet_05v0 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=1u
+X1 a_n1268_n300# a_n1468_n383# a_n1556_n300# w_n2267_n478# pfet_05v0 ad=0.78p pd=3.52u as=1.32p ps=6.88u w=3u l=1u
+X2 a_1164_n300# a_964_n383# a_860_n300# w_n2267_n478# pfet_05v0 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=1u
+X3 a_n660_n300# a_n860_n383# a_n964_n300# w_n2267_n478# pfet_05v0 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=1u
+X4 a_1468_n300# a_1268_n383# a_1164_n300# w_n2267_n478# pfet_05v0 ad=1.32p pd=6.88u as=0.78p ps=3.52u w=3u l=1u
+X5 a_556_n300# a_356_n383# a_252_n300# w_n2267_n478# pfet_05v0 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=1u
+X6 a_252_n300# a_52_n383# a_n52_n300# w_n2267_n478# pfet_05v0 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=1u
+X7 a_n52_n300# a_n252_n383# a_n356_n300# w_n2267_n478# pfet_05v0 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=1u
+X8 a_n964_n300# a_n1164_n383# a_n1268_n300# w_n2267_n478# pfet_05v0 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=1u
+X9 a_860_n300# a_660_n383# a_556_n300# w_n2267_n478# pfet_05v0 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=1u
+.ends
+
+.subckt pfet_05v0_FFMYWC a_n158_n200# a_n70_n292# w_n649_n378# a_70_n200#
+X0 a_70_n200# a_n70_n292# a_n158_n200# w_n649_n378# pfet_05v0 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=0.7u
+.ends
+
+.subckt pfet_05v0_KAFUQX a_n52_n200# w_n648_n756# a_296_n263# a_52_n263# a_436_n200#
++ a_192_n200# a_n436_n263# a_n524_n200# a_n192_n263# a_n296_n200#
+X0 a_192_n200# a_52_n263# a_n52_n200# w_n648_n756# pfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=0.7u
+X1 a_n52_n200# a_n192_n263# a_n296_n200# w_n648_n756# pfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=0.7u
+X2 a_n296_n200# a_n436_n263# a_n524_n200# w_n648_n756# pfet_05v0 ad=0.52p pd=2.52u as=0.88p ps=4.88u w=2u l=0.7u
+X3 a_436_n200# a_296_n263# a_192_n200# w_n648_n756# pfet_05v0 ad=0.88p pd=4.88u as=0.52p ps=2.52u w=2u l=0.7u
+.ends
+
+.subckt pfet_05v0_Z5N35L a_n188_n300# w_n274_n478# a_n100_n392# a_100_n300#
+X0 a_100_n300# a_n100_n392# a_n188_n300# w_n274_n478# pfet_05v0 ad=1.32p pd=6.88u as=1.32p ps=6.88u w=3u l=1u
+.ends
+
+.subckt RN_buffer Vdd Vout Vin m1_47910_n9270# m1_580_3940#
+Xppolyf_u_1k_6p0_XM9FDM_21 Vdd Vdd Vdd ppolyf_u_1k_6p0_XM9FDM_RN_buffer
+Xppolyf_u_1k_6p0_XM9FDM_10 Vdd Vdd m1_n3850_2490# ppolyf_u_1k_6p0_XM9FDM_RN_buffer
+Xppolyf_u_1k_6p0_XM9FDM_22 Vdd Vdd Vdd ppolyf_u_1k_6p0_XM9FDM_RN_buffer
+Xppolyf_u_1k_6p0_XM9FDM_11 Vdd ppolyf_u_1k_6p0_XM9FDM_11/a_n200_n20122# m1_n3850_2490#
++ ppolyf_u_1k_6p0_XM9FDM_RN_buffer
+Xppolyf_u_1k_6p0_XM9FDM_23 Vdd Vdd Vdd ppolyf_u_1k_6p0_XM9FDM_RN_buffer
+Xppolyf_u_1k_6p0_XM9FDM_12 Vdd ppolyf_u_1k_6p0_XM9FDM_12/a_n200_n20122# m1_580_3940#
++ ppolyf_u_1k_6p0_XM9FDM_RN_buffer
+Xppolyf_u_1k_6p0_XM9FDM_13 Vdd ppolyf_u_1k_6p0_XM9FDM_13/a_n200_n20122# m1_580_3940#
++ ppolyf_u_1k_6p0_XM9FDM_RN_buffer
+Xppolyf_u_1k_6p0_XM9FDM_24 Vdd Vdd Vdd ppolyf_u_1k_6p0_XM9FDM_RN_buffer
+Xppolyf_u_1k_6p0_XM9FDM_0 Vdd m1_7780_2360# Vdd ppolyf_u_1k_6p0_XM9FDM_RN_buffer
+Xppolyf_u_1k_6p0_XM9FDM_14 Vdd ppolyf_u_1k_6p0_XM9FDM_14/a_n200_n20122# m1_n3850_n3950#
++ ppolyf_u_1k_6p0_XM9FDM_RN_buffer
+Xppolyf_u_1k_6p0_XM9FDM_25 Vdd ppolyf_u_1k_6p0_XM9FDM_25/a_n200_n20122# m1_47910_n9270#
++ ppolyf_u_1k_6p0_XM9FDM_RN_buffer
+Xppolyf_u_1k_6p0_XM9FDM_1 Vdd m1_7780_2360# m1_47950_2240# ppolyf_u_1k_6p0_XM9FDM_RN_buffer
+Xppolyf_u_1k_6p0_XM9FDM_15 Vdd ppolyf_u_1k_6p0_XM9FDM_15/a_n200_n20122# m1_n3850_n3950#
++ ppolyf_u_1k_6p0_XM9FDM_RN_buffer
+Xppolyf_u_1k_6p0_XM9FDM_2 Vdd m1_7780_410# m1_47950_310# ppolyf_u_1k_6p0_XM9FDM_RN_buffer
+Xppolyf_u_1k_6p0_XM9FDM_17 Vdd ppolyf_u_1k_6p0_XM9FDM_17/a_n200_n20122# m1_n3860_n6140#
++ ppolyf_u_1k_6p0_XM9FDM_RN_buffer
+Xppolyf_u_1k_6p0_XM9FDM_16 Vdd ppolyf_u_1k_6p0_XM9FDM_16/a_n200_n20122# m1_n3860_n6140#
++ ppolyf_u_1k_6p0_XM9FDM_RN_buffer
+Xppolyf_u_1k_6p0_XM9FDM_3 Vdd m1_7780_410# m1_47950_1340# ppolyf_u_1k_6p0_XM9FDM_RN_buffer
+Xppolyf_u_1k_6p0_XM9FDM_18 Vdd ppolyf_u_1k_6p0_XM9FDM_18/a_n200_n20122# m1_n3860_n8300#
++ ppolyf_u_1k_6p0_XM9FDM_RN_buffer
+Xpfet_05v0_V5ACYY_0 Vout Vin Vdd Vout Vin Vin Vout Vout Vin Vin Vdd Vin Vin Vout Vdd
++ Vin Vout Vin Vdd Vout Vin Vdd pfet_05v0_V5ACYY
+Xppolyf_u_1k_6p0_XM9FDM_4 Vdd m1_7770_n8290# m1_47960_n7310# ppolyf_u_1k_6p0_XM9FDM_RN_buffer
+Xppolyf_u_1k_6p0_XM9FDM_19 Vdd Vdd m1_n3860_n8300# ppolyf_u_1k_6p0_XM9FDM_RN_buffer
+Xppolyf_u_1k_6p0_XM9FDM_5 Vdd m1_7770_n6300# m1_47960_n7310# ppolyf_u_1k_6p0_XM9FDM_RN_buffer
+XXM1 Vout Vin Vdd Vout Vin Vin Vout Vout Vin Vin Vdd Vin Vin Vout Vdd Vin Vout Vin
++ Vdd Vout Vin Vdd pfet_05v0_V5ACYY
+Xppolyf_u_1k_6p0_XM9FDM_6 Vdd m1_7770_n6300# m1_47960_n5360# ppolyf_u_1k_6p0_XM9FDM_RN_buffer
+Xppolyf_u_1k_6p0_XM9FDM_8 Vdd Vin m1_47950_n550# ppolyf_u_1k_6p0_XM9FDM_RN_buffer
+Xppolyf_u_1k_6p0_XM9FDM_7 Vdd Vin m1_47960_n5360# ppolyf_u_1k_6p0_XM9FDM_RN_buffer
+Xppolyf_u_1k_6p0_XM9FDM_9 Vdd m1_7770_n8290# Vdd ppolyf_u_1k_6p0_XM9FDM_RN_buffer
+Xpfet_05v0_FFMYWC_0 Vdd Vdd Vdd Vdd pfet_05v0_FFMYWC
+Xpfet_05v0_KAFUQX_0 Vdd Vdd m1_580_3940# m1_580_3940# Vdd Vout m1_580_3940# Vdd m1_580_3940#
++ Vout pfet_05v0_KAFUQX
+Xpfet_05v0_FFMYWC_1 Vdd Vdd Vdd Vdd pfet_05v0_FFMYWC
+Xpfet_05v0_KAFUQX_2 Vdd Vdd m1_580_3940# m1_580_3940# Vdd Vout m1_580_3940# Vdd m1_580_3940#
++ Vout pfet_05v0_KAFUQX
+Xpfet_05v0_Z5N35L_0 Vout Vout Vout Vout pfet_05v0_Z5N35L
+Xpfet_05v0_Z5N35L_1 Vout Vout Vout Vout pfet_05v0_Z5N35L
+Xnmoscap_6p0_SBPANC_0 Vdd Vdd nmoscap_6p0_SBPANC
+Xnmoscap_6p0_SBPANC_1 m1_580_3940# Vdd nmoscap_6p0_SBPANC
+Xppolyf_u_1k_6p0_XM9FDM_20 Vdd Vdd Vdd ppolyf_u_1k_6p0_XM9FDM_RN_buffer
+.ends
+
+.subckt ppolyf_u_1k_6p0_E84NSY a_n412_n8334# a_n200_8000# a_n200_n8122#
+X0 a_n200_8000# a_n200_n8122# a_n412_n8334# ppolyf_u_1k_6p0 r_width=2u r_length=80u
+.ends
+
+.subckt pfet_05v0_YY6U8W a_n2068_n176# a_n3076_n176# a_n956_n232# a_1060_n232# a_1964_n176#
++ a_556_n232# a_n1964_n232# a_2972_n176# a_n2972_n232# a_n52_n176# a_2468_n176# a_n2468_n232#
++ w_n3650_n354# a_3476_n176# a_n1060_n176# a_n3564_n176# a_n3476_n232# a_452_n176#
++ a_1564_n232# a_2572_n232# a_n452_n232# a_n556_n176# a_2068_n232# a_1460_n176# a_3076_n232#
++ a_n1460_n232# a_n1564_n176# a_956_n176# a_n2572_n176# a_52_n232#
+X0 a_1964_n176# a_1564_n232# a_1460_n176# w_n3650_n354# pfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=2u
+X1 a_2468_n176# a_2068_n232# a_1964_n176# w_n3650_n354# pfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=2u
+X2 a_452_n176# a_52_n232# a_n52_n176# w_n3650_n354# pfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=2u
+X3 a_2972_n176# a_2572_n232# a_2468_n176# w_n3650_n354# pfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=2u
+X4 a_956_n176# a_556_n232# a_452_n176# w_n3650_n354# pfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=2u
+X5 a_1460_n176# a_1060_n232# a_956_n176# w_n3650_n354# pfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=2u
+X6 a_3476_n176# a_3076_n232# a_2972_n176# w_n3650_n354# pfet_05v0 ad=0.88p pd=4.88u as=0.52p ps=2.52u w=2u l=2u
+X7 a_n1564_n176# a_n1964_n232# a_n2068_n176# w_n3650_n354# pfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=2u
+X8 a_n1060_n176# a_n1460_n232# a_n1564_n176# w_n3650_n354# pfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=2u
+X9 a_n2572_n176# a_n2972_n232# a_n3076_n176# w_n3650_n354# pfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=2u
+X10 a_n2068_n176# a_n2468_n232# a_n2572_n176# w_n3650_n354# pfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=2u
+X11 a_n556_n176# a_n956_n232# a_n1060_n176# w_n3650_n354# pfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=2u
+X12 a_n3076_n176# a_n3476_n232# a_n3564_n176# w_n3650_n354# pfet_05v0 ad=0.52p pd=2.52u as=0.88p ps=4.88u w=2u l=2u
+X13 a_n52_n176# a_n452_n232# a_n556_n176# w_n3650_n354# pfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=2u
+.ends
+
+.subckt nfet_05v0_DT85VJ a_n1114_n126# a_n760_n126# a_n302_n182# a_302_n126# a_n656_n182#
++ a_656_n126# a_760_n182# a_1114_n182# a_n52_n126# a_n406_n126# a_n1010_n182# a_n1364_n182#
++ a_1364_n126# a_1010_n126# a_n1452_n126# a_406_n182# a_52_n182# VSUBS
+X0 a_n52_n126# a_n302_n182# a_n406_n126# VSUBS nfet_05v0 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1.25u
+X1 a_1364_n126# a_1114_n182# a_1010_n126# VSUBS nfet_05v0 ad=0.66p pd=3.88u as=0.39p ps=2.02u w=1.5u l=1.25u
+X2 a_n1114_n126# a_n1364_n182# a_n1452_n126# VSUBS nfet_05v0 ad=0.39p pd=2.02u as=0.66p ps=3.88u w=1.5u l=1.25u
+X3 a_n760_n126# a_n1010_n182# a_n1114_n126# VSUBS nfet_05v0 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1.25u
+X4 a_656_n126# a_406_n182# a_302_n126# VSUBS nfet_05v0 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1.25u
+X5 a_1010_n126# a_760_n182# a_656_n126# VSUBS nfet_05v0 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1.25u
+X6 a_n406_n126# a_n656_n182# a_n760_n126# VSUBS nfet_05v0 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1.25u
+X7 a_302_n126# a_52_n182# a_n52_n126# VSUBS nfet_05v0 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1.25u
+.ends
+
+.subckt nmoscap_6p0_Q5BHEH a_n3700_n3756# w_n3820_n3824#
+X0 a_n3700_n3756# w_n3820_n3824# cap_nmos_06v0_b c_width=37u c_length=37u
+.ends
+
+.subckt nfet_05v0_HMNUDZ a_n302_n182# a_302_n126# a_n656_n182# a_656_n126# a_n52_n126#
++ a_n406_n126# a_n744_n126# a_406_n182# a_52_n182# VSUBS
+X0 a_n52_n126# a_n302_n182# a_n406_n126# VSUBS nfet_05v0 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1.25u
+X1 a_656_n126# a_406_n182# a_302_n126# VSUBS nfet_05v0 ad=0.66p pd=3.88u as=0.39p ps=2.02u w=1.5u l=1.25u
+X2 a_n406_n126# a_n656_n182# a_n744_n126# VSUBS nfet_05v0 ad=0.39p pd=2.02u as=0.66p ps=3.88u w=1.5u l=1.25u
+X3 a_302_n126# a_52_n182# a_n52_n126# VSUBS nfet_05v0 ad=0.39p pd=2.02u as=0.39p ps=2.02u w=1.5u l=1.25u
+.ends
+
+.subckt nfet_05v0_6F38LB a_964_n232# a_n556_n232# a_660_n232# a_1164_n176# a_n356_n176#
++ a_n1252_n176# a_n252_n232# a_n1164_n232# a_860_n176# a_n52_n176# a_n860_n232# a_n964_n176#
++ a_n660_n176# a_356_n232# a_556_n176# a_52_n232# a_252_n176# VSUBS
+X0 a_252_n176# a_52_n232# a_n52_n176# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1u
+X1 a_n52_n176# a_n252_n232# a_n356_n176# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1u
+X2 a_n964_n176# a_n1164_n232# a_n1252_n176# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.88p ps=4.88u w=2u l=1u
+X3 a_860_n176# a_660_n232# a_556_n176# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1u
+X4 a_n356_n176# a_n556_n232# a_n660_n176# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1u
+X5 a_1164_n176# a_964_n232# a_860_n176# VSUBS nfet_05v0 ad=0.88p pd=4.88u as=0.52p ps=2.52u w=2u l=1u
+X6 a_n660_n176# a_n860_n232# a_n964_n176# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1u
+X7 a_556_n176# a_356_n232# a_252_n176# VSUBS nfet_05v0 ad=0.52p pd=2.52u as=0.52p ps=2.52u w=2u l=1u
+.ends
+
+.subckt MG_6T_OTA_Layout GND Vout Vin- Vin+ Vdd
+Xnfet_05v0_37MYH2_0 GND GND GND GND nfet_05v0_37MYH2
+Xnfet_05v0_37MYH2_1 GND GND GND GND nfet_05v0_37MYH2
+Xppolyf_u_1k_6p0_E84NSY_1 GND m1_n3280_n6080# m1_n5560_n21880# ppolyf_u_1k_6p0_E84NSY
+Xppolyf_u_1k_6p0_E84NSY_0 GND m1_n3280_n6080# m1_n1880_n22120# ppolyf_u_1k_6p0_E84NSY
+Xnfet_05v0_37MYH2_2 GND GND GND GND nfet_05v0_37MYH2
+Xppolyf_u_1k_6p0_E84NSY_2 GND Vdd m1_n5560_n21880# ppolyf_u_1k_6p0_E84NSY
+Xnfet_05v0_37MYH2_3 GND GND GND GND nfet_05v0_37MYH2
+Xppolyf_u_1k_6p0_E84NSY_3 GND m1_860_n5540# GND ppolyf_u_1k_6p0_E84NSY
+Xpfet_05v0_YY6U8W_0 Vout Vout m1_n220_n220# m1_n220_n220# Vout m1_n220_n220# m1_n220_n220#
++ Vout m1_n220_n220# Vout Vdd m1_n220_n220# Vdd Vdd Vout Vdd m1_n220_n220# Vdd m1_n220_n220#
++ m1_n220_n220# m1_n220_n220# Vdd m1_n220_n220# Vdd m1_n220_n220# m1_n220_n220# Vdd
++ Vout Vdd m1_n220_n220# pfet_05v0_YY6U8W
+Xnfet_05v0_37MYH2_5 GND GND GND GND nfet_05v0_37MYH2
+Xnfet_05v0_37MYH2_4 GND GND GND GND nfet_05v0_37MYH2
+Xppolyf_u_1k_6p0_E84NSY_4 GND m1_860_n5540# m1_n1880_n22120# ppolyf_u_1k_6p0_E84NSY
+Xppolyf_u_1k_6p0_E84NSY_5 GND GND GND ppolyf_u_1k_6p0_E84NSY
+Xnfet_05v0_DT85VJ_0 m1_1670_n2560# m1_5620_n5220# m1_n1880_n22120# m1_1670_n2560#
++ m1_n1880_n22120# m1_5620_n5220# m1_n1880_n22120# m1_n1880_n22120# m1_5620_n5220#
++ m1_1670_n2560# m1_n1880_n22120# m1_n1880_n22120# m1_5620_n5220# m1_1670_n2560# m1_5620_n5220#
++ m1_n1880_n22120# m1_n1880_n22120# GND nfet_05v0_DT85VJ
+Xnmoscap_6p0_Q5BHEH_0 m1_n1880_n22120# GND nmoscap_6p0_Q5BHEH
+Xpfet_05v0_JCJSTU_0 m1_n220_n220# m1_n220_n220# m1_n220_n220# m1_n220_n220# m1_n220_n220#
++ m1_n220_n220# m1_n220_n220# m1_n220_n220# m1_n220_n220# m1_n220_n220# Vdd m1_n220_n220#
++ Vdd Vdd m1_n220_n220# Vdd m1_n220_n220# Vdd m1_n220_n220# m1_n220_n220# m1_n220_n220#
++ Vdd m1_n220_n220# Vdd m1_n220_n220# m1_n220_n220# Vdd m1_n220_n220# Vdd m1_n220_n220#
++ pfet_05v0_YY6U8W
+Xnmoscap_6p0_Q5BHEH_1 m1_860_n5540# GND nmoscap_6p0_Q5BHEH
+Xnmoscap_6p0_Q5BHEH_2 Vdd GND nmoscap_6p0_Q5BHEH
+Xnfet_05v0_HMNUDZ_0 m1_860_n5540# m1_5620_n5220# m1_860_n5540# GND GND m1_5620_n5220#
++ GND m1_860_n5540# m1_860_n5540# GND nfet_05v0_HMNUDZ
+Xnfet_05v0_6F38LB_0 Vin+ Vin+ Vin+ m1_1670_n2560# m1_n220_n220# m1_1670_n2560# Vin+
++ Vin+ m1_n220_n220# m1_1670_n2560# Vin+ m1_n220_n220# m1_1670_n2560# Vin+ m1_1670_n2560#
++ Vin+ m1_n220_n220# GND nfet_05v0_6F38LB
+Xnfet_05v0_6F38LB_1 Vin- Vin- Vin- m1_1670_n2560# Vout m1_1670_n2560# Vin- Vin- Vout
++ m1_1670_n2560# Vin- Vout m1_1670_n2560# Vin- m1_1670_n2560# Vin- Vout GND nfet_05v0_6F38LB
+X0 m1_860_n5540# m1_860_n5540# rm1 r_width=0.65u r_length=0.75u
+.ends
+
+.subckt MRTMOS_chip_final pin1 pin2 pin3 pin9 pin5 pin6 pin7 pin8 pin10 pin11 pin12
++ pin13 pin15 pin18 pin20 pin21 pin22
+XMG_ESD_protection_20 pin9 pin9 pin9 MG_ESD_protection_20/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000#
++ pin9 MG_ESD_protection
+Xcap_mim_2p0fF_2BWSH9_4 cap_mim_2p0fF_2BWSH9
+Xcmos_cross_switch_0 cmos_cross_switch_0/Vin cmos_cross_switch_0/Vdd pin9 cmos_cross_switch
+XMG_ESD_protection_0 pin9 MG_ESD_protection_0/pin_facing_input MG_ESD_protection_0/external_input_pin
++ MG_ESD_protection_0/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000# MG_ESD_protection_0/Vdd
++ MG_ESD_protection
+XMG_ESD_protection_10 pin9 pin9 pin9 MG_ESD_protection_10/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000#
++ pin9 MG_ESD_protection
+XMG_ESD_protection_21 pin9 pin9 pin9 MG_ESD_protection_21/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000#
++ pin9 MG_ESD_protection
+Xcap_mim_2p0fF_2BWSH9_5 cap_mim_2p0fF_2BWSH9
+Xcmos_cross_switch_1 cmos_cross_switch_1/Vin cmos_cross_switch_1/Vdd pin9 cmos_cross_switch
+XMG_ESD_protection_1 pin9 MG_ESD_protection_1/pin_facing_input pin9 MG_ESD_protection_1/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000#
++ pin9 MG_ESD_protection
+XMG_ESD_protection_11 pin9 pin9 pin9 MG_ESD_protection_11/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000#
++ pin9 MG_ESD_protection
+Xcap_mim_2p0fF_2BWSH9_7 cap_mim_2p0fF_2BWSH9
+Xcap_mim_2p0fF_2BWSH9_6 cap_mim_2p0fF_2BWSH9
+Xcmos_cross_switch_2 cmos_cross_switch_2/Vin cmos_cross_switch_2/Vdd pin9 cmos_cross_switch
+XMG_ESD_protection_2 pin9 pin9 pin9 MG_ESD_protection_2/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000#
++ pin9 MG_ESD_protection
+XMG_ESD_protection_13 pin9 MG_ESD_protection_13/pin_facing_input MG_ESD_protection_13/external_input_pin
++ MG_ESD_protection_13/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000# MG_ESD_protection_13/Vdd
++ MG_ESD_protection
+XMG_ESD_protection_12 pin9 pin9 pin9 MG_ESD_protection_12/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000#
++ pin9 MG_ESD_protection
+Xcap_mim_2p0fF_2BWSH9_8 cap_mim_2p0fF_2BWSH9
+XMG_ESD_protection_3 pin9 pin9 pin9 MG_ESD_protection_3/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000#
++ pin9 MG_ESD_protection
+XMG_ESD_protection_14 pin9 pin9 pin9 MG_ESD_protection_14/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000#
++ pin9 MG_ESD_protection
+XMG_ESD_protection_4 pin9 pin9 pin9 MG_ESD_protection_4/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000#
++ pin9 MG_ESD_protection
+XMG_ESD_protection_15 pin9 pin9 MG_ESD_protection_15/external_input_pin MG_ESD_protection_15/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000#
++ pin9 MG_ESD_protection
+XMG_ESD_protection_6 pin9 pin9 pin9 MG_ESD_protection_6/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000#
++ pin9 MG_ESD_protection
+XMG_ESD_protection_5 pin9 MG_ESD_protection_5/pin_facing_input MG_ESD_protection_5/external_input_pin
++ MG_ESD_protection_5/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000# MG_ESD_protection_5/Vdd
++ MG_ESD_protection
+Xcmos_switch_0 cmos_switch_0/Vdd pin9 pin9 pin9 pin9 pin9 cmos_switch
+XMG_ESD_protection_16 pin9 pin9 pin9 MG_ESD_protection_17/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000#
++ pin9 MG_ESD_protection
+XMG_ESD_protection_7 pin9 pin9 pin9 MG_ESD_protection_7/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000#
++ pin9 MG_ESD_protection
+Xcmos_switch_1 cmos_switch_1/Vdd pin9 pin9 pin9 pin9 pin9 cmos_switch
+XMG_ESD_protection_17 pin9 pin9 pin9 MG_ESD_protection_17/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000#
++ pin9 MG_ESD_protection
+XMG_ESD_protection_8 pin9 pin9 pin9 MG_ESD_protection_8/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000#
++ pin9 MG_ESD_protection
+XRN_Gm2_Layout_0 pin9 RN_Gm2_Layout_0/Vin- pin9 MG_ESD_protection_20/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000#
++ MG_ESD_protection_6/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000# pin9 pin9 pin9 pin9 MG_ESD_protection_20/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000#
++ pin9 MG_ESD_protection_20/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000# MG_ESD_protection_17/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000#
++ pin9 pin9 pin9 pin9 pin9 MG_ESD_protection_8/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000#
++ MG_ESD_protection_6/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000# pin9 MG_ESD_protection_17/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000#
++ pin9 MG_ESD_protection_17/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000# pin9 pin9 pin9
++ pin9 MG_ESD_protection_7/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000# pin9 RN_Gm2_Layout
+Xcmos_switch_2 cmos_switch_2/Vdd pin9 cmos_switch_2/in cmos_switch_2/a_n590_179# cmos_switch_2/out
++ cmos_switch_2/Vin cmos_switch
+XMG_ESD_protection_9 pin9 MG_ESD_protection_9/pin_facing_input pin9 MG_ESD_protection_9/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000#
++ pin9 MG_ESD_protection
+XMG_ESD_protection_18 pin9 pin9 pin9 MG_ESD_protection_18/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000#
++ pin9 MG_ESD_protection
+Xcmos_switch_3 cmos_switch_3/Vdd pin9 cmos_switch_3/in cmos_switch_3/a_n590_179# cmos_switch_3/out
++ cmos_switch_3/Vin cmos_switch
+XMG_ESD_protection_19 pin9 pin9 pin9 MG_ESD_protection_20/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000#
++ pin9 MG_ESD_protection
+Xcmos_switch_4 cmos_switch_4/Vdd pin9 cmos_switch_4/in cmos_switch_4/a_n590_179# cmos_switch_4/out
++ cmos_switch_4/Vin cmos_switch
+XMG_power_clamp_ESD_0 pin9 pin9 MG_power_clamp_ESD
+Xcmos_switch_5 cmos_switch_5/Vdd pin9 cmos_switch_5/in cmos_switch_5/a_n590_179# cmos_switch_5/out
++ cmos_switch_5/Vin cmos_switch
+XMG_power_clamp_ESD_1 pin9 pin9 MG_power_clamp_ESD
+Xcmos_switch_6 cmos_switch_6/Vdd pin9 cmos_switch_6/in cmos_switch_6/a_n590_179# cmos_switch_6/out
++ cmos_switch_6/Vin cmos_switch
+XMG_power_clamp_ESD_2 pin9 pin9 MG_power_clamp_ESD
+Xcmos_neg_switch_1 cmos_neg_switch_1/Vdd pin9 cmos_neg_switch_1/Vin cmos_neg_switch_1/in
++ cmos_neg_switch_1/out cmos_neg_switch
+Xcmos_neg_switch_0 cmos_neg_switch_0/Vdd pin9 cmos_neg_switch_0/Vin cmos_neg_switch_0/in
++ cmos_neg_switch_0/out cmos_neg_switch
+Xcmos_neg_switch_2 cmos_neg_switch_2/Vdd pin9 cmos_neg_switch_2/Vin cmos_neg_switch_2/in
++ cmos_neg_switch_2/out cmos_neg_switch
+XRN_GM3_Layout_0 pin9 pin9 pin9 pin9 MG_ESD_protection_4/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000#
++ MG_ESD_protection_3/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000# pin9 pin9 pin9 pin9 pin9
++ pin9 pin9 pin9 pin9 pin9 RN_GM3_Layout
+XTG_Gm_ff_Layout_0 TG_Gm_ff_Layout_0/Vin+ TG_Gm_ff_Layout_0/Vin- pin9 pin9 TG_Gm_ff_Layout_0/Vout
++ pin9 TG_Gm_ff_Layout
+XMG_decoder_Layout_0 MG_decoder_Layout_0/P13 MG_decoder_Layout_0/P14 MG_decoder_Layout_0/P15
++ MG_decoder_Layout_0/P16 MG_decoder_Layout_0/P19 MG_decoder_Layout_0/S5 MG_decoder_Layout_0/S4
++ MG_decoder_Layout_0/S7 pin9 pin9 pin9 pin9 pin9 pin9 pin9 pin9 pin9 pin9 pin9 pin9
++ MG_decoder_Layout_0/P17 pin9 pin9 pin9 pin9 pin9 pin9 pin9 pin9 pin9 pin9 MG_decoder_Layout
+Xcap_mim_2p0fF_2BWSH9_0 cap_mim_2p0fF_2BWSH9
+XRN_buffer_0 pin9 RN_buffer_0/Vout RN_buffer_0/Vin pin9 pin9 RN_buffer
+Xcap_mim_2p0fF_2BWSH9_1 cap_mim_2p0fF_2BWSH9
+Xcap_mim_2p0fF_2BWSH9_2 cap_mim_2p0fF_2BWSH9
+XMG_6T_OTA_Layout_0 pin9 MG_6T_OTA_Layout_0/Vout MG_6T_OTA_Layout_0/Vin- MG_6T_OTA_Layout_0/Vin+
++ pin9 MG_6T_OTA_Layout
+Xcap_mim_2p0fF_2BWSH9_3 cap_mim_2p0fF_2BWSH9
+X0 pin9 pin9 rm3 r_width=5.85u r_length=5.85u
+X1 TG_Gm_ff_Layout_0/Vout TG_Gm_ff_Layout_0/Vout rm2 r_width=6.45u r_length=6.55u
+.ends
+

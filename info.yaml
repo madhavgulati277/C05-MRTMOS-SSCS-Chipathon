@@ -16,7 +16,7 @@ project:
   team: "C05 MRTMOS"
   discord: "madhavgulati277, tur0922, ramann_696"
   description: "OTA with Switched Compensation Block"
-  lvs_config: "lvs_config_fraunhofer.json"
+  lvs_config: "lvs_config.json"
   gf_def_ready: true
   ws_def_ready: true
   drc_ready: true

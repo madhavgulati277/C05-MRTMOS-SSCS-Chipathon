@@ -1,0 +1,1364 @@
+timestamp 1788877814
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+use MG_and_gate MG_and_gate_7 1 0 11560 0 1 -13570
+use MG_and_gate MG_and_gate_8 1 0 11480 0 1 -16540
+use MG_and_gate MG_and_gate_9 1 0 17680 0 1 -16310
+use MG_or_gate MG_or_gate_4 1 0 17766 0 1 -13330
+use MG_and_gate MG_and_gate_2 1 0 5920 0 1 -7660
+use MG_and_gate MG_and_gate_3 1 0 5880 0 1 -10450
+use MG_and_gate MG_and_gate_5 1 0 11700 0 1 -7740
+use MG_and_gate MG_and_gate_6 1 0 11580 0 1 -10340
+use MG_and_gate MG_and_gate_11 1 0 17780 0 1 -7810
+use MG_and_gate MG_and_gate_12 1 0 17760 0 1 -10530
+use MG_and_gate MG_and_gate_1 1 0 5940 0 1 -4910
+use MG_not_gate MG_not_gate_2 1 0 -60 0 1 -4425
+use MG_not_gate MG_not_gate_3 1 0 -90 0 1 -6775
+use MG_or_gate MG_or_gate_2 1 0 11866 0 1 -4800
+use MG_and_gate MG_and_gate_10 1 0 17650 0 1 -4410
+use MG_and_gate MG_and_gate_0 1 0 5990 0 1 -2330
+use MG_not_gate MG_not_gate_0 1 0 -50 0 1 -75
+use MG_not_gate MG_not_gate_1 1 0 -50 0 1 -2235
+use MG_or_gate MG_or_gate_0 1 0 5916 0 1 310
+use MG_and_gate MG_and_gate_4 1 0 11920 0 1 210
+use MG_or_gate MG_or_gate_1 1 0 11896 0 1 -2130
+port "P19" 6 -510 -16890 -40 -16780 m2
+port "S5" 12 18650 270 19090 360 m2
+port "S7" 14 18880 -16500 19180 -16420 m1
+port "P17" 5 -260 -12970 110 -12860 m2
+port "S4" 13 18660 -60 19170 90 m2
+port "P16" 4 -570 -5960 -380 -5910 m1
+port "P15" 3 -520 -3600 -330 -3550 m1
+port "P14" 2 -570 -1420 -380 -1370 m1
+port "P13" 1 -540 750 -350 800 m1
+node "P19" 7 6750.51 -510 -16890 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3932400 35100 0 0 0 0 0 0
+node "m2_15200_n14950#" 3 2255.76 15200 -14950 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 984200 11670 0 0 0 0 0 0
+node "m2_13030_n13560#" 1 872.124 13030 -13560 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 407200 5340 0 0 0 0 0 0
+node "m2_12950_n9120#" 1 1698.88 12950 -9120 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 934500 8280 0 0 0 0 0 0
+node "m2_7490_n7610#" 1 694.321 7490 -7610 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 480900 5420 0 0 0 0 0 0
+node "m2_13220_n6240#" 2 1461.17 13220 -6240 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 717200 8480 0 0 0 0 0 0
+node "m2_13300_n3230#" 2 849.585 13300 -3230 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 449100 6160 0 0 0 0 0 0
+node "m2_7330_n2270#" 1 744.912 7330 -2270 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 364900 5160 0 0 0 0 0 0
+node "S5" 4 1308.62 18650 270 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 824600 12060 0 0 0 0 0 0
+node "S7" 3 3305.43 18880 -16500 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 988700 9840 486400 4680 0 0 0 0 0 0
+node "m1_15210_n12400#" 2 1879.2 15210 -12400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43400 860 842100 9500 0 0 0 0 0 0
+node "P17" 5 6741.46 -260 -12970 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1362500 7000 3169100 25340 0 0 0 0 0 0
+node "m1_7160_n10550#" 2 1924.5 7160 -10550 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 548400 5060 483900 5740 0 0 0 0 0 0
+node "m1_9330_n3970#" 1 1076.2 9330 -3970 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36000 780 701800 6480 0 0 0 0 0 0
+node "m1_8800_n1400#" 3 2744.24 8800 -1400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 395400 2860 1102000 12960 0 0 0 0 0 0
+node "S4" 12 12032.2 18660 -60 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3595000 32700 3834300 32160 0 0 0 0 0 0
+node "m1_3460_n5020#" 8 4773.03 3460 -5020 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1170000 12680 842600 14080 0 0 0 0 0 0
+node "m1_7270_n6620#" 8 7217.57 7270 -6620 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2266600 17640 1853100 21160 0 0 0 0 0 0
+node "m1_1880_n6120#" 3 1628.46 1880 -6120 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 339200 4560 450000 6260 0 0 0 0 0 0
+node "P16" 17 12338.3 -570 -5960 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3894300 43240 1322400 20020 0 0 0 0 0 0
+node "P15" 5 2365.45 -520 -3600 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 234700 4340 655500 10680 0 0 0 0 0 0
+node "m1_1650_n3790#" 3 1890.47 1650 -3790 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 396200 5940 538700 6100 0 0 0 0 0 0
+node "m1_1360_n1400#" 3 1415.02 1360 -1400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 276600 3980 327400 6000 0 0 0 0 0 0
+node "m1_1180_1030#" 5 1290.03 1180 1030 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 171600 3180 222380 6044 0 0 0 0 0 0
+node "P14" 18 19017 -570 -1420 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7429900 64760 3395300 29980 0 0 0 0 0 0
+node "P13" 20 15965.3 -540 750 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5039300 47820 4127200 43900 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_7270_n6620#" "m2_7330_n2270#" 238.551
+cap "m1_9330_n3970#" "m2_7330_n2270#" 23.3424
+cap "m1_7270_n6620#" "S4" 2268.25
+cap "m1_7270_n6620#" "m1_3460_n5020#" 670.552
+cap "m1_9330_n3970#" "m1_3460_n5020#" 312.88
+cap "m1_9330_n3970#" "S4" 277.841
+cap "m2_7330_n2270#" "m1_8800_n1400#" 45.6333
+cap "m1_8800_n1400#" "m1_3460_n5020#" 1.27162
+cap "S4" "m1_8800_n1400#" 651.203
+cap "P13" "m2_13300_n3230#" 382.321
+cap "m1_1360_n1400#" "m1_3460_n5020#" 26.9128
+cap "P16" "m2_12950_n9120#" 18.7161
+cap "P16" "m1_3460_n5020#" 141.24
+cap "P16" "S4" 983.369
+cap "P15" "m1_1880_n6120#" 200.569
+cap "S4" "S5" 1720.47
+cap "m2_7330_n2270#" "S4" 170.253
+cap "S7" "m2_15200_n14950#" 1.69807
+cap "S4" "m1_3460_n5020#" 147.891
+cap "m2_13220_n6240#" "m2_12950_n9120#" 1.13515
+cap "P15" "P14" 123.441
+cap "m1_1880_n6120#" "P14" 94.8256
+cap "S4" "P17" 729.825
+cap "m2_13030_n13560#" "m1_15210_n12400#" 104.862
+cap "P19" "S7" 852.796
+cap "m1_7270_n6620#" "m2_7490_n7610#" 112.229
+cap "P19" "S4" 0.393635
+cap "m1_1650_n3790#" "P15" 325.705
+cap "m2_13300_n3230#" "m2_13220_n6240#" 1.32584
+cap "P19" "m2_15200_n14950#" 22.5763
+cap "P13" "P15" 187.34
+cap "P13" "m1_1880_n6120#" 147.809
+cap "P19" "P17" 125.82
+cap "m1_7270_n6620#" "P15" 83.7698
+cap "m1_1180_1030#" "P14" 132.555
+cap "m2_7490_n7610#" "P16" 342.264
+cap "m1_7270_n6620#" "m1_1880_n6120#" 12.9822
+cap "m1_1650_n3790#" "P14" 131.026
+cap "P13" "P14" 7373.99
+cap "P15" "m1_1360_n1400#" 33.1375
+cap "P15" "P16" 297.877
+cap "m1_1880_n6120#" "P16" 886.987
+cap "m1_1180_1030#" "P13" 181.854
+cap "m2_7490_n7610#" "S4" 179.942
+cap "m1_7270_n6620#" "P14" 142.684
+cap "m1_1650_n3790#" "P13" 220.45
+cap "P15" "m1_3460_n5020#" 6.91848
+cap "m1_1360_n1400#" "P14" 93.2525
+cap "m1_1880_n6120#" "m1_3460_n5020#" 70.9988
+cap "P16" "P14" 270.657
+cap "P16" "m1_15210_n12400#" 124.449
+cap "m1_7270_n6620#" "P13" 10.4929
+cap "m1_7160_n10550#" "P16" 1.5633
+cap "m1_1180_1030#" "m1_1360_n1400#" 536.358
+cap "P14" "S5" 265.485
+cap "m2_15200_n14950#" "m2_13030_n13560#" 25.9644
+cap "m1_7270_n6620#" "m1_9330_n3970#" 172.659
+cap "m1_1650_n3790#" "m1_1360_n1400#" 256.423
+cap "m1_1650_n3790#" "P16" 460.357
+cap "P13" "m1_1360_n1400#" 202.24
+cap "P13" "P16" 1708.74
+cap "m2_12950_n9120#" "m1_15210_n12400#" 10.1893
+cap "m1_7270_n6620#" "m1_8800_n1400#" 168.285
+cap "P14" "m1_3460_n5020#" 908.018
+cap "S4" "P14" 386.03
+cap "m2_15200_n14950#" "m1_15210_n12400#" 2.31554
+cap "m1_7160_n10550#" "S4" 402.208
+cap "m2_13220_n6240#" "P14" 494.854
+cap "m1_1180_1030#" "m1_3460_n5020#" 382.826
+cap "m1_7270_n6620#" "P16" 24.9939
+cap "P13" "S5" 154.65
+cap "m1_1360_n1400#" "m1_8800_n1400#" 1.76362
+cap "m1_1650_n3790#" "m1_3460_n5020#" 27.3208
+cap "m1_7160_n10550#" "P17" 246.404
+cap "m2_13300_n3230#" "P14" 304.455
+cap "P13" "m1_3460_n5020#" 12.1402
+cap "P13" "S4" 237.172
+cap "MG_and_gate_8/GND" "MG_and_gate_8/Vin_B" 4.02443
+cap "MG_and_gate_8/Vin_B" "MG_and_gate_8/Vin_A" -9.01854
+cap "MG_and_gate_8/Vin_B" "P19" 29.6954
+cap "MG_and_gate_8/GND" "P19" 8.53679
+cap "MG_and_gate_8/Vin_B" "MG_and_gate_8/XM6/a_70_n200#" 0.454775
+cap "MG_and_gate_8/Vin_B" "MG_and_gate_8/pfet_05v0_2VHNWJ_1/a_n52_n110#" 0.0285783
+cap "MG_and_gate_8/Vin_A" "P19" 2.91243
+cap "MG_and_gate_8/Vin_B" "MG_and_gate_8/Vin_A" 0.387078
+cap "P19" "MG_and_gate_8/XM6/a_70_n200#" 4.62262
+cap "P19" "MG_and_gate_8/pfet_05v0_2VHNWJ_1/a_n52_n110#" 4.37909
+cap "MG_and_gate_8/Vin_B" "P19" 65.4092
+cap "MG_and_gate_8/GND" "P19" 48.1018
+cap "P19" "MG_and_gate_8/Vdd" 1.91205
+cap "MG_and_gate_8/GND" "P19" 39.7904
+cap "MG_and_gate_8/GND" "MG_and_gate_8/Vout" 9.50172
+cap "MG_and_gate_8/pfet_05v0_2VHNWJ_0/a_n52_n110#" "P19" 10.9866
+cap "MG_and_gate_8/Vin_B" "P19" 0.716694
+cap "MG_and_gate_8/Vout" "P19" 92.4089
+cap "MG_and_gate_9/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_and_gate_8/Vout" 0.224101
+cap "MG_and_gate_9/XM6/a_70_n200#" "MG_and_gate_9/Vin_B" 1.33282
+cap "MG_and_gate_9/Vin_B" "MG_and_gate_9/Vin_A" 1.18932
+cap "MG_and_gate_9/Vin_B" "MG_and_gate_8/Vout" 3.52581
+cap "MG_and_gate_9/Vin_B" "MG_and_gate_9/GND" 7.45496
+cap "MG_and_gate_9/Vin_A" "MG_and_gate_8/Vout" 0.88707
+cap "MG_and_gate_9/Vdd" "S7" 1.9225
+cap "MG_and_gate_9/Vin_B" "MG_and_gate_9/Vin_A" 0.358789
+cap "MG_and_gate_9/Vin_B" "MG_and_gate_9/GND" 5.29449
+cap "MG_and_gate_9/Vin_B" "S7" 11.5247
+cap "MG_and_gate_9/GND" "S7" 186.179
+cap "MG_and_gate_9/Vin_A" "S7" 6.32147
+cap "MG_and_gate_9/GND" "S7" 268.852
+cap "MG_and_gate_9/pfet_05v0_2VHNWJ_1/a_n52_n110#" "S7" 1.06242
+cap "MG_and_gate_9/Vin_B" "S7" 0.999751
+cap "MG_and_gate_9/Vout" "S7" 82.4621
+cap "MG_and_gate_9/GND" "S7" 61.7326
+cap "MG_and_gate_8/Vin_A" "MG_and_gate_8/pfet_05v0_2VHNWJ_1/w_n406_n308#" 11.5464
+cap "MG_and_gate_8/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_and_gate_8/GND" 1.8357
+cap "P19" "MG_and_gate_8/Vin_A" 0.570202
+cap "MG_and_gate_8/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_and_gate_8/Vin_A" 0.730312
+cap "MG_and_gate_8/Vin_A" "MG_and_gate_8/Vin_B" -9.44733
+cap "MG_and_gate_8/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_and_gate_8/Vin_A" 9.92919
+cap "MG_and_gate_8/GND" "MG_and_gate_8/Vin_A" 0.0517793
+cap "MG_and_gate_8/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_and_gate_8/Vin_B" 0.524819
+cap "MG_and_gate_7/nfet_05v0_EGQXBG_0/a_n70_n292#" "MG_and_gate_8/Vin_B" 0.347945
+cap "P19" "MG_and_gate_8/Vin_B" 0.0823719
+cap "MG_and_gate_7/GND" "MG_and_gate_8/Vin_B" 0.249125
+cap "MG_and_gate_7/GND" "MG_and_gate_8/Vdd" 29.54
+cap "MG_and_gate_7/Vout" "MG_and_gate_8/Vdd" 0.266596
+cap "MG_and_gate_8/Vdd" "MG_and_gate_7/GND" 23.6745
+cap "MG_and_gate_9/Vin_A" "MG_and_gate_7/Vout" 3.43166
+cap "MG_and_gate_9/Vin_A" "MG_and_gate_8/Vout" -0.43819
+cap "MG_and_gate_9/Vin_A" "MG_and_gate_9/pfet_05v0_2VHNWJ_1/w_n406_n308#" 123.119
+cap "MG_and_gate_9/Vin_A" "MG_and_gate_9/Vin_B" -9.43119
+cap "MG_and_gate_9/Vin_A" "MG_and_gate_9/pfet_05v0_2VHNWJ_1/a_n52_n110#" 3.33679
+cap "MG_and_gate_9/Vin_A" "MG_and_gate_9/GND" 0.393994
+cap "MG_and_gate_9/Vdd" "S7" 1.23081
+cap "MG_and_gate_9/Vin_A" "S7" 5.12673
+cap "MG_and_gate_9/Vin_A" "MG_and_gate_9/pfet_05v0_2VHNWJ_1/a_n52_n110#" 2.04354
+cap "MG_or_gate_4/Vin_B" "MG_and_gate_9/Vin_B" 0.119218
+cap "MG_and_gate_9/Vin_A" "MG_and_gate_9/Vin_B" 10.1575
+cap "MG_and_gate_9/GND" "MG_and_gate_9/Vin_B" 0.15033
+cap "MG_and_gate_9/Vin_A" "MG_and_gate_9/Vdd" 15.663
+cap "MG_and_gate_9/Vin_A" "MG_or_gate_4/Vin_B" 0.283546
+cap "MG_and_gate_9/Vin_B" "S7" 0.363831
+cap "MG_and_gate_9/Vin_B" "MG_and_gate_9/Vin_A" 15.3241
+cap "MG_and_gate_9/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_and_gate_9/Vin_A" 0.430736
+cap "MG_and_gate_9/GND" "MG_and_gate_9/Vin_B" 0.22835
+cap "MG_and_gate_9/Vout" "S7" 1.33576
+cap "MG_and_gate_9/Vin_B" "S7" 2.64577
+cap "S7" "MG_and_gate_9/pfet_05v0_2VHNWJ_1/a_n52_n110#" 0.354467
+cap "MG_and_gate_9/Vout" "MG_and_gate_9/Vin_A" 4.14326
+cap "MG_and_gate_9/Vout" "MG_or_gate_4/Vout" 4.30899
+cap "MG_and_gate_9/Vout" "S7" 0.790772
+cap "MG_and_gate_8/Vin_A" "P17" 0.895642
+cap "MG_and_gate_8/GND" "MG_and_gate_8/pfet_05v0_2VHNWJ_1/w_n406_n308#" 1.8357
+cap "MG_and_gate_8/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_and_gate_8/Vin_B" 0.756892
+cap "MG_and_gate_7/Vin_A" "MG_and_gate_8/Vin_B" -15.3704
+cap "MG_and_gate_8/GND" "MG_and_gate_8/Vin_B" 3.78404
+cap "MG_and_gate_8/Vin_A" "MG_and_gate_8/Vin_B" 0.206156
+cap "MG_and_gate_7/XM6/a_70_n200#" "MG_and_gate_8/Vin_B" 0.775611
+cap "MG_and_gate_7/Vin_A" "MG_and_gate_7/Vin_B" 7.10543e-15
+cap "MG_and_gate_8/Vdd" "MG_and_gate_7/Vin_B" 1.44944
+cap "MG_and_gate_7/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_and_gate_7/Vin_B" 5.68434e-14
+cap "MG_and_gate_7/Vin_A" "MG_and_gate_8/Vdd" 0.29339
+cap "MG_and_gate_8/Vdd" "MG_and_gate_7/GND" 29.54
+cap "MG_and_gate_8/Vin_B" "MG_and_gate_7/Vin_B" 0.347945
+cap "MG_and_gate_7/Vout" "MG_and_gate_8/Vdd" 1.33964
+cap "MG_and_gate_7/GND" "MG_and_gate_7/Vout" 2.84217e-14
+cap "MG_and_gate_7/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_and_gate_8/Vdd" 0.34322
+cap "MG_and_gate_7/GND" "MG_and_gate_8/Vdd" 23.6745
+cap "MG_and_gate_7/Vout" "MG_or_gate_4/Vin_A" 1.92947
+cap "MG_and_gate_7/Vout" "MG_or_gate_4/Vin_A" 3.09505
+cap "MG_or_gate_4/Vin_A" "MG_and_gate_9/pfet_05v0_2VHNWJ_1/w_n406_n308#" 1.57681
+cap "MG_and_gate_7/Vout" "MG_and_gate_9/pfet_05v0_2VHNWJ_1/w_n406_n308#" 0.120554
+cap "MG_and_gate_9/Vin_A" "MG_or_gate_4/Vin_A" 0.602937
+cap "MG_or_gate_4/pfet_05v0_E5NMY2_0/w_n446_n288#" "MG_and_gate_7/Vout" -0.444291
+cap "MG_and_gate_7/Vout" "MG_and_gate_9/Vin_A" 22.4182
+cap "MG_and_gate_9/Vin_A" "MG_and_gate_9/pfet_05v0_2VHNWJ_1/w_n406_n308#" 11.4497
+cap "MG_and_gate_9/XM6/a_70_n200#" "MG_and_gate_9/Vin_A" 0.0548918
+cap "MG_and_gate_9/Vin_A" "MG_or_gate_4/nfet_05v0_EGQXBG_1/a_n158_n200#" 0.0267702
+cap "MG_and_gate_9/Vin_A" "MG_and_gate_9/pfet_05v0_2VHNWJ_1/a_n52_n110#" 2.43077
+cap "MG_or_gate_4/Vin_A" "MG_and_gate_9/Vin_A" 0.309043
+cap "MG_and_gate_9/Vin_A" "MG_and_gate_9/Vdd" 190.549
+cap "MG_and_gate_9/Vin_A" "MG_or_gate_4/GND" 2.94619
+cap "MG_and_gate_9/Vin_B" "MG_and_gate_9/Vin_A" 13.6456
+cap "MG_or_gate_4/Vin_A" "MG_and_gate_9/Vdd" 5.02621
+cap "MG_and_gate_9/Vin_A" "MG_or_gate_4/Vin_B" 101.401
+cap "MG_or_gate_4/GND" "MG_and_gate_9/Vdd" 52.4471
+cap "MG_or_gate_4/Vin_A" "MG_or_gate_4/Vin_B" 3.55271e-15
+cap "MG_or_gate_4/Vin_B" "MG_and_gate_9/Vdd" 3.50542
+cap "MG_and_gate_9/Vin_A" "MG_or_gate_4/Vdd" 0.000671521
+cap "MG_or_gate_4/Vdd" "MG_and_gate_9/Vin_A" 0.3985
+cap "MG_and_gate_9/Vin_B" "MG_and_gate_9/Vin_A" 20.165
+cap "MG_and_gate_9/nfet_05v0_ZZNR9W_0/a_n158_n100#" "MG_and_gate_9/Vin_A" 5.27012
+cap "MG_and_gate_9/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_and_gate_9/Vin_A" 9.23098
+cap "MG_or_gate_4/nfet_05v0_EGQXBG_1/a_n158_n200#" "MG_and_gate_9/Vdd" 0.219247
+cap "MG_or_gate_4/Vin_B" "MG_and_gate_9/Vdd" 0.296056
+cap "MG_or_gate_4/GND" "MG_and_gate_9/Vdd" 58.7239
+cap "MG_or_gate_4/nfet_05v0_EGQXBG_1/a_n158_n200#" "MG_and_gate_9/Vin_A" 4.65587
+cap "MG_and_gate_9/Vdd" "MG_and_gate_9/Vin_A" 196.964
+cap "MG_or_gate_4/Vin_B" "MG_and_gate_9/Vin_A" 1.77853
+cap "MG_or_gate_4/GND" "MG_and_gate_9/Vin_A" 15.5976
+cap "MG_and_gate_9/Vdd" "MG_or_gate_4/Vout" 53.6299
+cap "MG_or_gate_4/Vout" "MG_or_gate_4/GND" 12.515
+cap "MG_and_gate_9/Vdd" "MG_or_gate_4/nfet_05v0_EGQXBG_0/a_n158_n200#" 0.111421
+cap "MG_or_gate_4/nfet_05v0_EGQXBG_0/a_n158_n200#" "MG_or_gate_4/Vout" 0.776289
+cap "MG_or_gate_4/Vout" "MG_and_gate_9/pfet_05v0_2VHNWJ_0/a_n52_n110#" 0.195872
+cap "MG_and_gate_9/Vdd" "MG_or_gate_4/GND" 13.3924
+cap "MG_or_gate_4/Vout" "MG_and_gate_9/nfet_05v0_ZZNR9W_0/a_n158_n100#" 4.30899
+cap "S4" "P17" 0.226617
+cap "S4" "MG_and_gate_7/pfet_05v0_2VHNWJ_1/w_n406_n308#" 10.7896
+cap "S4" "MG_and_gate_7/Vin_A" 1.30612
+cap "P16" "MG_and_gate_7/pfet_05v0_2VHNWJ_1/w_n406_n308#" 11.7272
+cap "S4" "MG_and_gate_7/pfet_05v0_2VHNWJ_1/w_n406_n308#" 9.3675
+cap "MG_and_gate_7/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_and_gate_7/Vin_A" 0.861899
+cap "P16" "MG_and_gate_7/Vin_A" 0.181216
+cap "MG_and_gate_7/Vin_B" "MG_and_gate_7/Vin_A" -15.9136
+cap "MG_and_gate_7/Vin_B" "S4" 0.137437
+cap "S4" "MG_and_gate_7/Vin_A" 0.21763
+cap "MG_and_gate_7/GND" "MG_and_gate_7/Vin_A" 0.00816085
+cap "MG_and_gate_7/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_and_gate_7/Vin_B" -2.27374e-13
+cap "MG_and_gate_7/Vin_B" "P16" 0.198563
+cap "MG_and_gate_7/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_and_gate_7/Vin_A" 5.68434e-14
+cap "MG_and_gate_7/Vin_B" "MG_and_gate_7/Vin_A" -2.84217e-14
+cap "P16" "MG_and_gate_7/Vin_A" 0.0201352
+cap "MG_and_gate_7/Vin_B" "MG_and_gate_7/GND" 0.0217881
+cap "MG_and_gate_7/Vdd" "P16" 28.7028
+cap "MG_and_gate_7/Vin_B" "MG_and_gate_7/Vdd" 1.13687e-13
+cap "MG_and_gate_6/Vout" "MG_and_gate_7/Vin_B" 4.10597
+cap "MG_and_gate_7/GND" "MG_and_gate_7/Vin_A" 0.0034105
+cap "MG_and_gate_7/Vdd" "P16" 24.6024
+cap "MG_and_gate_7/Vdd" "MG_and_gate_6/Vout" 23.6917
+cap "MG_and_gate_6/Vout" "MG_and_gate_7/pfet_05v0_2VHNWJ_1/a_n52_n110#" 0.391158
+cap "MG_or_gate_4/Vin_A" "MG_and_gate_7/Vin_B" 4.10597
+cap "MG_and_gate_7/Vdd" "MG_or_gate_4/Vin_A" 57.1106
+cap "MG_or_gate_4/Vin_A" "MG_and_gate_7/Vout" 2.9851
+cap "MG_or_gate_4/Vin_A" "MG_and_gate_7/nfet_05v0_ZZNR9W_0/a_n70_n192#" 6.06808
+cap "MG_or_gate_4/Vin_A" "MG_or_gate_4/pfet_05v0_E5NMY2_0/a_n52_n110#" 1.12136
+cap "MG_or_gate_4/Vin_A" "MG_and_gate_7/Vout" 4.64468
+cap "P16" "MG_or_gate_4/pfet_05v0_E5NMY2_0/w_n446_n288#" 6.6781
+cap "MG_or_gate_4/pfet_05v0_E5NMY2_0/w_n446_n288#" "MG_or_gate_4/Vin_A" 5.87116
+cap "m2_15200_n14950#" "MG_or_gate_4/Vin_A" -1.25626
+cap "MG_or_gate_4/Vin_B" "MG_or_gate_4/Vin_A" 2.59986
+cap "MG_or_gate_4/Vin_A" "MG_or_gate_4/GND" 0.0651396
+cap "MG_or_gate_4/Vin_A" "MG_or_gate_4/pfet_05v0_E5NMY2_0/a_n52_n110#" -2.84217e-14
+cap "MG_or_gate_4/Vdd" "MG_or_gate_4/GND" 14.9476
+cap "MG_or_gate_4/Vin_B" "MG_or_gate_4/GND" 0.0222932
+cap "MG_or_gate_4/Vdd" "MG_or_gate_4/GND" 23.6108
+cap "MG_or_gate_4/nfet_05v0_EGQXBG_1/a_n158_n200#" "MG_or_gate_4/Vout" 0.0143493
+cap "MG_or_gate_4/GND" "MG_or_gate_4/Vin_B" 0.102549
+cap "MG_or_gate_4/GND" "MG_or_gate_4/nfet_05v0_EGQXBG_1/a_n158_n200#" 0.0984012
+cap "MG_or_gate_4/GND" "MG_or_gate_4/nfet_05v0_EGQXBG_0/a_n158_n200#" 0.0291559
+cap "MG_or_gate_4/Vdd" "MG_or_gate_4/GND" 6.51568
+cap "MG_or_gate_4/Vdd" "MG_and_gate_12/Vout" 0.260194
+cap "MG_or_gate_4/Vout" "MG_or_gate_4/nfet_05v0_EGQXBG_0/a_n158_n200#" 0.000143493
+cap "MG_and_gate_3/Vout" "MG_and_gate_3/GND" 18.1698
+cap "P16" "MG_and_gate_3/Vout" 0.105659
+cap "S4" "MG_and_gate_3/GND" 4.09853
+cap "S4" "MG_and_gate_3/pfet_05v0_2VHNWJ_0/a_n52_n110#" 0.753028
+cap "S4" "MG_and_gate_3/Vout" 1.1717
+cap "MG_and_gate_6/Vin_A" "MG_and_gate_3/nfet_05v0_ZZNR9W_0/a_n70_n192#" 0.71093
+cap "MG_and_gate_3/GND" "MG_and_gate_6/Vin_A" 4.19287
+cap "MG_and_gate_7/Vin_A" "MG_and_gate_6/Vin_A" 0.151467
+cap "MG_and_gate_7/GND" "MG_and_gate_6/Vin_B" 36.3322
+cap "MG_and_gate_6/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_and_gate_6/Vin_B" 2.6089
+cap "MG_and_gate_7/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_and_gate_6/Vin_B" 11.7272
+cap "MG_and_gate_6/Vin_A" "MG_and_gate_6/Vin_B" 7.06274
+cap "MG_and_gate_6/Vin_A" "MG_and_gate_7/Vdd" 0.106181
+cap "MG_and_gate_6/Vin_B" "MG_and_gate_7/Vdd" 28.7028
+cap "MG_and_gate_6/GND" "MG_and_gate_6/Vin_B" 616.487
+cap "MG_and_gate_6/Vin_A" "MG_and_gate_6/Vin_B" 1.10936
+cap "P16" "MG_and_gate_7/Vdd" 24.6024
+cap "MG_and_gate_6/GND" "MG_and_gate_6/Vout" -2.73962
+cap "P16" "MG_and_gate_6/GND" 547.45
+cap "P16" "MG_and_gate_6/Vout" 68.7474
+cap "MG_and_gate_7/Vdd" "MG_and_gate_6/Vout" 1.12593
+cap "m2_12950_n9120#" "MG_or_gate_4/Vin_A" 0.631568
+cap "m2_12950_n9120#" "P16" 8.88178e-16
+cap "MG_or_gate_4/Vin_A" "P16" 10.5943
+cap "MG_or_gate_4/pfet_05v0_E5NMY2_0/w_n446_n288#" "MG_and_gate_12/Vin_B" 6.6781
+cap "MG_and_gate_12/GND" "MG_and_gate_12/Vin_B" 15.203
+cap "MG_and_gate_12/Vin_A" "MG_and_gate_12/Vin_B" 0.327591
+cap "MG_and_gate_12/Vin_A" "MG_and_gate_12/Vin_B" 0.273686
+cap "MG_and_gate_12/Vin_B" "MG_and_gate_12/GND" 15.203
+cap "MG_and_gate_12/Vin_A" "MG_or_gate_4/Vdd" 0.228251
+cap "MG_or_gate_4/Vdd" "MG_and_gate_12/GND" 14.9476
+cap "MG_or_gate_4/Vdd" "MG_and_gate_12/GND" 23.6108
+cap "MG_and_gate_12/Vin_B" "MG_or_gate_4/Vdd" 0.224442
+cap "MG_or_gate_4/Vdd" "MG_and_gate_12/pfet_05v0_2VHNWJ_1/a_n52_n110#" 0.0986293
+cap "MG_and_gate_12/Vout" "MG_or_gate_4/Vdd" 1.23153
+cap "MG_or_gate_4/Vdd" "MG_and_gate_12/GND" 6.51568
+cap "MG_and_gate_12/pfet_05v0_2VHNWJ_0/a_n52_n110#" "MG_or_gate_4/Vdd" 0.0431503
+cap "MG_and_gate_3/Vin_A" "MG_and_gate_3/pfet_05v0_2VHNWJ_1/a_n52_n110#" -0.0227986
+cap "MG_and_gate_3/GND" "MG_and_gate_3/Vin_A" 0.209031
+cap "MG_and_gate_3/Vin_B" "MG_and_gate_3/pfet_05v0_2VHNWJ_1/a_n52_n110#" 10.3898
+cap "P16" "MG_and_gate_3/Vin_A" 18.6339
+cap "MG_and_gate_3/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_and_gate_3/Vin_B" 28.4087
+cap "MG_and_gate_3/GND" "MG_and_gate_3/Vin_B" 7.78213
+cap "MG_and_gate_3/Vin_B" "MG_and_gate_3/XM6/a_70_n200#" 0.0655622
+cap "MG_and_gate_3/Vin_B" "MG_and_gate_3/Vin_A" -19.2111
+cap "P16" "MG_and_gate_3/Vin_B" 15.3001
+cap "MG_and_gate_2/XM6/a_70_n200#" "MG_and_gate_3/Vin_B" 0.0750233
+cap "MG_and_gate_3/Vin_B" "MG_and_gate_3/Vin_A" 2.13868
+cap "MG_and_gate_3/Vin_B" "MG_and_gate_2/nfet_05v0_EGQXBG_0/a_n70_n292#" 0.23001
+cap "MG_and_gate_2/GND" "MG_and_gate_3/Vin_B" 0.36271
+cap "P16" "MG_and_gate_3/Vin_A" 5.77399
+cap "MG_and_gate_2/nfet_05v0_EGQXBG_0/a_70_n200#" "MG_and_gate_3/Vin_B" 0.0318141
+cap "S4" "MG_and_gate_3/Vdd" 17.5434
+cap "P16" "MG_and_gate_3/Vout" 3.11788
+cap "MG_and_gate_3/Vin_B" "MG_and_gate_3/pfet_05v0_2VHNWJ_0/a_n52_n110#" 3.55271e-15
+cap "S4" "MG_and_gate_3/Vout" 3.08132
+cap "P16" "MG_and_gate_3/Vin_B" 0.29384
+cap "P16" "MG_and_gate_3/pfet_05v0_2VHNWJ_0/a_n52_n110#" 0.339461
+cap "S4" "MG_and_gate_3/pfet_05v0_2VHNWJ_0/a_n52_n110#" 11.3335
+cap "MG_and_gate_2/GND" "MG_and_gate_3/pfet_05v0_2VHNWJ_0/a_n52_n110#" 0.141239
+cap "MG_and_gate_3/Vdd" "MG_and_gate_6/Vin_A" 22.3628
+cap "P16" "MG_and_gate_3/Vout" 3.02035
+cap "MG_and_gate_3/Vdd" "P16" 0.24877
+cap "MG_and_gate_2/Vout" "MG_and_gate_6/Vin_A" -1.38778e-17
+cap "MG_and_gate_3/nfet_05v0_ZZNR9W_0/a_n70_n192#" "MG_and_gate_6/Vin_A" 13.1208
+cap "MG_and_gate_6/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_and_gate_6/Vin_A" 0.175178
+cap "P16" "MG_and_gate_6/Vin_A" -1.13687e-13
+cap "MG_and_gate_3/Vout" "MG_and_gate_6/Vin_A" 2.17655
+cap "MG_and_gate_6/Vin_B" "MG_and_gate_6/Vin_A" -16.4147
+cap "MG_and_gate_6/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_and_gate_6/Vin_A" 0.711904
+cap "MG_and_gate_6/Vin_B" "MG_and_gate_6/XM6/a_70_n200#" 0.141865
+cap "MG_and_gate_6/Vin_B" "MG_and_gate_6/pfet_05v0_2VHNWJ_1/w_n406_n308#" 16.4454
+cap "MG_and_gate_6/GND" "MG_and_gate_6/Vin_B" 17.2171
+cap "MG_and_gate_6/Vin_A" "MG_and_gate_6/pfet_05v0_2VHNWJ_1/a_n52_n110#" 0.691427
+cap "MG_and_gate_2/Vout" "MG_and_gate_6/Vin_A" 5.7994
+cap "MG_and_gate_6/Vin_B" "MG_and_gate_6/pfet_05v0_2VHNWJ_1/a_n52_n110#" 8.39346
+cap "MG_and_gate_5/Vout" "MG_and_gate_6/Vin_B" 3.84151
+cap "MG_and_gate_6/Vin_A" "MG_and_gate_6/Vin_B" 0.609526
+cap "MG_and_gate_6/Vdd" "MG_and_gate_6/Vin_B" -2.27374e-13
+cap "MG_and_gate_5/GND" "MG_and_gate_6/Vin_A" 1.01578
+cap "MG_and_gate_5/XM6/a_n70_n292#" "MG_and_gate_6/Vin_A" 0.014466
+cap "MG_and_gate_7/Vdd" "MG_and_gate_6/Vin_B" 0.0996378
+cap "MG_and_gate_5/GND" "MG_and_gate_6/Vin_B" 1.31911
+cap "MG_and_gate_7/pfet_05v0_2VHNWJ_0/w_n406_n308#" "MG_and_gate_6/Vin_B" 0.0317862
+cap "MG_and_gate_6/XM6/a_70_n200#" "MG_and_gate_6/Vin_B" -1.13687e-13
+cap "MG_and_gate_5/nfet_05v0_EGQXBG_0/a_n70_n292#" "MG_and_gate_6/Vin_B" 0.115226
+cap "P16" "MG_and_gate_6/Vin_B" 0.399641
+cap "MG_and_gate_6/Vout" "P16" 1.8383
+cap "MG_and_gate_5/Vout" "MG_and_gate_6/Vdd" 17.2959
+cap "MG_and_gate_6/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_and_gate_5/Vout" 5.74863
+cap "MG_and_gate_6/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_and_gate_5/nfet_05v0_EGQXBG_0/a_70_n200#" 0.0821373
+cap "MG_and_gate_6/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_and_gate_5/GND" 0.380502
+cap "MG_and_gate_5/Vout" "MG_and_gate_6/Vin_B" 1.9063
+cap "MG_and_gate_6/Vout" "MG_and_gate_5/Vout" 3.67172
+cap "P16" "MG_and_gate_6/pfet_05v0_2VHNWJ_1/a_n52_n110#" 1.40116
+cap "MG_and_gate_6/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_and_gate_7/Vdd" 0.0696803
+cap "MG_and_gate_6/Vdd" "MG_and_gate_5/Vout" 43.1721
+cap "MG_and_gate_6/nfet_05v0_ZZNR9W_0/a_n70_n192#" "MG_and_gate_5/Vout" 10.4338
+cap "MG_and_gate_5/Vout" "P16" -0.0711876
+cap "MG_and_gate_6/Vin_B" "MG_and_gate_5/Vout" 5.74781
+cap "MG_and_gate_6/Vout" "MG_and_gate_5/Vout" 5.61237
+cap "MG_and_gate_5/Vout" "MG_and_gate_12/Vin_B" 8.13366
+cap "MG_and_gate_12/GND" "MG_and_gate_12/Vin_B" 10.4259
+cap "MG_and_gate_12/Vin_A" "MG_and_gate_12/pfet_05v0_2VHNWJ_1/a_n52_n110#" 0.730312
+cap "MG_and_gate_12/Vin_A" "P14" 0.0167506
+cap "MG_and_gate_12/Vin_B" "MG_and_gate_11/GND" 8.43518
+cap "MG_and_gate_11/XM6/a_70_n200#" "MG_and_gate_12/Vin_B" 0.0315443
+cap "MG_and_gate_12/Vin_B" "MG_and_gate_12/Vdd" -2.84217e-14
+cap "MG_and_gate_12/Vin_B" "MG_and_gate_12/XM6/a_70_n200#" 2.84217e-14
+cap "MG_and_gate_12/Vin_A" "MG_and_gate_11/GND" 1.09641
+cap "MG_and_gate_11/GND" "MG_and_gate_12/pfet_05v0_2VHNWJ_1/a_n52_n110#" 0.19212
+cap "MG_and_gate_11/XM6/a_70_n200#" "MG_and_gate_12/Vin_B" 0.0741394
+cap "MG_and_gate_12/Vin_B" "MG_and_gate_11/nfet_05v0_EGQXBG_0/a_n70_n292#" 0.155944
+cap "MG_and_gate_11/nfet_05v0_EGQXBG_0/a_70_n200#" "MG_and_gate_12/Vin_B" 0.0595732
+cap "MG_and_gate_12/Vin_B" "MG_and_gate_11/GND" 1.24201
+cap "MG_and_gate_12/Vin_B" "MG_and_gate_12/XM6/a_70_n200#" 5.68434e-14
+cap "MG_and_gate_12/Vin_B" "MG_and_gate_12/pfet_05v0_2VHNWJ_1/a_n52_n110#" 2.27374e-13
+cap "MG_and_gate_11/GND" "MG_and_gate_12/pfet_05v0_2VHNWJ_0/a_n52_n110#" 0.0501934
+cap "MG_and_gate_3/GND" "MG_and_gate_3/Vin_B" 12.1876
+cap "MG_and_gate_3/pfet_05v0_2VHNWJ_1/a_n52_n110#" "P16" 0.923003
+cap "MG_and_gate_3/pfet_05v0_2VHNWJ_1/w_n406_n308#" "P16" 29.0804
+cap "MG_and_gate_3/GND" "P16" 8.13688
+cap "MG_and_gate_3/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_and_gate_3/GND" 6.59618
+cap "MG_and_gate_2/Vin_A" "P16" 22.1519
+cap "MG_and_gate_3/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_and_gate_3/Vin_B" 19.1305
+cap "MG_and_gate_3/Vin_B" "P16" 25.2221
+cap "MG_and_gate_3/pfet_05v0_2VHNWJ_1/a_n52_n110#" "P16" 1.78406
+cap "MG_and_gate_3/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_and_gate_3/Vin_B" 0.0428809
+cap "MG_and_gate_2/GND" "P16" 59.9661
+cap "MG_and_gate_2/Vin_A" "MG_and_gate_3/Vdd" 0.388866
+cap "MG_and_gate_2/pfet_05v0_2VHNWJ_1/a_n52_n110#" "P16" 4.82717
+cap "P16" "MG_and_gate_3/Vin_A" 5.77726
+cap "P16" "MG_and_gate_3/Vin_B" 58.7801
+cap "MG_and_gate_2/GND" "MG_and_gate_3/Vdd" 72.7138
+cap "MG_and_gate_2/Vin_A" "P16" 3.30661
+cap "MG_and_gate_2/Vin_A" "MG_and_gate_3/Vin_B" 0.0527704
+cap "MG_and_gate_2/XM6/a_70_n200#" "P16" 5.68581
+cap "P16" "MG_and_gate_3/Vdd" 62.7576
+cap "MG_and_gate_3/Vin_B" "MG_and_gate_3/Vdd" 0.841077
+cap "MG_and_gate_2/GND" "S4" 6.1944
+cap "MG_and_gate_2/Vin_B" "P16" 1.19992
+cap "MG_and_gate_2/GND" "MG_and_gate_3/Vdd" 58.3053
+cap "MG_and_gate_2/GND" "P16" 50.3482
+cap "MG_and_gate_2/Vdd" "P16" 2.48682
+cap "MG_and_gate_3/Vin_B" "P16" 0.29384
+cap "MG_and_gate_3/pfet_05v0_2VHNWJ_0/a_n52_n110#" "P16" 4.27291
+cap "MG_and_gate_3/Vout" "P16" 0.623389
+cap "MG_and_gate_2/pfet_05v0_2VHNWJ_1/a_n52_n110#" "S4" 1.0253
+cap "MG_and_gate_2/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_and_gate_3/Vdd" 0.675333
+cap "MG_and_gate_2/pfet_05v0_2VHNWJ_1/a_n52_n110#" "P16" 13.1964
+cap "MG_and_gate_3/Vdd" "S4" 6.33291
+cap "MG_and_gate_2/Vout" "S4" 2.22934
+cap "MG_and_gate_3/Vdd" "P16" 55.2053
+cap "MG_and_gate_2/Vout" "P16" 112.489
+cap "MG_and_gate_2/Vout" "MG_and_gate_3/Vdd" 0.561165
+cap "MG_and_gate_6/Vin_A" "MG_and_gate_2/GND" 6.29971
+cap "MG_and_gate_2/Vout" "MG_and_gate_6/Vin_A" 2.71904
+cap "MG_and_gate_5/Vin_A" "MG_and_gate_2/Vout" 5.52791
+cap "MG_and_gate_5/Vin_A" "P16" -4.43186
+cap "MG_and_gate_2/nfet_05v0_ZZNR9W_0/a_n70_n192#" "MG_and_gate_6/Vin_A" 0.95385
+cap "MG_and_gate_3/Vdd" "MG_and_gate_6/Vin_A" 6.33291
+cap "MG_and_gate_2/Vout" "P16" 56.5752
+cap "MG_and_gate_2/Vout" "MG_and_gate_6/GND" 7.4064
+cap "MG_and_gate_6/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_and_gate_6/Vin_A" -2.84217e-14
+cap "MG_and_gate_6/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_and_gate_5/Vin_A" 2.57811
+cap "MG_and_gate_6/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_and_gate_6/Vin_B" 18.6702
+cap "MG_and_gate_2/Vout" "MG_and_gate_5/XM6/a_70_n200#" 0.782573
+cap "MG_and_gate_2/Vout" "MG_and_gate_6/pfet_05v0_2VHNWJ_1/w_n406_n308#" 1.06031
+cap "MG_and_gate_6/Vin_A" "MG_and_gate_6/Vin_B" 0.0760356
+cap "MG_and_gate_2/Vout" "MG_and_gate_6/Vin_A" 5.9763
+cap "MG_and_gate_2/Vout" "MG_and_gate_5/Vin_A" -1.5119
+cap "MG_and_gate_5/GND" "MG_and_gate_6/Vin_B" 0.453667
+cap "MG_and_gate_5/Vin_B" "MG_and_gate_6/Vin_A" 0.034235
+cap "MG_and_gate_6/Vin_A" "MG_and_gate_5/Vin_A" 0.00514598
+cap "MG_and_gate_5/Vin_B" "MG_and_gate_5/Vin_A" 0.346283
+cap "MG_and_gate_5/Vin_B" "MG_and_gate_6/Vin_B" 1.31454
+cap "MG_and_gate_6/Vdd" "MG_and_gate_5/GND" 92.491
+cap "MG_and_gate_6/Vdd" "MG_and_gate_5/Vin_B" 1.09995
+cap "MG_and_gate_6/Vdd" "MG_and_gate_5/Vin_A" 1.29529
+cap "MG_and_gate_5/GND" "MG_and_gate_5/Vin_B" 4.77724
+cap "MG_and_gate_6/Vin_B" "MG_and_gate_5/XM6/a_70_n200#" 0.221998
+cap "MG_and_gate_5/Vout" "MG_and_gate_6/Vdd" 12.8691
+cap "MG_and_gate_5/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_and_gate_6/Vdd" 1.30316
+cap "MG_and_gate_5/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_and_gate_6/pfet_05v0_2VHNWJ_1/a_n52_n110#" 0.0773625
+cap "MG_and_gate_5/GND" "MG_and_gate_6/Vdd" 83.9866
+cap "m2_13220_n6240#" "MG_and_gate_5/Vout" 0.506591
+cap "MG_and_gate_6/Vdd" "MG_and_gate_5/Vout" 26.2473
+cap "MG_and_gate_11/XM6/a_70_n200#" "MG_and_gate_11/Vin_B" 0.269967
+cap "MG_and_gate_12/GND" "MG_and_gate_11/Vin_B" 1.41828
+cap "MG_and_gate_11/Vin_A" "MG_and_gate_11/Vin_B" 0.172692
+cap "MG_and_gate_11/GND" "MG_and_gate_11/Vin_B" 1.25913
+cap "MG_and_gate_11/Vin_A" "MG_and_gate_12/Vdd" 3.44806
+cap "MG_and_gate_11/GND" "MG_and_gate_12/Vdd" 49.4703
+cap "MG_and_gate_11/Vin_B" "MG_and_gate_12/Vdd" 0.749846
+cap "MG_and_gate_11/Vin_B" "MG_and_gate_12/Vin_B" 0.155944
+cap "MG_and_gate_12/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_and_gate_11/Vin_B" 0.0741524
+cap "MG_and_gate_12/Vdd" "MG_and_gate_11/pfet_05v0_2VHNWJ_1/a_n52_n110#" 0.520005
+cap "MG_and_gate_12/Vdd" "MG_and_gate_11/GND" 79.9836
+cap "MG_and_gate_12/Vdd" "MG_and_gate_11/Vin_B" 1.02248
+cap "MG_and_gate_12/Vdd" "MG_and_gate_11/pfet_05v0_2VHNWJ_0/a_n52_n110#" 0.365929
+cap "MG_and_gate_12/Vdd" "MG_and_gate_11/GND" 22.8881
+cap "MG_and_gate_12/Vdd" "MG_and_gate_11/Vout" 4.88312
+cap "MG_not_gate_3/Vin" "MG_not_gate_3/Vout" -0.977378
+cap "MG_not_gate_3/Vin" "MG_not_gate_3/GND" 135.228
+cap "MG_not_gate_3/Vin" "MG_not_gate_3/Vdd" 0.664131
+cap "MG_not_gate_3/Vdd" "MG_not_gate_3/GND" -0.137609
+cap "MG_not_gate_2/Vout" "MG_not_gate_3/Vout" 1.70067
+cap "MG_not_gate_3/Vin" "MG_not_gate_3/Vout" 30.1512
+cap "MG_not_gate_3/GND" "MG_not_gate_3/Vout" 9.38831
+cap "MG_not_gate_3/Vin" "MG_not_gate_3/GND" 85.3087
+cap "MG_not_gate_3/Vdd" "MG_not_gate_3/Vout" 4.83223
+cap "MG_not_gate_3/GND" "MG_and_gate_2/Vin_A" 0.0646143
+cap "MG_not_gate_3/Vout" "MG_not_gate_3/Vdd" 0.336763
+cap "MG_not_gate_3/Vout" "P16" 0.387765
+cap "MG_not_gate_3/Vin" "P16" 2.25294
+cap "MG_not_gate_3/GND" "P16" 4.68645
+cap "MG_not_gate_3/Vout" "MG_not_gate_3/Vin" 7.5158
+cap "MG_and_gate_2/Vin_B" "MG_and_gate_2/XM6/a_70_n200#" 0.649446
+cap "MG_and_gate_2/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_and_gate_2/Vin_A" 1.13687e-13
+cap "MG_and_gate_2/Vin_B" "MG_and_gate_2/Vin_A" -15.4955
+cap "MG_and_gate_2/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_and_gate_2/Vin_B" 26.8646
+cap "P16" "MG_and_gate_2/Vin_A" -0.906599
+cap "MG_and_gate_2/Vin_A" "MG_and_gate_2/GND" 0.298065
+cap "MG_and_gate_2/Vin_A" "MG_and_gate_2/pfet_05v0_2VHNWJ_1/a_n52_n110#" 0.080244
+cap "P16" "MG_and_gate_2/Vin_B" 25.2221
+cap "MG_and_gate_2/Vin_B" "MG_and_gate_2/GND" 18.4124
+cap "MG_and_gate_2/Vin_B" "MG_and_gate_2/pfet_05v0_2VHNWJ_1/a_n52_n110#" 9.87903
+cap "m1_3460_n5020#" "MG_and_gate_2/Vin_A" 17.9725
+cap "MG_and_gate_2/Vin_B" "MG_and_gate_1/nfet_05v0_EGQXBG_0/a_n70_n292#" 0.152375
+cap "MG_and_gate_2/Vin_B" "MG_and_gate_2/Vdd" 1.13687e-13
+cap "MG_and_gate_2/Vin_B" "MG_and_gate_2/pfet_05v0_2VHNWJ_1/a_n52_n110#" 2.27374e-13
+cap "MG_and_gate_2/Vin_B" "m1_3460_n5020#" 16.0892
+cap "MG_and_gate_2/Vin_B" "MG_and_gate_2/XM6/a_70_n200#" -1.13687e-13
+cap "MG_and_gate_2/Vin_B" "P16" 33.9952
+cap "MG_and_gate_2/Vin_B" "m1_7270_n6620#" 3.09714
+cap "MG_and_gate_2/Vin_B" "MG_and_gate_2/Vin_A" 2.1213
+cap "MG_and_gate_2/Vin_B" "MG_and_gate_1/nfet_05v0_EGQXBG_0/a_70_n200#" 0.0478489
+cap "MG_and_gate_2/Vin_B" "MG_and_gate_1/XM6/a_70_n200#" 0.0876548
+cap "MG_and_gate_2/Vdd" "MG_and_gate_2/Vin_A" 1.42109e-14
+cap "m1_3460_n5020#" "MG_and_gate_2/Vin_A" 7.32756
+cap "MG_and_gate_2/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_and_gate_2/Vin_A" 5.68434e-14
+cap "MG_and_gate_2/Vin_B" "MG_and_gate_2/GND" 0.404812
+cap "m1_7270_n6620#" "MG_and_gate_2/Vout" 1.69712
+cap "S4" "MG_and_gate_2/pfet_05v0_2VHNWJ_1/a_n52_n110#" 9.79718
+cap "MG_and_gate_2/Vdd" "MG_and_gate_2/Vin_B" 1.77636e-15
+cap "m1_3460_n5020#" "MG_and_gate_2/Vout" 7.54284
+cap "P16" "MG_and_gate_2/pfet_05v0_2VHNWJ_1/a_n52_n110#" 0.200791
+cap "m1_7270_n6620#" "MG_and_gate_2/pfet_05v0_2VHNWJ_1/a_n52_n110#" 5.92568
+cap "MG_and_gate_2/GND" "MG_and_gate_2/pfet_05v0_2VHNWJ_1/a_n52_n110#" 0.197822
+cap "m1_7270_n6620#" "MG_and_gate_2/Vdd" 47.6498
+cap "S4" "MG_and_gate_2/Vout" 2.5306
+cap "m1_3460_n5020#" "MG_and_gate_2/pfet_05v0_2VHNWJ_1/a_n52_n110#" 0.330008
+cap "MG_and_gate_2/Vin_B" "P16" 1.19992
+cap "m1_7270_n6620#" "MG_and_gate_2/Vin_B" 1.81807
+cap "m1_3460_n5020#" "MG_and_gate_2/Vin_B" 0.984091
+cap "P16" "MG_and_gate_2/Vout" 9.30046
+cap "S4" "MG_and_gate_5/Vin_A" 0.820457
+cap "MG_and_gate_5/Vin_A" "MG_and_gate_2/nfet_05v0_ZZNR9W_0/a_n70_n192#" 12.0913
+cap "MG_and_gate_2/Vdd" "MG_and_gate_5/Vin_A" 64.8403
+cap "MG_and_gate_2/Vin_B" "MG_and_gate_5/Vin_A" 4.91521
+cap "S4" "MG_and_gate_2/Vdd" 0.218468
+cap "S4" "MG_and_gate_2/nfet_05v0_ZZNR9W_0/a_n70_n192#" 9.23297
+cap "MG_and_gate_2/Vout" "MG_and_gate_5/Vin_A" 8.88567
+cap "MG_and_gate_2/Vout" "S4" 1.74802
+cap "P16" "MG_and_gate_5/Vin_A" -4.43186
+cap "S4" "MG_and_gate_5/pfet_05v0_2VHNWJ_1/w_n406_n308#" 2.95573
+cap "MG_and_gate_1/Vout" "MG_and_gate_5/Vin_A" 0.0746548
+cap "MG_and_gate_6/pfet_05v0_2VHNWJ_1/a_n192_n282#" "MG_and_gate_2/Vout" 0.285471
+cap "MG_and_gate_5/pfet_05v0_2VHNWJ_1/w_n406_n308#" "S4" 2.2835
+cap "MG_and_gate_5/Vin_A" "MG_and_gate_2/Vout" -33.8692
+cap "MG_and_gate_2/Vout" "MG_or_gate_2/GND" 1.46679
+cap "MG_and_gate_2/Vout" "MG_and_gate_6/pfet_05v0_2VHNWJ_1/a_n192_n282#" 0.449472
+cap "S4" "MG_and_gate_5/Vin_A" 0.301262
+cap "MG_and_gate_6/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_and_gate_2/Vout" 3.70151
+cap "MG_and_gate_5/Vin_A" "MG_and_gate_5/pfet_05v0_2VHNWJ_1/a_n52_n110#" 0.664518
+cap "MG_and_gate_5/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_and_gate_5/Vin_A" -5.68434e-14
+cap "MG_or_gate_2/Vin_B" "MG_and_gate_5/Vin_A" 6.72453
+cap "MG_and_gate_2/Vout" "MG_and_gate_6/pfet_05v0_2VHNWJ_1/a_n52_n110#" 0.0719365
+cap "S4" "MG_and_gate_2/Vout" 0.443295
+cap "MG_and_gate_2/Vout" "MG_and_gate_5/XM6/a_70_n200#" 0.870394
+cap "MG_and_gate_5/Vin_A" "MG_or_gate_2/GND" 0.100013
+cap "MG_and_gate_6/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_and_gate_5/Vin_A" 2.41611
+cap "MG_and_gate_5/Vin_A" "MG_and_gate_6/Vdd" 0.744499
+cap "MG_and_gate_5/Vin_B" "MG_and_gate_6/Vdd" 7.14152
+cap "MG_and_gate_5/GND" "MG_and_gate_5/Vin_A" 0.24219
+cap "MG_and_gate_5/GND" "MG_and_gate_5/Vin_B" 1.49216
+cap "MG_and_gate_6/pfet_05v0_2VHNWJ_0/a_n192_n282#" "MG_and_gate_5/Vin_B" 0.401147
+cap "MG_and_gate_5/Vin_A" "MG_or_gate_2/Vin_B" 7.92123
+cap "MG_or_gate_2/Vin_B" "MG_and_gate_5/Vin_B" 3.85863
+cap "MG_and_gate_6/pfet_05v0_2VHNWJ_0/a_n52_n110#" "MG_and_gate_5/Vin_B" 0.0207692
+cap "MG_and_gate_6/pfet_05v0_2VHNWJ_1/a_n192_n282#" "MG_and_gate_5/Vin_B" 0.142229
+cap "MG_and_gate_5/Vin_A" "MG_and_gate_5/pfet_05v0_2VHNWJ_1/a_n52_n110#" 2.27374e-13
+cap "MG_and_gate_6/Vdd" "MG_and_gate_5/Vout" 1.64686
+cap "MG_or_gate_2/Vout" "MG_and_gate_5/Vin_B" 1.3072
+cap "MG_and_gate_5/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_or_gate_2/Vout" 2.29715
+cap "MG_and_gate_5/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_and_gate_5/Vin_B" 2.84217e-14
+cap "MG_or_gate_2/Vout" "MG_and_gate_5/Vdd" 8.63991
+cap "MG_and_gate_6/Vdd" "MG_and_gate_5/Vin_B" 0.488598
+cap "MG_and_gate_5/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_and_gate_6/Vdd" 0.181391
+cap "MG_or_gate_2/Vout" "MG_and_gate_5/Vout" 0.460571
+cap "MG_and_gate_5/Vin_B" "MG_and_gate_5/Vdd" 7.10543e-15
+cap "MG_and_gate_5/pfet_05v0_2VHNWJ_0/a_n192_n282#" "MG_or_gate_2/Vout" 1.3072
+cap "MG_and_gate_5/Vdd" "MG_or_gate_2/Vout" 33.3414
+cap "MG_and_gate_5/Vout" "MG_or_gate_2/Vout" 1.5474
+cap "MG_or_gate_2/Vout" "P14" -4.44089e-16
+cap "MG_and_gate_5/nfet_05v0_EGQXBG_0/a_70_n200#" "MG_or_gate_2/Vout" 6.76813
+cap "MG_and_gate_11/Vin_A" "MG_and_gate_11/Vin_B" -16.5251
+cap "MG_and_gate_11/Vin_B" "MG_and_gate_11/XM6/a_70_n200#" 0.22978
+cap "MG_and_gate_11/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_and_gate_11/Vin_B" 21.3217
+cap "MG_and_gate_11/Vin_B" "MG_and_gate_10/GND" 4.59401
+cap "MG_and_gate_11/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_and_gate_11/Vin_B" 5.0386
+cap "MG_and_gate_11/Vdd" "MG_and_gate_11/Vin_B" 16.0689
+cap "MG_and_gate_11/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_and_gate_11/Vin_B" 5.0386
+cap "MG_and_gate_11/Vin_A" "MG_and_gate_11/pfet_05v0_2VHNWJ_1/a_n52_n110#" 0.037517
+cap "MG_and_gate_11/Vin_B" "MG_and_gate_12/pfet_05v0_2VHNWJ_0/a_n192_n282#" 0.00764724
+cap "MG_and_gate_11/Vin_A" "MG_and_gate_11/Vin_B" 9.22787
+cap "MG_and_gate_11/Vin_B" "MG_and_gate_12/Vdd" 6.19331
+cap "MG_and_gate_11/Vin_B" "MG_and_gate_11/GND" 4.52687
+cap "MG_and_gate_11/Vin_A" "MG_and_gate_12/Vdd" 2.9178
+cap "MG_and_gate_11/Vin_B" "MG_and_gate_12/pfet_05v0_2VHNWJ_1/a_n192_n282#" 0.0598185
+cap "MG_and_gate_12/pfet_05v0_2VHNWJ_1/a_n192_n282#" "MG_and_gate_11/Vin_B" 0.0297393
+cap "MG_and_gate_11/Vin_B" "MG_and_gate_12/pfet_05v0_2VHNWJ_0/a_n192_n282#" 0.00849694
+cap "MG_and_gate_11/Vin_B" "MG_and_gate_12/Vdd" 0.621799
+cap "MG_and_gate_12/Vdd" "MG_and_gate_11/pfet_05v0_2VHNWJ_1/a_n52_n110#" 0.0588222
+cap "MG_and_gate_12/Vdd" "MG_and_gate_11/Vout" 0.362566
+cap "MG_and_gate_12/Vdd" "MG_and_gate_11/Vout" 0.599442
+cap "MG_and_gate_11/pfet_05v0_2VHNWJ_0/a_n52_n110#" "MG_and_gate_12/Vdd" 0.000588222
+cap "MG_not_gate_2/GND" "MG_not_gate_3/Vdd" 9.6221
+cap "MG_not_gate_3/Vdd" "MG_not_gate_2/Vin" 0.619179
+cap "MG_not_gate_3/Vdd" "MG_not_gate_3/Vin" 0.664131
+cap "MG_not_gate_2/Vout" "MG_not_gate_3/Vin" 0.155289
+cap "MG_not_gate_3/Vout" "MG_not_gate_2/Vout" 1.86768
+cap "MG_not_gate_2/Vout" "MG_not_gate_3/Vdd" 5.34964
+cap "MG_not_gate_2/Vin" "MG_not_gate_3/Vin" 0.672821
+cap "MG_not_gate_2/GND" "MG_not_gate_3/Vin" 0.636386
+cap "MG_not_gate_3/Vout" "MG_not_gate_3/Vin" 1.57324
+cap "MG_not_gate_2/GND" "MG_not_gate_3/Vdd" 29.4633
+cap "MG_not_gate_3/Vout" "MG_not_gate_3/Vdd" 21.5577
+cap "MG_not_gate_3/Vout" "MG_not_gate_3/Vin" 1.4878
+cap "MG_not_gate_3/Vout" "MG_not_gate_3/Vdd" 20.9035
+cap "MG_not_gate_3/Vout" "MG_not_gate_2/Vout" 0.0823965
+cap "m1_3460_n5020#" "MG_and_gate_2/pfet_05v0_2VHNWJ_1/a_n52_n110#" 1.1407
+cap "m1_3460_n5020#" "MG_and_gate_1/Vin_B" 24.7634
+cap "MG_and_gate_2/Vin_A" "m1_3460_n5020#" 24.3874
+cap "MG_and_gate_1/Vin_A" "m1_3460_n5020#" -0.631683
+cap "MG_and_gate_2/GND" "MG_and_gate_2/pfet_05v0_2VHNWJ_1/w_n406_n308#" 5.85782
+cap "MG_and_gate_1/Vin_B" "MG_and_gate_2/pfet_05v0_2VHNWJ_1/w_n406_n308#" 0.717192
+cap "m1_3460_n5020#" "MG_and_gate_2/pfet_05v0_2VHNWJ_1/w_n406_n308#" 38.5476
+cap "MG_and_gate_2/Vin_B" "MG_and_gate_2/pfet_05v0_2VHNWJ_1/w_n406_n308#" 16.3799
+cap "m1_3460_n5020#" "MG_and_gate_2/GND" 27.7129
+cap "MG_and_gate_2/Vdd" "MG_and_gate_1/GND" 76.6443
+cap "MG_and_gate_1/Vin_B" "MG_and_gate_2/Vin_B" 0.152375
+cap "MG_and_gate_2/Vin_B" "MG_and_gate_1/Vin_A" 0.0468244
+cap "m1_3460_n5020#" "MG_and_gate_1/GND" 39.471
+cap "m1_3460_n5020#" "MG_and_gate_1/XM6/a_70_n200#" 4.62262
+cap "m1_3460_n5020#" "MG_and_gate_1/pfet_05v0_2VHNWJ_1/a_n52_n110#" 3.80741
+cap "m1_3460_n5020#" "MG_and_gate_2/Vin_B" 22.2301
+cap "MG_and_gate_1/Vin_B" "MG_and_gate_2/pfet_05v0_2VHNWJ_1/a_n52_n110#" 0.0624771
+cap "m1_3460_n5020#" "MG_and_gate_2/XM6/a_70_n200#" 0.030862
+cap "MG_and_gate_2/Vdd" "MG_and_gate_1/Vin_B" 0.955669
+cap "MG_and_gate_2/Vdd" "MG_and_gate_1/Vin_A" 0.492971
+cap "m1_3460_n5020#" "MG_and_gate_1/Vin_B" 34.7758
+cap "m1_3460_n5020#" "MG_and_gate_1/Vin_A" 2.76984
+cap "m1_3460_n5020#" "MG_and_gate_2/pfet_05v0_2VHNWJ_1/a_n52_n110#" 2.03722
+cap "m1_3460_n5020#" "MG_and_gate_2/Vin_A" 7.27484
+cap "MG_and_gate_2/Vdd" "m1_3460_n5020#" 89.8684
+cap "m1_3460_n5020#" "MG_and_gate_1/Vdd" 1.91205
+cap "m1_7270_n6620#" "MG_and_gate_2/Vdd" 15.1631
+cap "m1_3460_n5020#" "MG_and_gate_2/Vdd" 80.3579
+cap "m1_7270_n6620#" "MG_and_gate_1/GND" 15.3728
+cap "MG_and_gate_2/Vdd" "MG_and_gate_1/GND" 63.6574
+cap "MG_and_gate_1/Vin_B" "m1_3460_n5020#" 1.48997
+cap "m1_3460_n5020#" "MG_and_gate_1/GND" 33.4923
+cap "S4" "MG_and_gate_1/pfet_05v0_2VHNWJ_1/a_n52_n110#" 0.145278
+cap "S4" "MG_and_gate_1/Vout" 1.36499
+cap "MG_and_gate_2/pfet_05v0_2VHNWJ_1/a_n52_n110#" "m1_3460_n5020#" 5.23567
+cap "MG_and_gate_1/pfet_05v0_2VHNWJ_1/a_n52_n110#" "m1_7270_n6620#" 3.96499
+cap "m1_7270_n6620#" "MG_and_gate_1/Vout" 8.32111
+cap "MG_and_gate_1/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_and_gate_2/Vdd" 0.79269
+cap "MG_and_gate_2/Vdd" "MG_and_gate_1/Vout" 0.694695
+cap "MG_and_gate_2/Vout" "m1_3460_n5020#" 8.35591
+cap "MG_and_gate_1/pfet_05v0_2VHNWJ_1/a_n52_n110#" "m1_3460_n5020#" 10.8964
+cap "MG_and_gate_2/Vin_B" "m1_3460_n5020#" 0.984091
+cap "m1_3460_n5020#" "MG_and_gate_1/Vout" 75.5306
+cap "MG_and_gate_5/Vin_A" "MG_and_gate_1/nfet_05v0_ZZNR9W_0/a_n70_n192#" 3.55158
+cap "MG_and_gate_5/Vin_A" "MG_and_gate_2/Vdd" 15.1631
+cap "S4" "m1_3460_n5020#" 0.110366
+cap "S4" "MG_and_gate_5/pfet_05v0_2VHNWJ_1/w_n406_n308#" 2.44469
+cap "MG_and_gate_1/Vout" "MG_and_gate_5/Vin_A" 68.7139
+cap "MG_and_gate_1/Vout" "m1_3460_n5020#" 41.7286
+cap "MG_and_gate_1/GND" "MG_and_gate_1/Vout" 0.830611
+cap "m1_3460_n5020#" "MG_and_gate_5/Vin_A" -10.4192
+cap "MG_and_gate_1/GND" "MG_and_gate_5/Vin_A" 15.6221
+cap "MG_and_gate_5/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_and_gate_1/Vout" 4.43881
+cap "MG_or_gate_2/Vin_B" "MG_and_gate_5/pfet_05v0_2VHNWJ_1/a_n52_n110#" 0.35079
+cap "MG_or_gate_2/GND" "MG_and_gate_1/Vout" 3.68843
+cap "MG_or_gate_2/pfet_05v0_E5NMY2_0/w_n446_n288#" "MG_or_gate_2/Vin_B" -0.618144
+cap "MG_and_gate_5/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_or_gate_2/Vin_B" 8.61138
+cap "MG_and_gate_5/Vin_A" "MG_or_gate_2/Vin_B" 8.23918
+cap "S4" "MG_and_gate_5/pfet_05v0_2VHNWJ_1/w_n406_n308#" 2.44469
+cap "MG_and_gate_5/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_or_gate_2/GND" 6.48894
+cap "MG_or_gate_2/Vin_B" "MG_and_gate_1/Vout" -2.12895
+cap "MG_and_gate_5/Vin_A" "MG_or_gate_2/Vin_B" 9.43513
+cap "MG_or_gate_2/GND" "MG_and_gate_5/Vdd" 61.3818
+cap "MG_and_gate_5/Vin_B" "MG_or_gate_2/Vin_B" 5.26162
+cap "MG_or_gate_2/Vin_B" "MG_and_gate_5/pfet_05v0_2VHNWJ_1/a_n52_n110#" 0.375935
+cap "MG_and_gate_5/Vdd" "MG_or_gate_2/Vin_B" 19.5324
+cap "MG_and_gate_5/Vdd" "MG_or_gate_2/Vout" 1.77505
+cap "MG_or_gate_2/GND" "MG_and_gate_5/Vdd" 58.5851
+cap "MG_and_gate_5/Vdd" "MG_or_gate_2/Vout" 7.65801
+cap "MG_and_gate_10/Vin_A" "MG_or_gate_2/Vout" 0.265169
+cap "P14" "MG_or_gate_2/Vout" 0.0331328
+cap "MG_and_gate_11/Vin_B" "MG_and_gate_11/pfet_05v0_2VHNWJ_1/w_n406_n308#" 3.61254
+cap "MG_and_gate_11/Vin_A" "MG_and_gate_11/Vin_B" 0.21633
+cap "MG_and_gate_11/Vdd" "MG_and_gate_11/Vin_B" 3.61254
+cap "MG_and_gate_11/Vdd" "MG_and_gate_10/GND" 14.5289
+cap "MG_and_gate_10/GND" "MG_and_gate_11/Vdd" 20.4176
+cap "MG_and_gate_10/Vout" "MG_and_gate_11/Vdd" 1.61869
+cap "MG_and_gate_11/Vdd" "MG_and_gate_10/GND" 4.23216
+cap "MG_not_gate_2/GND" "MG_not_gate_3/Vdd" 9.75971
+cap "MG_not_gate_2/Vdd" "MG_not_gate_2/GND" -0.275217
+cap "MG_not_gate_3/Vdd" "MG_not_gate_2/Vin" 0.619179
+cap "MG_not_gate_2/GND" "MG_not_gate_2/Vin" 0.594018
+cap "MG_not_gate_2/Vin" "MG_not_gate_2/Vout" 0.910518
+cap "MG_not_gate_2/Vdd" "MG_not_gate_2/Vin" 97.6765
+cap "MG_not_gate_2/Vdd" "MG_not_gate_2/Vout" 30.4545
+cap "MG_not_gate_2/GND" "MG_not_gate_2/Vin" 0.886669
+cap "MG_not_gate_3/Vin" "MG_not_gate_2/Vin" 0.65184
+cap "MG_not_gate_2/Vout" "MG_not_gate_2/Vin" 48.2468
+cap "MG_not_gate_2/GND" "MG_not_gate_3/Vdd" 29.4633
+cap "MG_not_gate_2/Vout" "MG_not_gate_3/Vdd" 2.6764
+cap "P16" "MG_not_gate_2/GND" 0.744014
+cap "P16" "MG_not_gate_2/Vout" 1.07903
+cap "MG_not_gate_2/Vdd" "MG_not_gate_2/Vin" 1.13687e-13
+cap "MG_not_gate_2/Vout" "MG_not_gate_2/GND" 9.34637
+cap "MG_not_gate_1/Vin" "MG_not_gate_2/Vin" 0.843746
+cap "m1_1880_n6120#" "MG_not_gate_2/GND" 5.58338
+cap "MG_not_gate_2/Vin" "MG_not_gate_3/Vdd" 1.56238
+cap "m1_1880_n6120#" "MG_not_gate_2/Vout" 4.15997
+cap "P16" "MG_not_gate_2/Vin" 2.24192
+cap "MG_not_gate_1/Vout" "MG_not_gate_2/Vin" 0.0811766
+cap "MG_not_gate_2/Vin" "MG_and_gate_1/Vin_A" 3.70675
+cap "MG_not_gate_2/GND" "P16" 0.757925
+cap "MG_not_gate_2/Vout" "MG_and_gate_1/Vin_A" 4.77583
+cap "MG_not_gate_2/Vdd" "MG_and_gate_1/Vin_A" 5.47001
+cap "MG_not_gate_2/GND" "m1_1880_n6120#" 6.10529
+cap "MG_not_gate_2/Vin" "P16" 2.00638
+cap "MG_not_gate_2/Vout" "P16" 0.22199
+cap "m1_3460_n5020#" "MG_and_gate_1/Vin_A" -0.0175924
+cap "MG_not_gate_2/Vout" "m1_1880_n6120#" 3.60352
+cap "P14" "MG_and_gate_1/Vin_A" 2.22045e-16
+cap "MG_and_gate_1/Vin_B" "P14" 1.31237
+cap "MG_and_gate_1/Vin_A" "P14" 9.85118
+cap "MG_and_gate_1/Vin_B" "P13" 0.160409
+cap "MG_and_gate_1/Vin_A" "P13" 0.748978
+cap "m1_3460_n5020#" "MG_and_gate_1/Vin_A" 120.295
+cap "MG_and_gate_1/Vin_B" "m1_3460_n5020#" 107.187
+cap "m1_3460_n5020#" "MG_and_gate_1/GND" 18.8999
+cap "m1_3460_n5020#" "MG_and_gate_1/pfet_05v0_2VHNWJ_1/w_n406_n308#" 85.1134
+cap "MG_and_gate_1/Vin_A" "MG_and_gate_1/pfet_05v0_2VHNWJ_1/a_n52_n110#" -0.0316117
+cap "P16" "MG_and_gate_1/Vin_A" 0.244366
+cap "MG_and_gate_1/Vin_B" "P16" 0.0482499
+cap "MG_and_gate_1/Vin_B" "MG_and_gate_1/Vin_A" -19.8135
+cap "MG_and_gate_1/Vin_B" "MG_and_gate_1/GND" -1.31274
+cap "MG_and_gate_1/GND" "MG_and_gate_1/Vin_A" 0.279711
+cap "MG_and_gate_1/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_and_gate_1/Vin_A" 25.9045
+cap "m1_3460_n5020#" "MG_and_gate_1/pfet_05v0_2VHNWJ_1/a_n52_n110#" 17.7195
+cap "MG_and_gate_1/Vin_A" "P14" 0.0468244
+cap "MG_and_gate_0/XM6/a_70_n200#" "MG_and_gate_1/Vin_B" 0.24923
+cap "MG_and_gate_1/Vin_B" "MG_and_gate_1/Vdd" -1.13687e-13
+cap "MG_and_gate_0/nfet_05v0_EGQXBG_0/a_70_n200#" "MG_and_gate_1/Vin_B" 0.0873724
+cap "MG_and_gate_0/nfet_05v0_EGQXBG_0/a_n70_n292#" "MG_and_gate_1/Vin_B" 0.590947
+cap "MG_and_gate_1/Vin_A" "MG_and_gate_1/GND" 0.0397136
+cap "MG_and_gate_1/Vin_B" "MG_and_gate_1/GND" 0.565072
+cap "MG_and_gate_1/Vin_A" "m1_3460_n5020#" 3.0648
+cap "MG_and_gate_1/Vin_B" "m1_3460_n5020#" 31.3354
+cap "MG_and_gate_1/Vin_A" "MG_and_gate_1/Vin_B" 23.9983
+cap "MG_and_gate_1/Vin_B" "P16" 0.00145146
+cap "MG_and_gate_1/Vout" "m1_7270_n6620#" 18.416
+cap "MG_and_gate_1/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_and_gate_1/Vdd" 2.27374e-13
+cap "MG_and_gate_1/Vin_B" "MG_and_gate_1/Vdd" -1.77636e-15
+cap "MG_and_gate_1/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_and_gate_2/Vdd" 0.0317935
+cap "MG_and_gate_1/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_and_gate_1/GND" 0.388066
+cap "MG_and_gate_1/pfet_05v0_2VHNWJ_1/a_n52_n110#" "S4" 0.431304
+cap "MG_and_gate_1/pfet_05v0_2VHNWJ_1/a_n52_n110#" "m1_3460_n5020#" 0.146661
+cap "MG_and_gate_1/Vin_B" "m1_3460_n5020#" 1.48997
+cap "MG_and_gate_1/Vout" "MG_and_gate_1/Vin_B" -4.44089e-16
+cap "MG_and_gate_1/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_and_gate_0/nfet_05v0_EGQXBG_0/a_70_n200#" 0.490652
+cap "m1_7270_n6620#" "MG_and_gate_1/Vdd" 48.9791
+cap "MG_and_gate_1/pfet_05v0_2VHNWJ_1/a_n52_n110#" "m1_7270_n6620#" 20.9696
+cap "MG_and_gate_1/Vout" "S4" 2.01652
+cap "MG_and_gate_1/Vin_B" "m1_7270_n6620#" 1.68532
+cap "MG_and_gate_1/Vout" "m1_3460_n5020#" 8.53254
+cap "m1_7270_n6620#" "MG_and_gate_1/Vout" 4.92084
+cap "S4" "MG_or_gate_2/pfet_05v0_E5NMY2_0/w_n446_n288#" 3.92259
+cap "MG_and_gate_1/nfet_05v0_ZZNR9W_0/a_n70_n192#" "m1_7270_n6620#" 19.3715
+cap "MG_and_gate_1/Vdd" "m1_7270_n6620#" 52.8373
+cap "S4" "MG_and_gate_1/Vout" 6.86553
+cap "MG_or_gate_2/pfet_05v0_E5NMY2_0/w_n446_n288#" "S4" 3.92259
+cap "MG_and_gate_0/Vout" "MG_and_gate_1/Vout" 0.0488272
+cap "MG_or_gate_2/GND" "MG_and_gate_1/Vout" 0.851032
+cap "MG_or_gate_2/pfet_05v0_E5NMY2_0/w_n446_n288#" "MG_or_gate_1/Vin_A" 8.47991
+cap "MG_or_gate_2/pfet_05v0_E5NMY2_0/w_n446_n288#" "MG_and_gate_0/Vout" 2.54688
+cap "MG_or_gate_2/GND" "MG_or_gate_2/pfet_05v0_E5NMY2_0/w_n446_n288#" 2.24222
+cap "MG_and_gate_1/Vout" "MG_or_gate_2/nfet_05v0_EGQXBG_1/a_n158_n200#" 7.50139
+cap "MG_and_gate_5/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_and_gate_1/Vout" 4.69647
+cap "MG_or_gate_2/pfet_05v0_E5NMY2_0/w_n446_n288#" "MG_and_gate_1/Vout" 4.33655
+cap "S4" "MG_and_gate_1/Vout" 7.38565
+cap "MG_or_gate_2/Vin_B" "MG_and_gate_1/Vout" 9.74183
+cap "MG_or_gate_1/Vin_B" "MG_or_gate_2/Vdd" 2.20222
+cap "MG_or_gate_2/Vin_B" "MG_or_gate_2/GND" 0.287493
+cap "MG_or_gate_2/Vin_B" "MG_and_gate_5/Vdd" 0.276402
+cap "MG_or_gate_1/Vin_B" "MG_or_gate_2/Vin_A" 0.24657
+cap "MG_or_gate_2/Vin_B" "MG_or_gate_2/Vdd" -1.13687e-13
+cap "MG_or_gate_2/Vin_B" "MG_or_gate_2/Vin_A" 3.57689
+cap "MG_or_gate_2/Vin_B" "MG_or_gate_1/Vin_B" 1.34952
+cap "MG_or_gate_2/GND" "MG_or_gate_2/Vdd" 26.6026
+cap "MG_or_gate_2/GND" "MG_or_gate_2/Vin_A" 0.33378
+cap "MG_and_gate_5/Vdd" "MG_or_gate_2/Vin_A" 0.184958
+cap "P13" "MG_or_gate_2/Vout" 0.914092
+cap "MG_or_gate_2/nfet_05v0_EGQXBG_1/a_n158_n200#" "P13" 1.75239
+cap "MG_or_gate_2/nfet_05v0_EGQXBG_1/a_n158_n200#" "MG_and_gate_5/Vdd" 0.382078
+cap "MG_or_gate_2/Vin_B" "MG_and_gate_5/Vdd" 0.154277
+cap "MG_or_gate_2/GND" "MG_or_gate_2/nfet_05v0_EGQXBG_1/a_n158_n200#" 0.320712
+cap "MG_or_gate_2/GND" "MG_or_gate_2/Vin_B" 0.0397347
+cap "MG_or_gate_2/Vdd" "MG_or_gate_1/Vout" 0.0800303
+cap "MG_or_gate_2/Vdd" "MG_or_gate_2/GND" 26.5381
+cap "P13" "MG_or_gate_2/nfet_05v0_EGQXBG_0/a_n158_n200#" 2.81037
+cap "MG_or_gate_2/Vout" "P13" 1.16795
+cap "MG_or_gate_2/Vdd" "MG_or_gate_2/GND" 1.62805
+cap "MG_and_gate_10/Vin_A" "P14" -0.0144989
+cap "MG_or_gate_2/Vdd" "P13" 28.5253
+cap "MG_and_gate_10/Vin_A" "MG_or_gate_2/Vout" 0.265169
+cap "MG_and_gate_10/Vin_A" "MG_or_gate_2/Vdd" 17.3953
+cap "P14" "MG_and_gate_10/GND" 14.5609
+cap "MG_and_gate_10/Vin_B" "MG_and_gate_10/Vin_A" -12.5961
+cap "MG_and_gate_10/Vin_B" "MG_and_gate_10/GND" 0.795334
+cap "P14" "MG_and_gate_10/Vin_B" 20.9028
+cap "MG_and_gate_10/XM6/a_70_n200#" "MG_and_gate_10/Vin_B" 0.237702
+cap "MG_and_gate_10/pfet_05v0_2VHNWJ_1/a_n52_n110#" "P14" 4.46239
+cap "P14" "MG_and_gate_10/pfet_05v0_2VHNWJ_1/w_n406_n308#" 2.85508
+cap "P14" "MG_and_gate_10/Vin_A" 50.3182
+cap "MG_and_gate_10/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_and_gate_10/Vin_A" -0.278423
+cap "MG_and_gate_10/pfet_05v0_2VHNWJ_1/a_n52_n110#" "P14" 4.46239
+cap "MG_and_gate_11/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_and_gate_10/GND" 14.5289
+cap "MG_and_gate_10/Vin_B" "MG_and_gate_10/GND" -0.232235
+cap "MG_and_gate_10/Vin_B" "MG_and_gate_10/Vin_A" -5.68434e-14
+cap "MG_and_gate_10/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_and_gate_10/Vin_B" -5.68434e-14
+cap "P14" "MG_and_gate_10/GND" 14.5572
+cap "P14" "MG_and_gate_10/Vin_A" 10.7106
+cap "MG_and_gate_10/GND" "MG_and_gate_11/pfet_05v0_2VHNWJ_1/w_n406_n308#" 20.4176
+cap "MG_and_gate_10/GND" "MG_and_gate_11/pfet_05v0_2VHNWJ_0/w_n406_n308#" 4.23216
+cap "MG_not_gate_1/Vin" "MG_not_gate_2/Vdd" 0.308467
+cap "MG_not_gate_1/Vdd" "MG_not_gate_2/GND" -0.137609
+cap "MG_not_gate_2/Vin" "MG_not_gate_2/GND" 16.6384
+cap "MG_not_gate_2/Vin" "MG_not_gate_1/Vdd" 2.33925
+cap "MG_not_gate_1/Vin" "MG_not_gate_2/GND" 0.297009
+cap "MG_not_gate_1/Vin" "MG_not_gate_2/Vin" 1.58402
+cap "MG_not_gate_2/Vdd" "MG_not_gate_2/GND" 26.4886
+cap "MG_not_gate_2/Vdd" "MG_not_gate_2/Vin" 189.11
+cap "MG_not_gate_2/GND" "MG_not_gate_2/Vdd" 86.2178
+cap "MG_not_gate_2/Vin" "MG_not_gate_2/Vout" 10.3693
+cap "MG_not_gate_2/Vin" "MG_not_gate_1/Vdd" 1.17534
+cap "MG_not_gate_2/GND" "MG_not_gate_1/Vout" 0.928932
+cap "MG_not_gate_1/Vin" "P16" 0.0888361
+cap "P13" "MG_not_gate_1/Vout" 0.0478558
+cap "MG_not_gate_1/Vin" "MG_not_gate_2/Vdd" 1.78016
+cap "MG_not_gate_2/Vdd" "MG_not_gate_2/Vin" 144.385
+cap "MG_not_gate_2/Vin" "MG_not_gate_1/Vout" 51.2808
+cap "MG_not_gate_2/Vdd" "MG_not_gate_2/Vout" 35.7242
+cap "MG_not_gate_2/GND" "MG_not_gate_2/Vin" 50.4751
+cap "MG_not_gate_2/Vout" "MG_not_gate_1/Vout" 5.6497
+cap "MG_not_gate_2/GND" "MG_not_gate_2/Vout" 19.049
+cap "P16" "MG_not_gate_1/Vout" 3.89474
+cap "MG_not_gate_1/Vin" "MG_not_gate_2/Vin" 11.2547
+cap "MG_not_gate_2/Vdd" "MG_not_gate_1/Vout" 1.92152
+cap "MG_not_gate_1/Vin" "MG_not_gate_2/Vout" 11.1387
+cap "P16" "MG_not_gate_1/Vout" 2.44987
+cap "MG_and_gate_1/Vin_A" "MG_not_gate_1/Vout" 0.93472
+cap "MG_not_gate_2/Vdd" "MG_and_gate_1/Vin_A" 7.03879
+cap "MG_not_gate_2/Vout" "P16" 2.84217e-14
+cap "MG_and_gate_0/Vin_B" "MG_and_gate_0/XM6/a_70_n200#" 0.202268
+cap "MG_and_gate_1/Vin_A" "MG_and_gate_1/pfet_05v0_2VHNWJ_1/a_n52_n110#" 1.5826
+cap "m1_3460_n5020#" "MG_and_gate_0/Vin_B" 22.7361
+cap "m1_3460_n5020#" "MG_and_gate_1/pfet_05v0_2VHNWJ_1/w_n406_n308#" 43.3765
+cap "MG_and_gate_0/Vin_B" "MG_and_gate_0/Vin_A" 0.133882
+cap "MG_and_gate_1/GND" "m1_3460_n5020#" 33.5697
+cap "MG_and_gate_1/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_and_gate_0/Vin_A" 3.38785
+cap "m1_3460_n5020#" "MG_and_gate_1/Vin_A" -1.6195
+cap "MG_and_gate_0/Vin_B" "MG_and_gate_1/pfet_05v0_2VHNWJ_1/w_n406_n308#" 0.991598
+cap "MG_and_gate_1/GND" "MG_and_gate_0/Vin_B" -0.254133
+cap "MG_and_gate_0/Vin_B" "MG_and_gate_1/Vin_A" 46.0903
+cap "MG_and_gate_1/GND" "MG_and_gate_1/pfet_05v0_2VHNWJ_1/w_n406_n308#" 4.0512
+cap "MG_and_gate_1/Vin_A" "MG_and_gate_1/pfet_05v0_2VHNWJ_1/w_n406_n308#" 92.5953
+cap "MG_and_gate_1/GND" "MG_and_gate_1/Vin_A" 3.88237
+cap "MG_and_gate_0/Vin_B" "P14" -1.42109e-14
+cap "MG_and_gate_1/XM6/a_70_n200#" "MG_and_gate_1/Vin_A" 0.0535344
+cap "MG_and_gate_1/Vin_B" "MG_and_gate_1/Vin_A" 31.5281
+cap "MG_and_gate_0/Vin_B" "MG_and_gate_1/pfet_05v0_2VHNWJ_1/a_n52_n110#" 0.0865774
+cap "MG_and_gate_1/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_and_gate_1/Vin_A" 2.65271
+cap "MG_and_gate_0/GND" "MG_and_gate_1/Vdd" 99.5032
+cap "MG_and_gate_0/XM6/a_70_n200#" "MG_and_gate_1/Vin_A" 5.68581
+cap "MG_and_gate_1/Vdd" "MG_and_gate_0/Vin_B" 1.2661
+cap "MG_and_gate_1/Vdd" "MG_and_gate_1/Vin_A" 191.915
+cap "MG_and_gate_0/Vin_A" "MG_and_gate_1/Vdd" 0.572975
+cap "MG_and_gate_0/GND" "MG_and_gate_1/Vin_A" 67.6463
+cap "MG_and_gate_0/Vin_A" "m1_3460_n5020#" 0.141694
+cap "P14" "MG_and_gate_0/Vin_A" 0.0274858
+cap "MG_and_gate_0/Vin_B" "MG_and_gate_1/Vin_A" 62.2443
+cap "MG_and_gate_0/Vin_A" "MG_and_gate_1/Vin_A" 3.49523
+cap "MG_and_gate_1/Vin_A" "MG_and_gate_0/pfet_05v0_2VHNWJ_1/a_n52_n110#" 4.02174
+cap "MG_and_gate_1/Vin_B" "MG_and_gate_0/Vin_B" 0.591527
+cap "MG_and_gate_0/Vout" "m1_7270_n6620#" 110.346
+cap "MG_and_gate_1/Vdd" "MG_and_gate_0/Vout" 1.01422
+cap "MG_and_gate_0/pfet_05v0_2VHNWJ_1/a_n52_n110#" "m1_7270_n6620#" 26.4738
+cap "S4" "MG_and_gate_0/Vout" 3.74237
+cap "MG_and_gate_1/Vdd" "m1_7270_n6620#" 183.676
+cap "MG_and_gate_0/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_and_gate_1/Vdd" 1.34162
+cap "MG_and_gate_0/pfet_05v0_2VHNWJ_1/a_n52_n110#" "S4" 0.215791
+cap "MG_and_gate_0/GND" "m1_7270_n6620#" 74.7985
+cap "MG_and_gate_1/Vdd" "MG_and_gate_0/GND" 84.116
+cap "MG_and_gate_0/Vin_B" "m1_7270_n6620#" 2.62356
+cap "MG_and_gate_1/Vin_B" "m1_7270_n6620#" 1.47568
+cap "MG_and_gate_1/Vout" "m1_7270_n6620#" 9.41222
+cap "m1_7270_n6620#" "MG_and_gate_1/pfet_05v0_2VHNWJ_1/a_n52_n110#" 7.13737
+cap "MG_and_gate_0/Vdd" "m1_7270_n6620#" 2.48682
+cap "MG_and_gate_0/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_and_gate_1/pfet_05v0_2VHNWJ_1/a_n52_n110#" 0.48438
+cap "MG_and_gate_0/nfet_05v0_ZZNR9W_0/a_n70_n192#" "m1_7270_n6620#" 11.7093
+cap "MG_or_gate_1/Vin_A" "S4" 0.70896
+cap "MG_and_gate_0/GND" "m1_7270_n6620#" 16.6099
+cap "S4" "MG_and_gate_0/Vout" 0.0341431
+cap "MG_and_gate_0/Vout" "m1_7270_n6620#" 28.2649
+cap "MG_and_gate_1/Vdd" "m1_7270_n6620#" 12.6302
+cap "MG_or_gate_1/Vin_A" "MG_and_gate_0/Vout" -1.15083
+cap "MG_or_gate_1/pfet_05v0_E5NMY2_0/w_n446_n288#" "MG_and_gate_0/Vout" -0.135219
+cap "MG_or_gate_1/Vin_A" "MG_or_gate_2/pfet_05v0_E5NMY2_0/w_n446_n288#" 8.60468
+cap "MG_or_gate_2/Vin_A" "MG_and_gate_0/Vout" 0.809359
+cap "S4" "MG_or_gate_1/Vin_A" 0.70896
+cap "MG_and_gate_0/Vout" "MG_or_gate_2/pfet_05v0_E5NMY2_0/w_n446_n288#" 6.69459
+cap "S4" "MG_and_gate_0/Vout" 0.00534734
+cap "MG_or_gate_2/pfet_05v0_E5NMY2_0/w_n446_n288#" "MG_or_gate_2/GND" 2.24222
+cap "MG_or_gate_1/Vin_B" "MG_or_gate_2/Vin_A" 2.67101
+cap "MG_or_gate_1/Vin_B" "MG_or_gate_2/Vin_B" 1.94196
+cap "MG_or_gate_2/GND" "MG_or_gate_2/Vdd" 26.6026
+cap "MG_or_gate_1/Vin_A" "MG_or_gate_2/Vdd" 0.142175
+cap "MG_or_gate_2/Vdd" "MG_or_gate_1/Vin_B" 12.1641
+cap "MG_or_gate_1/Vin_B" "MG_or_gate_2/pfet_05v0_E5NMY2_0/a_n52_n110#" 1.94638
+cap "P13" "MG_or_gate_1/nfet_05v0_EGQXBG_1/a_n158_n200#" 2.27866
+cap "MG_or_gate_2/GND" "MG_or_gate_2/Vdd" 26.5381
+cap "MG_or_gate_2/Vdd" "MG_or_gate_1/Vout" 0.419509
+cap "MG_or_gate_2/GND" "MG_or_gate_1/Vout" 0.00141398
+cap "MG_or_gate_2/Vdd" "MG_or_gate_1/nfet_05v0_EGQXBG_1/a_n158_n200#" 0.427433
+cap "MG_or_gate_1/Vin_B" "MG_or_gate_2/Vdd" 0.151387
+cap "MG_or_gate_2/GND" "P13" 0.226408
+cap "MG_or_gate_2/Vdd" "MG_or_gate_2/GND" 1.62805
+cap "MG_or_gate_1/nfet_05v0_EGQXBG_0/a_n158_n200#" "P13" 2.12515
+cap "MG_and_gate_10/Vin_A" "P13" 3.90781
+cap "MG_or_gate_2/GND" "P13" 11.0195
+cap "MG_or_gate_2/Vdd" "MG_and_gate_10/Vin_A" 0.895643
+cap "MG_and_gate_10/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_and_gate_10/Vin_A" -1.11022e-16
+cap "MG_and_gate_10/Vin_A" "P14" 0.347479
+cap "MG_and_gate_10/pfet_05v0_2VHNWJ_1/a_n52_n110#" "P14" 1.33171
+cap "MG_and_gate_10/pfet_05v0_2VHNWJ_1/w_n406_n308#" "P14" 43.0635
+cap "P14" "MG_and_gate_10/Vdd" 10.1113
+cap "MG_and_gate_10/Vin_A" "P14" 0.829831
+cap "MG_and_gate_10/pfet_05v0_2VHNWJ_1/a_n52_n110#" "P14" 1.33171
+cap "MG_and_gate_10/Vin_B" "MG_and_gate_10/Vdd" 2.84217e-14
+cap "MG_and_gate_10/Vin_A" "MG_and_gate_10/Vdd" -5.68434e-14
+cap "MG_not_gate_1/Vin" "MG_not_gate_2/Vdd" 0.308467
+cap "MG_not_gate_1/Vdd" "MG_not_gate_0/Vin" 0.106052
+cap "MG_not_gate_0/GND" "MG_not_gate_1/Vin" 0.297009
+cap "MG_not_gate_1/Vdd" "MG_not_gate_1/Vin" 46.9509
+cap "P15" "MG_not_gate_1/Vin" -0.304603
+cap "MG_not_gate_1/Vin" "MG_not_gate_1/Vout" -0.137307
+cap "m1_1650_n3790#" "MG_not_gate_1/Vin" -0.40512
+cap "MG_not_gate_0/GND" "MG_not_gate_1/Vdd" 14.2104
+cap "MG_not_gate_1/Vin" "MG_not_gate_0/Vin" 0.889441
+cap "m1_1650_n3790#" "MG_not_gate_1/Vout" 1.53781
+cap "m1_1650_n3790#" "MG_not_gate_1/Vin" 8.60854
+cap "MG_not_gate_1/Vdd" "MG_not_gate_1/Vout" 133.382
+cap "MG_not_gate_0/Vout" "MG_not_gate_1/Vdd" 3.84755
+cap "MG_not_gate_1/Vdd" "MG_not_gate_1/Vin" 1.13687e-13
+cap "P16" "MG_not_gate_1/Vout" 1.55155
+cap "MG_not_gate_1/Vdd" "MG_not_gate_0/GND" 47.264
+cap "P13" "MG_not_gate_1/Vout" 0.00299099
+cap "P15" "MG_not_gate_1/Vout" 7.86986
+cap "MG_not_gate_1/Vdd" "m1_1650_n3790#" 4.50839
+cap "P15" "MG_not_gate_1/Vin" 0.202336
+cap "MG_not_gate_0/Vout" "MG_not_gate_1/Vout" 0.584684
+cap "MG_not_gate_1/Vout" "MG_not_gate_1/Vin" 29.6046
+cap "MG_not_gate_0/Vout" "MG_not_gate_1/Vin" 0.093699
+cap "MG_not_gate_0/GND" "MG_not_gate_1/Vout" 3.36714
+cap "MG_not_gate_0/GND" "MG_not_gate_1/Vin" 0.937704
+cap "MG_not_gate_2/Vdd" "MG_not_gate_1/Vin" 0.601886
+cap "P16" "MG_not_gate_1/Vout" 1.50761
+cap "MG_and_gate_0/Vin_B" "MG_and_gate_0/Vin_A" -4.67211
+cap "MG_and_gate_0/Vin_B" "MG_or_gate_0/Vin_A" 5.27634
+cap "MG_and_gate_0/Vin_A" "P13" 0.749984
+cap "MG_and_gate_0/Vin_A" "MG_or_gate_0/GND" 0.762508
+cap "MG_or_gate_0/GND" "MG_or_gate_0/Vin_A" 5.46977
+cap "MG_and_gate_0/Vin_A" "m1_7270_n6620#" 0.697617
+cap "MG_and_gate_0/Vin_A" "MG_and_gate_0/pfet_05v0_2VHNWJ_1/a_n52_n110#" -1.2549
+cap "MG_and_gate_0/Vin_A" "MG_or_gate_0/Vin_B" 20.0115
+cap "MG_and_gate_0/Vin_A" "MG_or_gate_0/nfet_05v0_EGQXBG_1/a_n158_n200#" 0.0851268
+cap "MG_and_gate_0/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_or_gate_0/GND" 16.1658
+cap "MG_and_gate_0/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_or_gate_0/Vin_A" 16.2836
+cap "MG_and_gate_0/Vin_A" "MG_or_gate_0/Vin_A" 178.861
+cap "P14" "MG_and_gate_0/Vin_A" 6.02207
+cap "MG_and_gate_0/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_or_gate_0/Vin_B" 3.29116
+cap "MG_and_gate_0/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_or_gate_0/Vin_A" 107.066
+cap "MG_and_gate_0/Vin_B" "MG_or_gate_0/GND" -0.332272
+cap "MG_and_gate_0/Vin_B" "MG_and_gate_0/XM6/a_70_n200#" 0.0207681
+cap "MG_and_gate_0/Vin_A" "MG_and_gate_1/pfet_05v0_2VHNWJ_1/w_n406_n308#" 3.20506
+cap "MG_and_gate_0/Vin_B" "MG_and_gate_0/XM6/a_70_n200#" -2.84217e-14
+cap "MG_or_gate_0/nfet_05v0_EGQXBG_1/a_n158_n200#" "MG_and_gate_0/Vin_B" 0.120783
+cap "MG_and_gate_0/Vin_A" "MG_or_gate_0/Vin_B" 7.67027
+cap "MG_and_gate_0/Vdd" "MG_and_gate_0/Vin_B" 1.13687e-13
+cap "MG_and_gate_0/Vin_A" "MG_or_gate_0/Vin_A" 3.05934
+cap "MG_and_gate_0/Vdd" "MG_or_gate_0/Vin_B" 25.1742
+cap "MG_and_gate_0/Vin_B" "MG_or_gate_0/Vin_B" 20.1707
+cap "m1_7270_n6620#" "MG_and_gate_0/Vin_A" 0.0462147
+cap "MG_and_gate_0/Vin_B" "MG_or_gate_0/Vin_A" 0.122901
+cap "MG_and_gate_0/Vin_A" "MG_and_gate_0/GND" 0.144579
+cap "MG_and_gate_0/Vdd" "MG_and_gate_0/GND" 45.4462
+cap "m1_7270_n6620#" "MG_and_gate_0/Vin_B" 11.3949
+cap "MG_and_gate_0/Vin_B" "MG_and_gate_0/GND" 0.873491
+cap "MG_and_gate_0/Vin_A" "MG_or_gate_0/nfet_05v0_EGQXBG_1/a_n158_n200#" 0.00972638
+cap "MG_and_gate_0/Vin_A" "P14" 0.0274858
+cap "MG_and_gate_1/Vdd" "MG_and_gate_0/pfet_05v0_2VHNWJ_1/a_n52_n110#" 0.203726
+cap "MG_and_gate_0/Vdd" "MG_or_gate_0/Vout" 1.63926
+cap "MG_and_gate_0/Vout" "m1_7270_n6620#" 14.4983
+cap "m1_7270_n6620#" "MG_and_gate_0/Vin_B" 2.86285
+cap "MG_or_gate_0/Vin_B" "MG_and_gate_0/Vout" 7.8925
+cap "MG_and_gate_0/pfet_05v0_2VHNWJ_1/a_n52_n110#" "m1_7270_n6620#" 13.0621
+cap "MG_or_gate_0/Vout" "MG_and_gate_0/Vout" 0.905412
+cap "MG_and_gate_0/Vdd" "m1_7270_n6620#" 66.126
+cap "MG_and_gate_0/GND" "MG_and_gate_0/pfet_05v0_2VHNWJ_1/a_n52_n110#" 0.359067
+cap "MG_or_gate_0/Vin_B" "MG_and_gate_0/Vin_B" 2.26482
+cap "MG_or_gate_0/Vin_B" "MG_and_gate_0/pfet_05v0_2VHNWJ_1/a_n52_n110#" 0.478666
+cap "MG_and_gate_0/Vdd" "MG_and_gate_0/GND" 36.6644
+cap "MG_or_gate_0/Vout" "MG_and_gate_0/pfet_05v0_2VHNWJ_1/a_n52_n110#" 0.408234
+cap "MG_and_gate_0/Vdd" "MG_or_gate_0/Vin_B" 24.5937
+cap "MG_and_gate_0/Vout" "MG_and_gate_4/Vin_A" 3.26502
+cap "MG_and_gate_0/nfet_05v0_ZZNR9W_0/a_n70_n192#" "MG_and_gate_4/Vin_A" 12.0469
+cap "MG_or_gate_1/pfet_05v0_E5NMY2_0/w_n446_n288#" "MG_or_gate_0/Vout" 3.83137
+cap "MG_or_gate_1/Vin_A" "MG_or_gate_0/Vout" 1.8568
+cap "MG_and_gate_0/Vdd" "MG_and_gate_4/Vin_A" 70.1974
+cap "MG_or_gate_1/Vin_A" "MG_and_gate_0/Vout" 3.30935
+cap "MG_or_gate_0/Vout" "MG_or_gate_1/GND" 0.0779091
+cap "MG_or_gate_0/Vout" "MG_or_gate_1/Vin_A" 3.44039
+cap "MG_or_gate_1/Vin_A" "MG_or_gate_1/nfet_05v0_EGQXBG_1/a_n158_n200#" 4.33896
+cap "MG_or_gate_1/Vin_A" "MG_or_gate_1/pfet_05v0_E5NMY2_0/a_n52_n110#" 3.56708
+cap "MG_or_gate_0/Vout" "MG_or_gate_1/pfet_05v0_E5NMY2_0/w_n446_n288#" 72.1166
+cap "MG_or_gate_1/pfet_05v0_E5NMY2_0/w_n446_n288#" "MG_or_gate_1/Vin_A" 58.7028
+cap "MG_or_gate_1/pfet_05v0_E5NMY2_0/a_n52_n110#" "MG_and_gate_4/Vin_B" 9.67365
+cap "MG_or_gate_1/Vin_B" "MG_or_gate_1/Vin_A" 5.47361
+cap "MG_or_gate_1/Vin_A" "MG_and_gate_4/GND" 0.572116
+cap "MG_or_gate_1/nfet_05v0_EGQXBG_1/a_n158_n200#" "MG_or_gate_1/Vin_B" 1.13687e-13
+cap "MG_or_gate_1/Vin_B" "MG_and_gate_4/GND" 0.378946
+cap "MG_or_gate_1/Vin_A" "MG_and_gate_4/Vin_B" 12.6884
+cap "MG_or_gate_1/nfet_05v0_EGQXBG_1/a_n158_n200#" "MG_and_gate_4/Vin_B" 6.8958
+cap "MG_or_gate_1/Vin_B" "MG_and_gate_4/XM6/a_70_n200#" 0.149501
+cap "MG_and_gate_4/GND" "MG_and_gate_4/Vin_B" 1.98321
+cap "MG_or_gate_1/Vin_B" "MG_and_gate_4/Vin_B" 13.8151
+cap "MG_or_gate_1/Vdd" "MG_and_gate_4/GND" 30.7662
+cap "MG_or_gate_1/Vdd" "MG_and_gate_4/Vin_B" 147.873
+cap "MG_or_gate_1/pfet_05v0_E5NMY2_0/a_n52_n110#" "MG_or_gate_1/Vin_A" 1.61665
+cap "MG_or_gate_1/nfet_05v0_EGQXBG_1/a_n158_n200#" "P13" 9.51009
+cap "MG_or_gate_1/nfet_05v0_EGQXBG_1/a_n158_n200#" "MG_and_gate_4/nfet_05v0_EGQXBG_0/a_70_n200#" 0.698764
+cap "MG_and_gate_4/Vout" "MG_or_gate_1/Vdd" 0.0570997
+cap "MG_or_gate_1/Vin_B" "MG_and_gate_4/GND" 0.088122
+cap "MG_and_gate_4/GND" "S4" 0.962836
+cap "MG_or_gate_1/Vdd" "S4" 154.339
+cap "MG_or_gate_1/Vin_B" "S4" 2.99586
+cap "MG_or_gate_1/Vin_B" "MG_and_gate_4/nfet_05v0_EGQXBG_0/a_70_n200#" 0.0593302
+cap "MG_or_gate_1/nfet_05v0_EGQXBG_1/a_n158_n200#" "MG_and_gate_4/GND" 0.651329
+cap "MG_or_gate_1/nfet_05v0_EGQXBG_1/a_n158_n200#" "MG_or_gate_1/Vdd" 2.27374e-13
+cap "MG_or_gate_1/pfet_05v0_E5NMY2_0/a_n52_n110#" "S4" 2.88228
+cap "MG_or_gate_1/Vout" "S4" 21.2384
+cap "MG_and_gate_4/GND" "MG_or_gate_1/Vdd" 38.2842
+cap "MG_or_gate_1/nfet_05v0_EGQXBG_1/a_n158_n200#" "MG_and_gate_4/Vout" 0.0411708
+cap "MG_or_gate_1/Vout" "P13" 0.894496
+cap "MG_or_gate_1/nfet_05v0_EGQXBG_1/a_n158_n200#" "S4" 16.3804
+cap "P13" "MG_or_gate_1/Vout" 3.32484
+cap "MG_or_gate_1/nfet_05v0_EGQXBG_0/a_n158_n200#" "P13" 9.27199
+cap "S4" "MG_or_gate_1/Vdd" 13.9328
+cap "S4" "MG_or_gate_1/Vout" 3.31957
+cap "S4" "MG_and_gate_4/GND" 0.0264099
+cap "MG_or_gate_1/Vdd" "MG_and_gate_4/GND" 3.17526
+cap "MG_and_gate_4/Vout" "MG_or_gate_1/Vdd" 0.551816
+cap "MG_or_gate_1/Vdd" "P13" 27.4528
+cap "MG_not_gate_0/GND" "MG_not_gate_0/Vin" 0.594018
+cap "MG_not_gate_0/Vin" "MG_not_gate_0/Vout" 3.73741
+cap "MG_not_gate_1/Vin" "MG_not_gate_0/Vin" 13.1918
+cap "MG_not_gate_0/Vin" "MG_not_gate_1/Vdd" 0.106052
+cap "MG_not_gate_0/GND" "MG_not_gate_1/Vin" 13.8401
+cap "MG_not_gate_0/Vin" "MG_not_gate_0/Vdd" 70.3545
+cap "MG_not_gate_0/GND" "MG_not_gate_1/Vdd" 14.348
+cap "MG_not_gate_0/GND" "MG_not_gate_0/Vdd" -0.275217
+cap "MG_not_gate_1/Vin" "MG_not_gate_0/Vin" 1.43889
+cap "MG_not_gate_1/Vout" "MG_not_gate_0/Vin" 0.251001
+cap "MG_not_gate_1/Vdd" "MG_not_gate_0/Vin" 2.56582
+cap "MG_not_gate_0/GND" "MG_not_gate_0/Vout" 142.674
+cap "MG_not_gate_1/Vin" "MG_not_gate_0/Vout" 0.503224
+cap "MG_not_gate_1/Vout" "MG_not_gate_0/Vout" 16.8428
+cap "MG_not_gate_1/Vdd" "MG_not_gate_0/Vout" 19.5619
+cap "MG_not_gate_0/Vdd" "MG_not_gate_0/Vin" 2.06694
+cap "MG_not_gate_0/Vin" "MG_not_gate_0/Vout" 78.8166
+cap "MG_not_gate_1/Vin" "MG_not_gate_0/GND" 0.265131
+cap "MG_not_gate_0/GND" "MG_not_gate_1/Vout" 0.950201
+cap "MG_not_gate_1/Vdd" "MG_not_gate_0/GND" 47.264
+cap "MG_not_gate_0/Vdd" "MG_not_gate_0/Vout" 21.962
+cap "P13" "MG_not_gate_0/Vdd" 2.06694
+cap "MG_or_gate_0/Vin_A" "MG_or_gate_0/pfet_05v0_E5NMY2_0/w_n446_n288#" 0.823763
+cap "MG_or_gate_0/Vin_B" "MG_and_gate_0/pfet_05v0_2VHNWJ_1/w_n406_n308#" 16.8725
+cap "P14" "MG_or_gate_0/Vin_A" 76.9929
+cap "MG_and_gate_0/Vin_A" "MG_or_gate_0/Vin_B" 23.7316
+cap "MG_or_gate_0/Vin_B" "MG_and_gate_0/pfet_05v0_2VHNWJ_1/a_n52_n110#" 0.829092
+cap "MG_or_gate_0/GND" "MG_or_gate_0/Vin_A" 44.3991
+cap "MG_or_gate_0/Vin_B" "MG_or_gate_0/pfet_05v0_E5NMY2_0/w_n446_n288#" -0.173853
+cap "P14" "MG_or_gate_0/Vin_B" 0.149355
+cap "MG_or_gate_0/GND" "MG_and_gate_0/pfet_05v0_2VHNWJ_1/w_n406_n308#" 16.1658
+cap "MG_and_gate_0/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_or_gate_0/Vin_A" 1.59695
+cap "MG_or_gate_0/Vin_A" "P13" 0.17722
+cap "MG_or_gate_0/Vin_B" "MG_or_gate_0/Vin_A" 107.241
+cap "MG_or_gate_0/nfet_05v0_EGQXBG_1/a_n158_n200#" "MG_or_gate_0/Vin_A" 3.41505
+cap "MG_or_gate_0/Vin_B" "MG_or_gate_0/nfet_05v0_EGQXBG_1/a_n158_n200#" 4.82704
+cap "MG_or_gate_0/Vin_B" "MG_or_gate_0/GND" 41.387
+cap "MG_or_gate_0/Vin_B" "MG_and_gate_0/XM6/a_70_n200#" 0.0127529
+cap "MG_or_gate_0/Vin_A" "MG_or_gate_0/Vin_B" 3.29519
+cap "MG_and_gate_0/Vdd" "MG_or_gate_0/GND" 45.4462
+cap "MG_or_gate_0/Vin_A" "P14" 0.00504237
+cap "MG_or_gate_0/Vin_B" "P14" 0.0131477
+cap "MG_or_gate_0/Vin_B" "MG_or_gate_0/pfet_05v0_E5NMY2_0/a_n52_n110#" 0.696025
+cap "MG_or_gate_0/Vin_B" "MG_and_gate_0/pfet_05v0_2VHNWJ_1/a_n52_n110#" 2.04839
+cap "MG_or_gate_0/Vin_A" "MG_and_gate_0/Vdd" 0.620835
+cap "MG_and_gate_0/Vdd" "MG_or_gate_0/Vin_B" 80.5452
+cap "MG_and_gate_0/Vin_B" "MG_or_gate_0/Vin_B" 26.763
+cap "MG_and_gate_0/Vin_A" "MG_or_gate_0/Vin_A" 0.13291
+cap "MG_and_gate_0/Vin_A" "MG_or_gate_0/Vin_B" 8.65689
+cap "MG_or_gate_0/Vin_B" "MG_or_gate_0/Vdd" 2.77363
+cap "MG_and_gate_0/nfet_05v0_ZZNR9W_0/a_n158_n100#" "MG_or_gate_0/Vin_B" 8.81767
+cap "MG_and_gate_0/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_or_gate_0/Vin_B" 6.24041
+cap "MG_or_gate_0/GND" "MG_and_gate_0/Vdd" 36.6644
+cap "MG_or_gate_0/nfet_05v0_EGQXBG_1/a_n158_n200#" "m1_7270_n6620#" 15.979
+cap "MG_and_gate_0/Vin_B" "MG_or_gate_0/Vin_B" 2.26482
+cap "MG_or_gate_0/Vout" "m1_7270_n6620#" 13.7258
+cap "MG_or_gate_0/GND" "m1_7270_n6620#" 12.6602
+cap "MG_or_gate_0/nfet_05v0_EGQXBG_1/a_n158_n200#" "MG_or_gate_0/Vin_B" 10.5821
+cap "MG_or_gate_0/Vout" "MG_or_gate_0/Vin_B" 110.507
+cap "MG_or_gate_0/Vdd" "MG_or_gate_0/Vin_B" 2.75668
+cap "MG_or_gate_0/GND" "MG_or_gate_0/Vin_B" 47.6731
+cap "MG_and_gate_0/Vdd" "MG_or_gate_0/Vin_B" 92.4687
+cap "MG_or_gate_0/Vout" "P14" 8.82791
+cap "MG_or_gate_0/GND" "MG_or_gate_0/Vout" 0.247983
+cap "MG_or_gate_0/nfet_05v0_EGQXBG_1/a_n158_n200#" "MG_and_gate_0/Vdd" 1.15953
+cap "MG_or_gate_0/Vout" "MG_or_gate_0/GND" 0.200236
+cap "MG_or_gate_0/Vout" "MG_or_gate_1/Vin_A" 15.5918
+cap "MG_and_gate_4/Vin_A" "MG_or_gate_0/XM2/a_n70_n192#" 15.4833
+cap "MG_or_gate_0/Vout" "MG_and_gate_4/Vin_A" 16.3159
+cap "MG_or_gate_0/GND" "MG_and_gate_4/Vin_A" 12.8831
+cap "MG_and_gate_4/Vin_A" "MG_or_gate_0/Vout" -15.0904
+cap "MG_or_gate_0/Vout" "MG_or_gate_1/pfet_05v0_E5NMY2_0/w_n446_n288#" 0.691963
+cap "MG_or_gate_0/Vout" "MG_and_gate_4/XM6/a_70_n200#" 1.42709
+cap "MG_or_gate_0/Vout" "P14" -0.144247
+cap "MG_or_gate_0/Vout" "MG_and_gate_4/GND" 7.84325
+cap "MG_and_gate_4/Vin_A" "P14" 0.1982
+cap "MG_and_gate_4/Vin_B" "P14" 5.0707
+cap "MG_and_gate_4/Vin_A" "MG_and_gate_4/Vin_B" 4.54526
+cap "MG_and_gate_4/Vin_B" "MG_and_gate_4/XM6/a_70_n200#" 5.55064
+cap "MG_and_gate_4/pfet_05v0_2VHNWJ_1/a_n52_n110#" "MG_and_gate_4/Vin_B" 0.432644
+cap "MG_and_gate_4/Vin_B" "MG_or_gate_1/nfet_05v0_EGQXBG_1/a_n158_n200#" 0.0918411
+cap "MG_and_gate_4/Vin_A" "MG_or_gate_1/Vdd" 0.992914
+cap "MG_and_gate_4/Vin_B" "MG_or_gate_1/nfet_05v0_EGQXBG_0/a_n70_n292#" 0.266139
+cap "MG_and_gate_4/Vin_A" "MG_or_gate_1/pfet_05v0_E5NMY2_0/a_n52_n110#" 0.00148774
+cap "MG_and_gate_4/Vin_B" "MG_or_gate_1/Vdd" 0.858868
+cap "MG_and_gate_4/Vin_B" "MG_and_gate_4/GND" 66.9869
+cap "MG_and_gate_4/Vin_B" "MG_or_gate_1/pfet_05v0_E5NMY2_0/a_n52_n110#" 0.0342802
+cap "MG_and_gate_4/GND" "MG_or_gate_1/Vdd" 30.7662
+cap "MG_and_gate_4/pfet_05v0_2VHNWJ_1/a_n52_n110#" "S4" 18.1395
+cap "MG_or_gate_1/nfet_05v0_EGQXBG_1/a_n158_n200#" "MG_and_gate_4/pfet_05v0_2VHNWJ_1/a_n52_n110#" 0.682047
+cap "MG_and_gate_4/GND" "P13" 0.230531
+cap "MG_or_gate_1/Vdd" "MG_and_gate_4/pfet_05v0_2VHNWJ_1/a_n52_n110#" 0.932436
+cap "MG_and_gate_4/GND" "S4" 76.5704
+cap "MG_and_gate_4/pfet_05v0_2VHNWJ_1/a_n52_n110#" "P13" 10.7119
+cap "MG_and_gate_4/Vin_B" "S4" 18.5089
+cap "MG_and_gate_4/Vdd" "S4" 2.418
+cap "P14" "MG_and_gate_4/Vout" 6.6075
+cap "MG_and_gate_4/Vout" "S4" 23.0334
+cap "MG_and_gate_4/GND" "MG_or_gate_1/Vdd" 38.2842
+cap "S4" "MG_and_gate_4/Vout" 109.83
+cap "P13" "MG_and_gate_4/pfet_05v0_2VHNWJ_0/a_n52_n110#" 10.4536
+cap "MG_and_gate_4/GND" "S4" 3.83453
+cap "MG_and_gate_4/GND" "MG_or_gate_1/Vdd" 3.17526
+cap "P14" "MG_and_gate_4/Vout" 1.61159
+cap "MG_and_gate_4/Vout" "P13" 6.407
+cap "MG_and_gate_4/GND" "P13" 11.5616
+cap "P13" "MG_and_gate_4/Vdd" 0.400422
+cap "MG_not_gate_0/Vin" "MG_not_gate_0/Vdd" 343.772
+cap "MG_not_gate_0/Vin" "MG_not_gate_0/Vout" 0.307066
+cap "MG_not_gate_0/Vin" "MG_not_gate_0/Vdd" 366.961
+cap "MG_not_gate_0/Vin" "P14" 0.484435
+cap "P13" "MG_not_gate_0/Vdd" 8.75004
+cap "MG_and_gate_0/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_or_gate_0/Vin_A" 0.213569
+cap "P14" "MG_or_gate_0/nfet_05v0_EGQXBG_1/a_n158_n200#" 1.0629
+cap "P14" "MG_or_gate_0/pfet_05v0_E5NMY2_0/a_n52_n110#" 3.20417
+cap "P14" "MG_or_gate_0/Vin_A" 65.0902
+cap "P13" "MG_or_gate_0/Vin_A" 0.246025
+cap "P13" "MG_or_gate_0/Vin_A" 0.331557
+cap "P14" "MG_or_gate_0/pfet_05v0_E5NMY2_0/w_n446_n288#" 103.61
+cap "MG_or_gate_0/pfet_05v0_E5NMY2_0/w_n446_n288#" "P13" 3.46057
+cap "MG_or_gate_0/Vin_A" "P14" 2.19913
+cap "MG_and_gate_0/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_or_gate_0/Vin_B" 0.217322
+cap "MG_or_gate_0/Vin_A" "P13" 0.13647
+cap "MG_or_gate_0/pfet_05v0_E5NMY2_0/a_n52_n110#" "P14" 5.22445
+cap "P14" "MG_or_gate_0/Vin_B" 10.0168
+cap "P13" "MG_or_gate_0/Vin_B" 0.422935
+cap "MG_or_gate_0/Vdd" "P14" 53.3323
+cap "MG_or_gate_0/Vdd" "P13" 4.52785
+cap "MG_or_gate_0/nfet_05v0_EGQXBG_1/a_n158_n200#" "MG_or_gate_0/Vin_B" 2.84217e-14
+cap "P14" "MG_or_gate_0/nfet_05v0_EGQXBG_1/a_n158_n200#" 4.13084
+cap "MG_or_gate_0/Vin_A" "MG_and_gate_0/pfet_05v0_2VHNWJ_1/w_n406_n308#" 0.0193477
+cap "MG_or_gate_0/nfet_05v0_EGQXBG_1/a_n158_n200#" "P14" 8.69348
+cap "P13" "MG_or_gate_0/Vdd" 3.67403
+cap "MG_and_gate_0/pfet_05v0_2VHNWJ_1/w_n406_n308#" "MG_or_gate_0/nfet_05v0_EGQXBG_1/a_n158_n200#" 0.138533
+cap "MG_or_gate_0/Vout" "P14" 10.1166
+cap "MG_or_gate_0/Vin_B" "MG_or_gate_0/nfet_05v0_EGQXBG_1/a_n158_n200#" 0.211383
+cap "MG_or_gate_0/Vdd" "P14" 44.6183
+cap "MG_or_gate_0/nfet_05v0_EGQXBG_1/a_n158_n200#" "m1_7270_n6620#" 6.6124
+cap "P13" "MG_or_gate_0/nfet_05v0_EGQXBG_1/a_n158_n200#" 0.418999
+cap "MG_or_gate_0/Vout" "m1_7270_n6620#" 1.43375
+cap "MG_or_gate_0/Vdd" "m1_7270_n6620#" 6.56211
+cap "MG_or_gate_0/XM2/a_n70_n192#" "MG_and_gate_4/Vin_A" 9.74041
+cap "MG_or_gate_0/Vdd" "MG_and_gate_4/Vin_A" 16.5974
+cap "MG_and_gate_4/Vin_A" "MG_or_gate_0/Vout" 2.09264
+cap "P14" "MG_and_gate_4/pfet_05v0_2VHNWJ_1/w_n406_n308#" 31.7549
+cap "MG_and_gate_4/Vin_A" "MG_or_gate_0/Vout" -16.3666
+cap "MG_or_gate_0/Vout" "P14" -0.144247
+cap "MG_and_gate_4/Vin_A" "P14" 17.5438
+cap "MG_and_gate_4/pfet_05v0_2VHNWJ_1/w_n406_n308#" "P13" 1.45179
+cap "MG_and_gate_4/Vin_A" "MG_and_gate_4/Vin_B" 0.302918
+cap "MG_and_gate_4/Vin_A" "MG_and_gate_4/pfet_05v0_2VHNWJ_1/a_n52_n110#" 0.796105
+cap "MG_and_gate_4/Vin_B" "P13" 0.469632
+cap "MG_and_gate_4/Vin_A" "P14" 47.1927
+cap "MG_and_gate_4/Vin_A" "MG_and_gate_4/Vdd" -1.13687e-13
+cap "P13" "MG_and_gate_4/Vdd" 9.58726
+cap "MG_and_gate_4/Vin_B" "P14" 28.3671
+cap "MG_and_gate_4/pfet_05v0_2VHNWJ_1/a_n52_n110#" "P14" 3.71248
+cap "MG_and_gate_4/Vin_B" "MG_and_gate_4/Vdd" 5.68434e-14
+cap "MG_and_gate_4/Vin_A" "P13" 0.698009
+cap "P14" "MG_and_gate_4/XM6/a_70_n200#" 0.0522252
+cap "P14" "MG_and_gate_4/Vdd" 180.255
+cap "S4" "MG_and_gate_4/Vin_B" 0.0860549
+cap "MG_and_gate_4/Vdd" "P13" 9.58726
+cap "P14" "MG_and_gate_4/Vin_B" 24.264
+cap "P14" "MG_and_gate_4/Vout" 7.64267
+cap "P13" "MG_and_gate_4/Vin_B" 0.217842
+cap "P13" "MG_and_gate_4/Vout" 0.910052
+cap "P14" "MG_and_gate_4/pfet_05v0_2VHNWJ_1/a_n52_n110#" 8.16167
+cap "MG_and_gate_4/pfet_05v0_2VHNWJ_1/a_n52_n110#" "P13" 1.67918
+cap "P14" "MG_and_gate_4/Vdd" 193.818
+cap "P14" "MG_and_gate_4/Vout" 1.61159
+cap "P13" "MG_and_gate_4/Vdd" 48.4773
+cap "P13" "MG_and_gate_4/Vout" 0.910694
+cap "MG_and_gate_4/pfet_05v0_2VHNWJ_0/a_n52_n110#" "P13" 1.18946
+cap "P14" "MG_and_gate_4/Vdd" 23.6191
+cap "MG_not_gate_0/Vdd" "P13" 2.06414
+cap "MG_not_gate_0/Vdd" "P13" 6.66934
+cap "MG_not_gate_0/XM1/a_n192_n282#" "P13" 0.136541
+cap "MG_not_gate_0/XM1/a_n192_n282#" "P13" 0.136541
+merge "MG_and_gate_4/GND" "MG_or_gate_0/GND" -3161.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "MG_or_gate_0/GND" "MG_not_gate_0/GND"
+merge "MG_not_gate_0/GND" "MG_or_gate_1/GND"
+merge "MG_or_gate_1/GND" "MG_and_gate_0/GND"
+merge "MG_and_gate_0/GND" "MG_not_gate_1/GND"
+merge "MG_not_gate_1/GND" "MG_and_gate_10/GND"
+merge "MG_and_gate_10/GND" "MG_or_gate_2/GND"
+merge "MG_or_gate_2/GND" "MG_and_gate_1/GND"
+merge "MG_and_gate_1/GND" "MG_not_gate_2/GND"
+merge "MG_not_gate_2/GND" "MG_not_gate_3/GND"
+merge "MG_not_gate_3/GND" "MG_and_gate_11/GND"
+merge "MG_and_gate_11/GND" "MG_and_gate_5/GND"
+merge "MG_and_gate_5/GND" "MG_and_gate_2/GND"
+merge "MG_and_gate_2/GND" "MG_and_gate_12/GND"
+merge "MG_and_gate_12/GND" "MG_and_gate_6/GND"
+merge "MG_and_gate_6/GND" "MG_and_gate_3/GND"
+merge "MG_and_gate_3/GND" "MG_or_gate_4/GND"
+merge "MG_or_gate_4/GND" "MG_and_gate_7/GND"
+merge "MG_and_gate_7/GND" "MG_and_gate_9/GND"
+merge "MG_and_gate_9/GND" "MG_and_gate_8/GND"
+merge "MG_and_gate_8/GND" "VSUBS"
+merge "MG_and_gate_6/Vout" "MG_or_gate_4/Vin_A" -484.703 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -43400 -860 -15300 -520 0 0 0 0 0 0
+merge "MG_or_gate_4/Vin_A" "m1_15210_n12400#"
+merge "MG_or_gate_4/Vin_B" "MG_and_gate_7/Vout" -330.755 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -13000 -820 0 0 0 0 0 0
+merge "MG_and_gate_7/Vout" "m2_13030_n13560#"
+merge "MG_and_gate_4/Vin_A" "MG_and_gate_1/Vin_A" -3949.44 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -758300 -6190 -423800 -6260 0 0 0 0 0 0
+merge "MG_and_gate_1/Vin_A" "MG_and_gate_5/Vin_A"
+merge "MG_and_gate_5/Vin_A" "m1_7270_n6620#"
+merge "m1_7270_n6620#" "MG_not_gate_2/Vin"
+merge "MG_not_gate_2/Vin" "P15"
+merge "MG_or_gate_2/Vin_A" "MG_and_gate_1/Vout" -568.629 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -36000 -780 0 -180 0 0 0 0 0 0
+merge "MG_and_gate_1/Vout" "m1_9330_n3970#"
+merge "MG_or_gate_0/Vin_A" "MG_or_gate_2/Vin_B" -808.097 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -60480 -1364 -10080 -404 0 0 0 0 0 0
+merge "MG_or_gate_2/Vin_B" "m1_3460_n5020#"
+merge "m1_3460_n5020#" "MG_not_gate_0/Vout"
+merge "MG_not_gate_0/Vout" "m1_1180_1030#"
+merge "MG_and_gate_4/Vin_B" "MG_or_gate_0/Vout" -6400.97 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1575200 -14040 -1638250 -15064 0 0 0 0 0 0
+merge "MG_or_gate_0/Vout" "MG_and_gate_6/Vin_A"
+merge "MG_and_gate_6/Vin_A" "MG_and_gate_8/Vin_A"
+merge "MG_and_gate_8/Vin_A" "S4"
+merge "MG_or_gate_0/Vin_B" "MG_or_gate_1/Vin_A" -1637.57 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -134550 -1730 -32100 -1308 0 0 0 0 0 0
+merge "MG_or_gate_1/Vin_A" "m1_8800_n1400#"
+merge "m1_8800_n1400#" "MG_not_gate_1/Vout"
+merge "MG_not_gate_1/Vout" "m1_1360_n1400#"
+merge "MG_or_gate_2/Vout" "MG_and_gate_11/Vin_A" -343.255 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -69400 -1450 0 0 0 0 0 0
+merge "MG_and_gate_11/Vin_A" "m2_13220_n6240#"
+merge "MG_and_gate_4/Vout" "S5" -640.848 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -218340 -3942 0 0 0 0 0 0
+merge "MG_or_gate_1/Vin_B" "MG_and_gate_0/Vout" -486.973 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -53820 -1528 0 0 0 0 0 0
+merge "MG_and_gate_0/Vout" "m2_7330_n2270#"
+merge "MG_and_gate_1/Vin_B" "MG_not_gate_3/Vout" -922.68 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -49600 -780 -211100 -3780 0 0 0 0 0 0
+merge "MG_not_gate_3/Vout" "m1_1880_n6120#"
+merge "MG_and_gate_3/Vout" "MG_and_gate_7/Vin_A" -348.215 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -81900 -1740 0 0 0 0 0 0
+merge "MG_and_gate_7/Vin_A" "m1_7160_n10550#"
+merge "MG_and_gate_8/Vout" "S7" -2277.33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -755600 -7410 -18000 -580 0 0 0 0 0 0
+merge "MG_or_gate_1/Vout" "MG_and_gate_10/Vin_A" -251.543 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -30310 -1002 0 0 0 0 0 0
+merge "MG_and_gate_10/Vin_A" "m2_13300_n3230#"
+merge "MG_and_gate_5/Vout" "MG_and_gate_12/Vin_A" -400.733 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -56000 -1500 0 0 0 0 0 0
+merge "MG_and_gate_12/Vin_A" "m2_12950_n9120#"
+merge "MG_and_gate_0/Vin_B" "MG_not_gate_3/Vin" -8409.91 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2411900 -23800 -1173000 -18930 0 0 0 0 0 0
+merge "MG_not_gate_3/Vin" "MG_and_gate_6/Vin_B"
+merge "MG_and_gate_6/Vin_B" "MG_and_gate_12/Vin_B"
+merge "MG_and_gate_12/Vin_B" "P16"
+merge "MG_or_gate_4/Vout" "MG_and_gate_9/Vin_A" -1178.48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -84950 -1970 0 0 0 0 0 0
+merge "MG_and_gate_9/Vin_A" "m2_15200_n14950#"
+merge "MG_not_gate_1/Vin" "MG_and_gate_11/Vin_B" -15340.9 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4842100 -46220 -3085740 -28272 0 0 0 0 0 0
+merge "MG_and_gate_11/Vin_B" "MG_and_gate_2/Vin_B"
+merge "MG_and_gate_2/Vin_B" "MG_and_gate_3/Vin_B"
+merge "MG_and_gate_3/Vin_B" "P14"
+merge "MG_not_gate_0/Vin" "MG_and_gate_10/Vin_B" -11970.9 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3186300 -29900 -3013100 -34160 0 0 0 0 0 0
+merge "MG_and_gate_10/Vin_B" "MG_and_gate_2/Vin_A"
+merge "MG_and_gate_2/Vin_A" "MG_and_gate_3/Vin_A"
+merge "MG_and_gate_3/Vin_A" "P13"
+merge "MG_and_gate_9/Vin_B" "P19" -761.552 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -329100 -4330 0 0 0 0 0 0
+merge "MG_and_gate_7/Vin_B" "MG_and_gate_8/Vin_B" -4608.43 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1112180 -6851 -1718340 -15232 0 0 0 0 0 0
+merge "MG_and_gate_8/Vin_B" "P17"
+merge "MG_and_gate_5/Vin_B" "MG_and_gate_2/Vout" -436.635 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -35100 -1140 0 0 0 0 0 0
+merge "MG_and_gate_2/Vout" "m2_7490_n7610#"
+merge "MG_and_gate_0/Vin_A" "MG_not_gate_2/Vout" -613.803 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5500 -560 -34500 -1330 0 0 0 0 0 0
+merge "MG_not_gate_2/Vout" "m1_1650_n3790#"
