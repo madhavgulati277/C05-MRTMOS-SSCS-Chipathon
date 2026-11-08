@@ -15750,21 +15750,20 @@ rlabel metal5 2370 158510 4320 159880 1 pin14
 port 14 n power input
 rlabel metal3 2410 140520 4330 141890 1 pin15
 port 15 n ground input
-rlabel metal4 0 0 0 0 2 pin16
-port 16 ne signal input
 rlabel metal3 2080 104670 4180 105730 1 pin17
+port 17 n signal input
 rlabel metal3 2060 122630 4260 123690 1 pin16
 port 16 n signal input
 rlabel metal3 2270 86660 4190 87810 1 pin18
-port 17 n signal input
-rlabel metal5 2220 68650 4250 69800 1 pin19
 port 18 n signal input
-rlabel metal3 2320 50680 4280 52010 1 pin20
+rlabel metal5 2220 68650 4250 69800 1 pin19
 port 19 n signal input
-rlabel metal3 2270 32480 4210 33810 1 pin21
+rlabel metal3 2320 50680 4280 52010 1 pin20
 port 20 n signal input
-rlabel metal3 2270 14660 4230 15790 1 pin22
+rlabel metal3 2270 32480 4210 33810 1 pin21
 port 21 n signal input
+rlabel metal3 2270 14660 4230 15790 1 pin22
+port 22 n signal input
 rlabel metal4 60560 215100 61950 217630 1 pin9
 port 9 n analog input
 rlabel metal4 150480 215030 151980 217490 1 pin4

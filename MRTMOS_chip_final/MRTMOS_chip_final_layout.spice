@@ -152,19 +152,19 @@ Xresistor_10k_0 m1_n534_1394# m1_3967_1408# VSUBS resistor_10k_0/ppolyf_u_1k_6p0
 + resistor_10k_RN_Gm2
 Xresistor_10k_1 m1_n202_2348# m1_3967_1408# VSUBS resistor_10k_1/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
 + resistor_10k_RN_Gm2
-Xresistor_10k_2 m1_n202_2348# m1_3967_3376# VSUBS resistor_10k_2/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
-+ resistor_10k_RN_Gm2
 Xresistor_10k_3 m1_n202_4351# m1_3967_3376# VSUBS resistor_10k_3/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
 + resistor_10k_RN_Gm2
-Xresistor_10k_4 m1_n202_4351# m1_3956_5364# VSUBS resistor_10k_4/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
+Xresistor_10k_2 m1_n202_2348# m1_3967_3376# VSUBS resistor_10k_2/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
 + resistor_10k_RN_Gm2
 Xresistor_10k_16 m1_4597_7353# m1_8767_8367# VSUBS ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
 + resistor_10k_RN_Gm2
-Xresistor_10k_5 m1_n223_6375# m1_3956_5364# VSUBS resistor_10k_5/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
+Xresistor_10k_4 m1_n202_4351# m1_3956_5364# VSUBS resistor_10k_4/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
++ resistor_10k_RN_Gm2
+Xresistor_10k_18 m1_4597_5375# m1_8778_6407# VSUBS resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
 + resistor_10k_RN_Gm2
 Xresistor_10k_17 m1_4597_7353# m1_8778_6407# VSUBS resistor_10k_17/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
 + resistor_10k_RN_Gm2
-Xresistor_10k_18 m1_4597_5375# m1_8778_6407# VSUBS resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
+Xresistor_10k_5 m1_n223_6375# m1_3956_5364# VSUBS resistor_10k_5/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
 + resistor_10k_RN_Gm2
 Xresistor_10k_6 m1_n223_6375# m1_3967_7342# VSUBS resistor_10k_6/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
 + resistor_10k_RN_Gm2
@@ -182,10 +182,10 @@ Xppolyf_u_1k_6p0_45EQGM_1 ppolyf_u_1k_6p0_45EQGM_1/a_n200_n2000# VSUBS ppolyf_u_
 + VSUBS ppolyf_u_1k_6p0_45EQGM_RN_Gm2
 Xresistor_10k_20 m1_4576_3365# m1_8789_4393# VSUBS resistor_10k_20/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
 + resistor_10k_RN_Gm2
-Xresistor_10k_10 resistor_10k_10/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000# VSUBS VSUBS
-+ resistor_10k_10/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000# resistor_10k_RN_Gm2
 Xresistor_10k_21 m1_4576_3365# m1_8767_2358# VSUBS resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
 + resistor_10k_RN_Gm2
+Xresistor_10k_10 resistor_10k_10/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000# VSUBS VSUBS
++ resistor_10k_10/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000# resistor_10k_RN_Gm2
 Xresistor_10k_22 m1_4608_1365# m1_8767_2358# VSUBS resistor_10k_22/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
 + resistor_10k_RN_Gm2
 .ends
@@ -404,23 +404,23 @@ X1 a_n52_n240# a_n192_n332# a_n280_n240# VSUBS nfet_05v0 ad=0.624p pd=2.92u as=1
 
 .subckt MG_power_clamp_ESD Vdd GND
 Xnfet_05v0_J69HZZ_0 Vdd GND m1_n5279_5007# Vdd GND Vdd GND nfet_05v0_J69HZZ
-Xnfet_05v0_J69HZZ_1 Vdd GND m1_n5279_5007# Vdd GND Vdd GND nfet_05v0_J69HZZ
 Xppolyf_u_1k_6p0_MUQPXQ_0 m1_140_160# GND m1_n610_8350# ppolyf_u_1k_6p0_MUQPXQ
-Xnfet_05v0_J69HZZ_2 Vdd GND m1_n5279_5007# Vdd GND Vdd GND nfet_05v0_J69HZZ
+Xnfet_05v0_J69HZZ_1 Vdd GND m1_n5279_5007# Vdd GND Vdd GND nfet_05v0_J69HZZ
 Xppolyf_u_1k_6p0_MUQPXQ_1 m1_140_160# GND m1_950_8350# ppolyf_u_1k_6p0_MUQPXQ
+Xnfet_05v0_J69HZZ_2 Vdd GND m1_n5279_5007# Vdd GND Vdd GND nfet_05v0_J69HZZ
+Xppolyf_u_1k_6p0_MUQPXQ_2 m1_1750_170# GND m1_n5279_5007# ppolyf_u_1k_6p0_MUQPXQ
 Xnfet_05v0_J69HZZ_3 Vdd GND m1_n5279_5007# Vdd GND Vdd GND nfet_05v0_J69HZZ
 Xnfet_05v0_J69HZZ_4 Vdd GND m1_n5279_5007# Vdd GND Vdd GND nfet_05v0_J69HZZ
-Xppolyf_u_1k_6p0_MUQPXQ_2 m1_1750_170# GND m1_n5279_5007# ppolyf_u_1k_6p0_MUQPXQ
-Xnfet_05v0_J69HZZ_5 Vdd GND m1_n5279_5007# Vdd GND Vdd GND nfet_05v0_J69HZZ
 Xppolyf_u_1k_6p0_MUQPXQ_3 m1_1750_170# GND m1_950_8350# ppolyf_u_1k_6p0_MUQPXQ
+Xnfet_05v0_J69HZZ_5 Vdd GND m1_n5279_5007# Vdd GND Vdd GND nfet_05v0_J69HZZ
 Xnfet_05v0_J69HZZ_6 Vdd GND m1_n5279_5007# Vdd GND Vdd GND nfet_05v0_J69HZZ
-Xnfet_05v0_J69HZZ_7 Vdd GND m1_n5279_5007# Vdd GND Vdd GND nfet_05v0_J69HZZ
 Xppolyf_u_1k_6p0_MUQPXQ_6 m1_n2910_160# GND Vdd ppolyf_u_1k_6p0_MUQPXQ
-Xnfet_05v0_J69HZZ_8 Vdd GND m1_n5279_5007# Vdd GND Vdd GND nfet_05v0_J69HZZ
+Xnfet_05v0_J69HZZ_7 Vdd GND m1_n5279_5007# Vdd GND Vdd GND nfet_05v0_J69HZZ
 Xppolyf_u_1k_6p0_MUQPXQ_7 m1_n2910_160# GND m1_n2120_8350# ppolyf_u_1k_6p0_MUQPXQ
-Xnfet_05v0_J69HZZ_9 Vdd GND m1_n5279_5007# Vdd GND Vdd GND nfet_05v0_J69HZZ
+Xnfet_05v0_J69HZZ_8 Vdd GND m1_n5279_5007# Vdd GND Vdd GND nfet_05v0_J69HZZ
 Xnmoscap_6p0_C96ALX_0 m1_n5279_5007# GND m1_n5279_5007# nmoscap_6p0_C96ALX
 Xppolyf_u_1k_6p0_MUQPXQ_8 m1_n1320_170# GND m1_n2120_8350# ppolyf_u_1k_6p0_MUQPXQ
+Xnfet_05v0_J69HZZ_9 Vdd GND m1_n5279_5007# Vdd GND Vdd GND nfet_05v0_J69HZZ
 Xppolyf_u_1k_6p0_MUQPXQ_9 m1_n1320_170# GND m1_n610_8350# ppolyf_u_1k_6p0_MUQPXQ
 Xpfet_05v0_9ZYXAC_0 m1_n5874_5836# m1_n5279_5007# Vdd Vdd m1_n5874_5836# m1_n5874_5836#
 + Vdd Vdd Vdd pfet_05v0_9ZYXAC
@@ -465,19 +465,19 @@ Xresistor_10k_0 m1_n534_1394# m1_3967_1408# VSUBS resistor_10k_0/ppolyf_u_1k_6p0
 + resistor_10k
 Xresistor_10k_1 m1_n202_2348# m1_3967_1408# VSUBS resistor_10k_1/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
 + resistor_10k
-Xresistor_10k_2 m1_n202_2348# m1_3967_3376# VSUBS resistor_10k_2/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
-+ resistor_10k
 Xresistor_10k_3 m1_n202_4351# m1_3967_3376# VSUBS resistor_10k_3/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
 + resistor_10k
-Xresistor_10k_4 m1_n202_4351# m1_3956_5364# VSUBS resistor_10k_4/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
+Xresistor_10k_2 m1_n202_2348# m1_3967_3376# VSUBS resistor_10k_2/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
 + resistor_10k
 Xresistor_10k_16 m1_4597_7353# m1_8767_8367# VSUBS ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
 + resistor_10k
-Xresistor_10k_5 m1_n223_6375# m1_3956_5364# VSUBS resistor_10k_5/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
+Xresistor_10k_4 m1_n202_4351# m1_3956_5364# VSUBS resistor_10k_4/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
++ resistor_10k
+Xresistor_10k_18 m1_4597_5375# m1_8778_6407# VSUBS resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
 + resistor_10k
 Xresistor_10k_17 m1_4597_7353# m1_8778_6407# VSUBS resistor_10k_17/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
 + resistor_10k
-Xresistor_10k_18 m1_4597_5375# m1_8778_6407# VSUBS resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
+Xresistor_10k_5 m1_n223_6375# m1_3956_5364# VSUBS resistor_10k_5/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
 + resistor_10k
 Xresistor_10k_6 m1_n223_6375# m1_3967_7342# VSUBS resistor_10k_6/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
 + resistor_10k
@@ -495,10 +495,10 @@ Xppolyf_u_1k_6p0_45EQGM_1 ppolyf_u_1k_6p0_45EQGM_1/a_n200_n2000# VSUBS ppolyf_u_
 + VSUBS ppolyf_u_1k_6p0_45EQGM
 Xresistor_10k_20 m1_4576_3365# m1_8789_4393# VSUBS resistor_10k_20/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
 + resistor_10k
-Xresistor_10k_10 resistor_10k_10/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000# VSUBS VSUBS
-+ resistor_10k_10/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000# resistor_10k
 Xresistor_10k_21 m1_4576_3365# m1_8767_2358# VSUBS resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
 + resistor_10k
+Xresistor_10k_10 resistor_10k_10/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000# VSUBS VSUBS
++ resistor_10k_10/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000# resistor_10k
 Xresistor_10k_22 m1_4608_1365# m1_8767_2358# VSUBS resistor_10k_22/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2000#
 + resistor_10k
 .ends
@@ -1065,7 +1065,7 @@ X0 m1_860_n5540# m1_860_n5540# rm1 r_width=0.65u r_length=0.75u
 .ends
 
 .subckt MRTMOS_chip_final pin1 pin2 pin3 pin9 pin5 pin6 pin7 pin8 pin10 pin11 pin12
-+ pin13 pin15 pin18 pin20 pin21 pin22
++ pin13 pin15 pin16 pin17 pin18 pin20 pin21 pin22
 XMG_ESD_protection_20 pin9 pin9 pin9 MG_ESD_protection_20/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1000#
 + pin9 MG_ESD_protection
 Xcap_mim_2p0fF_2BWSH9_4 cap_mim_2p0fF_2BWSH9

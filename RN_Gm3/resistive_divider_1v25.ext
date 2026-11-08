@@ -4,27 +4,27 @@ tech gf180mcuD
 style ngspice()
 scale 1000 1 0.5
 resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
-use resistor_10k resistor_10k_23 1 0 4870 0 1 70
-use resistor_10k resistor_10k_22 1 0 4870 0 1 1070
-use resistor_10k resistor_10k_21 1 0 4870 0 1 2070
-use resistor_10k resistor_10k_20 1 0 4870 0 1 3070
-use resistor_10k resistor_10k_19 1 0 4870 0 1 4070
-use resistor_10k resistor_10k_18 1 0 4870 0 1 5070
-use resistor_10k resistor_10k_17 1 0 4870 0 1 6070
-use resistor_10k resistor_10k_16 1 0 4870 0 1 7070
-use resistor_10k resistor_10k_10 1 0 4870 0 1 -927
-use resistor_10k resistor_10k_9 1 0 70 0 1 -927
-use resistor_10k resistor_10k_8 1 0 70 0 1 8070
-use resistor_10k resistor_10k_7 1 0 70 0 1 7070
-use resistor_10k resistor_10k_6 1 0 70 0 1 6070
-use resistor_10k resistor_10k_5 1 0 70 0 1 5070
-use resistor_10k resistor_10k_4 1 0 70 0 1 4070
-use resistor_10k resistor_10k_3 1 0 70 0 1 3070
-use resistor_10k resistor_10k_2 1 0 70 0 1 2070
-use resistor_10k resistor_10k_1 1 0 70 0 1 1070
 use resistor_10k resistor_10k_0 1 0 70 0 1 70
-use ppolyf_u_1k_6p0_45EQGM ppolyf_u_1k_6p0_45EQGM_1 0 -1 6758 1 0 9616
+use resistor_10k resistor_10k_9 1 0 70 0 1 -927
+use resistor_10k resistor_10k_10 1 0 4870 0 1 -927
+use resistor_10k resistor_10k_23 1 0 4870 0 1 70
+use resistor_10k resistor_10k_1 1 0 70 0 1 1070
+use resistor_10k resistor_10k_22 1 0 4870 0 1 1070
+use resistor_10k resistor_10k_2 1 0 70 0 1 2070
+use resistor_10k resistor_10k_3 1 0 70 0 1 3070
+use resistor_10k resistor_10k_20 1 0 4870 0 1 3070
+use resistor_10k resistor_10k_21 1 0 4870 0 1 2070
+use resistor_10k resistor_10k_4 1 0 70 0 1 4070
+use resistor_10k resistor_10k_19 1 0 4870 0 1 4070
+use resistor_10k resistor_10k_5 1 0 70 0 1 5070
+use resistor_10k resistor_10k_6 1 0 70 0 1 6070
+use resistor_10k resistor_10k_17 1 0 4870 0 1 6070
+use resistor_10k resistor_10k_18 1 0 4870 0 1 5070
+use resistor_10k resistor_10k_7 1 0 70 0 1 7070
 use ppolyf_u_1k_6p0_45EQGM ppolyf_u_1k_6p0_45EQGM_0 0 -1 6758 1 0 8616
+use resistor_10k resistor_10k_16 1 0 4870 0 1 7070
+use resistor_10k resistor_10k_8 1 0 70 0 1 8070
+use ppolyf_u_1k_6p0_45EQGM ppolyf_u_1k_6p0_45EQGM_1 0 -1 6758 1 0 9616
 node "m1_8767_2358#" 1 733.678 8767 2358 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 222159 3280 0 0 0 0 0 0 0 0
 node "m1_8789_4393#" 1 3084.89 8789 4393 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2057980 9340 0 0 0 0 0 0 0 0
 node "m1_8778_6407#" 1 732.647 8778 6407 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 222159 3280 0 0 0 0 0 0 0 0
@@ -44,185 +44,185 @@ node "m1_n223_6375#" 1 746.254 -223 6375 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "m1_n1090_8367#" 0 925.2 -1090 8367 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 497840 3012 0 0 0 0 0 0 0 0
 node "m1_n202_n649#" 4 37743 -202 -649 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32679275 75140 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_3967_3376#" "m1_n202_n649#" 51.2762
+cap "m1_3967_7342#" "m1_3956_5364#" 11.7205
+cap "m1_n202_n649#" "m1_n202_4351#" 42.1223
+cap "m1_4576_3365#" "m1_n202_n649#" 39.2995
+cap "m1_4597_5375#" "m1_4597_7353#" 12.6547
+cap "m1_4576_3365#" "m1_4608_1365#" 9.49881
+cap "m1_n202_n649#" "m1_3956_5364#" 51.7595
 cap "m1_4576_3365#" "m1_4597_5375#" 10.1877
+cap "m1_4576_3365#" "m1_3967_3376#" 133.239
+cap "m1_8767_2358#" "m1_n534_1394#" 16.5618
+cap "m1_4597_5375#" "m1_3956_5364#" 124.394
+cap "m1_3967_3376#" "m1_3956_5364#" 11.4798
+cap "m1_n202_2348#" "m1_n534_1394#" 15.8735
+cap "m1_3967_1408#" "m1_n534_1394#" 246.216
+cap "m1_n223_6375#" "m1_n202_n649#" 41.5144
+cap "m1_n223_6375#" "m1_n1090_8367#" 12.2939
+cap "m1_8789_4393#" "m1_8767_2358#" 9.63488
+cap "m1_8767_2358#" "m1_n202_n649#" 55.1963
+cap "m1_n202_n649#" "m1_n202_2348#" 42.6062
 cap "m1_n202_n649#" "m1_3967_1408#" 51.2762
-cap "m1_3956_5364#" "m1_3967_7342#" 11.7205
-cap "m1_4597_7353#" "m1_3967_7342#" 127.299
 cap "m1_4608_1365#" "m1_3967_1408#" 121.704
-cap "m1_n534_1394#" "m1_3967_1408#" 246.216
+cap "m1_8767_8367#" "m1_8778_6407#" 13.151
+cap "m1_8767_8367#" "m1_n202_n649#" 30.264
+cap "m1_n202_n649#" "m1_n534_1394#" 3404.81
+cap "m1_n223_6375#" "m1_n202_4351#" 9.91498
+cap "m1_4608_1365#" "m1_n534_1394#" 259.025
+cap "m1_3967_7342#" "m1_n202_n649#" 51.2762
 cap "m1_3967_3376#" "m1_3967_1408#" 12.9257
 cap "m1_8789_4393#" "m1_8778_6407#" 10.2769
-cap "m1_n202_n649#" "m1_8767_2358#" 55.1963
-cap "m1_8767_8367#" "m1_8778_6407#" 13.151
-cap "m1_n202_n649#" "m1_3967_7342#" 51.2762
-cap "m1_n534_1394#" "m1_8767_2358#" 16.5618
-cap "m1_n202_n649#" "m1_3956_5364#" 51.7595
+cap "m1_n202_2348#" "m1_n202_4351#" 12.0245
+cap "m1_8778_6407#" "m1_n202_n649#" 54.5157
+cap "m1_8789_4393#" "m1_n202_n649#" 35.4797
+cap "m1_3967_3376#" "m1_n534_1394#" 0.0983767
+cap "m1_n1090_8367#" "m1_n202_n649#" 22.3901
+cap "m1_3967_7342#" "m1_4597_7353#" 127.299
+cap "m1_4608_1365#" "m1_n202_n649#" 40.1351
+cap "m1_4576_3365#" "m1_n534_1394#" 0.132907
 cap "m1_n202_n649#" "m1_4597_7353#" 39.8439
-cap "m1_8789_4393#" "m1_8767_2358#" 9.63488
-cap "m1_3956_5364#" "m1_3967_3376#" 11.4798
-cap "m1_n202_n649#" "m1_n202_2348#" 42.6062
-cap "m1_n202_4351#" "m1_n202_2348#" 12.0245
-cap "m1_n534_1394#" "m1_n202_2348#" 15.8735
-cap "m1_n202_n649#" "m1_n223_6375#" 41.5144
-cap "m1_n202_n649#" "m1_n202_4351#" 42.1223
-cap "m1_n202_n649#" "m1_4608_1365#" 40.1351
-cap "m1_n202_n649#" "m1_4576_3365#" 39.2995
-cap "m1_n223_6375#" "m1_n202_4351#" 9.91498
-cap "m1_n202_n649#" "m1_n534_1394#" 3404.81
-cap "m1_3956_5364#" "m1_4597_5375#" 124.394
-cap "m1_4597_7353#" "m1_4597_5375#" 12.6547
-cap "m1_4608_1365#" "m1_4576_3365#" 9.49881
-cap "m1_4608_1365#" "m1_n534_1394#" 259.025
-cap "m1_n202_n649#" "m1_3967_3376#" 51.2762
-cap "m1_n534_1394#" "m1_4576_3365#" 0.132907
-cap "m1_3967_3376#" "m1_4576_3365#" 133.239
-cap "m1_n534_1394#" "m1_3967_3376#" 0.0983767
-cap "m1_n202_n649#" "m1_8789_4393#" 35.4797
-cap "m1_n202_n649#" "m1_8767_8367#" 30.264
-cap "m1_n202_n649#" "m1_n1090_8367#" 22.3901
-cap "m1_n202_n649#" "m1_4597_5375#" 39.8439
-cap "m1_n202_n649#" "m1_8778_6407#" 54.5157
-cap "m1_n223_6375#" "m1_n1090_8367#" 12.2939
+cap "m1_4597_5375#" "m1_n202_n649#" 39.8439
 cap "resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_1/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 5.77722
+cap "resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_10/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 15.2565
 cap "resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_1/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 12.811
 cap "resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_10/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 15.2565
-cap "resistor_10k_10/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 15.2565
-cap "resistor_10k_10/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 11.6616
-cap "resistor_10k_10/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_22/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 4.4745
+cap "resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_10/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 11.6616
+cap "resistor_10k_22/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_10/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 4.4745
+cap "resistor_10k_0/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 72.4615
+cap "resistor_10k_2/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 0.00185273
 cap "resistor_10k_0/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_2/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 1.69763
-cap "resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_0/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 72.4615
-cap "resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_2/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 0.00185273
 cap "resistor_10k_0/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 225.617
 cap "resistor_10k_2/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_1/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" -0.718653
 cap "resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_2/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 1.22259
 cap "m1_n534_1394#" "resistor_10k_2/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 69.5777
-cap "resistor_10k_1/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_2/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 37.3617
-cap "resistor_10k_1/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 6.78884
-cap "resistor_10k_2/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "m1_n534_1394#" 158.214
-cap "resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_10/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 3.2353
-cap "resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "m1_n534_1394#" 3.08568
-cap "resistor_10k_1/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_22/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 4.44054
-cap "resistor_10k_1/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "m1_n534_1394#" 10.1648
+cap "resistor_10k_10/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 3.2353
+cap "resistor_10k_22/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_1/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 4.44054
 cap "resistor_10k_2/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "m1_n534_1394#" 0.00462514
 cap "resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_2/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 2.52746
-cap "resistor_10k_1/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_22/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 4.55431
+cap "resistor_10k_2/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "m1_n534_1394#" 158.214
+cap "resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "m1_n534_1394#" 3.08568
+cap "resistor_10k_2/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_1/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 37.3617
+cap "resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_1/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 6.78884
+cap "resistor_10k_1/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "m1_n534_1394#" 10.1648
+cap "resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "m1_n534_1394#" 192.873
+cap "resistor_10k_22/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_1/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 4.55431
+cap "resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_10/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 3.2353
+cap "resistor_10k_22/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_10/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 7.52063
+cap "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "m1_n534_1394#" 0.0169589
 cap "resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_22/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 39.6755
-cap "m1_n534_1394#" "resistor_10k_10/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 2.9832
-cap "m1_n534_1394#" "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 0.0169589
-cap "m1_n534_1394#" "resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 192.873
-cap "m1_n534_1394#" "resistor_10k_22/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 8.34131
+cap "resistor_10k_22/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "m1_n534_1394#" 8.34131
 cap "resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_10/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 2.28493
-cap "resistor_10k_10/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_22/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 7.52063
-cap "resistor_10k_10/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 3.2353
+cap "resistor_10k_10/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "m1_n534_1394#" 2.9832
+cap "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_23/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 76.094
 cap "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_22/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" -0.614162
 cap "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_10/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 0.945754
-cap "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_23/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 76.094
-cap "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_23/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 170.126
+cap "resistor_10k_23/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 170.126
 cap "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_23/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 58.2713
-cap "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 0.00202746
 cap "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_23/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 1.60602
-cap "resistor_10k_0/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_2/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 1.62399
-cap "resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_2/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 46.511
+cap "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 0.00202746
+cap "resistor_10k_2/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 46.511
+cap "resistor_10k_2/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_0/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 1.62399
 cap "resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_2/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 3.90037
-cap "resistor_10k_3/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_3/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 0.0238684
-cap "resistor_10k_1/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_3/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" -0.718653
-cap "resistor_10k_3/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_3/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 8.46805
-cap "resistor_10k_3/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_1/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 41.0219
-cap "resistor_10k_3/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_1/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 2.72822
-cap "resistor_10k_1/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "m1_n534_1394#" 0.00505106
-cap "resistor_10k_22/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_1/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 4.44054
+cap "resistor_10k_3/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_3/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 0.0238684
+cap "resistor_10k_3/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_1/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" -0.718653
 cap "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_3/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 1.62189
-cap "resistor_10k_22/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 38.968
-cap "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_3/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 1.50292
-cap "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 9.58014
+cap "resistor_10k_1/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_3/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 2.72822
+cap "resistor_10k_1/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_3/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 41.0219
+cap "resistor_10k_1/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_22/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 4.44054
+cap "resistor_10k_3/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_3/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 8.46805
+cap "resistor_10k_1/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "m1_n534_1394#" 0.00505106
 cap "resistor_10k_22/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "m1_n534_1394#" 0.000561229
-cap "resistor_10k_22/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 3.22949
-cap "resistor_10k_22/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_1/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 4.55431
+cap "resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_22/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 38.968
+cap "resistor_10k_1/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_22/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 4.55431
+cap "resistor_10k_9/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 9.58014
+cap "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_3/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 1.50292
+cap "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_22/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 3.22949
+cap "resistor_10k_22/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" -0.614162
 cap "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 0.0528957
-cap "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_22/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" -0.614162
-cap "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 3.55957
-cap "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 45.1982
+cap "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 3.55957
+cap "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 45.1982
 cap "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_23/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 1.37139
-cap "resistor_10k_4/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_0/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 9.95921
+cap "resistor_10k_2/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_4/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 2.59191
 cap "resistor_10k_2/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_0/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 5.72175
-cap "resistor_10k_4/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_2/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 2.59191
-cap "resistor_10k_4/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_0/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 0.0603504
-cap "resistor_10k_0/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_2/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 0.0404348
-cap "resistor_10k_5/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_3/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" -1.46117
-cap "resistor_10k_3/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 8.20774
+cap "resistor_10k_4/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_0/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 9.95921
+cap "resistor_10k_2/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_0/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 0.0404348
+cap "resistor_10k_0/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_4/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 0.0603504
+cap "resistor_10k_3/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_5/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" -1.46117
+cap "resistor_10k_5/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_3/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 1.33956
 cap "resistor_10k_5/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_3/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 69.0911
-cap "resistor_10k_3/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_5/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 1.33956
-cap "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 1.28161
-cap "resistor_10k_0/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 70.9745
+cap "resistor_10k_3/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 8.20774
 cap "resistor_10k_3/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 7.6057
+cap "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 1.28161
+cap "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_0/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 70.9745
 cap "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" -0.944776
-cap "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 0.0556199
 cap "resistor_10k_19/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 0.280531
+cap "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 0.0556199
 cap "resistor_10k_19/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 23.218
-cap "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_19/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 2.90458
+cap "resistor_10k_19/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 2.90458
 cap "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 6.16041
 cap "resistor_10k_19/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_23/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 0.188986
-cap "resistor_10k_2/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_4/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 42.2819
-cap "resistor_10k_4/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_6/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 1.66783
-cap "resistor_10k_2/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_4/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 3.88045
+cap "resistor_10k_4/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_2/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 42.2819
+cap "resistor_10k_6/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_4/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 1.66783
+cap "resistor_10k_4/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_2/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 3.88045
 cap "resistor_10k_6/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_5/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" -1.59687
 cap "resistor_10k_5/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 4.59777
-cap "resistor_10k_5/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_3/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 1.51255
 cap "resistor_10k_6/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_5/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 63.1099
-cap "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 1.68346
+cap "resistor_10k_3/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_5/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 1.51255
+cap "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_5/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 4.39865
 cap "resistor_10k_2/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 63.8889
-cap "resistor_10k_5/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 4.39865
-cap "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" -1.17018
+cap "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 1.68346
+cap "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" -1.17018
 cap "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_19/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 0.280531
 cap "resistor_10k_19/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 1.1734
 cap "resistor_10k_19/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 23.1864
 cap "resistor_10k_21/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_19/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 2.32952
-cap "resistor_10k_3/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_6/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 46.2215
-cap "resistor_10k_6/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_4/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 1.23128
+cap "resistor_10k_4/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_6/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 1.23128
+cap "resistor_10k_6/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_3/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 46.2215
 cap "resistor_10k_6/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_3/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 3.87636
-cap "resistor_10k_7/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_8/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 0.0600327
-cap "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_5/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 4.59777
-cap "resistor_10k_7/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_16/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 3.81615
-cap "resistor_10k_8/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_5/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 14.1809
-cap "resistor_10k_7/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_8/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 13.6988
+cap "resistor_10k_8/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_7/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 0.0600327
 cap "resistor_10k_7/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_5/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 2.88186
-cap "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_16/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 2.67458
-cap "resistor_10k_16/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_7/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 3.78008
+cap "resistor_10k_7/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_16/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 3.81615
+cap "resistor_10k_7/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_8/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 13.6988
+cap "resistor_10k_5/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 4.59777
+cap "resistor_10k_8/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_5/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 14.1809
 cap "resistor_10k_16/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_16/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 13.1904
-cap "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_5/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 4.39865
+cap "resistor_10k_7/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_16/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 3.78008
+cap "resistor_10k_5/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 4.39865
+cap "resistor_10k_16/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 2.67458
 cap "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_16/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 15.3736
 cap "ppolyf_u_1k_6p0_45EQGM_1/a_n412_n2334#" "resistor_10k_16/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 0.0490336
-cap "ppolyf_u_1k_6p0_45EQGM_1/a_n412_n2334#" "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 0.0590766
+cap "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "ppolyf_u_1k_6p0_45EQGM_1/a_n412_n2334#" 0.0590766
 cap "ppolyf_u_1k_6p0_45EQGM_1/a_n412_n2334#" "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 3.64858
-cap "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_19/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 1.45098
-cap "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "ppolyf_u_1k_6p0_45EQGM_1/a_n412_n2334#" 44.0003
-cap "resistor_10k_8/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_7/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 27.8823
-cap "resistor_10k_6/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_7/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 2.5636
+cap "ppolyf_u_1k_6p0_45EQGM_1/a_n412_n2334#" "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 44.0003
+cap "resistor_10k_19/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 1.45098
+cap "resistor_10k_7/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_6/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 2.5636
+cap "resistor_10k_7/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_8/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 27.8823
 cap "resistor_10k_6/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_8/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 6.32501
 cap "resistor_10k_8/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_7/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 0.173092
-cap "resistor_10k_6/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_8/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 0.0294257
-cap "resistor_10k_8/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_7/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" -1.49734
-cap "resistor_10k_16/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_7/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 5.3794
-cap "resistor_10k_8/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_7/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 4.03601
-cap "resistor_10k_7/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_8/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 64.5144
-cap "resistor_10k_16/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "ppolyf_u_1k_6p0_45EQGM_1/a_n200_2000#" 4.0457
-cap "resistor_10k_16/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_16/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 55.1011
+cap "resistor_10k_8/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_6/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 0.0294257
+cap "resistor_10k_7/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_8/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" -1.49734
+cap "resistor_10k_8/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "resistor_10k_7/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 64.5144
+cap "resistor_10k_7/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_8/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 4.03601
+cap "resistor_10k_7/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_16/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 5.3794
+cap "ppolyf_u_1k_6p0_45EQGM_1/a_n200_2000#" "resistor_10k_16/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 4.0457
 cap "resistor_10k_7/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_16/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 5.32855
+cap "resistor_10k_16/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_16/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 55.1011
 cap "resistor_10k_16/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "ppolyf_u_1k_6p0_45EQGM_1/a_n200_n2122#" -1.16014
 cap "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "ppolyf_u_1k_6p0_45EQGM_1/a_n200_n2122#" 0.0310617
-cap "ppolyf_u_1k_6p0_45EQGM_1/a_n200_n2122#" "resistor_10k_16/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 0.0830147
-cap "ppolyf_u_1k_6p0_45EQGM_1/a_n200_n2122#" "resistor_10k_16/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 19.1856
+cap "resistor_10k_16/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "ppolyf_u_1k_6p0_45EQGM_1/a_n200_n2122#" 0.0830147
+cap "resistor_10k_16/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "ppolyf_u_1k_6p0_45EQGM_1/a_n200_n2122#" 19.1856
+cap "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "ppolyf_u_1k_6p0_45EQGM_1/a_n200_n2122#" 7.47511
 cap "resistor_10k_16/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 2.9591
-cap "ppolyf_u_1k_6p0_45EQGM_1/a_n200_n2122#" "resistor_10k_18/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 7.47511
 cap "resistor_10k_6/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_8/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 0.00733723
-cap "resistor_10k_8/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_7/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 1.85091
+cap "resistor_10k_7/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "resistor_10k_8/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 1.85091
 cap "resistor_10k_8/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_8/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 6.99981
-cap "resistor_10k_7/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_8/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 2.82294
 cap "resistor_10k_8/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_8/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 11.996
 cap "resistor_10k_8/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "ppolyf_u_1k_6p0_45EQGM_1/a_n200_2000#" 18.4918
-cap "resistor_10k_16/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" "ppolyf_u_1k_6p0_45EQGM_1/a_n200_2000#" 2.88928
-cap "resistor_10k_16/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" "ppolyf_u_1k_6p0_45EQGM_1/a_n200_2000#" 10.6041
-cap "resistor_10k_8/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "ppolyf_u_1k_6p0_45EQGM_1/a_n200_2000#" 18.4918
+cap "resistor_10k_8/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "resistor_10k_7/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 2.82294
+cap "ppolyf_u_1k_6p0_45EQGM_1/a_n200_2000#" "resistor_10k_16/ppolyf_u_1k_6p0_45EQGM_0/a_n412_n2334#" 10.6041
+cap "ppolyf_u_1k_6p0_45EQGM_1/a_n200_2000#" "resistor_10k_16/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" 2.88928
+cap "ppolyf_u_1k_6p0_45EQGM_1/a_n200_2000#" "resistor_10k_8/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" 18.4918
 cap "ppolyf_u_1k_6p0_45EQGM_1/a_n200_2000#" "ppolyf_u_1k_6p0_45EQGM_1/a_n200_n2122#" 5.42025
 cap "resistor_10k_16/ppolyf_u_1k_6p0_45EQGM_0/a_n200_n2122#" "ppolyf_u_1k_6p0_45EQGM_1/a_n200_n2122#" 1.33074
 merge "ppolyf_u_1k_6p0_45EQGM_1/a_n200_n2122#" "resistor_10k_8/ppolyf_u_1k_6p0_45EQGM_0/a_n200_2000#" -14892.9 0 0 0 0 0 0 0 0 0 0 -770112 -21392 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1103816 -49464 0 0 0 0 0 0 0 0
