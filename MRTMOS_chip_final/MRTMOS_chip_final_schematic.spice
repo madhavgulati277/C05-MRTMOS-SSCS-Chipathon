@@ -1,5 +1,6 @@
-** sch_path: /foss/designs/C05-MRTMOS-SSCS-Chipathon/MRTMOS_chip_final/final_tb.sch
-**.subckt final_tb
+** sch_path: /foss/designs/C05-MRTMOS-SSCS-Chipathon/MRTMOS_chip_final/MRTMOS_chip_final.sch
+.subckt MRTMOS_chip_final
+
 C1 Vout 0 50p
 V1 Vdd 0 5
 V2 Vin+ 0 DC 3.333 AC 0.5
@@ -9,7 +10,6 @@ x2 Vdd Vout net9 net4 0 RN_gm3_ota
 x3 Vdd net1 Vin- Vin+ 0 MG_6t_ota
 C2 net4 net3 750p
 C3 net2 net1 750p
-*  x4 -  gm_ff  IS MISSING !!!!
 V4 ffVin- 0 3
 V5 ffVin+ 0 3 ac 1
 R1 net6 net5 10k
@@ -17,6 +17,7 @@ V6 net5 0 5
 C4 net9 0 750p
 C5 net8 0 750p
 C6 Vout net7 50p
+x5 Vdd net7 ffVin- ffVin+ net6 0 TG_gm_ff
 **** begin user architecture code
 
 
@@ -64,27 +65,18 @@ C6 Vout net7 50p
 
 
 **** end user architecture code
-**.ends
+.ends
 
 * expanding   symbol:  /foss/designs/C05-MRTMOS-SSCS-Chipathon/RN_Gm2/RN_gm2_ota.sym # of pins=5
 ** sym_path: /foss/designs/C05-MRTMOS-SSCS-Chipathon/RN_Gm2/RN_gm2_ota.sym
 ** sch_path: /foss/designs/C05-MRTMOS-SSCS-Chipathon/RN_Gm2/RN_gm2_ota.sch
 .subckt RN_gm2_ota VDD Vout Vin- Vin+ GND
-*.opin Vout
-*.ipin Vin+
-*.ipin Vin-
-*.ipin VDD
-*.ipin GND
-XM1 Vout Vin- int2 GND nfet_05v0 L=1u W=20u nf=10 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
-XM2 int1 Vin+ int2 GND nfet_05v0 L=1u W=20u nf=10 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
-XM3 int2 net1 GND GND nfet_05v0 L=1.2u W=16u nf=8 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=3
-XM4 Vout int1 VDD VDD pfet_05v0 L=1.2u W=20u nf=8 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
-XM5 int1 int1 VDD VDD pfet_05v0 L=1.2u W=20u nf=8 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+*.PININFO Vout:O Vin+:I Vin-:I VDD:I GND:I
+M1 Vout Vin- int2 GND nfet_05v0 L=1u W=20u nf=10
+M2 int1 Vin+ int2 GND nfet_05v0 L=1u W=20u nf=10
+M3 int2 net1 GND GND nfet_05v0 L=1.2u W=16u nf=8 m=3
+M4 Vout int1 VDD VDD pfet_05v0 L=1.2u W=20u nf=8 m=2
+M5 int1 int1 VDD VDD pfet_05v0 L=1.2u W=20u nf=8 m=2
 XR3 net1 net45 GND ppolyf_u_3k r_width=2e-6 r_length=600e-6
 XR4 net46 net1 GND ppolyf_u_3k r_width=2e-6 r_length=200e-6
 XC3 VDD GND cap_nmos_06v0 c_width=30e-6 c_length=30e-6 m=4
@@ -154,23 +146,14 @@ XC2 net1 GND cap_nmos_06v0 c_width=30e-6 c_length=30e-6 m=4
 ** sym_path: /foss/designs/C05-MRTMOS-SSCS-Chipathon/RN_Gm3/RN_gm3_ota.sym
 ** sch_path: /foss/designs/C05-MRTMOS-SSCS-Chipathon/RN_Gm3/RN_gm3_ota.sch
 .subckt RN_gm3_ota Vdd Vout Vin+ Vin- GND
-*.opin Vout
-*.ipin Vin+
-*.ipin Vin-
-*.ipin Vdd
-*.ipin GND
-XM3 net1 net3 GND GND nfet_05v0 L=1.2u W=16u nf=8 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
-XM2 net2 Vin+ net1 GND nfet_05v0 L=1u W=7.5u nf=4 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
-XM5 net2 net2 Vdd Vdd pfet_05v0 L=2u W=17u nf=10 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+*.PININFO Vout:O Vin+:I Vin-:I Vdd:I GND:I
+M3 net1 net3 GND GND nfet_05v0 L=1.2u W=16u nf=8 m=2
+M2 net2 Vin+ net1 GND nfet_05v0 L=1u W=7.5u nf=4 m=4
+M5 net2 net2 Vdd Vdd pfet_05v0 L=2u W=17u nf=10 m=2
 XC3 net3 GND cap_nmos_06v0 c_width=60e-6 c_length=10e-6 m=6
 XC4 Vdd GND cap_nmos_06v0 c_width=60e-6 c_length=10e-6 m=6
-XM1 Vout Vin- net1 GND nfet_05v0 L=1u W=7.5u nf=4 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
-XM4 Vout net2 Vdd Vdd pfet_05v0 L=2u W=17u nf=10 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+M1 Vout Vin- net1 GND nfet_05v0 L=1u W=7.5u nf=4 m=4
+M4 Vout net2 Vdd Vdd pfet_05v0 L=2u W=17u nf=10 m=2
 XR2 GND net3 GND ppolyf_u_1k_6p0 r_width=2e-6 r_length=250e-6
 XR7 net3 Vdd GND ppolyf_u_1k_6p0 r_width=2e-6 r_length=750e-6
 XR1 Vin+ Vdd GND ppolyf_u_1k_6p0 r_width=2e-6 r_length=1600e-6
@@ -184,26 +167,31 @@ XR5 GND Vin- GND ppolyf_u_1k_6p0 r_width=2e-6 r_length=2400e-6
 ** sym_path: /foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_6T_OTA/MG_6t_ota.sym
 ** sch_path: /foss/designs/C05-MRTMOS-SSCS-Chipathon/MG_6T_OTA/MG_6t_ota.sch
 .subckt MG_6t_ota Vdd Vout Vin- Vin+ GND
-*.ipin Vdd
-*.ipin Vin+
-*.ipin Vin-
-*.ipin GND
-*.opin Vout
-XM4 Vout net1 Vdd Vdd pfet_05v0 L=2u W=27u nf=14 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
-XM2 Vout Vin- net2 GND nfet_05v0 L=1u W=16u nf=8 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
-XM1 net1 Vin+ net2 GND nfet_05v0 L=1u W=16u nf=8 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
-XM3 net1 net1 Vdd Vdd pfet_05v0 L=2u W=28u nf=14 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
-XM5b net2 net4 net3 GND nfet_05v0 L=1.25u W=12u nf=8 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
-XM5a net3 net5 GND GND nfet_05v0 L=1.25u W=6u nf=4 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+*.PININFO Vdd:I Vin+:I Vin-:I GND:I Vout:O
+M4 Vout net1 Vdd Vdd pfet_05v0 L=2u W=27u nf=14
+M2 Vout Vin- net2 GND nfet_05v0 L=1u W=16u nf=8
+M1 net1 Vin+ net2 GND nfet_05v0 L=1u W=16u nf=8
+M3 net1 net1 Vdd Vdd pfet_05v0 L=2u W=28u nf=14
+M5b net2 net4 net3 GND nfet_05v0 L=1.25u W=12u nf=8
+M5a net3 net5 GND GND nfet_05v0 L=1.25u W=6u nf=4
 XR1 net4 Vdd GND ppolyf_u_3k r_width=2e-6 r_length=600e-6
 XR2 net5 net4 GND ppolyf_u_3k r_width=2e-6 r_length=200e-6
 XR3 GND net5 GND ppolyf_u_3k r_width=2e-6 r_length=200e-6
 .ends
 
-.end
+
+* expanding   symbol:  /foss/designs/C05-MRTMOS-SSCS-Chipathon/TG_gm_ff/TG_gm_ff.sym # of pins=6
+** sym_path: /foss/designs/C05-MRTMOS-SSCS-Chipathon/TG_gm_ff/TG_gm_ff.sym
+** sch_path: /foss/designs/C05-MRTMOS-SSCS-Chipathon/TG_gm_ff/TG_gm_ff.sch
+.subckt TG_gm_ff VDD Vout Vin- Vin+ ext_bias GND
+*.PININFO ext_bias:I Vin+:I Vin-:I GND:I VDD:I Vout:O
+XC3 ext_bias GND cap_nmos_06v0 c_width=60e-6 c_length=10e-6 m=6
+XC1 VDD GND cap_nmos_06v0 c_width=60e-6 c_length=10e-6 m=6
+M7 net2 ext_bias GND GND nfet_05v0 L=1.2u W=16u nf=8 m=2
+M8 Vout Vin- net2 GND nfet_05v0 L=1u W=7.5u nf=4 m=4
+M9 net1 net1 VDD VDD pfet_05v0 L=2u W=17u nf=10 m=2
+M5 ext_bias ext_bias GND GND nfet_05v0 L=1.2u W=16u nf=8 m=2
+M1 net1 Vin+ net2 GND nfet_05v0 L=1u W=7.5u nf=4 m=4
+M2 Vout net1 VDD VDD pfet_05v0 L=2u W=17u nf=10 m=2
+.ends
+
