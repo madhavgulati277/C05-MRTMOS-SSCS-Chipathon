@@ -1,0 +1,150 @@
+{
+  "project_size": {
+    "source_gds": "/Users/kanobailey/chipathon/2026/data/C05/MRTMOS_chip_final/MRTMOS_chip_final.gds",
+    "top_cell": "MRTMOS_chip_final",
+    "block_type": "analog",
+    "layout_dbu_microns": 0.001,
+    "physical_bbox_dbu": [
+      20000,
+      1250,
+      1098750,
+      1080000
+    ],
+    "physical_bbox_microns": [
+      "20",
+      "1.25",
+      "1098.75",
+      "1080"
+    ],
+    "prboundary_dbu": null,
+    "prboundary_microns": null,
+    "width_microns": "1078.75",
+    "height_microns": "1078.75",
+    "top_cell_text": [
+      {
+        "text": "pin1",
+        "layer": 42,
+        "datatype": 10
+      },
+      {
+        "text": "pin2",
+        "layer": 42,
+        "datatype": 10
+      },
+      {
+        "text": "pin3",
+        "layer": 42,
+        "datatype": 10
+      },
+      {
+        "text": "pin4",
+        "layer": 42,
+        "datatype": 10
+      },
+      {
+        "text": "pin5",
+        "layer": 42,
+        "datatype": 10
+      },
+      {
+        "text": "pin6",
+        "layer": 42,
+        "datatype": 10
+      },
+      {
+        "text": "pin7",
+        "layer": 42,
+        "datatype": 10
+      },
+      {
+        "text": "pin8",
+        "layer": 42,
+        "datatype": 10
+      },
+      {
+        "text": "pin9",
+        "layer": 42,
+        "datatype": 10
+      },
+      {
+        "text": "pin10",
+        "layer": 42,
+        "datatype": 10
+      },
+      {
+        "text": "pin11",
+        "layer": 42,
+        "datatype": 10
+      },
+      {
+        "text": "pin12",
+        "layer": 42,
+        "datatype": 10
+      },
+      {
+        "text": "pin13",
+        "layer": 42,
+        "datatype": 10
+      },
+      {
+        "text": "pin14",
+        "layer": 42,
+        "datatype": 10
+      },
+      {
+        "text": "pin15",
+        "layer": 42,
+        "datatype": 10
+      },
+      {
+        "text": "pin16",
+        "layer": 42,
+        "datatype": 10
+      },
+      {
+        "text": "pin17",
+        "layer": 42,
+        "datatype": 10
+      },
+      {
+        "text": "pin18",
+        "layer": 42,
+        "datatype": 10
+      },
+      {
+        "text": "pin19",
+        "layer": 42,
+        "datatype": 10
+      },
+      {
+        "text": "pin20",
+        "layer": 42,
+        "datatype": 10
+      },
+      {
+        "text": "pin21",
+        "layer": 42,
+        "datatype": 10
+      },
+      {
+        "text": "pin22",
+        "layer": 42,
+        "datatype": 10
+      },
+      {
+        "text": "Vdd",
+        "layer": 81,
+        "datatype": 10
+      },
+      {
+        "text": "GND",
+        "layer": 81,
+        "datatype": 10
+      }
+    ]
+  },
+  "participant_pin_count": 22,
+  "selected_variants": [
+    "A"
+  ]
+}

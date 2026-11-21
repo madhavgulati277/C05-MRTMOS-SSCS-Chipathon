@@ -1,0 +1,81 @@
+* NGSPICE file created from MRTMOS_chip_final_2.ext - technology: gf180mcuD
+
+.subckt diode_nd2ps_06v0_XZ9LFE a_n2652_n242# a_n2500_n90#
+D0 a_n2652_n242# a_n2500_n90# diode_nd2ps_06v0 pj=51.8u area=22.5p
+.ends
+
+.subckt diode_pd2nw_06v0_WSMRF6 a_n2500_n90# w_n2676_n266#
+D0 a_n2500_n90# w_n2676_n266# diode_pd2nw_06v0 pj=51.8u area=22.5p
+.ends
+
+.subckt diode_pd2nw_06v0_QD74SH a_n1500_n90# w_n1676_n266#
+D0 a_n1500_n90# w_n1676_n266# diode_pd2nw_06v0 pj=31.8u area=13.5p
+.ends
+
+.subckt ppolyf_u_1k_6p0_84E4CZ a_n500_1000# a_n500_n1122# a_n712_n1334#
+X0 a_n500_1000# a_n500_n1122# a_n712_n1334# ppolyf_u_1k_6p0 r_width=5u r_length=10u
+.ends
+
+.subckt diode_nd2ps_06v0_67PAP3 a_n1652_n242# a_n1500_n90#
+D0 a_n1652_n242# a_n1500_n90# diode_nd2ps_06v0 pj=31.8u area=13.5p
+.ends
+
+.subckt MG_ESD_protection Vdd pin_facing_input GND
+Xdiode_nd2ps_06v0_XZ9LFE_0 GND GND diode_nd2ps_06v0_XZ9LFE
+Xdiode_nd2ps_06v0_XZ9LFE_1 GND GND diode_nd2ps_06v0_XZ9LFE
+Xdiode_pd2nw_06v0_WSMRF6_0 GND Vdd diode_pd2nw_06v0_WSMRF6
+Xdiode_nd2ps_06v0_XZ9LFE_2 GND GND diode_nd2ps_06v0_XZ9LFE
+Xdiode_pd2nw_06v0_WSMRF6_1 GND Vdd diode_pd2nw_06v0_WSMRF6
+Xdiode_pd2nw_06v0_WSMRF6_2 GND Vdd diode_pd2nw_06v0_WSMRF6
+Xdiode_nd2ps_06v0_XZ9LFE_3 GND GND diode_nd2ps_06v0_XZ9LFE
+Xdiode_nd2ps_06v0_XZ9LFE_4 GND GND diode_nd2ps_06v0_XZ9LFE
+Xdiode_pd2nw_06v0_WSMRF6_3 GND Vdd diode_pd2nw_06v0_WSMRF6
+Xdiode_pd2nw_06v0_QD74SH_0 pin_facing_input Vdd diode_pd2nw_06v0_QD74SH
+Xdiode_pd2nw_06v0_WSMRF6_4 GND Vdd diode_pd2nw_06v0_WSMRF6
+Xppolyf_u_1k_6p0_84E4CZ_0 pin_facing_input GND GND ppolyf_u_1k_6p0_84E4CZ
+Xdiode_nd2ps_06v0_67PAP3_0 GND pin_facing_input diode_nd2ps_06v0_67PAP3
+.ends
+
+.subckt MRTMOS_chip_final_2 pin9 pin14
+XMG_ESD_protection_0 MG_ESD_protection_0/Vdd MG_ESD_protection_0/pin_facing_input
++ pin9 MG_ESD_protection
+XMG_ESD_protection_10 MG_ESD_protection_10/Vdd MG_ESD_protection_10/pin_facing_input
++ pin9 MG_ESD_protection
+XMG_ESD_protection_1 MG_ESD_protection_1/Vdd MG_ESD_protection_1/pin_facing_input
++ pin9 MG_ESD_protection
+XMG_ESD_protection_11 MG_ESD_protection_11/Vdd MG_ESD_protection_11/pin_facing_input
++ pin9 MG_ESD_protection
+XMG_ESD_protection_2 MG_ESD_protection_2/Vdd MG_ESD_protection_2/pin_facing_input
++ pin9 MG_ESD_protection
+XMG_ESD_protection_13 MG_ESD_protection_13/Vdd MG_ESD_protection_13/pin_facing_input
++ pin9 MG_ESD_protection
+XMG_ESD_protection_12 MG_ESD_protection_12/Vdd MG_ESD_protection_12/pin_facing_input
++ pin9 MG_ESD_protection
+XMG_ESD_protection_3 MG_ESD_protection_3/Vdd MG_ESD_protection_3/pin_facing_input
++ pin9 MG_ESD_protection
+XMG_ESD_protection_14 MG_ESD_protection_14/Vdd MG_ESD_protection_14/pin_facing_input
++ pin9 MG_ESD_protection
+XMG_ESD_protection_4 MG_ESD_protection_4/Vdd MG_ESD_protection_4/pin_facing_input
++ pin9 MG_ESD_protection
+XMG_ESD_protection_15 MG_ESD_protection_15/Vdd MG_ESD_protection_15/pin_facing_input
++ pin9 MG_ESD_protection
+XMG_ESD_protection_6 MG_ESD_protection_6/Vdd MG_ESD_protection_6/pin_facing_input
++ pin9 MG_ESD_protection
+XMG_ESD_protection_5 MG_ESD_protection_5/Vdd MG_ESD_protection_5/pin_facing_input
++ pin9 MG_ESD_protection
+XMG_ESD_protection_16 MG_ESD_protection_16/Vdd MG_ESD_protection_16/pin_facing_input
++ pin9 MG_ESD_protection
+XMG_ESD_protection_7 MG_ESD_protection_7/Vdd MG_ESD_protection_7/pin_facing_input
++ pin9 MG_ESD_protection
+XMG_ESD_protection_17 MG_ESD_protection_17/Vdd MG_ESD_protection_17/pin_facing_input
++ pin9 MG_ESD_protection
+XMG_ESD_protection_8 MG_ESD_protection_8/Vdd MG_ESD_protection_8/pin_facing_input
++ pin9 MG_ESD_protection
+XMG_ESD_protection_18 MG_ESD_protection_18/Vdd MG_ESD_protection_18/pin_facing_input
++ pin9 MG_ESD_protection
+XMG_ESD_protection_9 MG_ESD_protection_9/Vdd MG_ESD_protection_9/pin_facing_input
++ pin9 MG_ESD_protection
+XMG_ESD_protection_19 MG_ESD_protection_19/Vdd MG_ESD_protection_19/pin_facing_input
++ pin9 MG_ESD_protection
+.ends
+

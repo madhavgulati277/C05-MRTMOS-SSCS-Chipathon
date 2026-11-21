@@ -1,0 +1,331 @@
+* SPICE3 file created from MRTMOS_chip_final_2.ext - technology: gf180mcuD
+
+.option scale=5n
+
+D0 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D1 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D2 pin9 MG_ESD_protection_0/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D3 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D4 pin9 MG_ESD_protection_0/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D5 pin9 MG_ESD_protection_0/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D6 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D7 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D8 pin9 MG_ESD_protection_0/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D9 MG_ESD_protection_0/pin_facing_input MG_ESD_protection_0/Vdd diode_pd2nw_06v0 pj=6360 area=540000
+D10 pin9 MG_ESD_protection_0/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+X0 MG_ESD_protection_0/pin_facing_input pin9 pin9 ppolyf_u_1k_6p0 r_width=1000 r_length=2000
+D11 pin9 MG_ESD_protection_0/pin_facing_input diode_nd2ps_06v0 pj=6360 area=540000
+D12 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D13 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D14 pin9 MG_ESD_protection_10/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D15 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D16 pin9 MG_ESD_protection_10/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D17 pin9 MG_ESD_protection_10/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D18 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D19 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D20 pin9 MG_ESD_protection_10/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D21 MG_ESD_protection_10/pin_facing_input MG_ESD_protection_10/Vdd diode_pd2nw_06v0 pj=6360 area=540000
+D22 pin9 MG_ESD_protection_10/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+X1 MG_ESD_protection_10/pin_facing_input pin9 pin9 ppolyf_u_1k_6p0 r_width=1000 r_length=2000
+D23 pin9 MG_ESD_protection_10/pin_facing_input diode_nd2ps_06v0 pj=6360 area=540000
+D24 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D25 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D26 pin9 MG_ESD_protection_1/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D27 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D28 pin9 MG_ESD_protection_1/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D29 pin9 MG_ESD_protection_1/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D30 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D31 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D32 pin9 MG_ESD_protection_1/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D33 MG_ESD_protection_1/pin_facing_input MG_ESD_protection_1/Vdd diode_pd2nw_06v0 pj=6360 area=540000
+D34 pin9 MG_ESD_protection_1/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+X2 MG_ESD_protection_1/pin_facing_input pin9 pin9 ppolyf_u_1k_6p0 r_width=1000 r_length=2000
+D35 pin9 MG_ESD_protection_1/pin_facing_input diode_nd2ps_06v0 pj=6360 area=540000
+D36 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D37 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D38 pin9 MG_ESD_protection_11/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D39 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D40 pin9 MG_ESD_protection_11/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D41 pin9 MG_ESD_protection_11/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D42 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D43 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D44 pin9 MG_ESD_protection_11/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D45 MG_ESD_protection_11/pin_facing_input MG_ESD_protection_11/Vdd diode_pd2nw_06v0 pj=6360 area=540000
+D46 pin9 MG_ESD_protection_11/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+X3 MG_ESD_protection_11/pin_facing_input pin9 pin9 ppolyf_u_1k_6p0 r_width=1000 r_length=2000
+D47 pin9 MG_ESD_protection_11/pin_facing_input diode_nd2ps_06v0 pj=6360 area=540000
+D48 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D49 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D50 pin9 MG_ESD_protection_2/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D51 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D52 pin9 MG_ESD_protection_2/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D53 pin9 MG_ESD_protection_2/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D54 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D55 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D56 pin9 MG_ESD_protection_2/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D57 MG_ESD_protection_2/pin_facing_input MG_ESD_protection_2/Vdd diode_pd2nw_06v0 pj=6360 area=540000
+D58 pin9 MG_ESD_protection_2/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+X4 MG_ESD_protection_2/pin_facing_input pin9 pin9 ppolyf_u_1k_6p0 r_width=1000 r_length=2000
+D59 pin9 MG_ESD_protection_2/pin_facing_input diode_nd2ps_06v0 pj=6360 area=540000
+D60 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D61 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D62 pin9 MG_ESD_protection_13/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D63 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D64 pin9 MG_ESD_protection_13/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D65 pin9 MG_ESD_protection_13/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D66 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D67 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D68 pin9 MG_ESD_protection_13/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D69 MG_ESD_protection_13/pin_facing_input MG_ESD_protection_13/Vdd diode_pd2nw_06v0 pj=6360 area=540000
+D70 pin9 MG_ESD_protection_13/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+X5 MG_ESD_protection_13/pin_facing_input pin9 pin9 ppolyf_u_1k_6p0 r_width=1000 r_length=2000
+D71 pin9 MG_ESD_protection_13/pin_facing_input diode_nd2ps_06v0 pj=6360 area=540000
+D72 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D73 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D74 pin9 MG_ESD_protection_12/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D75 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D76 pin9 MG_ESD_protection_12/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D77 pin9 MG_ESD_protection_12/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D78 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D79 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D80 pin9 MG_ESD_protection_12/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D81 MG_ESD_protection_12/pin_facing_input MG_ESD_protection_12/Vdd diode_pd2nw_06v0 pj=6360 area=540000
+D82 pin9 MG_ESD_protection_12/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+X6 MG_ESD_protection_12/pin_facing_input pin9 pin9 ppolyf_u_1k_6p0 r_width=1000 r_length=2000
+D83 pin9 MG_ESD_protection_12/pin_facing_input diode_nd2ps_06v0 pj=6360 area=540000
+D84 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D85 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D86 pin9 MG_ESD_protection_3/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D87 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D88 pin9 MG_ESD_protection_3/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D89 pin9 MG_ESD_protection_3/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D90 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D91 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D92 pin9 MG_ESD_protection_3/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D93 MG_ESD_protection_3/pin_facing_input MG_ESD_protection_3/Vdd diode_pd2nw_06v0 pj=6360 area=540000
+D94 pin9 MG_ESD_protection_3/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+X7 MG_ESD_protection_3/pin_facing_input pin9 pin9 ppolyf_u_1k_6p0 r_width=1000 r_length=2000
+D95 pin9 MG_ESD_protection_3/pin_facing_input diode_nd2ps_06v0 pj=6360 area=540000
+D96 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D97 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D98 pin9 MG_ESD_protection_14/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D99 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D100 pin9 MG_ESD_protection_14/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D101 pin9 MG_ESD_protection_14/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D102 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D103 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D104 pin9 MG_ESD_protection_14/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D105 MG_ESD_protection_14/pin_facing_input MG_ESD_protection_14/Vdd diode_pd2nw_06v0 pj=6360 area=540000
+D106 pin9 MG_ESD_protection_14/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+X8 MG_ESD_protection_14/pin_facing_input pin9 pin9 ppolyf_u_1k_6p0 r_width=1000 r_length=2000
+D107 pin9 MG_ESD_protection_14/pin_facing_input diode_nd2ps_06v0 pj=6360 area=540000
+D108 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D109 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D110 pin9 MG_ESD_protection_4/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D111 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D112 pin9 MG_ESD_protection_4/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D113 pin9 MG_ESD_protection_4/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D114 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D115 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D116 pin9 MG_ESD_protection_4/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D117 MG_ESD_protection_4/pin_facing_input MG_ESD_protection_4/Vdd diode_pd2nw_06v0 pj=6360 area=540000
+D118 pin9 MG_ESD_protection_4/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+X9 MG_ESD_protection_4/pin_facing_input pin9 pin9 ppolyf_u_1k_6p0 r_width=1000 r_length=2000
+D119 pin9 MG_ESD_protection_4/pin_facing_input diode_nd2ps_06v0 pj=6360 area=540000
+D120 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D121 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D122 pin9 MG_ESD_protection_15/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D123 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D124 pin9 MG_ESD_protection_15/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D125 pin9 MG_ESD_protection_15/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D126 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D127 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D128 pin9 MG_ESD_protection_15/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D129 MG_ESD_protection_15/pin_facing_input MG_ESD_protection_15/Vdd diode_pd2nw_06v0 pj=6360 area=540000
+D130 pin9 MG_ESD_protection_15/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+X10 MG_ESD_protection_15/pin_facing_input pin9 pin9 ppolyf_u_1k_6p0 r_width=1000 r_length=2000
+D131 pin9 MG_ESD_protection_15/pin_facing_input diode_nd2ps_06v0 pj=6360 area=540000
+D132 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D133 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D134 pin9 MG_ESD_protection_6/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D135 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D136 pin9 MG_ESD_protection_6/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D137 pin9 MG_ESD_protection_6/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D138 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D139 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D140 pin9 MG_ESD_protection_6/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D141 MG_ESD_protection_6/pin_facing_input MG_ESD_protection_6/Vdd diode_pd2nw_06v0 pj=6360 area=540000
+D142 pin9 MG_ESD_protection_6/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+X11 MG_ESD_protection_6/pin_facing_input pin9 pin9 ppolyf_u_1k_6p0 r_width=1000 r_length=2000
+D143 pin9 MG_ESD_protection_6/pin_facing_input diode_nd2ps_06v0 pj=6360 area=540000
+D144 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D145 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D146 pin9 MG_ESD_protection_5/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D147 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D148 pin9 MG_ESD_protection_5/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D149 pin9 MG_ESD_protection_5/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D150 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D151 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D152 pin9 MG_ESD_protection_5/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D153 MG_ESD_protection_5/pin_facing_input MG_ESD_protection_5/Vdd diode_pd2nw_06v0 pj=6360 area=540000
+D154 pin9 MG_ESD_protection_5/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+X12 MG_ESD_protection_5/pin_facing_input pin9 pin9 ppolyf_u_1k_6p0 r_width=1000 r_length=2000
+D155 pin9 MG_ESD_protection_5/pin_facing_input diode_nd2ps_06v0 pj=6360 area=540000
+D156 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D157 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D158 pin9 MG_ESD_protection_16/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D159 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D160 pin9 MG_ESD_protection_16/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D161 pin9 MG_ESD_protection_16/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D162 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D163 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D164 pin9 MG_ESD_protection_16/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D165 MG_ESD_protection_16/pin_facing_input MG_ESD_protection_16/Vdd diode_pd2nw_06v0 pj=6360 area=540000
+D166 pin9 MG_ESD_protection_16/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+X13 MG_ESD_protection_16/pin_facing_input pin9 pin9 ppolyf_u_1k_6p0 r_width=1000 r_length=2000
+D167 pin9 MG_ESD_protection_16/pin_facing_input diode_nd2ps_06v0 pj=6360 area=540000
+D168 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D169 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D170 pin9 MG_ESD_protection_7/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D171 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D172 pin9 MG_ESD_protection_7/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D173 pin9 MG_ESD_protection_7/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D174 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D175 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D176 pin9 MG_ESD_protection_7/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D177 MG_ESD_protection_7/pin_facing_input MG_ESD_protection_7/Vdd diode_pd2nw_06v0 pj=6360 area=540000
+D178 pin9 MG_ESD_protection_7/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+X14 MG_ESD_protection_7/pin_facing_input pin9 pin9 ppolyf_u_1k_6p0 r_width=1000 r_length=2000
+D179 pin9 MG_ESD_protection_7/pin_facing_input diode_nd2ps_06v0 pj=6360 area=540000
+D180 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D181 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D182 pin9 MG_ESD_protection_17/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D183 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D184 pin9 MG_ESD_protection_17/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D185 pin9 MG_ESD_protection_17/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D186 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D187 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D188 pin9 MG_ESD_protection_17/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D189 MG_ESD_protection_17/pin_facing_input MG_ESD_protection_17/Vdd diode_pd2nw_06v0 pj=6360 area=540000
+D190 pin9 MG_ESD_protection_17/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+X15 MG_ESD_protection_17/pin_facing_input pin9 pin9 ppolyf_u_1k_6p0 r_width=1000 r_length=2000
+D191 pin9 MG_ESD_protection_17/pin_facing_input diode_nd2ps_06v0 pj=6360 area=540000
+D192 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D193 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D194 pin9 MG_ESD_protection_8/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D195 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D196 pin9 MG_ESD_protection_8/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D197 pin9 MG_ESD_protection_8/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D198 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D199 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D200 pin9 MG_ESD_protection_8/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D201 MG_ESD_protection_8/pin_facing_input MG_ESD_protection_8/Vdd diode_pd2nw_06v0 pj=6360 area=540000
+D202 pin9 MG_ESD_protection_8/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+X16 MG_ESD_protection_8/pin_facing_input pin9 pin9 ppolyf_u_1k_6p0 r_width=1000 r_length=2000
+D203 pin9 MG_ESD_protection_8/pin_facing_input diode_nd2ps_06v0 pj=6360 area=540000
+D204 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D205 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D206 pin9 MG_ESD_protection_18/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D207 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D208 pin9 MG_ESD_protection_18/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D209 pin9 MG_ESD_protection_18/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D210 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D211 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D212 pin9 MG_ESD_protection_18/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D213 MG_ESD_protection_18/pin_facing_input MG_ESD_protection_18/Vdd diode_pd2nw_06v0 pj=6360 area=540000
+D214 pin9 MG_ESD_protection_18/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+X17 MG_ESD_protection_18/pin_facing_input pin9 pin9 ppolyf_u_1k_6p0 r_width=1000 r_length=2000
+D215 pin9 MG_ESD_protection_18/pin_facing_input diode_nd2ps_06v0 pj=6360 area=540000
+D216 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D217 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D218 pin9 MG_ESD_protection_9/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D219 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D220 pin9 MG_ESD_protection_9/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D221 pin9 MG_ESD_protection_9/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D222 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D223 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D224 pin9 MG_ESD_protection_9/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D225 MG_ESD_protection_9/pin_facing_input MG_ESD_protection_9/Vdd diode_pd2nw_06v0 pj=6360 area=540000
+D226 pin9 MG_ESD_protection_9/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+X18 MG_ESD_protection_9/pin_facing_input pin9 pin9 ppolyf_u_1k_6p0 r_width=1000 r_length=2000
+D227 pin9 MG_ESD_protection_9/pin_facing_input diode_nd2ps_06v0 pj=6360 area=540000
+D228 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D229 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D230 pin9 MG_ESD_protection_19/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D231 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D232 pin9 MG_ESD_protection_19/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D233 pin9 MG_ESD_protection_19/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D234 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D235 pin9 pin9 diode_nd2ps_06v0 pj=10360 area=900000
+D236 pin9 MG_ESD_protection_19/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+D237 MG_ESD_protection_19/pin_facing_input MG_ESD_protection_19/Vdd diode_pd2nw_06v0 pj=6360 area=540000
+D238 pin9 MG_ESD_protection_19/Vdd diode_pd2nw_06v0 pj=10360 area=900000
+X19 MG_ESD_protection_19/pin_facing_input pin9 pin9 ppolyf_u_1k_6p0 r_width=1000 r_length=2000
+D239 pin9 MG_ESD_protection_19/pin_facing_input diode_nd2ps_06v0 pj=6360 area=540000
+C0 MG_ESD_protection_15/pin_facing_input MG_ESD_protection_15/Vdd 5.34268f
+C1 MG_ESD_protection_9/pin_facing_input pin14 5.36621f
+C2 MG_ESD_protection_4/Vdd MG_ESD_protection_4/pin_facing_input 5.34268f
+C3 MG_ESD_protection_13/Vdd MG_ESD_protection_13/pin_facing_input 5.34268f
+C4 MG_ESD_protection_3/pin_facing_input MG_ESD_protection_3/Vdd 5.34268f
+C5 MG_ESD_protection_12/Vdd pin14 8.27961f
+C6 MG_ESD_protection_5/Vdd MG_ESD_protection_5/pin_facing_input 5.34268f
+C7 MG_ESD_protection_0/pin_facing_input MG_ESD_protection_0/Vdd 5.34268f
+C8 MG_ESD_protection_8/pin_facing_input MG_ESD_protection_8/Vdd 5.34268f
+C9 MG_ESD_protection_17/pin_facing_input MG_ESD_protection_17/Vdd 5.34268f
+C10 MG_ESD_protection_12/Vdd MG_ESD_protection_12/pin_facing_input 5.34268f
+C11 MG_ESD_protection_11/Vdd MG_ESD_protection_11/pin_facing_input 5.34268f
+C12 MG_ESD_protection_16/pin_facing_input pin14 5.37509f
+C13 MG_ESD_protection_1/Vdd MG_ESD_protection_1/pin_facing_input 5.34268f
+C14 MG_ESD_protection_7/Vdd MG_ESD_protection_7/pin_facing_input 5.34268f
+C15 pin14 MG_ESD_protection_1/pin_facing_input 2.05844f
+C16 MG_ESD_protection_14/pin_facing_input MG_ESD_protection_14/Vdd 5.34268f
+C17 MG_ESD_protection_9/pin_facing_input MG_ESD_protection_9/Vdd 5.34268f
+C18 MG_ESD_protection_19/pin_facing_input MG_ESD_protection_19/Vdd 5.34268f
+C19 MG_ESD_protection_6/pin_facing_input MG_ESD_protection_6/Vdd 5.34268f
+C20 MG_ESD_protection_18/pin_facing_input MG_ESD_protection_18/Vdd 5.34268f
+C21 MG_ESD_protection_10/Vdd MG_ESD_protection_10/pin_facing_input 5.34268f
+C22 MG_ESD_protection_16/Vdd MG_ESD_protection_16/pin_facing_input 5.34268f
+C23 MG_ESD_protection_5/Vdd pin14 4.55015f
+C24 MG_ESD_protection_8/pin_facing_input pin14 2.08456f
+C25 MG_ESD_protection_2/Vdd MG_ESD_protection_2/pin_facing_input 5.34268f
+C26 pin14 pin9 6.04141p
+C27 MG_ESD_protection_19/pin_facing_input pin9 14.74299f
+C28 MG_ESD_protection_19/Vdd pin9 0.14473p
+C29 MG_ESD_protection_9/pin_facing_input pin9 14.72487f
+C30 MG_ESD_protection_9/Vdd pin9 0.14503p
+C31 MG_ESD_protection_18/pin_facing_input pin9 14.71801f
+C32 MG_ESD_protection_18/Vdd pin9 0.14473p
+C33 MG_ESD_protection_8/pin_facing_input pin9 14.72487f
+C34 MG_ESD_protection_8/Vdd pin9 0.14484p
+C35 MG_ESD_protection_17/pin_facing_input pin9 18.17917f
+C36 MG_ESD_protection_17/Vdd pin9 0.14473p
+C37 MG_ESD_protection_7/pin_facing_input pin9 14.71801f
+C38 MG_ESD_protection_7/Vdd pin9 0.14474p
+C39 MG_ESD_protection_16/pin_facing_input pin9 14.71801f
+C40 MG_ESD_protection_16/Vdd pin9 0.14473p
+C41 MG_ESD_protection_5/pin_facing_input pin9 14.71801f
+C42 MG_ESD_protection_5/Vdd pin9 0.14473p
+C43 MG_ESD_protection_6/pin_facing_input pin9 14.72124f
+C44 MG_ESD_protection_6/Vdd pin9 0.14776p
+C45 MG_ESD_protection_15/pin_facing_input pin9 18.77712f
+C46 MG_ESD_protection_15/Vdd pin9 0.14473p
+C47 MG_ESD_protection_4/pin_facing_input pin9 15.11064f
+C48 MG_ESD_protection_4/Vdd pin9 0.14762p
+C49 MG_ESD_protection_14/pin_facing_input pin9 14.71801f
+C50 MG_ESD_protection_14/Vdd pin9 0.14473p
+C51 MG_ESD_protection_3/pin_facing_input pin9 14.71801f
+C52 MG_ESD_protection_3/Vdd pin9 0.14473p
+C53 MG_ESD_protection_12/pin_facing_input pin9 14.71801f
+C54 MG_ESD_protection_12/Vdd pin9 0.14473p
+C55 MG_ESD_protection_13/pin_facing_input pin9 15.43846f
+C56 MG_ESD_protection_13/Vdd pin9 0.14961p
+C57 MG_ESD_protection_2/pin_facing_input pin9 16.4032f
+C58 MG_ESD_protection_2/Vdd pin9 0.14473p
+C59 MG_ESD_protection_11/pin_facing_input pin9 14.72042f
+C60 MG_ESD_protection_11/Vdd pin9 0.14908p
+C61 MG_ESD_protection_1/pin_facing_input pin9 14.71801f
+C62 MG_ESD_protection_1/Vdd pin9 0.14473p
+C63 MG_ESD_protection_10/pin_facing_input pin9 14.71801f
+C64 MG_ESD_protection_10/Vdd pin9 0.14478p
+C65 MG_ESD_protection_0/pin_facing_input pin9 16.06777f
+C66 MG_ESD_protection_0/Vdd pin9 0.14473p

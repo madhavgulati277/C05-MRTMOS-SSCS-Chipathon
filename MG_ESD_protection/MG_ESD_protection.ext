@@ -1,4 +1,4 @@
-timestamp 1792231577
+timestamp 1795283515
 version 8.3
 tech gf180mcuD
 style ngspice()
@@ -17,11 +17,11 @@ use diode_nd2ps_06v0_XZ9LFE diode_nd2ps_06v0_XZ9LFE_2 1 0 8558 0 1 -1450
 use diode_pd2nw_06v0_WSMRF6 diode_pd2nw_06v0_WSMRF6_0 -1 0 2608 0 1 232
 use diode_nd2ps_06v0_XZ9LFE diode_nd2ps_06v0_XZ9LFE_0 1 0 8531 0 1 350
 use diode_nd2ps_06v0_XZ9LFE diode_nd2ps_06v0_XZ9LFE_1 1 0 8540 0 1 -574
-port "pin_facing_input" 3 5730 -5500 6620 -5280 m2
-port "external_input_pin" 4 5520 -300 5780 390 m2
+port "pin_facing_input" 5 11400 -5710 12270 -4890 m3
+port "external_input_pin" 6 3260 950 6340 1290 m2
 port "Vdd" 1 720 760 1560 930 m2
-port "GND" 2 9410 -3830 10760 -3610 m2
-node "pin_facing_input" 5 4860.55 5730 -5500 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 424900 6800 2746000 15480 2705200 11380 0 0 0 0
+port "GND" 4 5170 -6450 6600 -5710 m2
+node "pin_facing_input" 5 5022.64 11400 -5710 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 424900 6800 2746000 15480 2999900 12120 0 0 0 0
 node "m1_3300_n4580#" 1 700.642 3300 -4580 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 316800 4280 0 0 0 0 0 0 0 0
 node "m1_3300_n4160#" 1 579.189 3300 -4160 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 277200 4240 0 0 0 0 0 0 0 0
 node "m1_3280_n3420#" 1 586.771 3280 -3420 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 277200 4240 0 0 0 0 0 0 0 0
@@ -31,219 +31,195 @@ node "m1_3240_n1840#" 2 578.694 3240 -1840 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "m1_3300_n1120#" 1 580.129 3300 -1120 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 268800 4120 0 0 0 0 0 0 0 0
 node "m1_3320_n720#" 1 593.64 3320 -720 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 310400 4200 0 0 0 0 0 0 0 0
 node "m1_3260_n60#" 1 603.974 3260 -60 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 310400 4200 0 0 0 0 0 0 0 0
-node "external_input_pin" 21 16415.9 5520 -300 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1844200 40740 24608300 21520 4569600 15560 0 0 0 0
+node "external_input_pin" 20 15802.8 3260 950 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1844200 40740 26600100 22800 0 0 0 0 0 0
 node "m1_3260_360#" 1 732.549 3260 360 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 310400 4200 0 0 0 0 0 0 0 0
-node "Vdd" 24 13160.6 720 760 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2470600 50940 13936700 18540 0 0 0 0 0 0
-node "GND" 32 27691.7 9410 -3830 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5465000 81540 21572200 69860 0 0 0 0 0 0
+node "Vdd" 24 12906.6 720 760 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2470600 50940 13384400 17840 0 0 0 0 0 0
+node "GND" 32 27468.7 5170 -6450 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5465000 81540 21361400 68580 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "GND" "m1_3260_360#" 4.93398
-cap "GND" "m1_3240_n1840#" 4.72086
-cap "GND" "m1_3300_n1120#" 3.64593
-cap "GND" "m1_3280_n3420#" 3.96143
-cap "m1_3280_n3020#" "Vdd" 3.03802
-cap "GND" "m1_3300_n4160#" 3.64593
-cap "m1_3260_n60#" "external_input_pin" 1641.86
-cap "m1_3280_n3020#" "m1_3280_n3420#" 35.6506
-cap "m1_3280_n3020#" "m1_3300_n4160#" 0.818424
-cap "m1_3300_n4580#" "Vdd" 4.23907
-cap "m1_3260_n60#" "m1_3320_n720#" 155.434
-cap "Vdd" "external_input_pin" 3187.43
-cap "pin_facing_input" "Vdd" 5.01816
-cap "Vdd" "m1_3320_n720#" 4.54968
-cap "m1_3280_n3020#" "GND" 3.39551
-cap "m1_3300_n4580#" "m1_3300_n4160#" 35.6506
-cap "m1_3260_360#" "external_input_pin" 1721.27
-cap "m1_3240_n1840#" "external_input_pin" 1552.95
-cap "m1_3300_n1120#" "external_input_pin" 1579.64
-cap "m1_3240_n2240#" "Vdd" 3.97028
-cap "m1_3240_n1840#" "m1_3320_n720#" 1.63685
-cap "m1_3280_n3420#" "external_input_pin" 1813.73
-cap "external_input_pin" "m1_3300_n4160#" 1820.83
-cap "m1_3300_n1120#" "m1_3320_n720#" 22.6867
-cap "m1_3300_n4580#" "GND" 15.0815
-cap "m1_3240_n2240#" "m1_3240_n1840#" 39.0116
-cap "GND" "external_input_pin" 3089.6
-cap "GND" "pin_facing_input" 4777.45
-cap "GND" "m1_3320_n720#" 3.846
-cap "m1_3260_n60#" "Vdd" 4.92079
-cap "m1_3240_n2240#" "GND" 4.72086
-cap "m1_3280_n3020#" "external_input_pin" 1565.69
+cap "m1_3320_n720#" "external_input_pin" 1854.8
+cap "m1_3240_n1840#" "GND" 4.72086
 cap "m1_3260_n60#" "m1_3260_360#" 29.1686
-cap "m1_3260_n60#" "m1_3300_n1120#" 0.890374
-cap "m1_3240_n2240#" "m1_3280_n3020#" 123.406
-cap "m1_3300_n4580#" "external_input_pin" 1576.66
-cap "m1_3300_n4580#" "pin_facing_input" 64.2203
-cap "Vdd" "m1_3260_360#" 4.92079
-cap "Vdd" "m1_3240_n1840#" 3.92556
-cap "Vdd" "m1_3300_n1120#" 3.79565
-cap "Vdd" "m1_3280_n3420#" 3.93062
-cap "Vdd" "m1_3300_n4160#" 3.8145
+cap "m1_3240_n2240#" "Vdd" 3.97028
+cap "m1_3280_n3020#" "Vdd" 3.03802
 cap "m1_3260_n60#" "GND" 4.93398
+cap "m1_3260_360#" "GND" 4.93398
+cap "m1_3280_n3420#" "external_input_pin" 1813.73
+cap "m1_3300_n1120#" "external_input_pin" 1579.64
+cap "m1_3300_n4160#" "GND" 3.64593
+cap "m1_3300_n4580#" "Vdd" 4.23907
+cap "m1_3240_n1840#" "external_input_pin" 1552.79
+cap "m1_3320_n720#" "Vdd" 4.54968
+cap "m1_3280_n3020#" "m1_3280_n3420#" 35.6506
+cap "external_input_pin" "m1_3260_n60#" 1635.58
+cap "m1_3240_n1840#" "m1_3240_n2240#" 39.0116
+cap "external_input_pin" "m1_3260_360#" 1867.31
+cap "pin_facing_input" "GND" 4833.49
+cap "external_input_pin" "GND" 1807.77
+cap "m1_3300_n4160#" "external_input_pin" 1820.83
+cap "m1_3280_n3420#" "Vdd" 3.93062
+cap "m1_3300_n1120#" "Vdd" 3.79565
+cap "m1_3320_n720#" "m1_3300_n1120#" 22.6867
+cap "m1_3240_n1840#" "Vdd" 3.92556
+cap "m1_3240_n2240#" "GND" 4.72086
+cap "m1_3240_n1840#" "m1_3320_n720#" 1.63685
+cap "m1_3280_n3020#" "GND" 3.39551
+cap "m1_3300_n4160#" "m1_3280_n3020#" 0.818424
+cap "Vdd" "m1_3260_n60#" 4.92079
+cap "Vdd" "m1_3260_360#" 4.92079
 cap "pin_facing_input" "external_input_pin" 336.209
-cap "external_input_pin" "m1_3320_n720#" 1854.59
-cap "m1_3240_n1840#" "m1_3300_n1120#" 131.836
-cap "m1_3280_n3420#" "m1_3300_n4160#" 134.582
-cap "GND" "Vdd" 3403.62
+cap "m1_3320_n720#" "m1_3260_n60#" 155.434
+cap "Vdd" "GND" 3285.65
+cap "m1_3300_n4160#" "Vdd" 3.8145
+cap "m1_3300_n4580#" "GND" 15.0815
+cap "m1_3300_n4160#" "m1_3300_n4580#" 35.6506
 cap "m1_3240_n2240#" "external_input_pin" 1556.84
-cap "diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" 0.0590849
-cap "diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" "diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" 0.0207895
-cap "diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" "diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" 4.73986
-cap "diode_pd2nw_06v0_QD74SH_0/a_n1820_n410#" "diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" 307.154
-cap "diode_pd2nw_06v0_QD74SH_0/a_n1820_n410#" "diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" 0.109752
-cap "diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" "diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" 799.007
-cap "diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" "diode_pd2nw_06v0_QD74SH_0/a_n1820_n410#" 0.743376
-cap "diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" "diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" -1.59761
-cap "diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" "diode_pd2nw_06v0_QD74SH_0/a_n1820_n410#" 587.446
-cap "diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" "diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" 927.37
-cap "diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" "diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" 0.0719685
-cap "diode_pd2nw_06v0_QD74SH_0/a_n1820_n410#" "diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" 116.591
-cap "diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" "diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" -5.3229
+cap "m1_3240_n1840#" "m1_3300_n1120#" 131.836
+cap "m1_3320_n720#" "GND" 3.846
+cap "m1_3280_n3020#" "external_input_pin" 1565.69
+cap "m1_3300_n1120#" "m1_3260_n60#" 0.890374
+cap "m1_3240_n2240#" "m1_3280_n3020#" 123.406
+cap "pin_facing_input" "Vdd" 5.01816
+cap "external_input_pin" "Vdd" 13.7632
+cap "m1_3280_n3420#" "GND" 3.96143
+cap "m1_3300_n4160#" "m1_3280_n3420#" 134.582
+cap "m1_3300_n4580#" "pin_facing_input" 64.2203
+cap "m1_3300_n1120#" "GND" 3.64593
+cap "m1_3300_n4580#" "external_input_pin" 1576.66
+cap "diode_pd2nw_06v0_QD74SH_0/a_n1820_n410#" "diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" 0.0590849
+cap "diode_pd2nw_06v0_QD74SH_0/a_n1820_n410#" "diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" 0.0207895
+cap "diode_pd2nw_06v0_QD74SH_0/a_n1820_n410#" "diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" 12.0417
+cap "diode_pd2nw_06v0_QD74SH_0/a_n1820_n410#" "diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" 542.617
+cap "diode_pd2nw_06v0_QD74SH_0/a_n1820_n410#" "diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" 1.29686
+cap "diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" "diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" 1533.98
+cap "diode_pd2nw_06v0_QD74SH_0/a_n1820_n410#" "diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" 0.0994334
+cap "diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" "diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" 0.0719685
+cap "diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" 416.028
+cap "diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" "diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" 24.7781
+cap "diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" "diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" -5.36888
+cap "diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" "diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" 336.924
+cap "diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" 0.643943
+cap "ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1122#" "diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" -1.91872
+cap "diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" 54.026
 cap "ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1122#" "diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" -0.597967
-cap "diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" 125.373
-cap "diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" "ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1122#" -5.68999
-cap "diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" "diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" 363.814
-cap "ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#" "diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" 24.0877
-cap "ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#" "ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1122#" 3.69008
-cap "diode_nd2ps_06v0_XZ9LFE_4/a_n2652_n242#" "GND" 16.7467
-cap "diode_nd2ps_06v0_XZ9LFE_4/a_n2652_n242#" "ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1122#" 8.07553
-cap "diode_nd2ps_06v0_XZ9LFE_4/a_n2652_n242#" "ppolyf_u_1k_6p0_84E4CZ_0/a_n500_1000#" 217.828
-cap "ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1122#" "ppolyf_u_1k_6p0_84E4CZ_0/a_n500_1000#" 3.53276
-cap "diode_nd2ps_06v0_XZ9LFE_4/a_n2652_n242#" "ppolyf_u_1k_6p0_84E4CZ_0/a_n500_1000#" 552.671
-cap "ppolyf_u_1k_6p0_84E4CZ_0/a_n500_1000#" "diode_nd2ps_06v0_67PAP3_0/a_n1652_n242#" 1091.59
-cap "diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "pin_facing_input" 6.60234
-cap "diode_nd2ps_06v0_67PAP3_0/a_n1652_n242#" "diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" 1170.89
-cap "diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" 1.79728
-cap "diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" "diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" 120.365
-cap "diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" "diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" 463.698
-cap "diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" "diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" 1876.22
+cap "diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" "diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" 85.3025
+cap "diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" "diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" 219.287
+cap "ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#" "ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1122#" 11.7656
+cap "diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#" 102.064
+cap "diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1122#" 3.53276
+cap "diode_nd2ps_06v0_XZ9LFE_4/a_n2652_n242#" "ppolyf_u_1k_6p0_84E4CZ_0/a_n500_1000#" 355.904
+cap "ppolyf_u_1k_6p0_84E4CZ_0/a_n500_1000#" "diode_nd2ps_06v0_67PAP3_0/a_n1652_n242#" 408.719
+cap "ppolyf_u_1k_6p0_84E4CZ_0/a_n500_1000#" "pin_facing_input" 20.5163
+cap "pin_facing_input" "diode_nd2ps_06v0_67PAP3_0/a_n1652_n242#" 1.6701
+cap "ppolyf_u_1k_6p0_84E4CZ_0/a_n500_1000#" "diode_nd2ps_06v0_67PAP3_0/a_n1652_n242#" 1782.48
+cap "diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "diode_nd2ps_06v0_67PAP3_0/a_n1652_n242#" 406.227
+cap "diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "pin_facing_input" 2.22346
+cap "diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 1.79728
+cap "diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" "diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 1132.47
+cap "diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" "diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" 317.275
+cap "diode_pd2nw_06v0_WSMRF6_3/a_n2500_n90#" "diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" 467.405
+cap "diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" "diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 1889.99
 cap "diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" "diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" 0.0423156
-cap "diode_pd2nw_06v0_WSMRF6_3/a_n2500_n90#" "diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" 483.639
-cap "diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" "diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" 248.008
-cap "diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" "diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" -0.654135
-cap "diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" "diode_pd2nw_06v0_QD74SH_0/a_n1820_n410#" 221.028
-cap "diode_pd2nw_06v0_QD74SH_0/a_n1820_n410#" "diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" 1015.79
-cap "diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" "diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" 2.79152
-cap "diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 554.806
-cap "diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" 914.891
-cap "diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" "diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" -33.8574
-cap "diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" -343.466
-cap "diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" "diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" 10.5568
-cap "diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" -18.8196
-cap "diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" -18.9486
-cap "diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" 1123.76
-cap "diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" 389.309
-cap "diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" "diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" -0.13148
-cap "diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" "diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" -5.94174
-cap "diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" 6.07115
-cap "diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" "GND" -0.352572
-cap "diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" "diode_nd2ps_06v0_XZ9LFE_4/a_n2652_n242#" 12.0036
-cap "diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" "ppolyf_u_1k_6p0_84E4CZ_0/a_n500_1000#" -1.47645
-cap "ppolyf_u_1k_6p0_84E4CZ_0/a_n500_1000#" "diode_nd2ps_06v0_XZ9LFE_4/a_n2652_n242#" -0.92566
+cap "diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_3/a_n2500_n90#" 446.599
+cap "diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" 707.781
+cap "diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" "diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" -19.297
+cap "diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_3/a_n2500_n90#" -72.3501
+cap "diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" "diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" 10.8685
+cap "diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" "diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" -224.829
+cap "diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" "diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" 539.902
+cap "diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 925.409
+cap "diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" "diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" -21.1562
+cap "diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" "ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#" 4.25285
+cap "diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" "diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" -1.60794
+cap "diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#" 2.47978
+cap "diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" "diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" 7.76059
+cap "diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" "ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#" 923.312
+cap "diode_nd2ps_06v0_XZ9LFE_4/a_n2652_n242#" "diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" -0.492245
+cap "diode_nd2ps_06v0_XZ9LFE_4/a_n2652_n242#" "ppolyf_u_1k_6p0_84E4CZ_0/a_n500_1000#" -2.721
+cap "ppolyf_u_1k_6p0_84E4CZ_0/a_n500_1000#" "diode_nd2ps_06v0_67PAP3_0/a_n1652_n242#" 286.565
 cap "ppolyf_u_1k_6p0_84E4CZ_0/a_n500_1000#" "diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" 0.628718
-cap "ppolyf_u_1k_6p0_84E4CZ_0/a_n500_1000#" "diode_nd2ps_06v0_XZ9LFE_4/a_n2652_n242#" 284.553
-cap "diode_nd2ps_06v0_67PAP3_0/a_n1652_n242#" "ppolyf_u_1k_6p0_84E4CZ_0/a_n500_1000#" 0.348134
-cap "diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_3/a_n2500_n90#" 3.72779
-cap "diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" "diode_pd2nw_06v0_WSMRF6_3/a_n2500_n90#" 123.131
-cap "diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" "diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" 859.099
-cap "diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" "diode_pd2nw_06v0_WSMRF6_1/a_n2500_n90#" 483.639
-cap "diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" "diode_pd2nw_06v0_WSMRF6_1/a_n2820_n410#" 2934.67
-cap "diode_pd2nw_06v0_QD74SH_0/a_n1820_n410#" "diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" 1364.38
-cap "diode_pd2nw_06v0_QD74SH_0/a_n1820_n410#" "diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" 216.755
-cap "diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" "diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" 211.661
-cap "diode_pd2nw_06v0_QD74SH_0/a_n1820_n410#" "pin_facing_input" -0.00273802
-cap "diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" "diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" 984.105
-cap "diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" "diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" -375.046
-cap "diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" 494.889
-cap "diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" -18.9486
-cap "diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 30.8549
-cap "diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 1137.97
-cap "diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" -16.8281
-cap "diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" -20.3919
-cap "diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" 198.244
-cap "diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" "diode_nd2ps_06v0_XZ9LFE_1/a_n2652_n242#" 864.086
-cap "diode_nd2ps_06v0_XZ9LFE_1/a_n2652_n242#" "diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" 486.655
-cap "diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" "ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#" 3162.11
-cap "diode_nd2ps_06v0_XZ9LFE_3/a_n2500_n90#" "diode_nd2ps_06v0_XZ9LFE_4/a_n2652_n242#" 636.328
-cap "diode_nd2ps_06v0_XZ9LFE_4/a_n2652_n242#" "diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" 942.501
-cap "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_2/a_n2500_n90#" 124.989
-cap "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_1/a_n2500_n90#" 2.65631
-cap "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_2/a_n2500_n90#" 5.20326
-cap "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" 527.117
-cap "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_1/a_n2500_n90#" 62.5591
-cap "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" 725.458
-cap "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" 1439.13
-cap "external_input_pin" "diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" -0.375739
-cap "diode_pd2nw_06v0_WSMRF6_3/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" 283.008
-cap "external_input_pin" "diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" -0.0825634
-cap "diode_pd2nw_06v0_WSMRF6_3/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" 319.07
-cap "diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" 1005
-cap "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" 622.079
-cap "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" 638.789
-cap "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" -799.607
-cap "diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" -16.8281
-cap "diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" -35.1506
-cap "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" -116.473
-cap "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" 7.28273
-cap "diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 143.093
-cap "diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 112.864
-cap "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 957.264
-cap "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "diode_nd2ps_06v0_XZ9LFE_1/a_n2652_n242#" 1040.41
-cap "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "diode_nd2ps_06v0_XZ9LFE_1/a_n2652_n242#" 627.025
-cap "ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#" "diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" 1728.05
-cap "diode_nd2ps_06v0_XZ9LFE_4/a_n2652_n242#" "diode_nd2ps_06v0_XZ9LFE_3/a_n2500_n90#" 165.036
-cap "diode_nd2ps_06v0_XZ9LFE_4/a_n2652_n242#" "diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" 701.201
-cap "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "external_input_pin" 31.2173
-cap "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" 137.941
+cap "ppolyf_u_1k_6p0_84E4CZ_0/a_n500_1000#" "diode_nd2ps_06v0_67PAP3_0/a_n1652_n242#" 0.132051
+cap "diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" "diode_pd2nw_06v0_WSMRF6_3/a_n2500_n90#" 320.041
+cap "diode_pd2nw_06v0_WSMRF6_1/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_3/a_n2500_n90#" 3.72779
+cap "diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" "diode_pd2nw_06v0_WSMRF6_1/a_n2820_n410#" 2053.93
+cap "diode_pd2nw_06v0_WSMRF6_1/a_n2500_n90#" "diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" 458.536
+cap "diode_pd2nw_06v0_WSMRF6_1/a_n2820_n410#" "diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" 2643.88
+cap "diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 661.835
+cap "pin_facing_input" "diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" -0.00273802
+cap "diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_2/a_n2500_n90#" -112.843
+cap "diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_2/a_n2500_n90#" 617.426
+cap "diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" "diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" -234.424
+cap "diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 988.487
+cap "diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 485.149
+cap "ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#" "diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" 1107.3
+cap "diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" -8.31626
+cap "ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#" "diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" 37.3485
+cap "diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" "diode_nd2ps_06v0_XZ9LFE_1/a_n2652_n242#" 799.828
+cap "ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#" "diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" 1469.62
+cap "ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#" "diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" 3152.57
+cap "diode_nd2ps_06v0_XZ9LFE_3/a_n2500_n90#" "diode_nd2ps_06v0_XZ9LFE_4/a_n2652_n242#" 121.563
+cap "diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" "diode_nd2ps_06v0_XZ9LFE_4/a_n2652_n242#" 173.722
+cap "diode_pd2nw_06v0_WSMRF6_2/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 5.20326
+cap "diode_pd2nw_06v0_WSMRF6_1/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" 161.014
+cap "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_2/a_n2500_n90#" 321.899
+cap "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 1113.05
 cap "diode_pd2nw_06v0_WSMRF6_1/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 2.65631
-cap "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 644.007
-cap "diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 7.53847
-cap "diode_pd2nw_06v0_WSMRF6_2/a_n2500_n90#" "external_input_pin" 0.206109
-cap "diode_pd2nw_06v0_WSMRF6_1/a_n2500_n90#" "external_input_pin" 1.37501
-cap "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" "external_input_pin" 30.4859
-cap "diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" "external_input_pin" 8.53086
-cap "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_1/a_n2500_n90#" 62.5876
-cap "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" 768.802
-cap "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "external_input_pin" 43.9769
-cap "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 2004.31
-cap "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" "external_input_pin" -7.99543
-cap "external_input_pin" "diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" 15.8225
-cap "external_input_pin" "diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 61.0809
-cap "external_input_pin" "diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" 86.6574
-cap "diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" 1088.77
-cap "external_input_pin" "diode_pd2nw_06v0_WSMRF6_2/a_n2500_n90#" 60.7306
-cap "diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_2/a_n2500_n90#" 284.136
-cap "diode_pd2nw_06v0_WSMRF6_2/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" 343.173
-cap "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" 1566.99
-cap "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" 628.278
-cap "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" -615.913
-cap "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" 255.549
-cap "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" -59.1174
-cap "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" 350.347
-cap "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" 1.20821e-15
-cap "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" 13.5068
-cap "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" 1087.45
-cap "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" -39.6852
-cap "diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" -0.818424
-cap "diode_nd2ps_06v0_XZ9LFE_1/a_n2652_n242#" "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" 1163.78
-cap "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" -0.757234
-cap "diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" -1.17996
-cap "diode_nd2ps_06v0_XZ9LFE_1/a_n2652_n242#" "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" 697.597
-cap "diode_nd2ps_06v0_XZ9LFE_3/a_n2652_n242#" "diode_nd2ps_06v0_XZ9LFE_3/a_n2500_n90#" 2739.12
-cap "diode_nd2ps_06v0_XZ9LFE_3/a_n2652_n242#" "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" 695.581
-cap "diode_nd2ps_06v0_XZ9LFE_3/a_n2652_n242#" "diode_nd2ps_06v0_XZ9LFE_0/a_n2500_n90#" 674.569
-cap "external_input_pin" "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 0.19701
-cap "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" 118.321
-cap "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" 472.227
-cap "diode_pd2nw_06v0_WSMRF6_1/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_1/a_n2820_n410#" 7.94044
-cap "diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_1/a_n2820_n410#" 62.3666
-cap "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" 155.608
-cap "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 269.717
-cap "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" 92.4746
-cap "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 131.259
-cap "diode_nd2ps_06v0_XZ9LFE_1/a_n2652_n242#" "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" 73.4875
-cap "diode_nd2ps_06v0_XZ9LFE_1/a_n2652_n242#" "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" 42.1765
-cap "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "diode_nd2ps_06v0_XZ9LFE_1/a_n2652_n242#" -0.442182
-merge "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" "m1_3260_n60#" -17588.7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2555276 -89648 -7468600 -9280 0 0 0 0 0 0
+cap "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" 1299.51
+cap "diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" 687.818
+cap "diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" -264.41
+cap "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" 811.966
+cap "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" 542.365
+cap "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" 289.562
+cap "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" 645.313
+cap "diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" -64.0697
+cap "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" 334.414
+cap "diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" -92.1421
+cap "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" -522.068
+cap "diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" "ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#" 1.00261
+cap "diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" 0.898708
+cap "ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#" "diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" -0.217448
+cap "diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" 1.99713
+cap "ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#" "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" 1114.26
+cap "diode_nd2ps_06v0_XZ9LFE_1/a_n2652_n242#" "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" 1040.41
+cap "ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#" "diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" 903.618
+cap "diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" "ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#" 1732.39
+cap "diode_nd2ps_06v0_XZ9LFE_3/a_n2500_n90#" "diode_nd2ps_06v0_XZ9LFE_4/a_n2652_n242#" 22.5049
+cap "diode_nd2ps_06v0_XZ9LFE_4/a_n2652_n242#" "diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" 138.401
+cap "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_1/a_n2500_n90#" 2.65631
+cap "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" 7.53847
+cap "diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" 352.499
+cap "diode_pd2nw_06v0_WSMRF6_1/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" 161.043
+cap "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" 1460.05
+cap "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" 726.506
+cap "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 1803.27
+cap "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" 520.733
+cap "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" -227.664
+cap "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 1110.66
+cap "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 912.62
+cap "diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" -233.773
+cap "diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" -109.126
+cap "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" -281.199
+cap "diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 612.623
+cap "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 593.559
+cap "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" -0.757234
+cap "diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" 4.43854
+cap "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" -0.281254
+cap "diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 5.21857
+cap "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 1279.89
+cap "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "diode_nd2ps_06v0_XZ9LFE_1/a_n2652_n242#" 1158
+cap "diode_nd2ps_06v0_XZ9LFE_3/a_n2652_n242#" "diode_nd2ps_06v0_XZ9LFE_3/a_n2500_n90#" 1341.41
+cap "diode_nd2ps_06v0_XZ9LFE_3/a_n2652_n242#" "diode_nd2ps_06v0_XZ9LFE_3/a_n2500_n90#" 2738.99
+cap "diode_nd2ps_06v0_XZ9LFE_0/a_n2500_n90#" "diode_nd2ps_06v0_XZ9LFE_3/a_n2652_n242#" 127.181
+cap "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "diode_nd2ps_06v0_XZ9LFE_3/a_n2652_n242#" 127.808
+cap "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 293.659
+cap "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 399.969
+cap "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" 28.5449
+cap "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" 151.784
+cap "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 252.378
+cap "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 340.651
+cap "diode_pd2nw_06v0_WSMRF6_1/a_n2820_n410#" "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" 155.35
+cap "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "diode_nd2ps_06v0_XZ9LFE_1/a_n2652_n242#" 63.5778
+cap "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "diode_nd2ps_06v0_XZ9LFE_1/a_n2652_n242#" 15.8491
+merge "diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" "m1_3260_n60#" -17349.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2527876 -89018 -6916300 -8580 0 0 0 0 0 0
 merge "m1_3260_n60#" "m1_3260_360#"
 merge "m1_3260_360#" "diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#"
 merge "diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" "m1_3240_n1840#"
@@ -259,7 +235,7 @@ merge "diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" "m1_3300_n4580#"
 merge "m1_3300_n4580#" "m1_3300_n4160#"
 merge "m1_3300_n4160#" "diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#"
 merge "diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" "Vdd"
-merge "diode_nd2ps_06v0_XZ9LFE_0/a_n2652_n242#" "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" -28626.9 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4129899 -81364 -12705400 -24510 0 0 0 0 0 0
+merge "diode_nd2ps_06v0_XZ9LFE_0/a_n2652_n242#" "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" -26871 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3997660 -80686 -10712900 -20810 0 0 0 0 0 0
 merge "diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "diode_nd2ps_06v0_XZ9LFE_1/a_n2652_n242#"
 merge "diode_nd2ps_06v0_XZ9LFE_1/a_n2652_n242#" "diode_nd2ps_06v0_XZ9LFE_2/a_n2652_n242#"
 merge "diode_nd2ps_06v0_XZ9LFE_2/a_n2652_n242#" "diode_pd2nw_06v0_WSMRF6_1/a_n2820_n410#"
@@ -270,10 +246,10 @@ merge "diode_nd2ps_06v0_67PAP3_0/a_n1652_n242#" "diode_nd2ps_06v0_XZ9LFE_4/a_n26
 merge "diode_nd2ps_06v0_XZ9LFE_4/a_n2652_n242#" "ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#"
 merge "ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#" "diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#"
 merge "diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" "diode_pd2nw_06v0_WSMRF6_4/a_n2820_n410#"
-merge "diode_pd2nw_06v0_WSMRF6_4/a_n2820_n410#" "GND"
-merge "GND" "diode_pd2nw_06v0_QD74SH_0/a_n1820_n410#"
+merge "diode_pd2nw_06v0_WSMRF6_4/a_n2820_n410#" "diode_pd2nw_06v0_QD74SH_0/a_n1820_n410#"
 merge "diode_pd2nw_06v0_QD74SH_0/a_n1820_n410#" "VSUBS"
-merge "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "diode_nd2ps_06v0_XZ9LFE_0/a_n2500_n90#" -9229.19 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1707580 -40512 -343600 -5860 -2688000 -9040 0 0 0 0
+merge "VSUBS" "GND"
+merge "diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "diode_nd2ps_06v0_XZ9LFE_0/a_n2500_n90#" -8321.23 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1707580 -40352 -924600 -4480 0 0 0 0 0 0
 merge "diode_nd2ps_06v0_XZ9LFE_0/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#"
 merge "diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" "diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#"
 merge "diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_2/a_n2500_n90#"
@@ -284,6 +260,6 @@ merge "diode_nd2ps_06v0_XZ9LFE_3/a_n2500_n90#" "diode_pd2nw_06v0_WSMRF6_3/a_n250
 merge "diode_pd2nw_06v0_WSMRF6_3/a_n2500_n90#" "ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1122#"
 merge "ppolyf_u_1k_6p0_84E4CZ_0/a_n500_n1122#" "diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#"
 merge "diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" "external_input_pin"
-merge "ppolyf_u_1k_6p0_84E4CZ_0/a_n500_1000#" "diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" -2904.33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -271216 -6404 -1064000 -5600 -991100 -4270 0 0 0 0
+merge "ppolyf_u_1k_6p0_84E4CZ_0/a_n500_1000#" "diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" -3035.07 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -271216 -6404 -532000 -2800 -1725700 -6670 0 0 0 0
 merge "diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#"
 merge "diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" "pin_facing_input"

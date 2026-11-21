@@ -1,0 +1,525 @@
+magic
+tech gf180mcuD
+magscale 1 5
+timestamp 1794923414
+<< metal2 >>
+rect 4534 110900 4788 111000
+rect 5102 110900 5356 111000
+rect 5670 110900 5924 111000
+rect 6238 110900 6492 111000
+rect 7008 110900 7262 111000
+rect 7576 110900 7830 111000
+rect 8144 110900 8398 111000
+rect 8712 110900 8966 111000
+rect 14534 110900 14788 111000
+rect 15102 110900 15356 111000
+rect 15670 110900 15924 111000
+rect 16238 110900 16492 111000
+rect 17008 110900 17262 111000
+rect 17576 110900 17830 111000
+rect 18144 110900 18398 111000
+rect 18712 110900 18966 111000
+rect 24534 110900 24788 111000
+rect 25102 110900 25356 111000
+rect 25670 110900 25924 111000
+rect 26238 110900 26492 111000
+rect 27008 110900 27262 111000
+rect 27576 110900 27830 111000
+rect 28144 110900 28398 111000
+rect 28712 110900 28966 111000
+rect 34534 110900 34788 111000
+rect 35102 110900 35356 111000
+rect 35670 110900 35924 111000
+rect 36238 110900 36492 111000
+rect 37008 110900 37262 111000
+rect 37576 110900 37830 111000
+rect 38144 110900 38398 111000
+rect 38712 110900 38966 111000
+rect 44534 110900 44788 111000
+rect 45102 110900 45356 111000
+rect 45670 110900 45924 111000
+rect 46238 110900 46492 111000
+rect 47008 110900 47262 111000
+rect 47576 110900 47830 111000
+rect 48144 110900 48398 111000
+rect 48712 110900 48966 111000
+rect 54534 110900 54788 111000
+rect 55102 110900 55356 111000
+rect 55670 110900 55924 111000
+rect 56238 110900 56492 111000
+rect 57008 110900 57262 111000
+rect 57576 110900 57830 111000
+rect 58144 110900 58398 111000
+rect 58712 110900 58966 111000
+rect 64534 110900 64788 111000
+rect 65102 110900 65356 111000
+rect 65670 110900 65924 111000
+rect 66238 110900 66492 111000
+rect 67008 110900 67262 111000
+rect 67576 110900 67830 111000
+rect 68144 110900 68398 111000
+rect 68712 110900 68966 111000
+rect 74534 110900 74788 111000
+rect 75102 110900 75356 111000
+rect 75670 110900 75924 111000
+rect 76238 110900 76492 111000
+rect 77008 110900 77262 111000
+rect 77576 110900 77830 111000
+rect 78144 110900 78398 111000
+rect 78712 110900 78966 111000
+rect 84534 110900 84788 111000
+rect 85102 110900 85356 111000
+rect 85670 110900 85924 111000
+rect 86238 110900 86492 111000
+rect 87008 110900 87262 111000
+rect 87576 110900 87830 111000
+rect 88144 110900 88398 111000
+rect 88712 110900 88966 111000
+rect 94534 110900 94788 111000
+rect 95102 110900 95356 111000
+rect 95670 110900 95924 111000
+rect 96238 110900 96492 111000
+rect 97008 110900 97262 111000
+rect 97576 110900 97830 111000
+rect 98144 110900 98398 111000
+rect 98712 110900 98966 111000
+rect 104534 110900 104788 111000
+rect 105102 110900 105356 111000
+rect 105670 110900 105924 111000
+rect 106238 110900 106492 111000
+rect 107008 110900 107262 111000
+rect 107576 110900 107830 111000
+rect 108144 110900 108398 111000
+rect 108712 110900 108966 111000
+rect 0 106212 100 106466
+rect 0 105644 100 105898
+rect 0 105076 100 105330
+rect 0 104508 100 104762
+rect 0 103738 100 103992
+rect 0 103170 100 103424
+rect 0 102602 100 102856
+rect 0 102034 100 102288
+rect 0 96212 100 96466
+rect 0 95644 100 95898
+rect 0 95076 100 95330
+rect 0 94508 100 94762
+rect 0 93738 100 93992
+rect 0 93170 100 93424
+rect 0 92602 100 92856
+rect 0 92034 100 92288
+rect 0 86212 100 86466
+rect 0 85644 100 85898
+rect 0 85076 100 85330
+rect 0 84508 100 84762
+rect 0 83738 100 83992
+rect 0 83170 100 83424
+rect 0 82602 100 82856
+rect 0 82034 100 82288
+rect 0 76212 100 76466
+rect 0 75644 100 75898
+rect 0 75076 100 75330
+rect 0 74508 100 74762
+rect 0 73738 100 73992
+rect 0 73170 100 73424
+rect 0 72602 100 72856
+rect 0 72034 100 72288
+rect 0 66212 100 66466
+rect 0 65644 100 65898
+rect 0 65076 100 65330
+rect 0 64508 100 64762
+rect 0 63738 100 63992
+rect 0 63170 100 63424
+rect 0 62602 100 62856
+rect 0 62034 100 62288
+rect 0 56212 100 56466
+rect 0 55644 100 55898
+rect 0 55076 100 55330
+rect 0 54508 100 54762
+rect 0 53738 100 53992
+rect 0 53170 100 53424
+rect 0 52602 100 52856
+rect 0 52034 100 52288
+rect 0 46212 100 46466
+rect 0 45644 100 45898
+rect 0 45076 100 45330
+rect 0 44508 100 44762
+rect 0 43738 100 43992
+rect 0 43170 100 43424
+rect 0 42602 100 42856
+rect 0 42034 100 42288
+rect 0 36212 100 36466
+rect 0 35644 100 35898
+rect 0 35076 100 35330
+rect 0 34508 100 34762
+rect 0 33738 100 33992
+rect 0 33170 100 33424
+rect 0 32602 100 32856
+rect 0 32034 100 32288
+rect 0 26212 100 26466
+rect 0 25644 100 25898
+rect 0 25076 100 25330
+rect 0 24508 100 24762
+rect 0 23738 100 23992
+rect 0 23170 100 23424
+rect 0 22602 100 22856
+rect 0 22034 100 22288
+rect 0 16914 100 17864
+rect 0 15599 100 16624
+rect 0 14414 100 15439
+rect 0 13061 100 14086
+rect 0 11876 100 12901
+rect 0 10636 100 11586
+rect 0 6914 100 7864
+rect 0 5599 100 6624
+rect 0 4414 100 5439
+rect 0 3061 100 4086
+rect 0 1876 100 2901
+rect 0 636 100 1586
+<< labels >>
+flabel metal2 s 0 636 100 1586 0 FreeSans 448 90 0 0 pin15
+port 0 nsew ground bidirectional
+flabel metal2 s 0 1876 100 2901 0 FreeSans 448 90 0 0 pin15
+port 0 nsew ground bidirectional
+flabel metal2 s 0 3061 100 4086 0 FreeSans 448 90 0 0 pin15
+port 0 nsew ground bidirectional
+flabel metal2 s 0 4414 100 5439 0 FreeSans 448 90 0 0 pin15
+port 0 nsew ground bidirectional
+flabel metal2 s 0 5599 100 6624 0 FreeSans 448 90 0 0 pin15
+port 0 nsew ground bidirectional
+flabel metal2 s 0 6914 100 7864 0 FreeSans 448 90 0 0 pin15
+port 0 nsew ground bidirectional
+flabel metal2 s 0 10636 100 11586 0 FreeSans 448 90 0 0 pin14
+port 1 nsew power bidirectional
+flabel metal2 s 0 11876 100 12901 0 FreeSans 448 90 0 0 pin14
+port 1 nsew power bidirectional
+flabel metal2 s 0 13061 100 14086 0 FreeSans 448 90 0 0 pin14
+port 1 nsew power bidirectional
+flabel metal2 s 0 14414 100 15439 0 FreeSans 448 90 0 0 pin14
+port 1 nsew power bidirectional
+flabel metal2 s 0 15599 100 16624 0 FreeSans 448 90 0 0 pin14
+port 1 nsew power bidirectional
+flabel metal2 s 0 16914 100 17864 0 FreeSans 448 90 0 0 pin14
+port 1 nsew power bidirectional
+flabel metal2 s 0 22034 100 22288 0 FreeSans 448 90 0 0 pin13
+port 2 nsew signal bidirectional
+flabel metal2 s 0 22602 100 22856 0 FreeSans 448 90 0 0 pin13
+port 2 nsew signal bidirectional
+flabel metal2 s 0 23170 100 23424 0 FreeSans 448 90 0 0 pin13
+port 2 nsew signal bidirectional
+flabel metal2 s 0 23738 100 23992 0 FreeSans 448 90 0 0 pin13
+port 2 nsew signal bidirectional
+flabel metal2 s 0 24508 100 24762 0 FreeSans 448 90 0 0 pin13
+port 2 nsew signal bidirectional
+flabel metal2 s 0 25076 100 25330 0 FreeSans 448 90 0 0 pin13
+port 2 nsew signal bidirectional
+flabel metal2 s 0 25644 100 25898 0 FreeSans 448 90 0 0 pin13
+port 2 nsew signal bidirectional
+flabel metal2 s 0 26212 100 26466 0 FreeSans 448 90 0 0 pin13
+port 2 nsew signal bidirectional
+flabel metal2 s 0 32034 100 32288 0 FreeSans 448 90 0 0 pin12
+port 3 nsew signal bidirectional
+flabel metal2 s 0 32602 100 32856 0 FreeSans 448 90 0 0 pin12
+port 3 nsew signal bidirectional
+flabel metal2 s 0 33170 100 33424 0 FreeSans 448 90 0 0 pin12
+port 3 nsew signal bidirectional
+flabel metal2 s 0 33738 100 33992 0 FreeSans 448 90 0 0 pin12
+port 3 nsew signal bidirectional
+flabel metal2 s 0 34508 100 34762 0 FreeSans 448 90 0 0 pin12
+port 3 nsew signal bidirectional
+flabel metal2 s 0 35076 100 35330 0 FreeSans 448 90 0 0 pin12
+port 3 nsew signal bidirectional
+flabel metal2 s 0 35644 100 35898 0 FreeSans 448 90 0 0 pin12
+port 3 nsew signal bidirectional
+flabel metal2 s 0 36212 100 36466 0 FreeSans 448 90 0 0 pin12
+port 3 nsew signal bidirectional
+flabel metal2 s 0 42034 100 42288 0 FreeSans 448 90 0 0 pin11
+port 4 nsew signal bidirectional
+flabel metal2 s 0 42602 100 42856 0 FreeSans 448 90 0 0 pin11
+port 4 nsew signal bidirectional
+flabel metal2 s 0 43170 100 43424 0 FreeSans 448 90 0 0 pin11
+port 4 nsew signal bidirectional
+flabel metal2 s 0 43738 100 43992 0 FreeSans 448 90 0 0 pin11
+port 4 nsew signal bidirectional
+flabel metal2 s 0 44508 100 44762 0 FreeSans 448 90 0 0 pin11
+port 4 nsew signal bidirectional
+flabel metal2 s 0 45076 100 45330 0 FreeSans 448 90 0 0 pin11
+port 4 nsew signal bidirectional
+flabel metal2 s 0 45644 100 45898 0 FreeSans 448 90 0 0 pin11
+port 4 nsew signal bidirectional
+flabel metal2 s 0 46212 100 46466 0 FreeSans 448 90 0 0 pin11
+port 4 nsew signal bidirectional
+flabel metal2 s 0 52034 100 52288 0 FreeSans 448 90 0 0 pin10
+port 5 nsew signal bidirectional
+flabel metal2 s 0 52602 100 52856 0 FreeSans 448 90 0 0 pin10
+port 5 nsew signal bidirectional
+flabel metal2 s 0 53170 100 53424 0 FreeSans 448 90 0 0 pin10
+port 5 nsew signal bidirectional
+flabel metal2 s 0 53738 100 53992 0 FreeSans 448 90 0 0 pin10
+port 5 nsew signal bidirectional
+flabel metal2 s 0 54508 100 54762 0 FreeSans 448 90 0 0 pin10
+port 5 nsew signal bidirectional
+flabel metal2 s 0 55076 100 55330 0 FreeSans 448 90 0 0 pin10
+port 5 nsew signal bidirectional
+flabel metal2 s 0 55644 100 55898 0 FreeSans 448 90 0 0 pin10
+port 5 nsew signal bidirectional
+flabel metal2 s 0 56212 100 56466 0 FreeSans 448 90 0 0 pin10
+port 5 nsew signal bidirectional
+flabel metal2 s 0 62034 100 62288 0 FreeSans 448 90 0 0 pin9
+port 6 nsew signal bidirectional
+flabel metal2 s 0 62602 100 62856 0 FreeSans 448 90 0 0 pin9
+port 6 nsew signal bidirectional
+flabel metal2 s 0 63170 100 63424 0 FreeSans 448 90 0 0 pin9
+port 6 nsew signal bidirectional
+flabel metal2 s 0 63738 100 63992 0 FreeSans 448 90 0 0 pin9
+port 6 nsew signal bidirectional
+flabel metal2 s 0 64508 100 64762 0 FreeSans 448 90 0 0 pin9
+port 6 nsew signal bidirectional
+flabel metal2 s 0 65076 100 65330 0 FreeSans 448 90 0 0 pin9
+port 6 nsew signal bidirectional
+flabel metal2 s 0 65644 100 65898 0 FreeSans 448 90 0 0 pin9
+port 6 nsew signal bidirectional
+flabel metal2 s 0 66212 100 66466 0 FreeSans 448 90 0 0 pin9
+port 6 nsew signal bidirectional
+flabel metal2 s 0 72034 100 72288 0 FreeSans 448 90 0 0 pin8
+port 7 nsew signal bidirectional
+flabel metal2 s 0 72602 100 72856 0 FreeSans 448 90 0 0 pin8
+port 7 nsew signal bidirectional
+flabel metal2 s 0 73170 100 73424 0 FreeSans 448 90 0 0 pin8
+port 7 nsew signal bidirectional
+flabel metal2 s 0 73738 100 73992 0 FreeSans 448 90 0 0 pin8
+port 7 nsew signal bidirectional
+flabel metal2 s 0 74508 100 74762 0 FreeSans 448 90 0 0 pin8
+port 7 nsew signal bidirectional
+flabel metal2 s 0 75076 100 75330 0 FreeSans 448 90 0 0 pin8
+port 7 nsew signal bidirectional
+flabel metal2 s 0 75644 100 75898 0 FreeSans 448 90 0 0 pin8
+port 7 nsew signal bidirectional
+flabel metal2 s 0 76212 100 76466 0 FreeSans 448 90 0 0 pin8
+port 7 nsew signal bidirectional
+flabel metal2 s 0 82034 100 82288 0 FreeSans 448 90 0 0 pin7
+port 8 nsew signal bidirectional
+flabel metal2 s 0 82602 100 82856 0 FreeSans 448 90 0 0 pin7
+port 8 nsew signal bidirectional
+flabel metal2 s 0 83170 100 83424 0 FreeSans 448 90 0 0 pin7
+port 8 nsew signal bidirectional
+flabel metal2 s 0 83738 100 83992 0 FreeSans 448 90 0 0 pin7
+port 8 nsew signal bidirectional
+flabel metal2 s 0 84508 100 84762 0 FreeSans 448 90 0 0 pin7
+port 8 nsew signal bidirectional
+flabel metal2 s 0 85076 100 85330 0 FreeSans 448 90 0 0 pin7
+port 8 nsew signal bidirectional
+flabel metal2 s 0 85644 100 85898 0 FreeSans 448 90 0 0 pin7
+port 8 nsew signal bidirectional
+flabel metal2 s 0 86212 100 86466 0 FreeSans 448 90 0 0 pin7
+port 8 nsew signal bidirectional
+flabel metal2 s 0 92034 100 92288 0 FreeSans 448 90 0 0 pin6
+port 9 nsew signal bidirectional
+flabel metal2 s 0 92602 100 92856 0 FreeSans 448 90 0 0 pin6
+port 9 nsew signal bidirectional
+flabel metal2 s 0 93170 100 93424 0 FreeSans 448 90 0 0 pin6
+port 9 nsew signal bidirectional
+flabel metal2 s 0 93738 100 93992 0 FreeSans 448 90 0 0 pin6
+port 9 nsew signal bidirectional
+flabel metal2 s 0 94508 100 94762 0 FreeSans 448 90 0 0 pin6
+port 9 nsew signal bidirectional
+flabel metal2 s 0 95076 100 95330 0 FreeSans 448 90 0 0 pin6
+port 9 nsew signal bidirectional
+flabel metal2 s 0 95644 100 95898 0 FreeSans 448 90 0 0 pin6
+port 9 nsew signal bidirectional
+flabel metal2 s 0 96212 100 96466 0 FreeSans 448 90 0 0 pin6
+port 9 nsew signal bidirectional
+flabel metal2 s 0 102034 100 102288 0 FreeSans 448 90 0 0 pin5
+port 10 nsew signal bidirectional
+flabel metal2 s 0 102602 100 102856 0 FreeSans 448 90 0 0 pin5
+port 10 nsew signal bidirectional
+flabel metal2 s 0 103170 100 103424 0 FreeSans 448 90 0 0 pin5
+port 10 nsew signal bidirectional
+flabel metal2 s 0 103738 100 103992 0 FreeSans 448 90 0 0 pin5
+port 10 nsew signal bidirectional
+flabel metal2 s 0 104508 100 104762 0 FreeSans 448 90 0 0 pin5
+port 10 nsew signal bidirectional
+flabel metal2 s 0 105076 100 105330 0 FreeSans 448 90 0 0 pin5
+port 10 nsew signal bidirectional
+flabel metal2 s 0 105644 100 105898 0 FreeSans 448 90 0 0 pin5
+port 10 nsew signal bidirectional
+flabel metal2 s 0 106212 100 106466 0 FreeSans 448 90 0 0 pin5
+port 10 nsew signal bidirectional
+flabel metal2 s 4534 110900 4788 111000 0 FreeSans 448 0 0 0 pin4
+port 11 nsew signal bidirectional
+flabel metal2 s 5102 110900 5356 111000 0 FreeSans 448 0 0 0 pin4
+port 11 nsew signal bidirectional
+flabel metal2 s 5670 110900 5924 111000 0 FreeSans 448 0 0 0 pin4
+port 11 nsew signal bidirectional
+flabel metal2 s 6238 110900 6492 111000 0 FreeSans 448 0 0 0 pin4
+port 11 nsew signal bidirectional
+flabel metal2 s 7008 110900 7262 111000 0 FreeSans 448 0 0 0 pin4
+port 11 nsew signal bidirectional
+flabel metal2 s 7576 110900 7830 111000 0 FreeSans 448 0 0 0 pin4
+port 11 nsew signal bidirectional
+flabel metal2 s 8144 110900 8398 111000 0 FreeSans 448 0 0 0 pin4
+port 11 nsew signal bidirectional
+flabel metal2 s 8712 110900 8966 111000 0 FreeSans 448 0 0 0 pin4
+port 11 nsew signal bidirectional
+flabel metal2 s 14534 110900 14788 111000 0 FreeSans 448 0 0 0 pin3
+port 12 nsew signal bidirectional
+flabel metal2 s 15102 110900 15356 111000 0 FreeSans 448 0 0 0 pin3
+port 12 nsew signal bidirectional
+flabel metal2 s 15670 110900 15924 111000 0 FreeSans 448 0 0 0 pin3
+port 12 nsew signal bidirectional
+flabel metal2 s 16238 110900 16492 111000 0 FreeSans 448 0 0 0 pin3
+port 12 nsew signal bidirectional
+flabel metal2 s 17008 110900 17262 111000 0 FreeSans 448 0 0 0 pin3
+port 12 nsew signal bidirectional
+flabel metal2 s 17576 110900 17830 111000 0 FreeSans 448 0 0 0 pin3
+port 12 nsew signal bidirectional
+flabel metal2 s 18144 110900 18398 111000 0 FreeSans 448 0 0 0 pin3
+port 12 nsew signal bidirectional
+flabel metal2 s 18712 110900 18966 111000 0 FreeSans 448 0 0 0 pin3
+port 12 nsew signal bidirectional
+flabel metal2 s 24534 110900 24788 111000 0 FreeSans 448 0 0 0 pin2
+port 13 nsew signal bidirectional
+flabel metal2 s 25102 110900 25356 111000 0 FreeSans 448 0 0 0 pin2
+port 13 nsew signal bidirectional
+flabel metal2 s 25670 110900 25924 111000 0 FreeSans 448 0 0 0 pin2
+port 13 nsew signal bidirectional
+flabel metal2 s 26238 110900 26492 111000 0 FreeSans 448 0 0 0 pin2
+port 13 nsew signal bidirectional
+flabel metal2 s 27008 110900 27262 111000 0 FreeSans 448 0 0 0 pin2
+port 13 nsew signal bidirectional
+flabel metal2 s 27576 110900 27830 111000 0 FreeSans 448 0 0 0 pin2
+port 13 nsew signal bidirectional
+flabel metal2 s 28144 110900 28398 111000 0 FreeSans 448 0 0 0 pin2
+port 13 nsew signal bidirectional
+flabel metal2 s 28712 110900 28966 111000 0 FreeSans 448 0 0 0 pin2
+port 13 nsew signal bidirectional
+flabel metal2 s 34534 110900 34788 111000 0 FreeSans 448 0 0 0 pin1
+port 14 nsew signal bidirectional
+flabel metal2 s 35102 110900 35356 111000 0 FreeSans 448 0 0 0 pin1
+port 14 nsew signal bidirectional
+flabel metal2 s 35670 110900 35924 111000 0 FreeSans 448 0 0 0 pin1
+port 14 nsew signal bidirectional
+flabel metal2 s 36238 110900 36492 111000 0 FreeSans 448 0 0 0 pin1
+port 14 nsew signal bidirectional
+flabel metal2 s 37008 110900 37262 111000 0 FreeSans 448 0 0 0 pin1
+port 14 nsew signal bidirectional
+flabel metal2 s 37576 110900 37830 111000 0 FreeSans 448 0 0 0 pin1
+port 14 nsew signal bidirectional
+flabel metal2 s 38144 110900 38398 111000 0 FreeSans 448 0 0 0 pin1
+port 14 nsew signal bidirectional
+flabel metal2 s 38712 110900 38966 111000 0 FreeSans 448 0 0 0 pin1
+port 14 nsew signal bidirectional
+flabel metal2 s 44534 110900 44788 111000 0 FreeSans 448 0 0 0 pin22
+port 15 nsew signal bidirectional
+flabel metal2 s 45102 110900 45356 111000 0 FreeSans 448 0 0 0 pin22
+port 15 nsew signal bidirectional
+flabel metal2 s 45670 110900 45924 111000 0 FreeSans 448 0 0 0 pin22
+port 15 nsew signal bidirectional
+flabel metal2 s 46238 110900 46492 111000 0 FreeSans 448 0 0 0 pin22
+port 15 nsew signal bidirectional
+flabel metal2 s 47008 110900 47262 111000 0 FreeSans 448 0 0 0 pin22
+port 15 nsew signal bidirectional
+flabel metal2 s 47576 110900 47830 111000 0 FreeSans 448 0 0 0 pin22
+port 15 nsew signal bidirectional
+flabel metal2 s 48144 110900 48398 111000 0 FreeSans 448 0 0 0 pin22
+port 15 nsew signal bidirectional
+flabel metal2 s 48712 110900 48966 111000 0 FreeSans 448 0 0 0 pin22
+port 15 nsew signal bidirectional
+flabel metal2 s 54534 110900 54788 111000 0 FreeSans 448 0 0 0 pin21
+port 16 nsew signal bidirectional
+flabel metal2 s 55102 110900 55356 111000 0 FreeSans 448 0 0 0 pin21
+port 16 nsew signal bidirectional
+flabel metal2 s 55670 110900 55924 111000 0 FreeSans 448 0 0 0 pin21
+port 16 nsew signal bidirectional
+flabel metal2 s 56238 110900 56492 111000 0 FreeSans 448 0 0 0 pin21
+port 16 nsew signal bidirectional
+flabel metal2 s 57008 110900 57262 111000 0 FreeSans 448 0 0 0 pin21
+port 16 nsew signal bidirectional
+flabel metal2 s 57576 110900 57830 111000 0 FreeSans 448 0 0 0 pin21
+port 16 nsew signal bidirectional
+flabel metal2 s 58144 110900 58398 111000 0 FreeSans 448 0 0 0 pin21
+port 16 nsew signal bidirectional
+flabel metal2 s 58712 110900 58966 111000 0 FreeSans 448 0 0 0 pin21
+port 16 nsew signal bidirectional
+flabel metal2 s 64534 110900 64788 111000 0 FreeSans 448 0 0 0 pin20
+port 17 nsew signal bidirectional
+flabel metal2 s 65102 110900 65356 111000 0 FreeSans 448 0 0 0 pin20
+port 17 nsew signal bidirectional
+flabel metal2 s 65670 110900 65924 111000 0 FreeSans 448 0 0 0 pin20
+port 17 nsew signal bidirectional
+flabel metal2 s 66238 110900 66492 111000 0 FreeSans 448 0 0 0 pin20
+port 17 nsew signal bidirectional
+flabel metal2 s 67008 110900 67262 111000 0 FreeSans 448 0 0 0 pin20
+port 17 nsew signal bidirectional
+flabel metal2 s 67576 110900 67830 111000 0 FreeSans 448 0 0 0 pin20
+port 17 nsew signal bidirectional
+flabel metal2 s 68144 110900 68398 111000 0 FreeSans 448 0 0 0 pin20
+port 17 nsew signal bidirectional
+flabel metal2 s 68712 110900 68966 111000 0 FreeSans 448 0 0 0 pin20
+port 17 nsew signal bidirectional
+flabel metal2 s 74534 110900 74788 111000 0 FreeSans 448 0 0 0 pin19
+port 18 nsew signal bidirectional
+flabel metal2 s 75102 110900 75356 111000 0 FreeSans 448 0 0 0 pin19
+port 18 nsew signal bidirectional
+flabel metal2 s 75670 110900 75924 111000 0 FreeSans 448 0 0 0 pin19
+port 18 nsew signal bidirectional
+flabel metal2 s 76238 110900 76492 111000 0 FreeSans 448 0 0 0 pin19
+port 18 nsew signal bidirectional
+flabel metal2 s 77008 110900 77262 111000 0 FreeSans 448 0 0 0 pin19
+port 18 nsew signal bidirectional
+flabel metal2 s 77576 110900 77830 111000 0 FreeSans 448 0 0 0 pin19
+port 18 nsew signal bidirectional
+flabel metal2 s 78144 110900 78398 111000 0 FreeSans 448 0 0 0 pin19
+port 18 nsew signal bidirectional
+flabel metal2 s 78712 110900 78966 111000 0 FreeSans 448 0 0 0 pin19
+port 18 nsew signal bidirectional
+flabel metal2 s 84534 110900 84788 111000 0 FreeSans 448 0 0 0 pin18
+port 19 nsew signal bidirectional
+flabel metal2 s 85102 110900 85356 111000 0 FreeSans 448 0 0 0 pin18
+port 19 nsew signal bidirectional
+flabel metal2 s 85670 110900 85924 111000 0 FreeSans 448 0 0 0 pin18
+port 19 nsew signal bidirectional
+flabel metal2 s 86238 110900 86492 111000 0 FreeSans 448 0 0 0 pin18
+port 19 nsew signal bidirectional
+flabel metal2 s 87008 110900 87262 111000 0 FreeSans 448 0 0 0 pin18
+port 19 nsew signal bidirectional
+flabel metal2 s 87576 110900 87830 111000 0 FreeSans 448 0 0 0 pin18
+port 19 nsew signal bidirectional
+flabel metal2 s 88144 110900 88398 111000 0 FreeSans 448 0 0 0 pin18
+port 19 nsew signal bidirectional
+flabel metal2 s 88712 110900 88966 111000 0 FreeSans 448 0 0 0 pin18
+port 19 nsew signal bidirectional
+flabel metal2 s 94534 110900 94788 111000 0 FreeSans 448 0 0 0 pin17
+port 20 nsew signal bidirectional
+flabel metal2 s 95102 110900 95356 111000 0 FreeSans 448 0 0 0 pin17
+port 20 nsew signal bidirectional
+flabel metal2 s 95670 110900 95924 111000 0 FreeSans 448 0 0 0 pin17
+port 20 nsew signal bidirectional
+flabel metal2 s 96238 110900 96492 111000 0 FreeSans 448 0 0 0 pin17
+port 20 nsew signal bidirectional
+flabel metal2 s 97008 110900 97262 111000 0 FreeSans 448 0 0 0 pin17
+port 20 nsew signal bidirectional
+flabel metal2 s 97576 110900 97830 111000 0 FreeSans 448 0 0 0 pin17
+port 20 nsew signal bidirectional
+flabel metal2 s 98144 110900 98398 111000 0 FreeSans 448 0 0 0 pin17
+port 20 nsew signal bidirectional
+flabel metal2 s 98712 110900 98966 111000 0 FreeSans 448 0 0 0 pin17
+port 20 nsew signal bidirectional
+flabel metal2 s 104534 110900 104788 111000 0 FreeSans 448 0 0 0 pin16
+port 21 nsew signal bidirectional
+flabel metal2 s 105102 110900 105356 111000 0 FreeSans 448 0 0 0 pin16
+port 21 nsew signal bidirectional
+flabel metal2 s 105670 110900 105924 111000 0 FreeSans 448 0 0 0 pin16
+port 21 nsew signal bidirectional
+flabel metal2 s 106238 110900 106492 111000 0 FreeSans 448 0 0 0 pin16
+port 21 nsew signal bidirectional
+flabel metal2 s 107008 110900 107262 111000 0 FreeSans 448 0 0 0 pin16
+port 21 nsew signal bidirectional
+flabel metal2 s 107576 110900 107830 111000 0 FreeSans 448 0 0 0 pin16
+port 21 nsew signal bidirectional
+flabel metal2 s 108144 110900 108398 111000 0 FreeSans 448 0 0 0 pin16
+port 21 nsew signal bidirectional
+flabel metal2 s 108712 110900 108966 111000 0 FreeSans 448 0 0 0 pin16
+port 21 nsew signal bidirectional
+<< properties >>
+string FIXED_BBOX 0 0 111000 111000
+<< end >>

@@ -1,0 +1,1203 @@
+timestamp 1795182888
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+use MG_ESD_protection MG_ESD_protection_0 0 -1 8200 -1 0 54440
+use MG_ESD_protection MG_ESD_protection_1 0 -1 8200 -1 0 74440
+use MG_ESD_protection MG_ESD_protection_2 0 -1 8200 -1 0 94440
+use MG_ESD_protection MG_ESD_protection_3 0 -1 8200 -1 0 114440
+use MG_ESD_protection MG_ESD_protection_4 0 -1 8200 -1 0 134440
+use MG_ESD_protection MG_ESD_protection_5 0 -1 8200 -1 0 154440
+use MG_ESD_protection MG_ESD_protection_6 0 -1 8200 -1 0 174440
+use MG_ESD_protection MG_ESD_protection_7 0 -1 8200 -1 0 192540
+use MG_ESD_protection MG_ESD_protection_8 0 -1 8200 -1 0 206040
+use MG_ESD_protection MG_ESD_protection_9 1 0 15960 0 1 213800
+use MG_ESD_protection MG_ESD_protection_10 1 0 29460 0 1 213800
+use MG_ESD_protection MG_ESD_protection_11 1 0 47560 0 1 213800
+use MG_ESD_protection MG_ESD_protection_12 1 0 67560 0 1 213800
+use MG_ESD_protection MG_ESD_protection_13 1 0 87560 0 1 213800
+use MG_ESD_protection MG_ESD_protection_14 1 0 107560 0 1 213800
+use MG_ESD_protection MG_ESD_protection_15 1 0 127560 0 1 213800
+use MG_ESD_protection MG_ESD_protection_16 1 0 147560 0 1 213800
+use MG_ESD_protection MG_ESD_protection_17 1 0 167560 0 1 213800
+use MG_ESD_protection MG_ESD_protection_18 1 0 187560 0 1 213800
+use MG_ESD_protection MG_ESD_protection_19 1 0 206310 0 1 213800
+port "pin13" 13 0 46340 200 46848 m2
+port "pin13" 13 0 47476 200 47984 m2
+port "pin13" 13 0 49016 200 49524 m2
+port "pin13" 13 0 50152 200 50660 m2
+port "pin12" 12 0 66340 200 66848 m2
+port "pin12" 12 0 67476 200 67984 m2
+port "pin12" 12 0 69016 200 69524 m2
+port "pin12" 12 0 70152 200 70660 m2
+port "pin11" 11 0 86340 200 86848 m2
+port "pin11" 11 0 87476 200 87984 m2
+port "pin11" 11 0 89016 200 89524 m2
+port "pin11" 11 0 90152 200 90660 m2
+port "pin10" 10 0 106340 200 106848 m2
+port "pin10" 10 0 107476 200 107984 m2
+port "pin10" 10 0 109016 200 109524 m2
+port "pin10" 10 0 110152 200 110660 m2
+port "pin9" 9 0 126340 200 126848 m2
+port "pin9" 9 0 127476 200 127984 m2
+port "pin9" 9 0 129016 200 129524 m2
+port "pin9" 9 0 130152 200 130660 m2
+port "pin8" 8 0 146340 200 146848 m2
+port "pin8" 8 0 147476 200 147984 m2
+port "pin8" 8 0 149016 200 149524 m2
+port "pin8" 8 0 150152 200 150660 m2
+port "pin7" 7 0 166340 200 166848 m2
+port "pin7" 7 0 167476 200 167984 m2
+port "pin7" 7 0 169016 200 169524 m2
+port "pin7" 7 0 170152 200 170660 m2
+port "pin6" 6 0 186340 200 186848 m2
+port "pin6" 6 0 187476 200 187984 m2
+port "pin6" 6 0 189016 200 189524 m2
+port "pin6" 6 0 190152 200 190660 m2
+port "pin5" 5 0 206340 200 206848 m2
+port "pin5" 5 0 207476 200 207984 m2
+port "pin5" 5 0 209016 200 209524 m2
+port "pin5" 5 0 210152 200 210660 m2
+port "pin16" 16 211340 221800 211848 222000 m2
+port "pin16" 16 212476 221800 212984 222000 m2
+port "pin16" 16 214016 221800 214524 222000 m2
+port "pin16" 16 215152 221800 215660 222000 m2
+port "pin17" 17 191340 221800 191848 222000 m2
+port "pin17" 17 192476 221800 192984 222000 m2
+port "pin17" 17 194016 221800 194524 222000 m2
+port "pin17" 17 195152 221800 195660 222000 m2
+port "pin18" 18 171340 221800 171848 222000 m2
+port "pin18" 18 172476 221800 172984 222000 m2
+port "pin18" 18 174016 221800 174524 222000 m2
+port "pin18" 18 175152 221800 175660 222000 m2
+port "pin19" 19 151340 221800 151848 222000 m2
+port "pin19" 19 152476 221800 152984 222000 m2
+port "pin19" 19 154016 221800 154524 222000 m2
+port "pin19" 19 155152 221800 155660 222000 m2
+port "pin20" 20 131340 221800 131848 222000 m2
+port "pin20" 20 132476 221800 132984 222000 m2
+port "pin20" 20 134016 221800 134524 222000 m2
+port "pin20" 20 135152 221800 135660 222000 m2
+port "pin21" 21 111340 221800 111848 222000 m2
+port "pin21" 21 112476 221800 112984 222000 m2
+port "pin21" 21 114016 221800 114524 222000 m2
+port "pin21" 21 115152 221800 115660 222000 m2
+port "pin22" 22 91340 221800 91848 222000 m2
+port "pin22" 22 92476 221800 92984 222000 m2
+port "pin22" 22 94016 221800 94524 222000 m2
+port "pin22" 22 95152 221800 95660 222000 m2
+port "pin1" 1 71340 221800 71848 222000 m2
+port "pin1" 1 72476 221800 72984 222000 m2
+port "pin1" 1 74016 221800 74524 222000 m2
+port "pin1" 1 75152 221800 75660 222000 m2
+port "pin2" 2 51340 221800 51848 222000 m2
+port "pin2" 2 52476 221800 52984 222000 m2
+port "pin2" 2 54016 221800 54524 222000 m2
+port "pin2" 2 55152 221800 55660 222000 m2
+port "pin3" 3 31340 221800 31848 222000 m2
+port "pin3" 3 32476 221800 32984 222000 m2
+port "pin3" 3 34016 221800 34524 222000 m2
+port "pin3" 3 35152 221800 35660 222000 m2
+port "pin4" 4 11340 221800 11848 222000 m2
+port "pin4" 4 12476 221800 12984 222000 m2
+port "pin4" 4 14016 221800 14524 222000 m2
+port "pin4" 4 15152 221800 15660 222000 m2
+port "pin14" 14 0 26122 200 28172 m2
+port "pin14" 14 0 28828 200 30878 m2
+port "pin15" 15 0 6122 200 8172 m2
+port "pin15" 15 0 8828 200 10878 m2
+node "pin13" 0 24768.1 0 50152 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30617600 26080 0 0 0 0 0 0
+node "pin12" 0 24758.8 0 70152 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30617600 26080 0 0 0 0 0 0
+node "pin11" 0 27228.5 0 90152 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30617600 26080 0 0 0 0 0 0
+node "pin10" 0 24758.8 0 110152 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30617600 26080 0 0 0 0 0 0
+node "pin9" 0 26512.2 0 130152 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30617600 26080 0 0 0 0 0 0
+node "pin8" 0 24758.8 0 150152 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30617600 26080 0 0 0 0 0 0
+node "pin7" 0 24758.8 0 170152 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30617600 26080 0 0 0 0 0 0
+node "pin6" 0 24758.8 0 190152 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30617600 26080 0 0 0 0 0 0
+node "pin5" 0 45960.2 0 210152 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 63177600 41360 0 0 0 0 0 0
+node "pin16" 0 20027.5 215152 221800 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30617600 26080 0 0 0 0 0 0
+node "pin17" 0 20027.5 195152 221800 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30617600 26080 0 0 0 0 0 0
+node "pin18" 0 20076.4 175152 221800 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30617600 26080 0 0 0 0 0 0
+node "pin19" 0 18855.6 155152 221800 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30617600 26080 0 0 0 0 0 0
+node "pin20" 0 26876.4 135152 221800 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30617600 26080 0 0 0 0 0 0
+node "pin21" 0 15369.4 115152 221800 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30617600 26080 0 0 0 0 0 0
+node "pin22" 0 24804.5 95152 221800 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30617600 26080 0 0 0 0 0 0
+node "pin1" 0 19866.2 75152 221800 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30617600 26080 0 0 0 0 0 0
+node "pin2" 0 20027.5 55152 221800 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30617600 26080 0 0 0 0 0 0
+node "pin3" 0 20027.5 35152 221800 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30617600 26080 0 0 0 0 0 0
+node "pin4" 0 36410.5 15152 221800 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 63177600 41360 0 0 0 0 0 0
+node "pin14" 660094 5.88234e+06 0 28828 m2 946200000 1577000 0 0 0 0 0 0 788500000 1577000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13000000 52000 147820000 116400 33000000 70000 4404000000 2256000 4400000000 2240000
+substrate "pin15" 0 0 0 8828 m2 0 0 0 0 0 0 0 0 0 0 777300000 1554600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16000000 64000 30820000 80400 26000000 78000 4408000000 2272000 4400000000 2240000
+cap "pin14" "pin20" 2373.44
+cap "pin14" "pin19" 6074.11
+cap "pin14" "pin1" 3211
+cap "pin5" "pin14" 7233.53
+cap "pin6" "pin14" 2373.44
+cap "pin14" "pin4" 8887.49
+cap "pin17" "pin14" 2373.44
+cap "pin22" "pin14" 2373.44
+cap "pin10" "pin14" 5126.16
+cap "pin3" "pin14" 2373.44
+cap "pin7" "pin14" 2373.44
+cap "pin14" "pin11" 2373.44
+cap "pin2" "pin14" 2373.44
+cap "pin16" "pin14" 2373.44
+cap "pin9" "pin14" 2373.44
+cap "pin14" "pin12" 3121.44
+cap "pin14" "pin13" 2373.44
+cap "pin8" "pin14" 2557.18
+cap "pin14" "pin18" 2373.44
+cap "pin21" "pin14" 15396.5
+cap "MG_ESD_protection_0/pin_facing_input" "MG_ESD_protection_0/GND" 386.456
+cap "MG_ESD_protection_0/pin_facing_input" "pin15" 13.931
+cap "pin15" "MG_ESD_protection_0/diode_nd2ps_06v0_XZ9LFE_0/a_n2500_n90#" 1.31024e-17
+cap "pin15" "MG_ESD_protection_0/diode_nd2ps_06v0_XZ9LFE_0/a_n2500_n90#" 3.64375
+cap "MG_ESD_protection_0/diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "pin15" 3.49823
+cap "pin15" "MG_ESD_protection_0/diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" 3.64296
+cap "pin15" "pin15" 517.513
+cap "pin15" "MG_ESD_protection_0/diode_nd2ps_06v0_XZ9LFE_3/a_n2500_n90#" 4.16812
+cap "pin15" "MG_ESD_protection_0/GND" 510.109
+cap "MG_ESD_protection_0/GND" "pin15" 528.581
+cap "MG_ESD_protection_0/diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" "pin15" 4.23455
+cap "MG_ESD_protection_0/pin_facing_input" "MG_ESD_protection_0/GND" 585.697
+cap "MG_ESD_protection_0/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "MG_ESD_protection_0/GND" 2.94818
+cap "MG_ESD_protection_0/pin_facing_input" "pin15" 12.7494
+cap "MG_ESD_protection_0/external_input_pin" "pin15" 364.348
+cap "MG_ESD_protection_0/GND" "pin15" 320.671
+cap "pin15" "MG_ESD_protection_0/diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" 35.4383
+cap "MG_ESD_protection_0/GND" "pin15" 308.943
+cap "MG_ESD_protection_0/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_1000#" "pin15" 7.32254
+cap "pin15" "MG_ESD_protection_0/diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" 16.8631
+cap "MG_ESD_protection_0/GND" "MG_ESD_protection_0/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_1000#" 353.223
+cap "MG_ESD_protection_0/pin_facing_input" "pin15" 1.50485
+cap "pin15" "MG_ESD_protection_0/GND" 1.48826
+cap "pin15" "MG_ESD_protection_0/GND" 2.21812
+cap "MG_ESD_protection_0/pin_facing_input" "MG_ESD_protection_0/GND" 6.40114
+cap "MG_ESD_protection_0/pin_facing_input" "pin15" 3.01774
+cap "pin15" "MG_ESD_protection_0/external_input_pin" 22.1163
+cap "MG_ESD_protection_0/pin_facing_input" "MG_ESD_protection_0/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" 0.876425
+cap "MG_ESD_protection_0/external_input_pin" "pin15" 18.1943
+cap "MG_ESD_protection_0/external_input_pin" "MG_ESD_protection_0/diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" -2.27374e-13
+cap "pin15" "MG_ESD_protection_0/external_input_pin" 9.33039
+cap "MG_ESD_protection_0/external_input_pin" "MG_ESD_protection_0/diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" 9.09495e-13
+cap "pin15" "MG_ESD_protection_0/Vdd" 22.069
+cap "pin15" "MG_ESD_protection_0/Vdd" 44.1379
+cap "pin15" "MG_ESD_protection_0/Vdd" 2.2069
+cap "MG_ESD_protection_0/diode_pd2nw_06v0_QD74SH_0/a_n1820_n410#" "MG_ESD_protection_0/external_input_pin" 12.4592
+cap "MG_ESD_protection_1/pin_facing_input" "MG_ESD_protection_1/diode_nd2ps_06v0_XZ9LFE_4/a_n2652_n242#" 1.68532
+cap "pin14" "MG_ESD_protection_1/diode_nd2ps_06v0_XZ9LFE_0/a_n2500_n90#" 2.26021
+cap "pin14" "pin15" 294.52
+cap "MG_ESD_protection_1/diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "pin14" 2.21606
+cap "MG_ESD_protection_1/diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" "pin14" 2.36077
+cap "pin14" "MG_ESD_protection_1/diode_nd2ps_06v0_XZ9LFE_0/a_n2652_n242#" 294.894
+cap "pin14" "MG_ESD_protection_1/GND" 293.091
+cap "pin14" "MG_ESD_protection_1/diode_nd2ps_06v0_XZ9LFE_3/a_n2500_n90#" 2.98755
+cap "MG_ESD_protection_1/GND" "pin14" 311.45
+cap "MG_ESD_protection_1/diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" "pin14" 3.15562
+cap "pin14" "MG_ESD_protection_1/pin_facing_input" 471.883
+cap "MG_ESD_protection_1/GND" "MG_ESD_protection_1/pin_facing_input" 6.74126
+cap "pin14" "MG_ESD_protection_1/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" 1.86925
+cap "pin14" "MG_ESD_protection_1/GND" 253.609
+cap "pin14" "MG_ESD_protection_1/diode_nd2ps_06v0_67PAP3_0/a_n1652_n242#" 27.566
+cap "MG_ESD_protection_1/external_input_pin" "pin14" 568.801
+cap "MG_ESD_protection_1/external_input_pin" "pin14" 551.258
+cap "MG_ESD_protection_1/GND" "pin14" 542.283
+cap "MG_ESD_protection_1/diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "pin14" 4.13199
+cap "pin14" "MG_ESD_protection_1/diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" 3.77625
+cap "MG_ESD_protection_1/GND" "pin14" 527.227
+cap "MG_ESD_protection_1/GND" "MG_ESD_protection_1/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_1000#" 6.74126
+cap "MG_ESD_protection_1/GND" "pin14" 320.787
+cap "pin14" "MG_ESD_protection_1/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_1000#" 588.226
+cap "MG_ESD_protection_1/ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#" "pin14" 132.887
+cap "pin14" "MG_ESD_protection_1/external_input_pin" 557.881
+cap "MG_ESD_protection_1/external_input_pin" "pin14" 496.98
+cap "MG_ESD_protection_1/diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "pin14" 336.566
+cap "MG_ESD_protection_1/GND" "pin14" 140.005
+cap "pin14" "MG_ESD_protection_1/pin_facing_input" 76.5409
+cap "pin14" "MG_ESD_protection_1/GND" 324.784
+cap "pin14" "MG_ESD_protection_1/diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" 131.502
+cap "MG_ESD_protection_1/pin_facing_input" "MG_ESD_protection_1/GND" 6.65784
+cap "pin14" "MG_ESD_protection_1/pin_facing_input" 762.843
+cap "pin14" "MG_ESD_protection_1/GND" 132.506
+cap "MG_ESD_protection_1/ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#" "pin14" 163.32
+cap "pin14" "MG_ESD_protection_1/external_input_pin" -7.10543e-15
+cap "MG_ESD_protection_1/external_input_pin" "pin14" 251.688
+cap "MG_ESD_protection_1/external_input_pin" "pin14" 254.136
+cap "pin14" "MG_ESD_protection_1/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 2.77019
+cap "pin14" "MG_ESD_protection_1/diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" 250.849
+cap "MG_ESD_protection_1/diode_nd2ps_06v0_XZ9LFE_2/a_n2652_n242#" "pin14" 54.8792
+cap "pin14" "MG_ESD_protection_1/diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" 107.745
+cap "pin14" "MG_ESD_protection_1/pin_facing_input" 157.075
+cap "pin14" "MG_ESD_protection_1/external_input_pin" 17.3818
+cap "pin14" "MG_ESD_protection_1/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" 14.2733
+cap "pin14" "MG_ESD_protection_1/diode_pd2nw_06v0_WSMRF6_3/a_n2500_n90#" 13.3729
+cap "MG_ESD_protection_1/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" "MG_ESD_protection_1/pin_facing_input" 2.54581
+cap "MG_ESD_protection_1/external_input_pin" "MG_ESD_protection_1/ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#" 39.2574
+cap "MG_ESD_protection_1/external_input_pin" "pin14" 73.1789
+cap "pin15" "pin14" -0.00201764
+cap "pin15" "MG_ESD_protection_1/external_input_pin" 16.4395
+cap "pin14" "MG_ESD_protection_1/external_input_pin" -0.491208
+cap "MG_ESD_protection_1/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "pin14" -0.00432865
+cap "MG_ESD_protection_1/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "pin14" -0.00226907
+cap "pin14" "MG_ESD_protection_1/diode_nd2ps_06v0_XZ9LFE_2/a_n2652_n242#" -0.00412107
+cap "pin14" "MG_ESD_protection_1/diode_pd2nw_06v0_WSMRF6_3/a_n2500_n90#" 1.17356
+cap "MG_ESD_protection_1/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" "pin14" 0.291602
+cap "pin15" "MG_ESD_protection_1/external_input_pin" 16.7947
+cap "MG_ESD_protection_1/Vdd" "pin15" 9.45813
+cap "pin15" "MG_ESD_protection_1/Vdd" 44.1379
+cap "pin15" "MG_ESD_protection_1/Vdd" 14.8177
+cap "MG_ESD_protection_1/diode_pd2nw_06v0_QD74SH_0/a_n1820_n410#" "MG_ESD_protection_1/external_input_pin" 21.5204
+cap "MG_ESD_protection_2/GND" "MG_ESD_protection_2/pin_facing_input" 6.5005
+cap "MG_ESD_protection_2/GND" "pin15" 18.241
+cap "MG_ESD_protection_2/pin_facing_input" "MG_ESD_protection_2/GND" 6.74126
+cap "MG_ESD_protection_2/external_input_pin" "pin15" 490.816
+cap "MG_ESD_protection_2/diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "pin15" 180.655
+cap "MG_ESD_protection_2/GND" "pin15" 289.402
+cap "MG_ESD_protection_2/GND" "pin15" 378.519
+cap "pin15" "MG_ESD_protection_2/diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" 78.647
+cap "pin15" "MG_ESD_protection_2/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_1000#" 86.0105
+cap "MG_ESD_protection_2/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_1000#" "MG_ESD_protection_2/GND" 783.317
+cap "pin15" "MG_ESD_protection_2/external_input_pin" 572.834
+cap "pin15" "MG_ESD_protection_2/diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" 549.822
+cap "pin15" "MG_ESD_protection_2/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 19.3914
+cap "MG_ESD_protection_2/diode_nd2ps_06v0_XZ9LFE_2/a_n2652_n242#" "pin15" 206.437
+cap "MG_ESD_protection_2/diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" "pin15" 211.876
+cap "MG_ESD_protection_2/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" "MG_ESD_protection_2/pin_facing_input" 583.115
+cap "MG_ESD_protection_2/external_input_pin" "MG_ESD_protection_2/ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#" 226.058
+cap "MG_ESD_protection_2/pin_facing_input" "MG_ESD_protection_2/ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#" 23.5747
+cap "MG_ESD_protection_2/external_input_pin" "pin15" -1.13687e-13
+cap "pin15" "MG_ESD_protection_2/external_input_pin" 548.65
+cap "MG_ESD_protection_2/diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" "pin15" -9.03626e-15
+cap "MG_ESD_protection_2/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "pin15" 12.4954
+cap "MG_ESD_protection_2/external_input_pin" "pin15" 643.342
+cap "pin15" "MG_ESD_protection_2/diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" -2.83157e-17
+cap "pin15" "MG_ESD_protection_2/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 13.5007
+cap "pin15" "MG_ESD_protection_2/diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" 640.084
+cap "pin15" "MG_ESD_protection_2/diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" -1.79471e-14
+cap "MG_ESD_protection_2/diode_nd2ps_06v0_XZ9LFE_2/a_n2652_n242#" "pin15" 29.833
+cap "MG_ESD_protection_2/diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" "pin15" 8.48437e-15
+cap "MG_ESD_protection_2/diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" "pin15" 633.721
+cap "MG_ESD_protection_2/diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" "pin15" -6.35909e-15
+cap "MG_ESD_protection_2/diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" "MG_ESD_protection_2/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" 3.1071
+cap "MG_ESD_protection_2/diode_pd2nw_06v0_WSMRF6_3/a_n2500_n90#" "MG_ESD_protection_2/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" 197.864
+cap "MG_ESD_protection_2/pin_facing_input" "MG_ESD_protection_2/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" 220.305
+cap "pin15" "MG_ESD_protection_2/external_input_pin" 24.259
+cap "MG_ESD_protection_2/external_input_pin" "MG_ESD_protection_2/diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" 4.54747e-13
+cap "pin15" "MG_ESD_protection_2/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" 2.7946
+cap "pin15" "MG_ESD_protection_2/Vdd" 40.9852
+cap "MG_ESD_protection_2/Vdd" "pin15" 27.4286
+cap "MG_ESD_protection_2/diode_pd2nw_06v0_QD74SH_0/a_n1820_n410#" "MG_ESD_protection_2/external_input_pin" 30.5816
+cap "MG_ESD_protection_3/diode_nd2ps_06v0_67PAP3_0/a_n1652_n242#" "MG_ESD_protection_3/pin_facing_input" 4.57443
+cap "MG_ESD_protection_3/GND" "MG_ESD_protection_3/pin_facing_input" 6.74126
+cap "MG_ESD_protection_3/GND" "pin14" 0.36426
+cap "MG_ESD_protection_3/GND" "pin14" 0.643776
+cap "MG_ESD_protection_3/GND" "MG_ESD_protection_3/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_1000#" 6.74126
+cap "pin14" "MG_ESD_protection_3/external_input_pin" 2.84217e-14
+cap "pin14" "MG_ESD_protection_3/external_input_pin" 316.084
+cap "pin14" "MG_ESD_protection_3/external_input_pin" 309.32
+cap "MG_ESD_protection_3/diode_nd2ps_06v0_XZ9LFE_1/a_n2652_n242#" "pin14" 15.6582
+cap "MG_ESD_protection_3/diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "pin14" 288.058
+cap "pin14" "MG_ESD_protection_3/diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" 103.547
+cap "MG_ESD_protection_3/diode_nd2ps_06v0_XZ9LFE_2/a_n2652_n242#" "pin14" 126.247
+cap "MG_ESD_protection_3/pin_facing_input" "pin14" 20.4902
+cap "pin14" "MG_ESD_protection_3/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" 47.7043
+cap "pin14" "MG_ESD_protection_3/pin_facing_input" 301.474
+cap "MG_ESD_protection_3/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" "MG_ESD_protection_3/pin_facing_input" 6.2728
+cap "pin14" "MG_ESD_protection_3/ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#" 74.9699
+cap "MG_ESD_protection_3/external_input_pin" "pin14" -1.42109e-14
+cap "MG_ESD_protection_3/external_input_pin" "pin14" 1.13687e-13
+cap "pin15" "pin14" 11.8894
+cap "MG_ESD_protection_3/external_input_pin" "pin15" 18.835
+cap "MG_ESD_protection_3/external_input_pin" "pin14" 475.875
+cap "MG_ESD_protection_3/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "pin14" 14.9548
+cap "MG_ESD_protection_3/external_input_pin" "pin14" 552.815
+cap "MG_ESD_protection_3/diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "pin14" 547.404
+cap "MG_ESD_protection_3/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "pin14" 15.7636
+cap "MG_ESD_protection_3/diode_nd2ps_06v0_XZ9LFE_2/a_n2652_n242#" "pin14" 47.3326
+cap "MG_ESD_protection_3/diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" "pin14" 447.815
+cap "MG_ESD_protection_3/diode_pd2nw_06v0_WSMRF6_3/a_n2500_n90#" "pin14" 123.915
+cap "MG_ESD_protection_3/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" "pin14" 109.724
+cap "MG_ESD_protection_3/pin_facing_input" "pin14" 262.018
+cap "MG_ESD_protection_3/pin_facing_input" "MG_ESD_protection_3/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" 0.0417345
+cap "MG_ESD_protection_3/ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#" "pin14" 290.659
+cap "pin14" "MG_ESD_protection_3/external_input_pin" -1.42109e-14
+cap "pin14" "MG_ESD_protection_3/diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" 3.46813
+cap "pin14" "MG_ESD_protection_3/external_input_pin" 486.308
+cap "pin14" "pin15" 12.2162
+cap "MG_ESD_protection_3/external_input_pin" "MG_ESD_protection_3/diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" -4.54747e-13
+cap "MG_ESD_protection_3/external_input_pin" "pin15" 21.9264
+cap "MG_ESD_protection_3/diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" "pin14" 3.46813
+cap "pin14" "MG_ESD_protection_3/external_input_pin" 544.63
+cap "pin14" "MG_ESD_protection_3/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 12.1961
+cap "MG_ESD_protection_3/diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "pin14" 545.075
+cap "MG_ESD_protection_3/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "pin14" 13.1813
+cap "MG_ESD_protection_3/diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" "pin14" 3.46813
+cap "MG_ESD_protection_3/diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" "pin14" 3.46813
+cap "MG_ESD_protection_3/diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" "pin14" 3.2445
+cap "pin14" "MG_ESD_protection_3/diode_nd2ps_06v0_XZ9LFE_2/a_n2652_n242#" 11.9202
+cap "MG_ESD_protection_3/diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" "pin14" 547.111
+cap "MG_ESD_protection_3/diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" "pin14" 0.223631
+cap "MG_ESD_protection_3/diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" "pin14" 7.66601
+cap "pin14" "MG_ESD_protection_3/diode_pd2nw_06v0_WSMRF6_3/a_n2500_n90#" 170.009
+cap "MG_ESD_protection_3/pin_facing_input" "pin14" 189.312
+cap "MG_ESD_protection_3/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" "pin14" 91.1819
+cap "MG_ESD_protection_3/ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#" "pin14" 244.302
+cap "MG_ESD_protection_3/external_input_pin" "pin14" 350.798
+cap "MG_ESD_protection_3/diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" "pin14" 34.553
+cap "pin15" "MG_ESD_protection_3/external_input_pin" 5.59824
+cap "pin15" "pin14" 47.5069
+cap "MG_ESD_protection_3/diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" "MG_ESD_protection_3/external_input_pin" -4.54747e-13
+cap "MG_ESD_protection_3/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "pin14" 57.569
+cap "MG_ESD_protection_3/external_input_pin" "pin14" 350.798
+cap "pin14" "MG_ESD_protection_3/diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" 39.2031
+cap "MG_ESD_protection_3/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "pin14" 56.8903
+cap "MG_ESD_protection_3/diode_pd2nw_06v0_WSMRF6_1/a_n2500_n90#" "pin14" 351.205
+cap "pin14" "MG_ESD_protection_3/diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" 42.9735
+cap "MG_ESD_protection_3/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" "pin14" 53.9591
+cap "MG_ESD_protection_3/diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" "pin14" 41.5495
+cap "pin14" "MG_ESD_protection_3/diode_pd2nw_06v0_WSMRF6_2/a_n2500_n90#" 359.658
+cap "pin14" "MG_ESD_protection_3/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" 122.988
+cap "pin14" "MG_ESD_protection_3/diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" 131.652
+cap "MG_ESD_protection_3/diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" "pin14" 76.0352
+cap "pin14" "MG_ESD_protection_3/diode_pd2nw_06v0_WSMRF6_3/a_n2500_n90#" 107.719
+cap "MG_ESD_protection_3/diode_pd2nw_06v0_WSMRF6_4/a_n2820_n410#" "pin14" 147.244
+cap "MG_ESD_protection_3/Vdd" "pin15" 28.3744
+cap "MG_ESD_protection_3/diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" "pin14" 1.13018
+cap "MG_ESD_protection_3/Vdd" "pin15" 40.0394
+cap "MG_ESD_protection_3/diode_pd2nw_06v0_QD74SH_0/a_n1820_n410#" "MG_ESD_protection_3/external_input_pin" 7.92855
+cap "MG_ESD_protection_4/pin_facing_input" "MG_ESD_protection_4/diode_nd2ps_06v0_67PAP3_0/a_n1652_n242#" 2.64835
+cap "MG_ESD_protection_4/diode_nd2ps_06v0_67PAP3_0/a_n1652_n242#" "MG_ESD_protection_4/pin_facing_input" 6.74126
+cap "MG_ESD_protection_4/diode_nd2ps_06v0_67PAP3_0/a_n1652_n242#" "MG_ESD_protection_4/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" 6.74126
+cap "MG_ESD_protection_4/pin_facing_input" "MG_ESD_protection_4/GND" 6.52949
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_3/a_n2500_n90#" "pin15" 0.638538
+cap "MG_ESD_protection_4/pin_facing_input" "pin15" 0.411556
+cap "MG_ESD_protection_4/pin_facing_input" "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" 1.71112
+cap "MG_ESD_protection_4/ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#" "MG_ESD_protection_4/external_input_pin" 45.0543
+cap "MG_ESD_protection_4/external_input_pin" "pin15" 1.42109e-14
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" "MG_ESD_protection_4/external_input_pin" -2.27374e-13
+cap "MG_ESD_protection_4/external_input_pin" "pin15" 451.943
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" "pin15" 3.46813
+cap "pin15" "MG_ESD_protection_4/external_input_pin" 483.447
+cap "pin15" "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" 3.46813
+cap "pin15" "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 7.12627
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "pin15" 7.01699
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" "pin15" 3.46813
+cap "MG_ESD_protection_4/diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "pin15" 483.689
+cap "pin15" "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" -1.79299e-16
+cap "MG_ESD_protection_4/diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" "pin15" 452.817
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" "pin15" 3.46813
+cap "MG_ESD_protection_4/diode_nd2ps_06v0_XZ9LFE_2/a_n2652_n242#" "pin15" 9.029
+cap "pin15" "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" 3.2445
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_3/a_n2500_n90#" "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" 131.61
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" 0.223631
+cap "MG_ESD_protection_4/pin_facing_input" "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" 155.739
+cap "MG_ESD_protection_4/external_input_pin" "pin15" 58.3087
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" "pin15" 0.311919
+cap "MG_ESD_protection_4/external_input_pin" "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" -4.54747e-13
+cap "pin15" "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" 4.19906
+cap "MG_ESD_protection_4/external_input_pin" "pin15" 587.221
+cap "pin15" "MG_ESD_protection_4/external_input_pin" 558.86
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "pin15" 11.8002
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" "pin15" 4.47087
+cap "pin15" "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 10.9883
+cap "pin15" "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_1/a_n2500_n90#" 559.411
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" "pin15" 2.74006
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" "pin15" 4.50852
+cap "pin15" "MG_ESD_protection_4/diode_nd2ps_06v0_XZ9LFE_2/a_n2652_n242#" 9.08489
+cap "pin15" "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_2/a_n2500_n90#" 563.411
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" 47.0725
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" "MG_ESD_protection_4/pin_facing_input" 194.113
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_3/a_n2500_n90#" 173.404
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" "MG_ESD_protection_4/ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#" 4.54954
+cap "MG_ESD_protection_4/pin_facing_input" "MG_ESD_protection_4/ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#" 2.52802
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" "pin15" 1.83512
+cap "MG_ESD_protection_4/Vdd" "pin15" 3.74303
+cap "pin15" "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" 26.6588
+cap "pin15" "MG_ESD_protection_4/Vdd" 274.113
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" "pin15" 26.7474
+cap "MG_ESD_protection_4/Vdd" "pin15" 263.177
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "pin15" 222.235
+cap "pin15" "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_1/a_n2500_n90#" 26.7474
+cap "pin15" "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" 280.425
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "pin15" 218.342
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_2/a_n2500_n90#" "pin15" 53.4948
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" "pin15" 269.522
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" "pin15" 209.638
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" 291.189
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" "MG_ESD_protection_4/diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" 37.9739
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_3/a_n2500_n90#" "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" 16.3412
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_4/a_n2820_n410#" "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" 1.90819
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_4/a_n2820_n410#" "MG_ESD_protection_4/diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" 0.735132
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" "pin15" 2.4429
+cap "MG_ESD_protection_4/Vdd" "pin15" 327.706
+cap "MG_ESD_protection_4/Vdd" "pin15" 314.134
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" "pin15" 2.40724
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "pin15" 13.1337
+cap "pin15" "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_1/a_n2500_n90#" 2.40009
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" "pin15" 315.77
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "pin15" 12.777
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" "pin15" 12.2527
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" "pin15" 315.544
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_2/a_n2500_n90#" "pin15" 4.45318
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" 210.309
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" 1.12914
+cap "pin15" "MG_ESD_protection_4/Vdd" 8.51232
+cap "pin15" "MG_ESD_protection_4/Vdd" 0.152474
+cap "MG_ESD_protection_4/Vdd" "pin15" 0.165991
+cap "pin15" "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" 0.166898
+cap "pin15" "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" 0.36093
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" "pin15" 0.0169174
+cap "MG_ESD_protection_4/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" "pin15" 0.196059
+cap "MG_ESD_protection_5/diode_nd2ps_06v0_67PAP3_0/a_n1652_n242#" "MG_ESD_protection_5/pin_facing_input" 0.722278
+cap "MG_ESD_protection_5/diode_nd2ps_06v0_67PAP3_0/a_n1652_n242#" "MG_ESD_protection_5/pin_facing_input" 6.74126
+cap "MG_ESD_protection_5/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "MG_ESD_protection_5/diode_nd2ps_06v0_67PAP3_0/a_n1652_n242#" 6.74126
+cap "MG_ESD_protection_5/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "MG_ESD_protection_5/diode_nd2ps_06v0_67PAP3_0/a_n1652_n242#" 6.74126
+cap "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" "MG_ESD_protection_5/pin_facing_input" 3.42542
+cap "MG_ESD_protection_5/external_input_pin" "MG_ESD_protection_5/ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#" 33.4605
+cap "pin15" "MG_ESD_protection_5/external_input_pin" 15.9887
+cap "MG_ESD_protection_5/external_input_pin" "pin15" 20.5269
+cap "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" "pin14" 1.17654
+cap "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" "pin14" 1.00305
+cap "MG_ESD_protection_5/ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#" "pin14" 0.00918642
+cap "pin14" "MG_ESD_protection_5/Vdd" 110.86
+cap "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" "pin14" 303.148
+cap "pin15" "MG_ESD_protection_5/Vdd" 3.15271
+cap "pin15" "pin14" 191.896
+cap "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "pin14" 221.678
+cap "MG_ESD_protection_5/Vdd" "pin14" 110.718
+cap "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" "pin14" 287.867
+cap "pin14" "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" 127.017
+cap "pin14" "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_1/a_n2500_n90#" 287.809
+cap "pin14" "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 218.082
+cap "pin14" "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 209.253
+cap "pin14" "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" 117.1
+cap "pin14" "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_2/a_n2500_n90#" 313.937
+cap "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" "pin14" 253.832
+cap "pin14" "MG_ESD_protection_5/diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" 111.704
+cap "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_3/a_n2500_n90#" "pin14" 88.3291
+cap "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" "pin14" 161.891
+cap "pin14" "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_4/a_n2820_n410#" 193.229
+cap "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" "pin14" 6.72406
+cap "MG_ESD_protection_5/Vdd" "pin14" 530.911
+cap "MG_ESD_protection_5/Vdd" "pin15" 44.1379
+cap "pin15" "pin14" 35.8569
+cap "pin14" "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 10.6601
+cap "pin14" "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" 6.97213
+cap "MG_ESD_protection_5/Vdd" "pin14" 549.255
+cap "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" "pin14" 552.741
+cap "pin14" "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_1/a_n2500_n90#" 6.97213
+cap "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "pin14" 9.07879
+cap "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" "pin14" 549.255
+cap "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" "pin14" 8.13368
+cap "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_2/a_n2500_n90#" "pin14" 13.9443
+cap "pin14" "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" 92.8693
+cap "pin14" "MG_ESD_protection_5/diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" 3.39556
+cap "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" "pin14" 488.102
+cap "pin14" "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_4/a_n2820_n410#" 178.814
+cap "pin14" "MG_ESD_protection_5/Vdd" 286.931
+cap "MG_ESD_protection_5/Vdd" "pin15" 21.1232
+cap "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" "pin14" 6.35861
+cap "pin14" "pin15" 159.663
+cap "pin14" "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 176.629
+cap "pin14" "MG_ESD_protection_5/Vdd" 288.583
+cap "pin14" "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_1/a_n2500_n90#" 5.89848
+cap "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" "pin14" 294.884
+cap "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "pin14" 178.11
+cap "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_2/a_n2500_n90#" "pin14" 5.85818
+cap "pin14" "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_3/a_n2500_n90#" 5.29408
+cap "pin14" "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" 298.008
+cap "pin14" "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" 4.48822
+cap "pin14" "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 175.199
+cap "pin14" "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" 278.585
+cap "pin14" "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" 82.8943
+cap "pin14" "MG_ESD_protection_5/diode_pd2nw_06v0_WSMRF6_4/a_n2820_n410#" 150.54
+cap "MG_ESD_protection_6/pin_facing_input" "MG_ESD_protection_6/diode_nd2ps_06v0_67PAP3_0/a_n1652_n242#" 5.53747
+cap "MG_ESD_protection_6/diode_nd2ps_06v0_67PAP3_0/a_n1652_n242#" "MG_ESD_protection_6/pin_facing_input" 6.74126
+cap "MG_ESD_protection_6/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "MG_ESD_protection_6/diode_nd2ps_06v0_67PAP3_0/a_n1652_n242#" 6.74126
+cap "MG_ESD_protection_6/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "MG_ESD_protection_6/diode_nd2ps_06v0_67PAP3_0/a_n1652_n242#" 5.35149
+cap "pin15" "MG_ESD_protection_6/external_input_pin" 15.5536
+cap "pin15" "MG_ESD_protection_6/external_input_pin" 25.6586
+cap "MG_ESD_protection_6/external_input_pin" "pin15" 1.86608
+cap "MG_ESD_protection_6/external_input_pin" "MG_ESD_protection_6/Vdd" -4.54747e-13
+cap "MG_ESD_protection_6/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" "pin15" 0.57935
+cap "pin15" "MG_ESD_protection_6/diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" 3.99268
+cap "MG_ESD_protection_6/Vdd" "pin15" 222.597
+cap "MG_ESD_protection_6/diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" "pin15" 4.02812
+cap "MG_ESD_protection_6/Vdd" "pin15" 211.524
+cap "MG_ESD_protection_6/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "pin15" 23.5411
+cap "MG_ESD_protection_6/diode_pd2nw_06v0_WSMRF6_1/a_n2500_n90#" "pin15" 4.02812
+cap "MG_ESD_protection_6/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "pin15" 23.2724
+cap "MG_ESD_protection_6/diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" "pin15" 213.783
+cap "MG_ESD_protection_6/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" "pin15" 22.4378
+cap "MG_ESD_protection_6/diode_pd2nw_06v0_WSMRF6_2/a_n2500_n90#" "pin15" 8.05623
+cap "MG_ESD_protection_6/diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" "pin15" 212.721
+cap "MG_ESD_protection_6/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" "MG_ESD_protection_6/diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" 205.812
+cap "MG_ESD_protection_6/diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" "MG_ESD_protection_6/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" 2.69809
+cap "MG_ESD_protection_6/diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" "pin15" 8.27977
+cap "pin15" "MG_ESD_protection_6/Vdd" 477.5
+cap "MG_ESD_protection_6/Vdd" "pin15" 445.347
+cap "MG_ESD_protection_6/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "pin15" 103.466
+cap "MG_ESD_protection_6/diode_pd2nw_06v0_WSMRF6_1/a_n2500_n90#" "pin15" 7.89051
+cap "MG_ESD_protection_6/diode_pd2nw_06v0_WSMRF6_2/a_n2500_n90#" "pin15" 7.85022
+cap "MG_ESD_protection_6/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "pin15" 103.053
+cap "pin15" "MG_ESD_protection_6/diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" 452.643
+cap "pin15" "MG_ESD_protection_6/diode_pd2nw_06v0_WSMRF6_3/a_n2500_n90#" 7.28612
+cap "MG_ESD_protection_6/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" "pin15" 6.48025
+cap "pin15" "MG_ESD_protection_6/diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" 454.577
+cap "pin15" "MG_ESD_protection_6/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 100.368
+cap "MG_ESD_protection_6/diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" "MG_ESD_protection_6/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" 0.530862
+cap "MG_ESD_protection_6/diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" "MG_ESD_protection_6/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" 202.772
+cap "pin15" "MG_ESD_protection_6/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 147.437
+cap "MG_ESD_protection_6/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "pin15" 153.357
+cap "pin15" "MG_ESD_protection_6/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 153.168
+cap "MG_ESD_protection_7/diode_nd2ps_06v0_67PAP3_0/a_n1652_n242#" "MG_ESD_protection_7/pin_facing_input" 6.01898
+cap "MG_ESD_protection_7/diode_nd2ps_06v0_67PAP3_0/a_n1652_n242#" "MG_ESD_protection_7/pin_facing_input" 6.74126
+cap "MG_ESD_protection_7/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "MG_ESD_protection_7/diode_nd2ps_06v0_67PAP3_0/a_n1652_n242#" 6.74126
+cap "MG_ESD_protection_7/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "MG_ESD_protection_7/diode_nd2ps_06v0_67PAP3_0/a_n1652_n242#" 4.86997
+cap "MG_ESD_protection_7/external_input_pin" "pin15" 3.82776
+cap "MG_ESD_protection_7/external_input_pin" "MG_ESD_protection_7/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 2.27374e-13
+cap "pin15" "MG_ESD_protection_7/external_input_pin" 26.1251
+cap "pin15" "MG_ESD_protection_7/external_input_pin" 43.2925
+cap "MG_ESD_protection_7/Vdd" "pin15" 28.3744
+cap "MG_ESD_protection_7/Vdd" "MG_ESD_protection_7/diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" 25.0371
+cap "pin15" "MG_ESD_protection_7/diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" 9.33039
+cap "MG_ESD_protection_7/Vdd" "pin15" 30.5813
+cap "MG_ESD_protection_8/pin_facing_input" "MG_ESD_protection_7/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" 8.54729
+cap "pin14" "pin15" 249.142
+cap "MG_ESD_protection_8/diode_nd2ps_06v0_XZ9LFE_0/a_n2500_n90#" "pin14" 2.00996
+cap "pin14" "MG_ESD_protection_7/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 243.14
+cap "MG_ESD_protection_8/diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "pin14" 1.93055
+cap "MG_ESD_protection_8/diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" "pin14" 1.97776
+cap "MG_ESD_protection_8/diode_nd2ps_06v0_XZ9LFE_3/a_n2500_n90#" "pin14" 2.11325
+cap "MG_ESD_protection_8/GND" "pin14" 241.688
+cap "pin14" "MG_ESD_protection_8/diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" 2.07458
+cap "pin14" "MG_ESD_protection_8/GND" 252.558
+cap "MG_ESD_protection_8/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "pin14" 1.6184
+cap "MG_ESD_protection_8/pin_facing_input" "pin14" 322.05
+cap "MG_ESD_protection_8/GND" "pin14" 194.128
+cap "MG_ESD_protection_8/pin_facing_input" "MG_ESD_protection_8/GND" 6.74126
+cap "pin14" "MG_ESD_protection_7/diode_pd2nw_06v0_WSMRF6_4/a_n2820_n410#" 18.9666
+cap "pin14" "MG_ESD_protection_8/external_input_pin" 568.801
+cap "pin14" "MG_ESD_protection_8/external_input_pin" 551.258
+cap "pin14" "MG_ESD_protection_8/diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" 4.13199
+cap "pin14" "MG_ESD_protection_8/GND" 542.283
+cap "MG_ESD_protection_8/GND" "pin14" 527.227
+cap "pin14" "MG_ESD_protection_8/diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" 3.77625
+cap "MG_ESD_protection_8/GND" "MG_ESD_protection_8/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_1000#" 6.74126
+cap "MG_ESD_protection_8/GND" "pin14" 320.719
+cap "MG_ESD_protection_8/ppolyf_u_1k_6p0_84E4CZ_0/a_n500_1000#" "pin14" 588.226
+cap "pin14" "MG_ESD_protection_8/ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#" 131.325
+cap "pin14" "MG_ESD_protection_8/external_input_pin" 561.152
+cap "pin14" "MG_ESD_protection_8/external_input_pin" 496.98
+cap "pin14" "MG_ESD_protection_8/diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" 336.566
+cap "pin14" "MG_ESD_protection_8/GND" 140.005
+cap "pin14" "MG_ESD_protection_8/pin_facing_input" 82.8294
+cap "pin14" "MG_ESD_protection_8/diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" 131.502
+cap "MG_ESD_protection_8/GND" "pin14" 325.092
+cap "MG_ESD_protection_8/GND" "pin14" 134.201
+cap "MG_ESD_protection_8/pin_facing_input" "pin14" 775.74
+cap "MG_ESD_protection_8/pin_facing_input" "MG_ESD_protection_8/GND" 6.65784
+cap "MG_ESD_protection_8/ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#" "pin14" 163.32
+cap "pin14" "MG_ESD_protection_8/external_input_pin" -5.68434e-14
+cap "pin14" "MG_ESD_protection_8/external_input_pin" 405.434
+cap "pin14" "MG_ESD_protection_8/external_input_pin" 417.803
+cap "MG_ESD_protection_8/diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "pin14" 407.941
+cap "pin14" "MG_ESD_protection_8/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 8.31058
+cap "pin14" "MG_ESD_protection_8/diode_nd2ps_06v0_XZ9LFE_2/a_n2652_n242#" 103.512
+cap "pin14" "MG_ESD_protection_8/diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" 202.411
+cap "MG_ESD_protection_8/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" "pin14" 32.0068
+cap "MG_ESD_protection_8/pin_facing_input" "MG_ESD_protection_8/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" 2.54581
+cap "MG_ESD_protection_8/external_input_pin" "pin14" 29.992
+cap "MG_ESD_protection_8/pin_facing_input" "pin14" 314.099
+cap "MG_ESD_protection_8/diode_pd2nw_06v0_WSMRF6_3/a_n2500_n90#" "pin14" 29.1176
+cap "MG_ESD_protection_8/external_input_pin" "pin14" 140.545
+cap "MG_ESD_protection_8/external_input_pin" "MG_ESD_protection_8/ppolyf_u_1k_6p0_84E4CZ_0/a_n712_n1334#" 39.2574
+cap "pin14" "MG_ESD_protection_8/external_input_pin" -3.63769
+cap "pin14" "pin15" 0.0167922
+cap "MG_ESD_protection_8/external_input_pin" "pin15" 16.4395
+cap "pin14" "MG_ESD_protection_8/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 0.0381124
+cap "pin14" "MG_ESD_protection_8/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 0.0224862
+cap "pin14" "MG_ESD_protection_8/diode_nd2ps_06v0_XZ9LFE_2/a_n2652_n242#" 0.272074
+cap "MG_ESD_protection_8/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" "pin14" 1.09292
+cap "pin14" "MG_ESD_protection_8/diode_pd2nw_06v0_WSMRF6_3/a_n2500_n90#" 2.80393
+cap "MG_ESD_protection_8/external_input_pin" "pin15" 26.1251
+cap "pin15" "MG_ESD_protection_8/diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" 43.2925
+cap "MG_ESD_protection_8/Vdd" "MG_ESD_protection_8/diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" 25.0371
+cap "pin15" "MG_ESD_protection_8/diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" 26.1251
+cap "MG_ESD_protection_8/diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" "MG_ESD_protection_8/Vdd" 116.84
+cap "MG_ESD_protection_8/Vdd" "pin5" 39.2249
+cap "pin15" "pin5" 30.4744
+cap "MG_ESD_protection_8/external_input_pin" "MG_ESD_protection_8/diode_pd2nw_06v0_QD74SH_0/a_n1820_n410#" 21.5204
+cap "pin15" "MG_ESD_protection_11/external_input_pin" 9.77948
+cap "pin15" "MG_ESD_protection_13/diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" 0.510529
+cap "pin15" "MG_ESD_protection_13/diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" 1.54433
+cap "MG_ESD_protection_13/diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" "pin15" 0.602463
+cap "MG_ESD_protection_13/diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" "pin15" 1.55846
+cap "pin15" "MG_ESD_protection_15/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" 21.9051
+cap "pin15" "MG_ESD_protection_17/pin_facing_input" 17.0824
+cap "MG_ESD_protection_17/pin_facing_input" "pin15" 7.82742
+cap "pin15" "MG_ESD_protection_9/external_input_pin" 26.051
+cap "MG_ESD_protection_9/external_input_pin" "pin15" 33.4605
+cap "pin14" "MG_ESD_protection_9/pin_facing_input" 15.7887
+cap "MG_ESD_protection_9/pin_facing_input" "pin15" 0.337063
+cap "pin14" "MG_ESD_protection_9/external_input_pin" 305.659
+cap "pin14" "pin15" 434.471
+cap "MG_ESD_protection_9/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "pin15" 6.74126
+cap "MG_ESD_protection_9/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "pin14" 303.858
+cap "pin14" "MG_ESD_protection_9/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" 283.519
+cap "pin15" "MG_ESD_protection_9/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" 6.74126
+cap "pin14" "pin15" 422.207
+cap "MG_ESD_protection_9/pin_facing_input" "pin15" 6.74126
+cap "pin14" "MG_ESD_protection_9/pin_facing_input" 82.6312
+cap "pin14" "pin15" 104.726
+cap "MG_ESD_protection_9/pin_facing_input" "pin15" 0.851749
+cap "pin15" "MG_ESD_protection_10/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" 2.74466
+cap "pin15" "MG_ESD_protection_10/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" 6.74126
+cap "pin15" "MG_ESD_protection_10/pin_facing_input" 6.74126
+cap "MG_ESD_protection_10/pin_facing_input" "pin15" 5.05595
+cap "pin15" "MG_ESD_protection_11/diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" 25.2263
+cap "pin15" "pin15" 0.0324974
+cap "pin15" "MG_ESD_protection_11/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" 3.22618
+cap "pin15" "MG_ESD_protection_11/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" 6.74126
+cap "MG_ESD_protection_11/pin_facing_input" "pin15" 6.74126
+cap "MG_ESD_protection_11/pin_facing_input" "pin15" 4.57443
+cap "pin14" "pin15" 495.929
+cap "pin14" "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" 84.0613
+cap "pin15" "pin14" 435.153
+cap "pin14" "pin15" 424.018
+cap "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" "pin14" 25.932
+cap "pin15" "pin14" 0.576494
+cap "pin15" "MG_ESD_protection_12/external_input_pin" 28.8229
+cap "pin15" "MG_ESD_protection_12/pin_facing_input" 1.3001
+cap "pin15" "MG_ESD_protection_12/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" 6.74126
+cap "MG_ESD_protection_12/pin_facing_input" "pin15" 6.74126
+cap "MG_ESD_protection_12/pin_facing_input" "pin15" 6.5005
+cap "pin15" "pin15" 0.187368
+cap "pin15" "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" 40.652
+cap "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" "pin15" 45.4526
+cap "pin15" "MG_ESD_protection_13/diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" 20.1011
+cap "pin15" "MG_ESD_protection_13/external_input_pin" 39.2574
+cap "pin15" "MG_ESD_protection_13/pin_facing_input" 6.11529
+cap "MG_ESD_protection_13/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "pin15" 6.74126
+cap "pin15" "MG_ESD_protection_13/pin_facing_input" 6.74126
+cap "MG_ESD_protection_13/pin_facing_input" "pin15" 1.68532
+cap "pin14" "pin15" 4.26543
+cap "pin14" "MG_ESD_protection_14/diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" 0.675209
+cap "pin15" "pin14" 375.281
+cap "MG_ESD_protection_14/diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" "pin14" 25.2309
+cap "pin15" "pin14" 576.772
+cap "pin15" "pin14" 573.729
+cap "MG_ESD_protection_14/pin_facing_input" "pin15" 4.18921
+cap "pin14" "pin15" 104.796
+cap "MG_ESD_protection_14/pin_facing_input" "pin14" 1.86491
+cap "pin15" "MG_ESD_protection_14/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" 6.74126
+cap "MG_ESD_protection_14/pin_facing_input" "pin15" 6.74126
+cap "pin15" "MG_ESD_protection_14/pin_facing_input" 3.61139
+cap "MG_ESD_protection_15/external_input_pin" "pin15" 3.39795
+cap "pin15" "MG_ESD_protection_15/external_input_pin" 31.7142
+cap "MG_ESD_protection_15/pin_facing_input" "pin15" 104.833
+cap "MG_ESD_protection_15/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "pin15" 271.097
+cap "pin15" "MG_ESD_protection_15/pin_facing_input" 6.74126
+cap "MG_ESD_protection_15/pin_facing_input" "pin15" 5.53747
+cap "pin15" "MG_ESD_protection_16/external_input_pin" 26.051
+cap "MG_ESD_protection_16/pin_facing_input" "pin14" 15.4754
+cap "pin14" "MG_ESD_protection_16/external_input_pin" 173.277
+cap "MG_ESD_protection_16/pin_facing_input" "pin15" 0.337063
+cap "MG_ESD_protection_16/external_input_pin" "pin15" 33.4605
+cap "MG_ESD_protection_16/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "pin14" 303.578
+cap "pin15" "MG_ESD_protection_16/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" 6.74126
+cap "pin15" "pin14" 433.261
+cap "MG_ESD_protection_16/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "pin15" 6.74126
+cap "pin15" "pin14" 423.828
+cap "MG_ESD_protection_16/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "pin14" 283.519
+cap "MG_ESD_protection_16/pin_facing_input" "pin14" 162.976
+cap "pin15" "MG_ESD_protection_16/pin_facing_input" 6.74126
+cap "pin15" "pin14" 163.381
+cap "MG_ESD_protection_16/pin_facing_input" "pin15" 0.722278
+cap "MG_ESD_protection_17/external_input_pin" "pin15" 16.9898
+cap "MG_ESD_protection_17/external_input_pin" "pin15" 45.0543
+cap "pin15" "pin15" 0.208865
+cap "pin15" "MG_ESD_protection_17/pin_facing_input" 5.15225
+cap "MG_ESD_protection_17/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "pin15" 171.326
+cap "pin15" "MG_ESD_protection_17/pin_facing_input" 300.011
+cap "pin15" "MG_ESD_protection_17/pin_facing_input" 120.104
+cap "MG_ESD_protection_18/external_input_pin" "pin15" 7.92855
+cap "pin15" "MG_ESD_protection_18/pin_facing_input" 3.22618
+cap "MG_ESD_protection_18/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "pin15" 6.74126
+cap "pin15" "MG_ESD_protection_18/pin_facing_input" 6.74126
+cap "pin15" "pin14" 3.00876
+cap "pin15" "MG_ESD_protection_18/pin_facing_input" 4.57443
+cap "pin15" "pin14" 40.9327
+cap "MG_ESD_protection_18/pin_facing_input" "pin14" 154.96
+cap "pin15" "MG_ESD_protection_19/external_input_pin" 27.1836
+cap "MG_ESD_protection_19/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "pin15" 0.577823
+cap "MG_ESD_protection_19/external_input_pin" "pin15" 32.0113
+cap "MG_ESD_protection_19/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "pin15" 6.74126
+cap "pin15" "MG_ESD_protection_19/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" 6.74126
+cap "MG_ESD_protection_19/pin_facing_input" "pin15" 6.74126
+cap "MG_ESD_protection_19/pin_facing_input" "pin15" 0.952802
+cap "pin14" "pin15" 1.3362
+cap "pin14" "MG_ESD_protection_9/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" 24.3766
+cap "MG_ESD_protection_9/pin_facing_input" "pin15" 3.08836
+cap "pin14" "MG_ESD_protection_9/pin_facing_input" 1007.56
+cap "pin14" "pin15" 62.4997
+cap "pin14" "MG_ESD_protection_9/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" 22.8507
+cap "MG_ESD_protection_9/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "pin14" 1761.43
+cap "pin14" "MG_ESD_protection_9/GND" 103.166
+cap "MG_ESD_protection_9/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "pin14" 1343.5
+cap "pin14" "MG_ESD_protection_9/GND" 548.898
+cap "MG_ESD_protection_9/pin_facing_input" "pin14" 494.37
+cap "MG_ESD_protection_9/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "pin14" 1.14398
+cap "MG_ESD_protection_9/GND" "pin14" 206.371
+cap "pin15" "MG_ESD_protection_9/pin_facing_input" 6.7325
+cap "MG_ESD_protection_10/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "pin15" 3.08836
+cap "pin15" "MG_ESD_protection_11/diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" 2.22617
+cap "pin15" "MG_ESD_protection_11/diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" 2.40789
+cap "pin15" "MG_ESD_protection_11/diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" 616.351
+cap "MG_ESD_protection_11/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" "pin15" 14.5694
+cap "pin15" "MG_ESD_protection_11/diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" 0.0417345
+cap "MG_ESD_protection_11/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "pin15" 3.04662
+cap "pin14" "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" 10.5782
+cap "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" "pin14" 295.058
+cap "pin14" "pin15" 471.47
+cap "pin15" "pin14" 30.4752
+cap "pin14" "MG_ESD_protection_12/diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" 7.82185
+cap "pin14" "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_3/a_n2500_n90#" 19.1792
+cap "pin14" "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" 1049.47
+cap "MG_ESD_protection_12/diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" "pin14" 178.207
+cap "pin15" "pin14" 385.566
+cap "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" "pin14" 96.365
+cap "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" "pin14" 227.967
+cap "pin14" "pin15" 0.851644
+cap "MG_ESD_protection_12/diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" "pin14" 1.26829
+cap "MG_ESD_protection_12/pin_facing_input" "pin15" 3.08836
+cap "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" "pin15" 0.147992
+cap "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" "pin15" 546.871
+cap "pin15" "MG_ESD_protection_13/diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" 3.31421
+cap "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_3/a_n2500_n90#" "pin15" 6.13075
+cap "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" "pin15" 154.317
+cap "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" "pin15" 406.884
+cap "MG_ESD_protection_13/diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" "pin15" 124.152
+cap "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" "pin15" 474.582
+cap "MG_ESD_protection_13/diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" "pin15" 39.6756
+cap "MG_ESD_protection_13/pin_facing_input" "pin15" 376.552
+cap "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" "pin15" 275.103
+cap "MG_ESD_protection_13/pin_facing_input" "pin15" 215.274
+cap "pin15" "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" 4.48473
+cap "pin15" "MG_ESD_protection_13/pin_facing_input" 0.0410451
+cap "pin15" "MG_ESD_protection_13/pin_facing_input" 2.54581
+cap "MG_ESD_protection_13/pin_facing_input" "MG_ESD_protection_13/GND" 0.542549
+cap "pin14" "pin15" 20.1634
+cap "pin14" "MG_ESD_protection_14/diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" 0.759888
+cap "pin14" "MG_ESD_protection_14/diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" 76.6931
+cap "pin15" "pin14" 101.183
+cap "MG_ESD_protection_14/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" "pin14" 373.223
+cap "pin14" "MG_ESD_protection_14/diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" 302.099
+cap "MG_ESD_protection_14/pin_facing_input" "pin14" 368.929
+cap "MG_ESD_protection_14/diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" "pin14" 4.48473
+cap "MG_ESD_protection_14/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" "pin14" 470.819
+cap "pin15" "pin14" 56.3194
+cap "pin14" "MG_ESD_protection_14/pin_facing_input" 690.671
+cap "pin14" "pin15" 120.12
+cap "pin15" "MG_ESD_protection_14/pin_facing_input" 0.876425
+cap "pin14" "MG_ESD_protection_14/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" 264.57
+cap "MG_ESD_protection_14/pin_facing_input" "pin14" 402.024
+cap "MG_ESD_protection_14/GND" "pin14" 19.1587
+cap "MG_ESD_protection_14/pin_facing_input" "MG_ESD_protection_14/GND" 2.21193
+cap "pin15" "MG_ESD_protection_15/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" 406.118
+cap "pin15" "MG_ESD_protection_15/pin_facing_input" 394.875
+cap "pin15" "MG_ESD_protection_15/pin_facing_input" 1669.78
+cap "MG_ESD_protection_15/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "MG_ESD_protection_15/GND" 1535.02
+cap "pin15" "pin14" 0.33485
+cap "pin14" "MG_ESD_protection_16/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" 9.84228
+cap "pin14" "pin15" 33.4819
+cap "pin14" "MG_ESD_protection_16/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" 9.36674
+cap "pin15" "MG_ESD_protection_16/pin_facing_input" 3.08836
+cap "pin14" "MG_ESD_protection_16/pin_facing_input" 583.641
+cap "MG_ESD_protection_16/GND" "pin14" 102.084
+cap "pin14" "MG_ESD_protection_16/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" 1742.32
+cap "MG_ESD_protection_16/GND" "pin14" 548.898
+cap "MG_ESD_protection_16/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "pin14" 1343.5
+cap "MG_ESD_protection_16/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "pin14" 1.40996
+cap "pin14" "MG_ESD_protection_16/pin_facing_input" 869.855
+cap "MG_ESD_protection_16/GND" "pin14" 288.271
+cap "MG_ESD_protection_17/pin_facing_input" "pin15" 1.71112
+cap "MG_ESD_protection_17/GND" "pin15" 2.58139
+cap "MG_ESD_protection_17/pin_facing_input" "pin15" 5.25876
+cap "MG_ESD_protection_17/GND" "MG_ESD_protection_17/pin_facing_input" 1.37724
+cap "MG_ESD_protection_17/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "MG_ESD_protection_17/GND" 894.406
+cap "MG_ESD_protection_17/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "MG_ESD_protection_17/GND" 2.55394
+cap "MG_ESD_protection_17/pin_facing_input" "MG_ESD_protection_17/GND" 1335.24
+cap "MG_ESD_protection_17/pin_facing_input" "MG_ESD_protection_17/GND" 619.553
+cap "pin15" "MG_ESD_protection_18/diode_pd2nw_06v0_QD74SH_0/a_n1500_n90#" 0.0417345
+cap "pin15" "MG_ESD_protection_18/pin_facing_input" 3.04662
+cap "pin14" "MG_ESD_protection_18/GND" 54.0972
+cap "MG_ESD_protection_18/GND" "pin14" 86.4659
+cap "MG_ESD_protection_18/pin_facing_input" "pin14" 928.337
+cap "MG_ESD_protection_19/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "pin15" 3.08836
+cap "MG_ESD_protection_19/pin_facing_input" "pin15" 24.5067
+cap "MG_ESD_protection_9/diode_pd2nw_06v0_QD74SH_0/a_n1820_n410#" "pin14" 0.15414
+cap "MG_ESD_protection_9/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" "pin14" 15.1614
+cap "pin14" "MG_ESD_protection_9/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" 411.948
+cap "MG_ESD_protection_9/diode_pd2nw_06v0_WSMRF6_4/a_n2820_n410#" "pin14" 261.825
+cap "pin14" "MG_ESD_protection_9/diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" 253.526
+cap "MG_ESD_protection_9/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "pin14" 72.4128
+cap "MG_ESD_protection_9/GND" "pin14" 686.524
+cap "MG_ESD_protection_9/GND" "pin14" 1005.1
+cap "MG_ESD_protection_9/diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" "pin14" 7.57992
+cap "pin14" "MG_ESD_protection_9/diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" 2.87268
+cap "pin14" "MG_ESD_protection_9/GND" 313.023
+cap "pin15" "MG_ESD_protection_11/diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" 3.29662
+cap "MG_ESD_protection_11/diode_pd2nw_06v0_WSMRF6_1/a_n2820_n410#" "pin15" 436.31
+cap "pin15" "MG_ESD_protection_11/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" 0.00447425
+cap "pin15" "MG_ESD_protection_11/diode_pd2nw_06v0_WSMRF6_1/a_n2820_n410#" 31.277
+cap "MG_ESD_protection_11/diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" "pin15" 977.125
+cap "MG_ESD_protection_11/diode_pd2nw_06v0_WSMRF6_3/a_n2500_n90#" "pin15" 15.8195
+cap "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_3/a_n2500_n90#" "pin14" 11.8283
+cap "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" "pin14" 0.00447425
+cap "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" "pin14" 691.391
+cap "pin14" "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_1/a_n2820_n410#" 351.677
+cap "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_1/a_n2820_n410#" "pin14" 28.6422
+cap "pin14" "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_2/a_n2500_n90#" 19.2199
+cap "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" "pin14" 1017.06
+cap "pin14" "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_4/a_n2820_n410#" 403.348
+cap "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" "pin14" 88.3101
+cap "pin14" "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" 417.441
+cap "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" "pin15" 0.288029
+cap "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_2/a_n2500_n90#" "pin15" 6.26115
+cap "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_1/a_n2820_n410#" "pin15" 16.3871
+cap "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" "pin15" 632.351
+cap "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_4/a_n2820_n410#" "pin15" 416.236
+cap "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" "pin15" 219.553
+cap "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" "pin15" 382.07
+cap "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" "pin15" 999.242
+cap "MG_ESD_protection_13/diode_pd2nw_06v0_QD74SH_0/a_n1820_n410#" "pin15" 23.6489
+cap "pin15" "MG_ESD_protection_13/diode_pd2nw_06v0_QD74SH_0/a_n1820_n410#" 15.5546
+cap "pin15" "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" 614.123
+cap "pin15" "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" 1.52465
+cap "pin15" "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" 6.00939
+cap "MG_ESD_protection_14/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" "pin14" 778.595
+cap "pin14" "MG_ESD_protection_14/diode_pd2nw_06v0_QD74SH_0/w_n1676_n266#" 38.6276
+cap "pin14" "MG_ESD_protection_14/diode_pd2nw_06v0_QD74SH_0/a_n1820_n410#" 71.4783
+cap "MG_ESD_protection_14/diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" "pin14" 6.00939
+cap "pin14" "MG_ESD_protection_14/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" 995.371
+cap "pin14" "MG_ESD_protection_14/diode_pd2nw_06v0_QD74SH_0/a_n1820_n410#" 26.8382
+cap "pin14" "MG_ESD_protection_14/diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" 1.52465
+cap "pin14" "MG_ESD_protection_14/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" 800.195
+cap "pin14" "MG_ESD_protection_14/diode_pd2nw_06v0_QD74SH_0/a_n1820_n410#" 162.496
+cap "MG_ESD_protection_14/pin_facing_input" "pin14" 9.85197
+cap "MG_ESD_protection_14/diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" "pin14" 154.412
+cap "MG_ESD_protection_14/GND" "pin14" 128.656
+cap "pin14" "MG_ESD_protection_14/GND" 0.188785
+cap "pin15" "MG_ESD_protection_15/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" 925.305
+cap "pin15" "MG_ESD_protection_15/diode_pd2nw_06v0_QD74SH_0/a_n1820_n410#" 77.4656
+cap "MG_ESD_protection_15/pin_facing_input" "pin15" 18.7154
+cap "MG_ESD_protection_15/diode_pd2nw_06v0_WSMRF6_4/a_n2820_n410#" "pin15" 426.036
+cap "MG_ESD_protection_15/diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" "pin15" 517.995
+cap "pin15" "MG_ESD_protection_15/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" 54.9764
+cap "pin15" "MG_ESD_protection_15/diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" 112.896
+cap "MG_ESD_protection_15/GND" "pin15" 910.233
+cap "pin14" "MG_ESD_protection_16/diode_pd2nw_06v0_QD74SH_0/a_n1820_n410#" -0.0656801
+cap "pin14" "MG_ESD_protection_16/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" 5.49077
+cap "MG_ESD_protection_16/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" "pin14" 246.293
+cap "pin14" "MG_ESD_protection_16/diode_pd2nw_06v0_WSMRF6_4/a_n2820_n410#" 165.908
+cap "MG_ESD_protection_16/diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" "pin14" 253.526
+cap "MG_ESD_protection_16/GND" "pin14" 686.25
+cap "pin14" "MG_ESD_protection_16/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" 68.8179
+cap "MG_ESD_protection_16/diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" "pin14" 7.57992
+cap "pin14" "MG_ESD_protection_16/GND" 1005.1
+cap "MG_ESD_protection_16/GND" "pin14" 433.892
+cap "MG_ESD_protection_16/diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" "pin14" 4.8023
+cap "pin15" "MG_ESD_protection_17/GND" 0.729146
+cap "pin15" "MG_ESD_protection_17/pin_facing_input" 0.968772
+cap "MG_ESD_protection_17/GND" "pin15" 697.292
+cap "MG_ESD_protection_17/diode_nd2ps_06v0_67PAP3_0/a_n1500_n90#" "pin15" 2.96119
+cap "pin15" "MG_ESD_protection_17/diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" 20.2909
+cap "MG_ESD_protection_17/diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" "pin15" 6.96799
+cap "pin15" "MG_ESD_protection_17/GND" 804.239
+cap "MG_ESD_protection_18/GND" "pin14" 87.0143
+cap "MG_ESD_protection_18/GND" "pin14" 117.109
+cap "MG_ESD_protection_18/diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" "pin14" 0.415867
+cap "pin14" "MG_ESD_protection_9/diode_pd2nw_06v0_WSMRF6_4/a_n2820_n410#" -0.121155
+cap "pin14" "MG_ESD_protection_9/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" 786.734
+cap "pin14" "MG_ESD_protection_9/diode_pd2nw_06v0_WSMRF6_4/a_n2820_n410#" 21.8776
+cap "pin14" "MG_ESD_protection_9/diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" 511.737
+cap "MG_ESD_protection_9/GND" "pin14" 388.232
+cap "pin14" "MG_ESD_protection_9/GND" 991.662
+cap "pin14" "MG_ESD_protection_9/diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" 12.7953
+cap "pin14" "MG_ESD_protection_9/diode_nd2ps_06v0_XZ9LFE_3/a_n2500_n90#" 2.91735
+cap "pin14" "MG_ESD_protection_9/GND" 299.538
+cap "pin14" "MG_ESD_protection_9/diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" 1.30821
+cap "MG_ESD_protection_11/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "pin15" 427.216
+cap "pin15" "MG_ESD_protection_11/diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" 7.84714
+cap "MG_ESD_protection_11/diode_pd2nw_06v0_WSMRF6_2/a_n2500_n90#" "pin15" 16.6914
+cap "MG_ESD_protection_11/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "pin15" 41.4535
+cap "MG_ESD_protection_11/diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" "pin15" 954.707
+cap "pin14" "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" 675.423
+cap "pin14" "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 356.616
+cap "pin14" "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_2/a_n2500_n90#" 12.7002
+cap "pin14" "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" 19.1995
+cap "pin14" "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" 1004.3
+cap "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "pin14" 37.9871
+cap "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_4/a_n2820_n410#" "pin14" 419.54
+cap "pin14" "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" 57.3517
+cap "pin14" "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" 417.364
+cap "pin15" "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" 0.191988
+cap "pin15" "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" 628.373
+cap "pin15" "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" 6.3489
+cap "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "pin15" 19.7326
+cap "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" "pin15" 219.457
+cap "pin15" "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" 343.339
+cap "pin15" "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_4/a_n2820_n410#" 436.556
+cap "pin15" "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_4/a_n2820_n410#" 30.9536
+cap "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" "pin15" 1000.67
+cap "pin15" "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" 6.00939
+cap "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" "pin15" 633.871
+cap "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_4/a_n2820_n410#" "pin15" 14.2723
+cap "pin14" "MG_ESD_protection_14/diode_pd2nw_06v0_WSMRF6_4/w_n2676_n266#" 32.5592
+cap "MG_ESD_protection_14/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" "pin14" 779.58
+cap "MG_ESD_protection_14/diode_pd2nw_06v0_WSMRF6_4/a_n2820_n410#" "pin14" 79.2223
+cap "MG_ESD_protection_14/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" "pin14" 995.978
+cap "MG_ESD_protection_14/diode_pd2nw_06v0_WSMRF6_2/w_n2676_n266#" "pin14" 6.00939
+cap "MG_ESD_protection_14/diode_pd2nw_06v0_WSMRF6_4/a_n2820_n410#" "pin14" 27.7276
+cap "pin14" "MG_ESD_protection_14/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" 1010.38
+cap "MG_ESD_protection_14/diode_pd2nw_06v0_WSMRF6_4/a_n2820_n410#" "pin14" 39.0242
+cap "MG_ESD_protection_14/GND" "pin14" 13.502
+cap "MG_ESD_protection_14/diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "pin14" 325.775
+cap "MG_ESD_protection_15/diode_pd2nw_06v0_WSMRF6_4/a_n2820_n410#" "pin15" 5.02098
+cap "pin15" "MG_ESD_protection_15/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" 1003.91
+cap "pin15" "MG_ESD_protection_15/diode_pd2nw_06v0_WSMRF6_4/a_n2820_n410#" 27.6328
+cap "pin15" "MG_ESD_protection_15/diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" 1014.31
+cap "pin15" "MG_ESD_protection_15/diode_pd2nw_06v0_WSMRF6_4/a_n2820_n410#" 38.2857
+cap "MG_ESD_protection_15/GND" "pin15" 726.089
+cap "pin15" "MG_ESD_protection_15/diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" 223.763
+cap "pin14" "MG_ESD_protection_16/diode_pd2nw_06v0_WSMRF6_4/a_n2820_n410#" -0.0430919
+cap "MG_ESD_protection_16/diode_pd2nw_06v0_WSMRF6_4/a_n2500_n90#" "pin14" 496.932
+cap "MG_ESD_protection_16/diode_pd2nw_06v0_WSMRF6_4/a_n2820_n410#" "pin14" 10.9388
+cap "pin14" "MG_ESD_protection_16/diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" 511.737
+cap "pin14" "MG_ESD_protection_16/GND" 388.232
+cap "MG_ESD_protection_16/diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" "pin14" 12.7953
+cap "MG_ESD_protection_16/GND" "pin14" 991.662
+cap "MG_ESD_protection_16/diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" "pin14" 1.92356
+cap "MG_ESD_protection_16/GND" "pin14" 409.605
+cap "MG_ESD_protection_16/diode_nd2ps_06v0_XZ9LFE_3/a_n2500_n90#" "pin14" 4.5113
+cap "pin15" "MG_ESD_protection_17/diode_nd2ps_06v0_XZ9LFE_4/a_n2500_n90#" 39.28
+cap "pin15" "MG_ESD_protection_17/GND" 700.953
+cap "pin15" "MG_ESD_protection_17/GND" 783.45
+cap "pin15" "MG_ESD_protection_17/diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" 3.21001
+cap "MG_ESD_protection_17/diode_nd2ps_06v0_XZ9LFE_3/a_n2500_n90#" "pin15" 6.88065
+cap "MG_ESD_protection_18/GND" "pin14" 90.5131
+cap "MG_ESD_protection_18/diode_nd2ps_06v0_XZ9LFE_3/a_n2500_n90#" "pin14" 0.272773
+cap "MG_ESD_protection_18/GND" "pin14" 107.529
+cap "pin14" "MG_ESD_protection_9/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" -0.120067
+cap "MG_ESD_protection_9/external_input_pin" "pin14" 808.531
+cap "pin14" "MG_ESD_protection_9/external_input_pin" 880.227
+cap "MG_ESD_protection_9/external_input_pin" "pin14" 1005.17
+cap "MG_ESD_protection_9/diode_nd2ps_06v0_XZ9LFE_4/a_n2652_n242#" "pin14" 298.502
+cap "MG_ESD_protection_9/diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" "pin14" 1.37348
+cap "MG_ESD_protection_9/diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "pin14" 2.58699
+cap "pin15" "MG_ESD_protection_11/Vdd" 7.905
+cap "pin15" "MG_ESD_protection_11/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 436.317
+cap "pin15" "MG_ESD_protection_11/Vdd" 956.01
+cap "pin15" "MG_ESD_protection_11/diode_pd2nw_06v0_WSMRF6_1/a_n2500_n90#" 16.7537
+cap "pin15" "MG_ESD_protection_11/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 39.6502
+cap "pin14" "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_1/a_n2500_n90#" 12.7625
+cap "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "pin14" 359.759
+cap "MG_ESD_protection_12/Vdd" "pin14" 676.783
+cap "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" "pin14" 19.1995
+cap "MG_ESD_protection_12/Vdd" "pin14" 1006.42
+cap "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "pin14" 36.1693
+cap "pin14" "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" 423.485
+cap "MG_ESD_protection_12/Vdd" "pin14" 64.7202
+cap "MG_ESD_protection_12/external_input_pin" "pin14" 417.48
+cap "pin15" "MG_ESD_protection_13/Vdd" 0.190921
+cap "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" "pin15" 6.35517
+cap "pin15" "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 18.9995
+cap "pin15" "MG_ESD_protection_13/Vdd" 628.538
+cap "pin15" "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" 440.035
+cap "pin15" "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_2/a_n2500_n90#" 219.572
+cap "pin15" "MG_ESD_protection_13/Vdd" 352.835
+cap "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" "pin15" 27.9995
+cap "MG_ESD_protection_13/external_input_pin" "pin15" 999.242
+cap "pin15" "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" 13.5378
+cap "MG_ESD_protection_13/external_input_pin" "pin15" 633.589
+cap "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" "pin15" 6.00939
+cap "MG_ESD_protection_14/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" "pin14" 77.7925
+cap "pin14" "MG_ESD_protection_14/diode_pd2nw_06v0_WSMRF6_3/w_n2676_n266#" 33.4783
+cap "MG_ESD_protection_14/external_input_pin" "pin14" 778.562
+cap "MG_ESD_protection_14/diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" "pin14" 6.00939
+cap "pin14" "MG_ESD_protection_14/external_input_pin" 995.29
+cap "MG_ESD_protection_14/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" "pin14" 26.7223
+cap "pin14" "MG_ESD_protection_14/external_input_pin" 1010.77
+cap "MG_ESD_protection_14/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" "pin14" 38.2585
+cap "pin14" "MG_ESD_protection_14/external_input_pin" 336.648
+cap "MG_ESD_protection_15/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" "pin15" 5.32981
+cap "MG_ESD_protection_15/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" "pin15" 27.1789
+cap "pin15" "MG_ESD_protection_15/external_input_pin" 1004.3
+cap "pin15" "MG_ESD_protection_15/external_input_pin" 1052.45
+cap "MG_ESD_protection_15/external_input_pin" "pin15" 930.251
+cap "MG_ESD_protection_16/diode_pd2nw_06v0_WSMRF6_3/a_n2820_n410#" "pin14" -0.0358432
+cap "pin14" "MG_ESD_protection_16/external_input_pin" 507.83
+cap "pin14" "MG_ESD_protection_16/external_input_pin" 880.227
+cap "pin14" "MG_ESD_protection_16/external_input_pin" 1005.17
+cap "MG_ESD_protection_16/diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" "pin14" 1.52553
+cap "pin14" "MG_ESD_protection_16/diode_nd2ps_06v0_XZ9LFE_4/a_n2652_n242#" 403.912
+cap "MG_ESD_protection_16/diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "pin14" 3.15873
+cap "pin15" "MG_ESD_protection_17/external_input_pin" 736.461
+cap "MG_ESD_protection_17/diode_nd2ps_06v0_XZ9LFE_4/a_n2652_n242#" "pin15" 773.819
+cap "MG_ESD_protection_17/diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" "pin15" 2.81198
+cap "MG_ESD_protection_17/diode_nd2ps_06v0_XZ9LFE_1/a_n2500_n90#" "pin15" 5.73157
+cap "pin14" "MG_ESD_protection_18/diode_nd2ps_06v0_XZ9LFE_4/a_n2652_n242#" 86.575
+cap "MG_ESD_protection_18/diode_nd2ps_06v0_XZ9LFE_4/a_n2652_n242#" "pin14" 106.272
+cap "pin15" "pin4" 48.7353
+cap "MG_ESD_protection_9/diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" "pin4" 0.345637
+cap "MG_ESD_protection_9/Vdd" "pin4" 114.877
+cap "MG_ESD_protection_9/diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" "MG_ESD_protection_9/Vdd" 233.68
+cap "MG_ESD_protection_9/diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" "pin15" 26.1251
+cap "MG_ESD_protection_9/diode_pd2nw_06v0_WSMRF6_1/a_n2820_n410#" "MG_ESD_protection_9/diode_pd2nw_06v0_WSMRF6_1/a_n2500_n90#" 63.3774
+cap "MG_ESD_protection_9/Vdd" "MG_ESD_protection_9/diode_pd2nw_06v0_WSMRF6_1/a_n2500_n90#" 26.3215
+cap "MG_ESD_protection_9/external_input_pin" "MG_ESD_protection_9/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 26.1251
+cap "pin14" "MG_ESD_protection_9/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" -0.0793974
+cap "MG_ESD_protection_9/external_input_pin" "MG_ESD_protection_9/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 15.9887
+cap "MG_ESD_protection_9/external_input_pin" "pin14" -3.63868
+cap "pin14" "MG_ESD_protection_9/external_input_pin" 641.756
+cap "MG_ESD_protection_9/external_input_pin" "pin14" 1042.81
+cap "pin14" "MG_ESD_protection_9/external_input_pin" 1016.32
+cap "pin14" "MG_ESD_protection_9/diode_nd2ps_06v0_XZ9LFE_2/a_n2652_n242#" 298.844
+cap "pin14" "MG_ESD_protection_9/diode_nd2ps_06v0_XZ9LFE_0/a_n2500_n90#" 2.64411
+cap "MG_ESD_protection_10/Vdd" "pin15" 36.8867
+cap "MG_ESD_protection_10/diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" "MG_ESD_protection_10/Vdd" 55.3874
+cap "MG_ESD_protection_10/Vdd" "pin15" 22.069
+cap "MG_ESD_protection_10/diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" "pin15" 22.8949
+cap "MG_ESD_protection_10/diode_pd2nw_06v0_WSMRF6_1/a_n2820_n410#" "MG_ESD_protection_10/external_input_pin" 53.545
+cap "MG_ESD_protection_10/Vdd" "MG_ESD_protection_10/external_input_pin" 4.31693
+cap "MG_ESD_protection_10/diode_pd2nw_06v0_WSMRF6_1/a_n2820_n410#" "MG_ESD_protection_10/external_input_pin" 23.7925
+cap "MG_ESD_protection_10/diode_pd2nw_06v0_WSMRF6_1/a_n2820_n410#" "MG_ESD_protection_10/external_input_pin" 47.0434
+cap "MG_ESD_protection_11/Vdd" "pin15" 7.9814
+cap "pin15" "MG_ESD_protection_11/Vdd" 840.453
+cap "pin15" "MG_ESD_protection_11/diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" 17.1881
+cap "MG_ESD_protection_11/Vdd" "MG_ESD_protection_11/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 28.3744
+cap "MG_ESD_protection_11/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" "MG_ESD_protection_11/external_input_pin" 39.3075
+cap "MG_ESD_protection_11/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" "MG_ESD_protection_11/external_input_pin" 21.9264
+cap "MG_ESD_protection_11/diode_pd2nw_06v0_WSMRF6_1/a_n2820_n410#" "MG_ESD_protection_11/external_input_pin" 18.835
+cap "pin14" "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" 13.3383
+cap "MG_ESD_protection_12/Vdd" "pin14" 568.101
+cap "pin14" "pin15" 246.453
+cap "MG_ESD_protection_12/Vdd" "pin15" 27.4286
+cap "pin15" "pin14" 54.6936
+cap "MG_ESD_protection_12/Vdd" "pin14" 822.025
+cap "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" "pin14" 18.7402
+cap "MG_ESD_protection_12/Vdd" "pin15" 40.9852
+cap "MG_ESD_protection_12/external_input_pin" "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 28.752
+cap "pin14" "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 270.309
+cap "MG_ESD_protection_12/external_input_pin" "pin14" 402.347
+cap "MG_ESD_protection_12/Vdd" "pin14" 55.5716
+cap "MG_ESD_protection_12/external_input_pin" "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 29.2163
+cap "MG_ESD_protection_12/external_input_pin" "MG_ESD_protection_12/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 15.5379
+cap "pin15" "MG_ESD_protection_13/Vdd" 0.175044
+cap "pin15" "MG_ESD_protection_13/Vdd" 14.8177
+cap "pin15" "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" 6.2365
+cap "pin15" "MG_ESD_protection_13/Vdd" 533.343
+cap "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" "MG_ESD_protection_13/Vdd" 300.634
+cap "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_1/a_n2500_n90#" 235.396
+cap "MG_ESD_protection_13/external_input_pin" "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 850.476
+cap "MG_ESD_protection_13/external_input_pin" "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 425.881
+cap "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" 6.00939
+cap "MG_ESD_protection_14/Vdd" "pin15" 2.2069
+cap "pin15" "MG_ESD_protection_14/Vdd" 44.1379
+cap "MG_ESD_protection_14/Vdd" "MG_ESD_protection_14/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 22.069
+cap "MG_ESD_protection_14/external_input_pin" "MG_ESD_protection_14/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 43.0397
+cap "pin14" "MG_ESD_protection_14/external_input_pin" 669.241
+cap "pin14" "MG_ESD_protection_14/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 47.7775
+cap "pin14" "MG_ESD_protection_14/diode_pd2nw_06v0_WSMRF6_1/w_n2676_n266#" 25.2101
+cap "MG_ESD_protection_14/external_input_pin" "pin14" 597.68
+cap "MG_ESD_protection_14/diode_pd2nw_06v0_WSMRF6_0/w_n2676_n266#" "pin14" 6.00939
+cap "pin14" "MG_ESD_protection_14/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 15.0694
+cap "MG_ESD_protection_14/external_input_pin" "MG_ESD_protection_14/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 18.1943
+cap "pin14" "MG_ESD_protection_14/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 28.88
+cap "pin14" "MG_ESD_protection_14/external_input_pin" 678.733
+cap "MG_ESD_protection_14/external_input_pin" "MG_ESD_protection_14/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 22.1163
+cap "MG_ESD_protection_14/external_input_pin" "pin14" 280.3
+cap "pin15" "MG_ESD_protection_15/Vdd" 33.734
+cap "MG_ESD_protection_15/Vdd" "pin15" 34.6798
+cap "MG_ESD_protection_15/external_input_pin" "MG_ESD_protection_15/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 35.5753
+cap "pin15" "MG_ESD_protection_15/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 3.88274
+cap "MG_ESD_protection_15/external_input_pin" "MG_ESD_protection_15/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 25.6586
+cap "MG_ESD_protection_15/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" "MG_ESD_protection_15/external_input_pin" 600.462
+cap "pin15" "MG_ESD_protection_16/Vdd" 21.1232
+cap "pin15" "MG_ESD_protection_16/Vdd" 44.1379
+cap "MG_ESD_protection_16/diode_pd2nw_06v0_WSMRF6_1/a_n2500_n90#" "MG_ESD_protection_16/diode_pd2nw_06v0_WSMRF6_1/a_n2820_n410#" 18.8375
+cap "MG_ESD_protection_16/Vdd" "MG_ESD_protection_16/diode_pd2nw_06v0_WSMRF6_1/a_n2820_n410#" 3.15271
+cap "MG_ESD_protection_16/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" "MG_ESD_protection_16/external_input_pin" 35.3986
+cap "pin14" "MG_ESD_protection_16/external_input_pin" -0.463462
+cap "pin14" "MG_ESD_protection_16/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" -0.0208304
+cap "MG_ESD_protection_16/external_input_pin" "MG_ESD_protection_16/diode_pd2nw_06v0_WSMRF6_2/a_n2820_n410#" 15.9887
+cap "pin14" "MG_ESD_protection_16/external_input_pin" 395.875
+cap "MG_ESD_protection_16/external_input_pin" "pin14" 1022.82
+cap "pin14" "MG_ESD_protection_16/external_input_pin" 1016.32
+cap "pin14" "MG_ESD_protection_16/diode_nd2ps_06v0_XZ9LFE_2/a_n2652_n242#" 387.391
+cap "pin14" "MG_ESD_protection_16/diode_nd2ps_06v0_XZ9LFE_0/a_n2500_n90#" 3.14503
+cap "MG_ESD_protection_17/Vdd" "pin15" 8.51232
+cap "pin15" "MG_ESD_protection_17/Vdd" 44.1379
+cap "MG_ESD_protection_17/Vdd" "MG_ESD_protection_17/diode_pd2nw_06v0_WSMRF6_1/a_n2820_n410#" 15.7636
+cap "MG_ESD_protection_17/diode_pd2nw_06v0_WSMRF6_1/a_n2820_n410#" "MG_ESD_protection_17/external_input_pin" 46.7718
+cap "MG_ESD_protection_17/external_input_pin" "MG_ESD_protection_17/diode_pd2nw_06v0_WSMRF6_1/a_n2820_n410#" 16.8903
+cap "MG_ESD_protection_17/diode_nd2ps_06v0_XZ9LFE_2/a_n2652_n242#" "MG_ESD_protection_17/diode_nd2ps_06v0_XZ9LFE_0/a_n2500_n90#" 5.92031
+cap "pin15" "MG_ESD_protection_18/Vdd" 40.0394
+cap "MG_ESD_protection_18/Vdd" "MG_ESD_protection_18/diode_pd2nw_06v0_WSMRF6_1/a_n2820_n410#" 28.3744
+cap "MG_ESD_protection_18/diode_pd2nw_06v0_WSMRF6_1/a_n2820_n410#" "MG_ESD_protection_18/external_input_pin" 39.3075
+cap "MG_ESD_protection_18/diode_pd2nw_06v0_WSMRF6_1/a_n2820_n410#" "MG_ESD_protection_18/external_input_pin" 21.9264
+cap "MG_ESD_protection_18/external_input_pin" "MG_ESD_protection_18/diode_pd2nw_06v0_WSMRF6_1/a_n2820_n410#" 18.835
+cap "pin14" "MG_ESD_protection_18/diode_nd2ps_06v0_XZ9LFE_2/a_n2500_n90#" 70.5769
+cap "MG_ESD_protection_18/diode_nd2ps_06v0_XZ9LFE_2/a_n2652_n242#" "pin14" 89.9537
+cap "pin15" "MG_ESD_protection_19/Vdd" 22.6995
+cap "pin15" "MG_ESD_protection_19/Vdd" 44.1379
+cap "MG_ESD_protection_19/diode_pd2nw_06v0_WSMRF6_1/a_n2820_n410#" "MG_ESD_protection_19/Vdd" 1.57636
+cap "MG_ESD_protection_19/diode_pd2nw_06v0_WSMRF6_1/a_n2820_n410#" "MG_ESD_protection_19/diode_pd2nw_06v0_WSMRF6_1/a_n2500_n90#" 21.3162
+cap "MG_ESD_protection_19/diode_pd2nw_06v0_WSMRF6_1/a_n2820_n410#" "MG_ESD_protection_19/external_input_pin" 69.4014
+cap "MG_ESD_protection_19/diode_pd2nw_06v0_WSMRF6_1/a_n2820_n410#" "MG_ESD_protection_19/external_input_pin" 18.9672
+cap "MG_ESD_protection_13/Vdd" "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 2.57303
+cap "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_0/a_n2500_n90#" "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" 14.7602
+cap "MG_ESD_protection_13/diode_pd2nw_06v0_WSMRF6_0/a_n2820_n410#" "MG_ESD_protection_13/external_input_pin" 22.7521
+merge "MG_ESD_protection_19/VSUBS" "MG_ESD_protection_18/VSUBS" -116735 0 0 0 0 0 0 0 0 0 0 -587210000 -1424688 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14200000 -61400 -14200000 -61400 -14200000 -61400 -164592000 -161520 -156483400 -117068
+merge "MG_ESD_protection_18/VSUBS" "MG_ESD_protection_17/VSUBS"
+merge "MG_ESD_protection_17/VSUBS" "MG_ESD_protection_16/VSUBS"
+merge "MG_ESD_protection_16/VSUBS" "MG_ESD_protection_15/VSUBS"
+merge "MG_ESD_protection_15/VSUBS" "MG_ESD_protection_14/VSUBS"
+merge "MG_ESD_protection_14/VSUBS" "MG_ESD_protection_13/VSUBS"
+merge "MG_ESD_protection_13/VSUBS" "MG_ESD_protection_12/VSUBS"
+merge "MG_ESD_protection_12/VSUBS" "MG_ESD_protection_11/VSUBS"
+merge "MG_ESD_protection_11/VSUBS" "MG_ESD_protection_10/VSUBS"
+merge "MG_ESD_protection_10/VSUBS" "MG_ESD_protection_9/VSUBS"
+merge "MG_ESD_protection_9/VSUBS" "MG_ESD_protection_8/VSUBS"
+merge "MG_ESD_protection_8/VSUBS" "MG_ESD_protection_7/VSUBS"
+merge "MG_ESD_protection_7/VSUBS" "MG_ESD_protection_6/VSUBS"
+merge "MG_ESD_protection_6/VSUBS" "MG_ESD_protection_5/VSUBS"
+merge "MG_ESD_protection_5/VSUBS" "MG_ESD_protection_4/VSUBS"
+merge "MG_ESD_protection_4/VSUBS" "MG_ESD_protection_3/VSUBS"
+merge "MG_ESD_protection_3/VSUBS" "MG_ESD_protection_2/VSUBS"
+merge "MG_ESD_protection_2/VSUBS" "MG_ESD_protection_1/VSUBS"
+merge "MG_ESD_protection_1/VSUBS" "MG_ESD_protection_0/VSUBS"
+merge "MG_ESD_protection_0/VSUBS" "pin15"
+merge "MG_ESD_protection_16/external_input_pin" "pin19" -1734.82 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -211200 -8880 0 0 0 0 0 0
+merge "MG_ESD_protection_1/external_input_pin" "pin12" -2845.55 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -211200 -16400 0 0 0 0 0 0
+merge "MG_ESD_protection_8/external_input_pin" "pin5" -9160.63 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8778151 -35014 0 0 0 0 0 0
+merge "MG_ESD_protection_15/external_input_pin" "pin20" -2709.06 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -211200 -9320 0 0 0 0 0 0
+merge "MG_ESD_protection_12/external_input_pin" "pin1" -1762.45 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -211200 -8880 0 0 0 0 0 0
+merge "MG_ESD_protection_7/external_input_pin" "pin6" -2700.32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1011700 -14621 0 0 0 0 0 0
+merge "MG_ESD_protection_0/external_input_pin" "pin13" -3077.66 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -211200 -16400 0 0 0 0 0 0
+merge "MG_ESD_protection_11/external_input_pin" "pin2" -1702.53 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -211200 -8880 0 0 0 0 0 0
+merge "MG_ESD_protection_10/external_input_pin" "pin3" -2105.13 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1331900 -9441 0 0 0 0 0 0
+merge "MG_ESD_protection_9/external_input_pin" "pin4" -7197.42 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9098351 -21663 0 0 0 0 0 0
+merge "MG_ESD_protection_14/external_input_pin" "pin21" -1712.32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -211200 -8880 0 0 0 0 0 0
+merge "MG_ESD_protection_6/external_input_pin" "pin7" -2906.24 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -211200 -16840 0 0 0 0 0 0
+merge "MG_ESD_protection_5/external_input_pin" "pin8" -2845.95 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -211200 -16400 0 0 0 0 0 0
+merge "MG_ESD_protection_3/external_input_pin" "pin10" -2833.39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -211200 -16400 0 0 0 0 0 0
+merge "MG_ESD_protection_13/external_input_pin" "pin22" -1746.96 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -211200 -8880 0 0 0 0 0 0
+merge "MG_ESD_protection_4/external_input_pin" "pin9" -2845.15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -211200 -16400 0 0 0 0 0 0
+merge "MG_ESD_protection_2/external_input_pin" "pin11" -3607.08 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -211200 -16400 0 0 0 0 0 0
+merge "MG_ESD_protection_19/external_input_pin" "pin16" -1756.75 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -211200 -8880 0 0 0 0 0 0
+merge "MG_ESD_protection_18/external_input_pin" "pin17" -1702.53 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -211200 -8880 0 0 0 0 0 0
+merge "MG_ESD_protection_17/external_input_pin" "pin18" -2040.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -211200 -8880 0 0 0 0 0 0
