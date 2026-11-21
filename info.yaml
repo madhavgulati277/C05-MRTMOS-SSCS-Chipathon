@@ -66,67 +66,155 @@ project:
 #   Note: secondary_esd flag is ignored
 
 pins:
-  - name: pin15
+  - pin_index: 0
+    pin_name: pin15
+    slot: W12
+    instance: W12
     io_type: ground
-  - name: pin14
+    cell: gf180mcu_fd_io__dvss
+  - pin_index: 1
+    pin_name: pin14
+    slot: W13
+    instance: W13
     io_type: power
-  - name: pin13
+    cell: gf180mcu_fd_io__dvdd
+  - pin_index: 2
+    pin_name: pin13
+    slot: W14
+    instance: W14
     io_type: analog
+    cell: gf180mcu_fd_io__asig_5p0
     secondary_esd: true
-  - name: pin12
+  - pin_index: 3
+    pin_name: pin12
+    slot: W15
+    instance: W15
     io_type: analog
+    cell: gf180mcu_fd_io__asig_5p0
     secondary_esd: true
-  - name: pin11
+  - pin_index: 4
+    pin_name: pin11
+    slot: W16
+    instance: W16
     io_type: analog
+    cell: gf180mcu_fd_io__asig_5p0
     secondary_esd: true
-  - name: pin10
+  - pin_index: 5
+    pin_name: pin10
+    slot: W17
+    instance: W17
     io_type: analog
+    cell: gf180mcu_fd_io__asig_5p0
     secondary_esd: true
-  - name: pin9
+  - pin_index: 6
+    pin_name: pin9
+    slot: W18
+    instance: W18
     io_type: analog
+    cell: gf180mcu_fd_io__asig_5p0
     secondary_esd: true
-  - name: pin8
+  - pin_index: 7
+    pin_name: pin8
+    slot: W19
+    instance: W19
     io_type: analog
+    cell: gf180mcu_fd_io__asig_5p0
     secondary_esd: true
-  - name: pin7
+  - pin_index: 8
+    pin_name: pin7
+    slot: W20
+    instance: W20
     io_type: analog
+    cell: gf180mcu_fd_io__asig_5p0
     secondary_esd: true
-  - name: pin6
+  - pin_index: 9
+    pin_name: pin6
+    slot: W21
+    instance: W21
     io_type: analog
+    cell: gf180mcu_fd_io__asig_5p0
     secondary_esd: true
-  - name: pin5
+  - pin_index: 10
+    pin_name: pin5
+    slot: W22
+    instance: W22
     io_type: analog
+    cell: gf180mcu_fd_io__asig_5p0
     secondary_esd: true
-  - name: pin4
+  - pin_index: 11
+    pin_name: pin4
+    slot: N01
+    instance: N01
     io_type: analog
+    cell: gf180mcu_fd_io__asig_5p0
     secondary_esd: true
-  - name: pin3
+  - pin_index: 12
+    pin_name: pin3
+    slot: N02
+    instance: N02
     io_type: analog
+    cell: gf180mcu_fd_io__asig_5p0
     secondary_esd: true
-  - name: pin2
+  - pin_index: 13
+    pin_name: pin2
+    slot: N03
+    instance: N03
     io_type: analog
+    cell: gf180mcu_fd_io__asig_5p0
     secondary_esd: true
-  - name: pin1
+  - pin_index: 14
+    pin_name: pin1
+    slot: N04
+    instance: N04
     io_type: analog
+    cell: gf180mcu_fd_io__asig_5p0
     secondary_esd: true
-  - name: pin22
+  - pin_index: 15
+    pin_name: pin22
+    slot: N05
+    instance: N05
     io_type: analog
+    cell: gf180mcu_fd_io__asig_5p0
     secondary_esd: true
-  - name: pin21
+  - pin_index: 16
+    pin_name: pin21
+    slot: N06
+    instance: N06
     io_type: analog
+    cell: gf180mcu_fd_io__asig_5p0
     secondary_esd: true
-  - name: pin20
+  - pin_index: 17
+    pin_name: pin20
+    slot: N07
+    instance: N07
     io_type: analog
+    cell: gf180mcu_fd_io__asig_5p0
     secondary_esd: true
-  - name: pin19
+  - pin_index: 18
+    pin_name: pin19
+    slot: N08
+    instance: N08
     io_type: analog
+    cell: gf180mcu_fd_io__asig_5p0
     secondary_esd: true
-  - name: pin18
+  - pin_index: 19
+    pin_name: pin18
+    slot: N09
+    instance: N09
     io_type: analog
+    cell: gf180mcu_fd_io__asig_5p0
     secondary_esd: true
-  - name: pin17
+  - pin_index: 20
+    pin_name: pin17
+    slot: N10
+    instance: N10
     io_type: analog
+    cell: gf180mcu_fd_io__asig_5p0
     secondary_esd: true
-  - name: pin16
+  - pin_index: 21
+    pin_name: pin16
+    slot: N11
+    instance: N11
     io_type: analog
+    cell: gf180mcu_fd_io__asig_5p0
     secondary_esd: true
